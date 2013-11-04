@@ -44,7 +44,7 @@ module.exports = function (grunt) {
                 },
                 files: [
                     '<%= yeoman.app %>/*.html',
-                    '.tmp/styles/{,*/}*.css',
+                    '<%= yeoman.app %>/css/{,*/}*.css',
                     '{.tmp,<%= yeoman.app %>}/scripts/{,*/}*.js',
                     '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
                 ]
@@ -304,7 +304,7 @@ module.exports = function (grunt) {
             outputFile: '<%= yeoman.dist %>/bower_components/modernizr/modernizr.js',
             files: [
                 '<%= yeoman.dist %>/scripts/{,*/}*.js',
-                '<%= yeoman.dist %>/styles/{,*/}*.css',
+                '<%= yeoman.dist %>/css/{,*/}*.css',
                 '!<%= yeoman.dist %>/scripts/vendor/*'
             ],
             uglify: true
