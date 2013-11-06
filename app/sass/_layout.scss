@@ -30,8 +30,10 @@
 		height:45px;
 		top:0;
 		left:0;
-		background:#ececec;
+		background:#f0949a;
 		z-index:1;
+		box-shadow:0 0 5px rgba(0,0,0,.5);
+		border-bottom:2px solid #ea7985;
 	}
 
 	.page .main {
@@ -43,6 +45,7 @@
 		height:auto;	
 		& > div {
 			margin-top:10px;
+			@include border-box-sizing;
 		}
 	}
 
@@ -50,11 +53,10 @@
 		.prodShow {
 			height:auto;
 			@include span-columns(4 omega);
-			@include border-box-sizing;
 
 			& > img {
 				width:100%;
-				border:5px solid #d5cfd1;
+				border:5px solid #902024;
 			}
 		}
 
@@ -68,10 +70,9 @@
 
 		.prodSpec {
 			@include span-columns(4 omega);
-			@include border-box-sizing;
 			border-width:1px 1px 4px 1px;
 			border-style:solid;
-			border-color:#6d0000;
+			border-color:#902024;
 			background:#ffffff;
 			height:auto;
 			box-shadow: 0 0 3px rgba(0,0,0,.3);
@@ -136,11 +137,16 @@
 			@include span-columns(1 omega);
 			height:80px;
 			background:#ececec;
-			a {
+			a.pure-button.pure-button-primary {
+				border-radius:5px;
+				padding:0;
 				display: block;
 				width:100%;
 				height:100%;
-				background:green;
+				background:#ea7985;
+				line-height: 80px;
+				font-weight: bold;
+				font-size:1rem;
 			}
 		}
 
@@ -150,11 +156,12 @@
 
 			a.pure-button.pure-button-primary {
 				margin:0;
-				padding:0;
 				border-radius:5px;
 				width:100%;
 				height:55px;
-				line-height: 55px;
+				line-height: 35px;
+				background: #b93744;
+				font-size:1.3rem;
 			}
 		}
 
