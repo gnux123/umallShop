@@ -63,7 +63,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/buttons\/_buttons-core\.scss}line{font-family:\000031}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/buttons\/_buttons-core\.scss}line{font-family:\000031}}
 .pure-button {
   /* Structure */
   display: inline-block;
@@ -82,19 +82,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* Firefox: Get rid of the inner focus border */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/buttons\/_buttons-core\.scss}line{font-family:\0000319}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/buttons\/_buttons-core\.scss}line{font-family:\0000319}}
 .pure-button::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/buttons\/_buttons-core\.scss}line{font-family:\0000324}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/buttons\/_buttons-core\.scss}line{font-family:\0000324}}
 a:focus {
   outline: none;
 }
 
 /* from YUICSS buttons-core.css */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/buttons\/_buttons-theme\.scss}line{font-family:\000033}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/buttons\/_buttons-theme\.scss}line{font-family:\000033}}
 .pure-button {
   /* Structure */
   display: inline-block;
@@ -113,20 +113,20 @@ a:focus {
 }
 
 /* Firefox: Get rid of the inner focus border */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/buttons\/_buttons-theme\.scss}line{font-family:\0000321}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/buttons\/_buttons-theme\.scss}line{font-family:\0000321}}
 .pure-button::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/buttons\/_buttons-theme\.scss}line{font-family:\0000326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/buttons\/_buttons-theme\.scss}line{font-family:\0000326}}
 a:focus {
   outline: none;
 }
 
 /* end from YUICSS buttons-core.css */
 /* from YUICSS buttons.css */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/buttons\/_buttons-theme\.scss}line{font-family:\0000331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/buttons\/_buttons-theme\.scss}line{font-family:\0000331}}
 .pure-button {
   font-size: 100%;
   *font-size: 90%;
@@ -154,7 +154,7 @@ a:focus {
   transition: 0.1s linear box-shadow;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/buttons\/_buttons-theme\.scss}line{font-family:\0000355}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/buttons\/_buttons-theme\.scss}line{font-family:\0000355}}
 .pure-button-hover,
 .pure-button:hover {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#00000000', GradientType=0);
@@ -166,7 +166,7 @@ a:focus {
   background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.05));
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/buttons\/_buttons-theme\.scss}line{font-family:\0000368}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/buttons\/_buttons-theme\.scss}line{font-family:\0000368}}
 .pure-button-active,
 .pure-button:active {
   -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
@@ -174,7 +174,7 @@ a:focus {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/buttons\/_buttons-theme\.scss}line{font-family:\0000377}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/buttons\/_buttons-theme\.scss}line{font-family:\0000377}}
 .pure-button[disabled],
 .pure-button-disabled,
 .pure-button-disabled:hover,
@@ -190,19 +190,19 @@ a:focus {
   box-shadow: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/buttons\/_buttons-theme\.scss}line{font-family:\0000389}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/buttons\/_buttons-theme\.scss}line{font-family:\0000389}}
 .pure-button-hidden {
   display: none;
 }
 
 /* Firefox: Get rid of the inner focus border */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/buttons\/_buttons-theme\.scss}line{font-family:\0000394}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/buttons\/_buttons-theme\.scss}line{font-family:\0000394}}
 .pure-button::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/buttons\/_buttons-theme\.scss}line{font-family:\00003102}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/buttons\/_buttons-theme\.scss}line{font-family:\00003102}}
 .pure-button-primary,
 .pure-button-selected,
 a.pure-button-primary,
@@ -211,12 +211,12 @@ a.pure-button-selected {
   color: #fbfcfe;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/buttons\/_buttons-theme\.scss}line{font-family:\00003107}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/buttons\/_buttons-theme\.scss}line{font-family:\00003107}}
 .pure-button:-moz-focusring {
   outline-color: rgba(0, 0, 0, 0.85);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/buttons\/_buttons\.scss}line{font-family:\000031}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/buttons\/_buttons\.scss}line{font-family:\000031}}
 .pure-button {
   font-size: 100%;
   *font-size: 90%;
@@ -248,7 +248,7 @@ a.pure-button-selected {
   transition: 0.1s linear box-shadow;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/buttons\/_buttons\.scss}line{font-family:\0000327}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/buttons\/_buttons\.scss}line{font-family:\0000327}}
 .pure-button-hover,
 .pure-button:hover {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#00000000', GradientType=0);
@@ -260,7 +260,7 @@ a.pure-button-selected {
   background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.05));
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/buttons\/_buttons\.scss}line{font-family:\0000340}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/buttons\/_buttons\.scss}line{font-family:\0000340}}
 .pure-button-active,
 .pure-button:active {
   -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
@@ -268,7 +268,7 @@ a.pure-button-selected {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/buttons\/_buttons\.scss}line{font-family:\0000349}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/buttons\/_buttons\.scss}line{font-family:\0000349}}
 .pure-button[disabled],
 .pure-button-disabled,
 .pure-button-disabled:hover,
@@ -284,20 +284,20 @@ a.pure-button-selected {
   box-shadow: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/buttons\/_buttons\.scss}line{font-family:\0000361}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/buttons\/_buttons\.scss}line{font-family:\0000361}}
 .pure-button-hidden {
   display: none;
 }
 
 /* Firefox: Get rid of the inner focus border */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/buttons\/_buttons\.scss}line{font-family:\0000366}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/buttons\/_buttons\.scss}line{font-family:\0000366}}
 .pure-button::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
 
 /* Sam */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/buttons\/_buttons\.scss}line{font-family:\0000376}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/buttons\/_buttons\.scss}line{font-family:\0000376}}
 .pure-button-primary,
 .pure-button-selected,
 a.pure-button-primary,
@@ -306,7 +306,7 @@ a.pure-button-selected {
   color: #fff;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/buttons\/_buttons\.scss}line{font-family:\0000381}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/buttons\/_buttons\.scss}line{font-family:\0000381}}
 .pure-button:-moz-focusring {
   outline-color: rgba(0, 0, 0, 0.85);
 }
@@ -318,7 +318,7 @@ a.pure-button-selected {
 /*
  * Corrects margin displayed oddly in IE 6/7.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-core\.scss}line{font-family:\0000311}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-core\.scss}line{font-family:\0000311}}
 .pure-form {
   margin: 0;
 }
@@ -326,7 +326,7 @@ a.pure-button-selected {
 /*
  * Define consistent border, margin, and padding.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-core\.scss}line{font-family:\0000319}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-core\.scss}line{font-family:\0000319}}
 .pure-form fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -338,7 +338,7 @@ a.pure-button-selected {
  * 2. Corrects text not wrapping in Firefox 3.
  * 3. Corrects alignment displayed oddly in IE 6/7.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-core\.scss}line{font-family:\0000331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-core\.scss}line{font-family:\0000331}}
 .pure-form legend {
   border: 0;
   /* 1 */
@@ -355,7 +355,7 @@ a.pure-button-selected {
  *    and Chrome.
  * 3. Improves appearance and consistency in all browsers.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-core\.scss}line{font-family:\0000348}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-core\.scss}line{font-family:\0000348}}
 .pure-form button,
 .pure-form input,
 .pure-form select,
@@ -374,7 +374,7 @@ a.pure-button-selected {
  * Addresses Firefox 3+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-core\.scss}line{font-family:\0000361}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-core\.scss}line{font-family:\0000361}}
 .pure-form button,
 .pure-form input {
   line-height: normal;
@@ -389,7 +389,7 @@ a.pure-button-selected {
  * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
  *    Known issue: inner spacing remains in IE 6.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-core\.scss}line{font-family:\0000378}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-core\.scss}line{font-family:\0000378}}
 .pure-form button,
 .pure-form input[type="button"],
 .pure-form input[type="reset"],
@@ -405,7 +405,7 @@ a.pure-button-selected {
 /*
  * Re-set default cursor for disabled elements.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-core\.scss}line{font-family:\0000389}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-core\.scss}line{font-family:\0000389}}
 .pure-form button[disabled],
 .pure-form input[disabled] {
   cursor: default;
@@ -417,7 +417,7 @@ a.pure-button-selected {
  * 3. Removes excess padding in IE 7.
  *    Known issue: excess padding remains in IE 6.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-core\.scss}line{font-family:\00003101}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-core\.scss}line{font-family:\00003101}}
 .pure-form input[type="checkbox"],
 .pure-form input[type="radio"] {
   box-sizing: border-box;
@@ -435,7 +435,7 @@ a.pure-button-selected {
  * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-core\.scss}line{font-family:\00003114}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-core\.scss}line{font-family:\00003114}}
 .pure-form input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -449,7 +449,7 @@ a.pure-button-selected {
  * Removes inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-core\.scss}line{font-family:\00003127}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-core\.scss}line{font-family:\00003127}}
 .pure-form input[type="search"]::-webkit-search-cancel-button,
 .pure-form input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -458,7 +458,7 @@ a.pure-button-selected {
 /*
  * Removes inner padding and border in Firefox 3+.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-core\.scss}line{font-family:\00003136}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-core\.scss}line{font-family:\00003136}}
 .pure-form button::-moz-focus-inner,
 .pure-form input::-moz-focus-inner {
   border: 0;
@@ -469,7 +469,7 @@ a.pure-button-selected {
  * 1. Removes default vertical scrollbar in IE 6/7/8/9.
  * 2. Improves readability and alignment in all browsers.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-core\.scss}line{font-family:\00003146}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-core\.scss}line{font-family:\00003146}}
 .pure-form textarea {
   overflow: auto;
   /* 1 */
@@ -478,23 +478,23 @@ a.pure-button-selected {
 }
 
 @media only screen and (max-width: 480px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-r\.scss}line{font-family:\000032}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-r\.scss}line{font-family:\000032}}
   .pure-form button[type='submit'] {
     margin: 0.7em 0 0;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-r\.scss}line{font-family:\000036}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-r\.scss}line{font-family:\000036}}
   .pure-form input[type='text'], .pure-form button, .pure-form label {
     margin-bottom: 0.3em;
     display: block;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-r\.scss}line{font-family:\0000311}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-r\.scss}line{font-family:\0000311}}
   .pure-group input[type='text'] {
     margin-bottom: 0;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-r\.scss}line{font-family:\0000315}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-r\.scss}line{font-family:\0000315}}
   .pure-form-aligned .pure-control-group label {
     margin-bottom: 0.3em;
     text-align: left;
@@ -502,12 +502,12 @@ a.pure-button-selected {
     width: 100%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-r\.scss}line{font-family:\0000322}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-r\.scss}line{font-family:\0000322}}
   .pure-form-aligned .pure-controls {
     margin: 1.5em 0 0 0;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-r\.scss}line{font-family:\0000326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-r\.scss}line{font-family:\0000326}}
   .pure-form .pure-help-inline {
     display: block;
     font-size: 80%;
@@ -526,13 +526,13 @@ Forms Core
 /*
  * Corrects margin displayed oddly in IE 6/7.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\0000319}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\0000319}}
 .pure-form {
   margin: 0;
 }
 
 /* Define consistent border, margin, and padding.*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\0000326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\0000326}}
 .pure-form fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -544,7 +544,7 @@ Forms Core
  * 2. Corrects text not wrapping in Firefox 3.
  * 3. Corrects alignment displayed oddly in IE 6/7.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\0000338}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\0000338}}
 .pure-form legend {
   border: 0;
   /* 1 */
@@ -561,7 +561,7 @@ Forms Core
  *    and Chrome.
  * 3. Improves appearance and consistency in all browsers.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\0000355}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\0000355}}
 .pure-form button,
 .pure-form input,
 .pure-form select,
@@ -580,7 +580,7 @@ Forms Core
  * Addresses Firefox 3+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\0000368}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\0000368}}
 .pure-form button,
 .pure-form input {
   line-height: normal;
@@ -595,7 +595,7 @@ Forms Core
  * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
  *    Known issue: inner spacing remains in IE 6.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\0000385}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\0000385}}
 .pure-form button,
 .pure-form input[type="button"],
 .pure-form input[type="reset"],
@@ -611,7 +611,7 @@ Forms Core
 /*
  * Re-set default cursor for disabled elements.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\0000396}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\0000396}}
 .pure-form button[disabled],
 .pure-form input[disabled] {
   cursor: default;
@@ -623,7 +623,7 @@ Forms Core
  * 3. Removes excess padding in IE 7.
  *    Known issue: excess padding remains in IE 6.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\00003108}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\00003108}}
 .pure-form input[type="checkbox"],
 .pure-form input[type="radio"] {
   box-sizing: border-box;
@@ -641,7 +641,7 @@ Forms Core
  * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\00003121}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\00003121}}
 .pure-form input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -655,7 +655,7 @@ Forms Core
  * Removes inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\00003134}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\00003134}}
 .pure-form input[type="search"]::-webkit-search-cancel-button,
 .pure-form input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -664,7 +664,7 @@ Forms Core
 /*
  * Removes inner padding and border in Firefox 3+.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\00003143}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\00003143}}
 .pure-form button::-moz-focus-inner,
 .pure-form input::-moz-focus-inner {
   border: 0;
@@ -675,7 +675,7 @@ Forms Core
  * 1. Removes default vertical scrollbar in IE 6/7/8/9.
  * 2. Improves readability and alignment in all browsers.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\00003153}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\00003153}}
 .pure-form textarea {
   overflow: auto;
   /* 1 */
@@ -687,23 +687,23 @@ Forms Core
 
 =========================================================*/
 @media only screen and (max-width: 480px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\00003161}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\00003161}}
   .pure-form button[type='submit'] {
     margin: 0.7em 0 0;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\00003165}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\00003165}}
   .pure-form input[type='text'], .pure-form button, .pure-form label {
     margin-bottom: 0.3em;
     display: block;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\00003170}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\00003170}}
   .yui3-group input[type='text'] {
     margin-bottom: 0;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\00003174}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\00003174}}
   .pure-form-aligned .pure-control-group label {
     margin-bottom: 0.3em;
     text-align: left;
@@ -711,12 +711,12 @@ Forms Core
     width: 100%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\00003181}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\00003181}}
   .pure-form-aligned .pure-controls {
     margin: 1.5em 0 0 0;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\00003185}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\00003185}}
   .pure-form .pure-help-inline {
     display: block;
     font-size: 80%;
@@ -727,7 +727,7 @@ Forms Core
 /* ===============  forms.css ================
 
 =========================================================*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\00003196}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\00003196}}
 .pure-form input,
 .pure-form select {
   padding: 0.5em 0.6em;
@@ -747,7 +747,7 @@ Forms Core
   -webkit-font-smoothing: antialiased;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\00003215}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\00003215}}
 .pure-form input:focus,
 .pure-form select:focus {
   outline: 0;
@@ -756,14 +756,14 @@ Forms Core
   border-color: #129FEA;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\00003221}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\00003221}}
 .pure-form .pure-checkbox,
 .pure-form .pure-radio {
   margin: 0.5em 0;
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\00003230}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\00003230}}
 .pure-form input[disabled],
 .pure-form select[disabled],
 .pure-form textarea[disabled],
@@ -777,7 +777,7 @@ Forms Core
   border-color: #e6e6e6;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\00003239}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\00003239}}
 .pure-form input:focus:invalid,
 .pure-form textarea:focus:invalid,
 .pure-form select:focus:invalid {
@@ -785,39 +785,39 @@ Forms Core
   border: 1px solid #ee5f5b;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\00003245}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\00003245}}
 .pure-form input:focus:invalid:focus,
 .pure-form textarea:focus:invalid:focus,
 .pure-form select:focus:invalid:focus {
   border-color: #e9322d;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\00003248}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\00003248}}
 .pure-form select {
   border: 1px solid #e6e6e6;
   background-color: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\00003252}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\00003252}}
 .pure-form select[multiple] {
   height: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\00003255}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\00003255}}
 .pure-form label {
   margin: 0.5em 0 0.2em;
   color: #4f4f4f;
   font-size: 90%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\00003260}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\00003260}}
 .pure-form fieldset {
   margin: 0;
   padding: 0.35em 0 0.75em;
   border: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\00003265}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\00003265}}
 .pure-form legend {
   display: block;
   width: 100%;
@@ -828,14 +828,14 @@ Forms Core
   border-bottom: 1px solid #ededed;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\00003277}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\00003277}}
 .pure-form.pure-form-stacked input[type='text'],
 .pure-form.pure-form-stacked select,
 .pure-form.pure-form-stacked label {
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\00003284}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\00003284}}
 .pure-form-aligned input,
 .pure-form-aligned textarea,
 .pure-form-aligned select,
@@ -848,12 +848,12 @@ Forms Core
 }
 
 /* aligned Forms */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\00003292}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\00003292}}
 .pure-form-aligned .pure-control-group {
   margin-bottom: 0.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\00003295}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\00003295}}
 .pure-form-aligned .pure-control-group label {
   text-align: right;
   display: inline-block;
@@ -862,25 +862,25 @@ Forms Core
   margin: 0 1em 0 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\00003302}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\00003302}}
 .pure-form-aligned .pure-controls {
   margin: 1.5em 0 0 10em;
 }
 
 /* Rounded Inputs */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\00003307}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\00003307}}
 .pure-form .pure-input-rounded {
   border-radius: 30px;
   padding-left: 1em;
 }
 
 /* Grouped Inputs */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\00003313}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\00003313}}
 .pure-form .pure-group fieldset {
   margin-bottom: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\00003316}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\00003316}}
 .pure-form .pure-group input {
   display: block;
   padding: 0.5em 0.6em;
@@ -890,55 +890,55 @@ Forms Core
   top: -1px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\00003324}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\00003324}}
 .pure-form .pure-group input:focus {
   z-index: 2;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\00003327}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\00003327}}
 .pure-form .pure-group input:first-child {
   top: 1px;
   border-radius: 4px 4px 0px 0px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\00003331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\00003331}}
 .pure-form .pure-group input:last-child {
   top: -2px;
   border-radius: 0px 0px 4px 4px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\00003335}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\00003335}}
 .pure-form .pure-group button {
   margin: 0.35em 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\00003339}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\00003339}}
 .pure-form .pure-input-1 {
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\00003342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\00003342}}
 .pure-form .pure-input-2-3 {
   width: 66%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\00003345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\00003345}}
 .pure-form .pure-input-1-2 {
   width: 50%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\00003348}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\00003348}}
 .pure-form .pure-input-1-3 {
   width: 33%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\00003351}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\00003351}}
 .pure-form .pure-input-1-4 {
   width: 25%;
 }
 
 /* Inline help for forms */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms-theme\.scss}line{font-family:\00003356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms-theme\.scss}line{font-family:\00003356}}
 .pure-form .pure-help-inline {
   display: inline-block;
   padding-left: 0.3em;
@@ -947,7 +947,7 @@ Forms Core
   vertical-align: middle;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms\.scss}line{font-family:\000032}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms\.scss}line{font-family:\000032}}
 .pure-form input,
 .pure-form select {
   padding: 0.5em 0.6em;
@@ -967,7 +967,7 @@ Forms Core
   -webkit-font-smoothing: antialiased;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms\.scss}line{font-family:\0000321}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms\.scss}line{font-family:\0000321}}
 .pure-form input:focus,
 .pure-form select:focus {
   outline: 0;
@@ -976,14 +976,14 @@ Forms Core
   border-color: #129FEA;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms\.scss}line{font-family:\0000327}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms\.scss}line{font-family:\0000327}}
 .pure-form .pure-checkbox,
 .pure-form .pure-radio {
   margin: 0.5em 0;
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms\.scss}line{font-family:\0000336}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms\.scss}line{font-family:\0000336}}
 .pure-form input[disabled],
 .pure-form select[disabled],
 .pure-form textarea[disabled],
@@ -996,7 +996,7 @@ Forms Core
   border-color: transparent;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms\.scss}line{font-family:\0000344}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms\.scss}line{font-family:\0000344}}
 .pure-form input:focus:invalid,
 .pure-form textarea:focus:invalid,
 .pure-form select:focus:invalid {
@@ -1004,39 +1004,39 @@ Forms Core
   border: 1px solid #ee5f5b;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms\.scss}line{font-family:\0000350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms\.scss}line{font-family:\0000350}}
 .pure-form input:focus:invalid:focus,
 .pure-form textarea:focus:invalid:focus,
 .pure-form select:focus:invalid:focus {
   border-color: #e9322d;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms\.scss}line{font-family:\0000353}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms\.scss}line{font-family:\0000353}}
 .pure-form select {
   border: 1px solid #ccc;
   background-color: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms\.scss}line{font-family:\0000357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms\.scss}line{font-family:\0000357}}
 .pure-form select[multiple] {
   height: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms\.scss}line{font-family:\0000360}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms\.scss}line{font-family:\0000360}}
 .pure-form label {
   margin: 0.5em 0 0.2em;
   color: #999;
   font-size: 90%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms\.scss}line{font-family:\0000365}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms\.scss}line{font-family:\0000365}}
 .pure-form fieldset {
   margin: 0;
   padding: 0.35em 0 0.75em;
   border: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms\.scss}line{font-family:\0000370}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms\.scss}line{font-family:\0000370}}
 .pure-form legend {
   display: block;
   width: 100%;
@@ -1047,14 +1047,14 @@ Forms Core
   border-bottom: 1px solid #e5e5e5;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms\.scss}line{font-family:\0000382}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms\.scss}line{font-family:\0000382}}
 .pure-form.pure-form-stacked input[type='text'],
 .pure-form.pure-form-stacked select,
 .pure-form.pure-form-stacked label {
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms\.scss}line{font-family:\0000389}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms\.scss}line{font-family:\0000389}}
 .pure-form-aligned input,
 .pure-form-aligned textarea,
 .pure-form-aligned select,
@@ -1067,12 +1067,12 @@ Forms Core
 }
 
 /* aligned Forms */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms\.scss}line{font-family:\0000397}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms\.scss}line{font-family:\0000397}}
 .pure-form-aligned .pure-control-group {
   margin-bottom: 0.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms\.scss}line{font-family:\00003100}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms\.scss}line{font-family:\00003100}}
 .pure-form-aligned .pure-control-group label {
   text-align: right;
   display: inline-block;
@@ -1081,25 +1081,25 @@ Forms Core
   margin: 0 1em 0 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms\.scss}line{font-family:\00003107}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms\.scss}line{font-family:\00003107}}
 .pure-form-aligned .pure-controls {
   margin: 1.5em 0 0 10em;
 }
 
 /* Rounded Inputs */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms\.scss}line{font-family:\00003112}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms\.scss}line{font-family:\00003112}}
 .pure-form .pure-input-rounded {
   border-radius: 20px;
   padding-left: 1em;
 }
 
 /* Grouped Inputs */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms\.scss}line{font-family:\00003118}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms\.scss}line{font-family:\00003118}}
 .pure-form .pure-group fieldset {
   margin-bottom: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms\.scss}line{font-family:\00003121}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms\.scss}line{font-family:\00003121}}
 .pure-form .pure-group input {
   display: block;
   padding: 10px;
@@ -1109,55 +1109,55 @@ Forms Core
   top: -1px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms\.scss}line{font-family:\00003129}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms\.scss}line{font-family:\00003129}}
 .pure-form .pure-group input:focus {
   z-index: 2;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms\.scss}line{font-family:\00003132}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms\.scss}line{font-family:\00003132}}
 .pure-form .pure-group input:first-child {
   top: 1px;
   border-radius: 4px 4px 0 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms\.scss}line{font-family:\00003136}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms\.scss}line{font-family:\00003136}}
 .pure-form .pure-group input:last-child {
   top: -2px;
   border-radius: 0 0 4px 4px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms\.scss}line{font-family:\00003140}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms\.scss}line{font-family:\00003140}}
 .pure-form .pure-group button {
   margin: 0.35em 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms\.scss}line{font-family:\00003144}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms\.scss}line{font-family:\00003144}}
 .pure-form .pure-input-1 {
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms\.scss}line{font-family:\00003147}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms\.scss}line{font-family:\00003147}}
 .pure-form .pure-input-2-3 {
   width: 66%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms\.scss}line{font-family:\00003150}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms\.scss}line{font-family:\00003150}}
 .pure-form .pure-input-1-2 {
   width: 50%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms\.scss}line{font-family:\00003153}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms\.scss}line{font-family:\00003153}}
 .pure-form .pure-input-1-3 {
   width: 33%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms\.scss}line{font-family:\00003156}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms\.scss}line{font-family:\00003156}}
 .pure-form .pure-input-1-4 {
   width: 25%;
 }
 
 /* Inline help for forms */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/forms\/_forms\.scss}line{font-family:\00003161}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/forms\/_forms\.scss}line{font-family:\00003161}}
 .pure-form .pure-help-inline {
   display: inline-block;
   padding-left: 0.3em;
@@ -1166,7 +1166,7 @@ Forms Core
   font-size: 90%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/grids\/_grids-core\.scss}line{font-family:\000031}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/grids\/_grids-core\.scss}line{font-family:\000031}}
 .pure-g {
   letter-spacing: -0.31em;
   /* Webkit: collapse white-space between units */
@@ -1182,13 +1182,13 @@ Forms Core
    The ".opera-only" selector is used to prevent actual prefocus styling
    and is not required in markup.
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/grids\/_grids-core\.scss}line{font-family:\0000313}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/grids\/_grids-core\.scss}line{font-family:\0000313}}
 .opera-only :-o-prefocus,
 .pure-g {
   word-spacing: -0.43em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/grids\/_grids-core\.scss}line{font-family:\0000317}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/grids\/_grids-core\.scss}line{font-family:\0000317}}
 .pure-u {
   display: inline-block;
   zoom: 1;
@@ -1200,7 +1200,7 @@ Forms Core
   text-rendering: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/grids\/_grids-r\.scss}line{font-family:\000031}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/grids\/_grids-r\.scss}line{font-family:\000031}}
 .pure-g-r {
   letter-spacing: -0.31em;
   *letter-spacing: normal;
@@ -1211,67 +1211,67 @@ Forms Core
    The ".opera-only" selector is used to prevent actual prefocus styling
    and is not required in markup.
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/grids\/_grids-r\.scss}line{font-family:\0000312}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/grids\/_grids-r\.scss}line{font-family:\0000312}}
 .opera-only :-o-prefocus,
 .pure-g-r {
   word-spacing: -0.43em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/grids\/_grids-r\.scss}line{font-family:\0000316}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/grids\/_grids-r\.scss}line{font-family:\0000316}}
 .pure-g-r img {
   max-width: 100%;
 }
 
 @media (min-width: 980px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/grids\/_grids-r\.scss}line{font-family:\0000321}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/grids\/_grids-r\.scss}line{font-family:\0000321}}
   .pure-visible-phone {
     display: none;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/grids\/_grids-r\.scss}line{font-family:\0000324}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/grids\/_grids-r\.scss}line{font-family:\0000324}}
   .pure-visible-tablet {
     display: none;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/grids\/_grids-r\.scss}line{font-family:\0000327}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/grids\/_grids-r\.scss}line{font-family:\0000327}}
   .pure-hidden-desktop {
     display: none;
   }
 }
 @media (max-width: 480px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/grids\/_grids-r\.scss}line{font-family:\0000332}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/grids\/_grids-r\.scss}line{font-family:\0000332}}
   .pure-g-r > [class^="pure-u"] {
     width: 100%;
   }
 }
 @media (max-width: 767px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/grids\/_grids-r\.scss}line{font-family:\0000337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/grids\/_grids-r\.scss}line{font-family:\0000337}}
   .pure-g-r > [class^="pure-u"] {
     width: 100%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/grids\/_grids-r\.scss}line{font-family:\0000340}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/grids\/_grids-r\.scss}line{font-family:\0000340}}
   .pure-hidden-phone {
     display: none;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/grids\/_grids-r\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/grids\/_grids-r\.scss}line{font-family:\0000343}}
   .pure-visible-desktop {
     display: none;
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/grids\/_grids-r\.scss}line{font-family:\0000348}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/grids\/_grids-r\.scss}line{font-family:\0000348}}
   .pure-hidden-tablet {
     display: none;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/grids\/_grids-r\.scss}line{font-family:\0000351}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/grids\/_grids-r\.scss}line{font-family:\0000351}}
   .pure-visible-desktop {
     display: none;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/grids\/_grids-units\.scss}line{font-family:\0000328}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/grids\/_grids-units\.scss}line{font-family:\0000328}}
 .pure-u-1,
 .pure-u-1-2,
 .pure-u-1-3,
@@ -1310,160 +1310,160 @@ Forms Core
   text-rendering: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/grids\/_grids-units\.scss}line{font-family:\0000337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/grids\/_grids-units\.scss}line{font-family:\0000337}}
 .pure-u-1 {
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/grids\/_grids-units\.scss}line{font-family:\0000341}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/grids\/_grids-units\.scss}line{font-family:\0000341}}
 .pure-u-1-2 {
   width: 50%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/grids\/_grids-units\.scss}line{font-family:\0000345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/grids\/_grids-units\.scss}line{font-family:\0000345}}
 .pure-u-1-3 {
   width: 33.33333%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/grids\/_grids-units\.scss}line{font-family:\0000349}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/grids\/_grids-units\.scss}line{font-family:\0000349}}
 .pure-u-2-3 {
   width: 66.66666%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/grids\/_grids-units\.scss}line{font-family:\0000353}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/grids\/_grids-units\.scss}line{font-family:\0000353}}
 .pure-u-1-4 {
   width: 25%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/grids\/_grids-units\.scss}line{font-family:\0000357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/grids\/_grids-units\.scss}line{font-family:\0000357}}
 .pure-u-3-4 {
   width: 75%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/grids\/_grids-units\.scss}line{font-family:\0000361}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/grids\/_grids-units\.scss}line{font-family:\0000361}}
 .pure-u-1-5 {
   width: 20%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/grids\/_grids-units\.scss}line{font-family:\0000365}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/grids\/_grids-units\.scss}line{font-family:\0000365}}
 .pure-u-2-5 {
   width: 40%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/grids\/_grids-units\.scss}line{font-family:\0000369}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/grids\/_grids-units\.scss}line{font-family:\0000369}}
 .pure-u-3-5 {
   width: 60%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/grids\/_grids-units\.scss}line{font-family:\0000373}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/grids\/_grids-units\.scss}line{font-family:\0000373}}
 .pure-u-4-5 {
   width: 80%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/grids\/_grids-units\.scss}line{font-family:\0000377}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/grids\/_grids-units\.scss}line{font-family:\0000377}}
 .pure-u-1-6 {
   width: 16.656%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/grids\/_grids-units\.scss}line{font-family:\0000381}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/grids\/_grids-units\.scss}line{font-family:\0000381}}
 .pure-u-5-6 {
   width: 83.33%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/grids\/_grids-units\.scss}line{font-family:\0000385}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/grids\/_grids-units\.scss}line{font-family:\0000385}}
 .pure-u-1-8 {
   width: 12.5%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/grids\/_grids-units\.scss}line{font-family:\0000389}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/grids\/_grids-units\.scss}line{font-family:\0000389}}
 .pure-u-3-8 {
   width: 37.5%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/grids\/_grids-units\.scss}line{font-family:\0000393}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/grids\/_grids-units\.scss}line{font-family:\0000393}}
 .pure-u-5-8 {
   width: 62.5%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/grids\/_grids-units\.scss}line{font-family:\0000397}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/grids\/_grids-units\.scss}line{font-family:\0000397}}
 .pure-u-7-8 {
   width: 87.5%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/grids\/_grids-units\.scss}line{font-family:\00003101}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/grids\/_grids-units\.scss}line{font-family:\00003101}}
 .pure-u-1-12 {
   width: 8.3333%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/grids\/_grids-units\.scss}line{font-family:\00003105}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/grids\/_grids-units\.scss}line{font-family:\00003105}}
 .pure-u-5-12 {
   width: 41.6666%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/grids\/_grids-units\.scss}line{font-family:\00003109}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/grids\/_grids-units\.scss}line{font-family:\00003109}}
 .pure-u-7-12 {
   width: 58.3333%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/grids\/_grids-units\.scss}line{font-family:\00003113}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/grids\/_grids-units\.scss}line{font-family:\00003113}}
 .pure-u-11-12 {
   width: 91.6666%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/grids\/_grids-units\.scss}line{font-family:\00003117}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/grids\/_grids-units\.scss}line{font-family:\00003117}}
 .pure-u-1-24 {
   width: 4.1666%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/grids\/_grids-units\.scss}line{font-family:\00003121}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/grids\/_grids-units\.scss}line{font-family:\00003121}}
 .pure-u-5-24 {
   width: 20.8333%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/grids\/_grids-units\.scss}line{font-family:\00003125}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/grids\/_grids-units\.scss}line{font-family:\00003125}}
 .pure-u-7-24 {
   width: 29.1666%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/grids\/_grids-units\.scss}line{font-family:\00003129}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/grids\/_grids-units\.scss}line{font-family:\00003129}}
 .pure-u-11-24 {
   width: 45.8333%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/grids\/_grids-units\.scss}line{font-family:\00003133}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/grids\/_grids-units\.scss}line{font-family:\00003133}}
 .pure-u-13-24 {
   width: 54.1666%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/grids\/_grids-units\.scss}line{font-family:\00003137}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/grids\/_grids-units\.scss}line{font-family:\00003137}}
 .pure-u-17-24 {
   width: 70.8333%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/grids\/_grids-units\.scss}line{font-family:\00003141}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/grids\/_grids-units\.scss}line{font-family:\00003141}}
 .pure-u-19-24 {
   width: 79.1666%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/grids\/_grids-units\.scss}line{font-family:\00003145}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/grids\/_grids-units\.scss}line{font-family:\00003145}}
 .pure-u-23-24 {
   width: 95.8333%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/menus\/_menus-core\.scss}line{font-family:\000031}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/menus\/_menus-core\.scss}line{font-family:\000031}}
 .pure-menu ul {
   position: absolute;
   visibility: hidden;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/menus\/_menus-core\.scss}line{font-family:\000036}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/menus\/_menus-core\.scss}line{font-family:\000036}}
 .pure-menu.pure-menu-open {
   visibility: visible;
   z-index: 2;
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/menus\/_menus-core\.scss}line{font-family:\0000312}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/menus\/_menus-core\.scss}line{font-family:\0000312}}
 .pure-menu ul {
   left: -10000px;
   list-style: none;
@@ -1473,24 +1473,24 @@ Forms Core
   z-index: 1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/menus\/_menus-core\.scss}line{font-family:\0000321}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/menus\/_menus-core\.scss}line{font-family:\0000321}}
 .pure-menu > ul {
   position: relative;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/menus\/_menus-core\.scss}line{font-family:\0000323}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/menus\/_menus-core\.scss}line{font-family:\0000323}}
 .pure-menu-open > ul {
   left: 0;
   top: 0;
   visibility: visible;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/menus\/_menus-core\.scss}line{font-family:\0000329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/menus\/_menus-core\.scss}line{font-family:\0000329}}
 .pure-menu li {
   position: relative;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/menus\/_menus-core\.scss}line{font-family:\0000331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/menus\/_menus-core\.scss}line{font-family:\0000331}}
 .pure-menu a, .pure-menu .pure-menu-heading {
   display: block;
   color: inherit;
@@ -1500,7 +1500,7 @@ Forms Core
   white-space: nowrap;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/menus\/_menus-core\.scss}line{font-family:\0000340}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/menus\/_menus-core\.scss}line{font-family:\0000340}}
 .pure-menu.pure-menu-horizontal > .pure-menu-heading {
   display: inline-block;
   margin: 0;
@@ -1509,7 +1509,7 @@ Forms Core
   vertical-align: middle;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/menus\/_menus-core\.scss}line{font-family:\0000347}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/menus\/_menus-core\.scss}line{font-family:\0000347}}
 .pure-menu.pure-menu-horizontal > ul {
   display: inline-block;
   zoom: 1;
@@ -1517,12 +1517,12 @@ Forms Core
   vertical-align: middle;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/menus\/_menus-core\.scss}line{font-family:\0000354}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/menus\/_menus-core\.scss}line{font-family:\0000354}}
 .pure-menu li a {
   padding: 5px 20px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/menus\/_menus-core\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/menus\/_menus-core\.scss}line{font-family:\0000356}}
 .pure-menu-can-have-children > .pure-menu-label:after {
   content: '\25B8';
   float: right;
@@ -1532,12 +1532,12 @@ Forms Core
   margin-top: -1px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/menus\/_menus-core\.scss}line{font-family:\0000364}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/menus\/_menus-core\.scss}line{font-family:\0000364}}
 .pure-menu-can-have-children > .pure-menu-label {
   padding-right: 30px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/menus\/_menus-core\.scss}line{font-family:\0000368}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/menus\/_menus-core\.scss}line{font-family:\0000368}}
 .pure-menu-separator {
   background-color: #dfdfdf;
   display: block;
@@ -1547,13 +1547,13 @@ Forms Core
   overflow: hidden;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/menus\/_menus-core\.scss}line{font-family:\0000377}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/menus\/_menus-core\.scss}line{font-family:\0000377}}
 .pure-menu-hidden {
   display: none;
 }
 
 /* FIXED MENU */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/menus\/_menus-core\.scss}line{font-family:\0000380}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/menus\/_menus-core\.scss}line{font-family:\0000380}}
 .pure-menu-fixed {
   position: fixed;
   top: 0;
@@ -1563,7 +1563,7 @@ Forms Core
 
 /* HORIZONTAL MENU CODE */
 /* Initial menus should be inline-block so that they are horizontal */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/menus\/_menus-core\.scss}line{font-family:\0000391}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/menus\/_menus-core\.scss}line{font-family:\0000391}}
 .pure-menu-horizontal li {
   display: inline-block;
   zoom: 1;
@@ -1572,31 +1572,31 @@ Forms Core
 }
 
 /* Submenus should still be display:block; */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/menus\/_menus-core\.scss}line{font-family:\0000399}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/menus\/_menus-core\.scss}line{font-family:\0000399}}
 .pure-menu-horizontal li li {
   display: block;
 }
 
 /* Content after should be down arrow */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/menus\/_menus-core\.scss}line{font-family:\00003104}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/menus\/_menus-core\.scss}line{font-family:\00003104}}
 .pure-menu-horizontal > .pure-menu-children > .pure-menu-can-have-children > .pure-menu-label:after {
   content: "\25BE";
 }
 
 /*Add extra padding to elements that have the arrow so that the hover looks nice */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/menus\/_menus-core\.scss}line{font-family:\00003108}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/menus\/_menus-core\.scss}line{font-family:\00003108}}
 .pure-menu-horizontal > .pure-menu-children > .pure-menu-can-have-children > .pure-menu-label {
   padding-right: 30px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/menus\/_menus-paginator\.scss}line{font-family:\000031}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/menus\/_menus-paginator\.scss}line{font-family:\000031}}
 .pure-paginator {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/menus\/_menus-paginator\.scss}line{font-family:\000036}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/menus\/_menus-paginator\.scss}line{font-family:\000036}}
 .pure-paginator li {
   display: inline-block;
   *display: inline;
@@ -1605,7 +1605,7 @@ Forms Core
   margin: 0 -0.35em 0 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/menus\/_menus-paginator\.scss}line{font-family:\0000313}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/menus\/_menus-paginator\.scss}line{font-family:\0000313}}
 .pure-paginator .pure-button {
   border-radius: 0;
   padding: 0.8em 1.4em;
@@ -1613,42 +1613,42 @@ Forms Core
   height: 1.1em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/menus\/_menus-paginator\.scss}line{font-family:\0000319}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/menus\/_menus-paginator\.scss}line{font-family:\0000319}}
 .pure-paginator .pure-button:focus {
   outline-style: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/menus\/_menus-paginator\.scss}line{font-family:\0000322}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/menus\/_menus-paginator\.scss}line{font-family:\0000322}}
 .pure-paginator .prev, .pure-paginator .next {
   color: #C0C1C3;
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.45);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/menus\/_menus-paginator\.scss}line{font-family:\0000326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/menus\/_menus-paginator\.scss}line{font-family:\0000326}}
 .pure-paginator .prev {
   border-radius: 2px 0 0 2px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/menus\/_menus-paginator\.scss}line{font-family:\0000329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/menus\/_menus-paginator\.scss}line{font-family:\0000329}}
 .pure-paginator .next {
   border-radius: 0 2px 2px 0;
 }
 
 /* RESPONSIVE */
 @media (max-width: 480px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/menus\/_menus-r\.scss}line{font-family:\000035}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/menus\/_menus-r\.scss}line{font-family:\000035}}
   .pure-menu-horizontal {
     width: 100%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/menus\/_menus-r\.scss}line{font-family:\000039}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/menus\/_menus-r\.scss}line{font-family:\000039}}
   .pure-menu-children li {
     display: block;
     border-bottom: 1px solid block;
   }
 }
 /* MAIN MENU STYLING */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/menus\/_menus\.scss}line{font-family:\000034}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/menus\/_menus\.scss}line{font-family:\000034}}
 .pure-menu.pure-menu-open,
 .pure-menu.pure-menu-horizontal li .pure-menu-children {
   background: #ffffff;
@@ -1657,58 +1657,58 @@ Forms Core
 }
 
 /* remove borders for horizontal menus */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/menus\/_menus\.scss}line{font-family:\0000310}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/menus\/_menus\.scss}line{font-family:\0000310}}
 .pure-menu.pure-menu-horizontal, .pure-menu.pure-menu-horizontal .pure-menu-heading {
   border: none;
 }
 
 /* LINK STYLES */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/menus\/_menus\.scss}line{font-family:\0000318}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/menus\/_menus\.scss}line{font-family:\0000318}}
 .pure-menu a {
   border: 1px solid transparent;
   border-left: none;
   border-right: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/menus\/_menus\.scss}line{font-family:\0000326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/menus\/_menus\.scss}line{font-family:\0000326}}
 .pure-menu a,
 .pure-menu .pure-menu-can-have-children > li:after {
   color: #777;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/menus\/_menus\.scss}line{font-family:\0000330}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/menus\/_menus\.scss}line{font-family:\0000330}}
 .pure-menu .pure-menu-can-have-children > li:hover:after {
   color: #fff;
 }
 
 /* HOVER STATES */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/menus\/_menus\.scss}line{font-family:\0000337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/menus\/_menus\.scss}line{font-family:\0000337}}
 .pure-menu li a:hover {
   background: #eee;
 }
 
 /* DISABLED STATES */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/menus\/_menus\.scss}line{font-family:\0000342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/menus\/_menus\.scss}line{font-family:\0000342}}
 .pure-menu li.pure-menu-disabled a:hover {
   background: #fff;
   color: #bfbfbf;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/menus\/_menus\.scss}line{font-family:\0000347}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/menus\/_menus\.scss}line{font-family:\0000347}}
 .pure-menu .pure-menu-disabled > a {
   background-image: none;
   border-color: transparent;
   cursor: default;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/menus\/_menus\.scss}line{font-family:\0000354}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/menus\/_menus\.scss}line{font-family:\0000354}}
 .pure-menu .pure-menu-disabled > a,
 .pure-menu .pure-menu-can-have-children.pure-menu-disabled > a:after {
   color: #bfbfbf;
 }
 
 /* HEADINGS */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/menus\/_menus\.scss}line{font-family:\0000359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/menus\/_menus\.scss}line{font-family:\0000359}}
 .pure-menu .pure-menu-heading {
   color: #565d64;
   text-transform: uppercase;
@@ -1720,20 +1720,20 @@ Forms Core
 }
 
 /* ACTIVE MENU ITEM */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/menus\/_menus\.scss}line{font-family:\0000370}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/menus\/_menus\.scss}line{font-family:\0000370}}
 .pure-menu .pure-menu-selected a {
   color: #000;
 }
 
 /* FIXED MENU */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/menus\/_menus\.scss}line{font-family:\0000375}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/menus\/_menus\.scss}line{font-family:\0000375}}
 .pure-menu.pure-menu-open.pure-menu-fixed {
   border: none;
   border-bottom: 1px solid #b7b7b7;
 }
 
 /* foundational CSS */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/tables\/_tables-theme\.scss}line{font-family:\000033}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/tables\/_tables-theme\.scss}line{font-family:\000033}}
 .pure-table {
   /* Remove spacing between table cells (from Normalize.css) */
   border-collapse: separate;
@@ -1742,7 +1742,7 @@ Forms Core
   border: 1px solid #e6eaf4;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/tables\/_tables-theme\.scss}line{font-family:\0000311}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/tables\/_tables-theme\.scss}line{font-family:\0000311}}
 .pure-table caption {
   color: #adadad;
   font: italic 85%/1 arial, sans-serif;
@@ -1750,7 +1750,7 @@ Forms Core
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/tables\/_tables-theme\.scss}line{font-family:\0000319}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/tables\/_tables-theme\.scss}line{font-family:\0000319}}
 .pure-table td,
 .pure-table th {
   border-left: 1px solid #e6eaf4;
@@ -1764,13 +1764,13 @@ Forms Core
   /* cell padding */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/tables\/_tables-theme\.scss}line{font-family:\0000329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/tables\/_tables-theme\.scss}line{font-family:\0000329}}
 .pure-table td:first-child,
 .pure-table th:first-child {
   border-left-width: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/tables\/_tables-theme\.scss}line{font-family:\0000333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/tables\/_tables-theme\.scss}line{font-family:\0000333}}
 .pure-table thead {
   background-color: #d1d7eb;
   color: #1c2440;
@@ -1784,39 +1784,39 @@ striping:
 even - #fff (white)
 odd - #edf5ff (light blue)
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/tables\/_tables-theme\.scss}line{font-family:\0000346}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/tables\/_tables-theme\.scss}line{font-family:\0000346}}
 .pure-table td {
   background-color: #f1f3f9;
   color: #344579;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/tables\/_tables-theme\.scss}line{font-family:\0000350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/tables\/_tables-theme\.scss}line{font-family:\0000350}}
 .pure-table-odd td {
   background-color: #e6eaf4;
   color: #273259;
 }
 
 /* BORDERED TABLES */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/tables\/_tables-theme\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/tables\/_tables-theme\.scss}line{font-family:\0000356}}
 .pure-table-bordered td {
   border-bottom: 1px solid #e6eaf4;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/tables\/_tables-theme\.scss}line{font-family:\0000360}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/tables\/_tables-theme\.scss}line{font-family:\0000360}}
 .pure-table-bordered tbody > tr:last-child td,
 .pure-table-horizontal tbody > tr:last-child td {
   border-bottom-width: 0;
 }
 
 /* HORIZONTAL BORDERED TABLES */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/tables\/_tables-theme\.scss}line{font-family:\0000366}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/tables\/_tables-theme\.scss}line{font-family:\0000366}}
 .pure-table-horizontal td,
 .pure-table-horizontal th {
   border-width: 0 0 1px 0;
   border-bottom: 1px solid #e6eaf4;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/tables\/_tables-theme\.scss}line{font-family:\0000370}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/tables\/_tables-theme\.scss}line{font-family:\0000370}}
 .pure-table-horizontal tbody > tr:last-child td {
   border-bottom-width: 0;
 }
@@ -1828,7 +1828,7 @@ odd - #edf5ff (light blue)
 * Author: tilomitra
 */
 /* foundational CSS */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/tables\/_tables\.scss}line{font-family:\000039}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/tables\/_tables\.scss}line{font-family:\000039}}
 .pure-table {
   /* Remove spacing between table cells (from Normalize.css) */
   border-collapse: collapse;
@@ -1837,7 +1837,7 @@ odd - #edf5ff (light blue)
   border: 1px solid #cbcbcb;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/tables\/_tables\.scss}line{font-family:\0000317}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/tables\/_tables\.scss}line{font-family:\0000317}}
 .pure-table caption {
   color: #000;
   font: italic 85%/1 arial, sans-serif;
@@ -1845,7 +1845,7 @@ odd - #edf5ff (light blue)
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/tables\/_tables\.scss}line{font-family:\0000325}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/tables\/_tables\.scss}line{font-family:\0000325}}
 .pure-table td,
 .pure-table th {
   border-left: 1px solid #cbcbcb;
@@ -1859,13 +1859,13 @@ odd - #edf5ff (light blue)
   /* cell padding */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/tables\/_tables\.scss}line{font-family:\0000334}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/tables\/_tables\.scss}line{font-family:\0000334}}
 .pure-table td:first-child,
 .pure-table th:first-child {
   border-left-width: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/tables\/_tables\.scss}line{font-family:\0000338}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/tables\/_tables\.scss}line{font-family:\0000338}}
 .pure-table thead {
   background: #e0e0e0;
   color: #000;
@@ -1879,43 +1879,43 @@ striping:
    even - #fff (white)
    odd  - #edf5ff (light blue)
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/tables\/_tables\.scss}line{font-family:\0000351}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/tables\/_tables\.scss}line{font-family:\0000351}}
 .pure-table td {
   background-color: transparent;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/tables\/_tables\.scss}line{font-family:\0000354}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/tables\/_tables\.scss}line{font-family:\0000354}}
 .pure-table-odd td {
   background-color: #f2f2f2;
 }
 
 /* nth-child selector for modern browsers */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/tables\/_tables\.scss}line{font-family:\0000359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/tables\/_tables\.scss}line{font-family:\0000359}}
 .pure-table-striped tr:nth-child(2n-1) td {
   background-color: #f2f2f2;
 }
 
 /* BORDERED TABLES */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/tables\/_tables\.scss}line{font-family:\0000364}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/tables\/_tables\.scss}line{font-family:\0000364}}
 .pure-table-bordered td {
   border-bottom: 1px solid #cbcbcb;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/tables\/_tables\.scss}line{font-family:\0000368}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/tables\/_tables\.scss}line{font-family:\0000368}}
 .pure-table-bordered tbody > tr:last-child td,
 .pure-table-horizontal tbody > tr:last-child td {
   border-bottom-width: 0;
 }
 
 /* HORIZONTAL BORDERED TABLES */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/tables\/_tables\.scss}line{font-family:\0000376}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/tables\/_tables\.scss}line{font-family:\0000376}}
 .pure-table-horizontal td,
 .pure-table-horizontal th {
   border-width: 0 0 1px 0;
   border-bottom: 1px solid #cbcbcb;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure\/tables\/_tables\.scss}line{font-family:\0000380}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/pure_css\/tables\/_tables\.scss}line{font-family:\0000380}}
 .pure-table-horizontal tbody > tr:last-child td {
   border-bottom-width: 0;
 }
@@ -2187,7 +2187,7 @@ striping:
   .page .main .prodDetail > ul > li.current {
     background: #888888;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_layout\.scss}line{font-family:\00003182}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_layout\.scss}line{font-family:\00003183}}
   .page .main .prodDetail > ul > li:before {
     position: absolute;
     left: 0;
