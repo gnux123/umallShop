@@ -1,4 +1,8 @@
 @import "susy";
 @import "compass/reset";
+@import "pure/_all";
+@import "compass";
+//@import "./../bower_components/font-awesome/scss/font-awesome.scss";
+@import "_mixin";
 @import "_base";
 @import "_layout";
