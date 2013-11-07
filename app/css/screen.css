@@ -4332,7 +4332,11 @@ striping:
     background: #b93744;
     font-size: 1.3rem;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_layout\.scss}line{font-family:\00003168}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_layout\.scss}line{font-family:\00003165}}
+  .page .main .addCart a.pure-button.pure-button-primary:active {
+    color: #ffffff;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_layout\.scss}line{font-family:\00003171}}
   .page .main .prodDetail {
     width: 100%;
     float: right;
@@ -4345,7 +4349,7 @@ striping:
     display: table;
     clear: both;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_layout\.scss}line{font-family:\00003174}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_layout\.scss}line{font-family:\00003177}}
   .page .main .prodDetail > ul > li {
     float: left;
     position: relative;
@@ -4357,11 +4361,11 @@ striping:
     text-align: center;
     line-height: 50px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_layout\.scss}line{font-family:\00003185}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_layout\.scss}line{font-family:\00003188}}
   .page .main .prodDetail > ul > li.current {
     background: #888888;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_layout\.scss}line{font-family:\00003190}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_layout\.scss}line{font-family:\00003193}}
   .page .main .prodDetail > ul > li:before {
     position: absolute;
     left: 0;

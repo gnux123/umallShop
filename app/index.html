@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" ng-app="umallApp"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +15,6 @@
         <!-- endbuild -->
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="bower_components/modernizr/modernizr.js"></script>
-        <script src="bower_components/zepto/zepto.min.js"></script>
 
         <!-- endbuild -->
     </head>
@@ -27,57 +26,7 @@
             <div class="navs">
                 test
             </div>
-            <div class="main">
-                <div class="prodShow">
-                    <img src="http://img2.u-mall.com.tw/UserFiles/Product/00470/00470304/26ad40e9-227c-44b1-acde-268123ce3c64.jpg" alt="">
-                </div>
-                <div class="prodNums">
-                    品號：901122345
-                </div>
-
-                <div class="prodSpec">
-                    <ul>
-                        <li class="prodTitle">六圓環生技特級納豆營養素六盒</li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-
-                <div class="prodSelects">
-                    <ul>
-                        <li>
-                            <a href="#">規格</a>
-                        </li>
-                        <li>
-                            <a href="#">顏色</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="priceZone">
-                </div>
-                <div class="prodBonus">
-                    <a class="pure-button pure-button-primary" href="#">
-                        <i class="fa fa-gift fa-lg"></i>
-                        贈品
-                    </a>
-                </div>
-                <div class="addCart">
-                    <a class="pure-button pure-button-primary" href="#">
-                        <i class="fa fa-shopping-cart fa-lg"></i>
-                        <span>加入購物車</span>
-                    </a>
-                </div>
-                <div class="prodDetail">
-                    <ul>
-                        <li class="current"><a href="#">付款方式</a></li>
-                        <li><a href="#">詳細說明</a></li>
-                    </ul>
-                    <div class="prodDetail_content">
-                        <div></div>
-                        <div></div>
-                    </div>
-                </div>
+            <div class="main" ui-view='main'>
             </div>
         </div>
 
@@ -87,7 +36,9 @@
         <!--script src="bower_components/jquery/jquery.js"></script-->
         <!-- endbower -->
         <!-- endbuild -->
-
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+        <script src="js/controller.js"></script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -97,9 +48,8 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
-
         <!-- build:js scripts/main.js -->
-        <script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>
+        <!--script data-main="scripts/main" src="bower_components/requirejs/require.js"></script-->
         <!-- endbuild -->
 </body>
 </html>
