@@ -1,7 +1,6 @@
-'use strict';
-angular.module('umallApp',['ui.router'])
-.config(function($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise("/home");  
+var umallApp = angular.module('umallApp',['ui.router']);
+angular.module('umallApp').config(function($stateProvider, $urlRouterProvider) {
+    $urlRouterProvider.otherwise("/prods");  
     $stateProvider
     .state('prods', {
         url: '/prods', 
@@ -12,13 +11,25 @@ angular.module('umallApp',['ui.router'])
             }
         }
     })
-    .state('shopFirst', {
-        url: '/shopCartFirst', 
+    .state('shop', {
+        url: '/shopCart/:steps/:message', 
         views: {
             'main': {
-                templateUrl: 'view/prods.html'
-                //controller:  'LoginCtrl',
+                templateUrl: 'view/shopcart.html',
+                controller:  'shopCtrl'
             }
         }
     })
 });
+
+//shopCart
+var shopCtrl = function($scope, $stateParams){
+    $scope.steps = $stateParams.steps;
+    $scope.message = $stateParams.message;
+    // console.log($stateParams.steps);
+    if($scope.steps == 1){
+     alert($scope.steps + "," + $scope.message);
+    }
+}
+
+umallApp.controller('shopCtrl',shopCtrl);
