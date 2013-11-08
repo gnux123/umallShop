@@ -7,8 +7,8 @@
 
                 <div class="prodSpec">
                     <ul>
-                        <li class="prodTitle">六圓環生技特級納豆營養素六盒</li>
-                        <li></li>
+                        <li class="prodTitle">{{ prods.name }}</li>
+                        <li class="prodSubs">{{ prods.subdes }}</li>
                         <li></li>
                     </ul>
                 </div>
@@ -25,6 +25,7 @@
                 </div>
 
                 <div class="priceZone">
+                    {{prods.price | currency}}
                 </div>
                 <div class="prodBonus">
                     <a class="pure-button pure-button-primary" href="#">
@@ -33,7 +34,7 @@
                     </a>
                 </div>
                 <div class="addCart">
-                    <a class="pure-button pure-button-primary" href="#">
+                    <a class="pure-button pure-button-primary" href="/#/shopCart/1/{{prods.name}}/{{prods.price}}">
                         <i class="fa fa-shopping-cart fa-lg"></i>
                         <span>加入購物車</span>
                     </a>
