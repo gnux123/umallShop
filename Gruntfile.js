@@ -46,6 +46,7 @@ module.exports = function (grunt) {
                     '<%= yeoman.app %>/*.html',
                     '<%= yeoman.app %>/css/{,*/}*.css',
                     '{.tmp,<%= yeoman.app %>}/scripts/{,*/}*.js',
+                    '{.tmp,<%= yeoman.app %>}/js/{,*/}*.js',
                     '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
                 ]
             }
@@ -142,7 +143,8 @@ module.exports = function (grunt) {
                 javascriptsDir: '<%= yeoman.app %>/js',
                 fontsDir: '<%= yeoman.app %>/font',
                 importPath: '<%= yeoman.app %>/sass',
-                relativeAssets: true
+                relativeAssets: true,
+                require: 'susy'
             },
             dist: {
                 options: {
