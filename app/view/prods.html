@@ -1,5 +1,5 @@
                 <div class="prodShow">
-                    <img src="http://img2.u-mall.com.tw/UserFiles/Product/00470/00470304/26ad40e9-227c-44b1-acde-268123ce3c64.jpg" alt="">
+                    <img src="{{ prods.img }}" alt="">
                 </div>
                 <div class="prodNums">
                     品號：901122345
@@ -25,16 +25,17 @@
                 </div>
 
                 <div class="priceZone">
-                    {{prods.price | currency}}
+                    優惠價：{{prods.priceSpecial | currency}}
+                    森活價：{{prods.priceOrg | currency}}
                 </div>
                 <div class="prodBonus">
                     <a class="pure-button pure-button-primary" href="#">
                         <i class="fa fa-gift fa-lg"></i>
-                        贈品
+                        <span>贈品</span>
                     </a>
                 </div>
                 <div class="addCart">
-                    <a class="pure-button pure-button-primary" href="/#/shopCart/1/{{prods.name}}/{{prods.price}}">
+                    <a class="pure-button pure-button-primary" href="/#/shopCart/1/">
                         <i class="fa fa-shopping-cart fa-lg"></i>
                         <span>加入購物車</span>
                     </a>

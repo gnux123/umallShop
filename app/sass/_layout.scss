@@ -42,7 +42,7 @@
 		padding:0;
 		@include container;
 		//@include susy-grid-background;
-		height:auto;	
+		height:auto;
 		& > div {
 			margin-top:10px;
 			@include border-box-sizing;
@@ -79,15 +79,17 @@
 
 			ul > li {
 				display:block;
+				padding:5px;
+				line-height: 20px;
 				&:first-child {
 					width:100%;
 					height:40px;
 					overflow: hidden;
 					line-height:40px;
-					padding:0 5px;
 					font-weight: bolder;
 					font-size:1.15rem;
 				}
+
 			}
 		}
 

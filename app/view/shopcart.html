@@ -1,3 +1,11 @@
 <label>價格:</label>
-<input type="text" ng-model="price">
-<a ng-href="#/prods" ng-click="update()">update</a>
+<input type="text" ng-model="prods.priceSpecial">
+<a ng-href="#/shopCart/1/" ng-click="update()">update</a>
+件數：{{prods.piece}}
+姓名：{{user.name}}
+<select>
+	<option ng-repeat="prodSpec1 in prods.prodSpec1" ng-value="{{prodSpec1}}">{{prodSpec1}}</option>
+</select>
+<select>
+	<option ng-repeat="prodSpec2 in prods.prodSpec2" ng-value="{{prodSpec2}}">{{prodSpec2}}</option>
+</select>

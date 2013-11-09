@@ -16,3 +16,24 @@ a {
 	text-decoration:none;
 	color:#362e2b;
 }
+
+.wave-enter, .wave-leave {
+    -webkit-transition:all 5s;
+    -moz-transition:all 5s;
+    -o-transition:all 5s;
+    transition:all 5s;
+}
+.wave-enter {
+    position:absolute;
+    left:100%;
+}
+.wave-enter-active {
+    left:0;
+}
+.wave-leave {
+    position:absolute;
+    left:0;
+}
+.wave-leave-active {
+    left:-100%;
+}
