@@ -17,23 +17,43 @@ a {
 	color:#362e2b;
 }
 
-.wave-enter, .wave-leave {
-    -webkit-transition:all 5s;
-    -moz-transition:all 5s;
-    -o-transition:all 5s;
-    transition:all 5s;
+/* Have to set height explicity on ui-view 
+to prevent collapsing during animation*/
+
+.view-enter, .view-leave {
+  position: absolute;
+  -webkit-transition:all .5s ease-in-out;
+    -moz-transition:all .5s ease-in-out;
+    -o-transition:all .5s ease-in-out;
+    transition:all .5s ease-in-out;
 }
-.wave-enter {
-    position:absolute;
-    left:100%;
+
+.view-enter {
+  opacity: 0;
+  -webkit-transform:scale3d(0.5, 0.5, 0.5);
+  -moz-transform:scale3d(0.5, 0.5, 0.5);
+  transform:scale3d(0.5, 0.5, 0.5);
 }
-.wave-enter-active {
-    left:0;
+
+.view-enter-active {
+  opacity: 1;
+  -webkit-transform:scale3d(1, 1, 1);
+  -moz-transform:scale3d(1, 1, 1);
+  transform:scale3d(1, 1, 1);
 }
-.wave-leave {
-    position:absolute;
-    left:0;
+
+.view-leave {
+  opacity: 1;
+  /*padding-left: 0px;*/  
+  -webkit-transform:translate3d(0, 0, 0);
+  -moz-transform:translate3d(0, 0, 0);
+  transform:translate3d(0, 0, 0);
 }
-.wave-leave-active {
-    left:-100%;
+
+.view-leave-active {
+  opacity: 0;
+  /*padding-left: 100px;*/
+  -webkit-transform:translate3d(100px, 0, 0);
+  -moz-transform:translate3d(100px, 0, 0);
+  transform:translate3d(100px, 0, 0);
 }

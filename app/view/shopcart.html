@@ -1,11 +1,32 @@
+<div class="steps_1">
+	<div class="prodSpec prodsData">
+        <ul>
+            <li class="prodTitle">{{ prods.name }}</li>
+            <li>共計{{prods.piece}}件商品</li>
+           	<li>森活價{{prods.priceOrg | currency}}</li>
+           	<li>優惠價{{prods.priceSpecial | currency}}</li>
+        </ul>
+	</div>
+	<div class="member_priceChoice">
+		<ul>
+			<li><input type="radio">優惠價{{prods.priceSpecial | currency}}</li>
+			<li><input type="radio">森活價{{prods.priceOrg | currency}}</li>
+			<li>
+				<select name="" id="">
+					<option value="">使用折價券</option>
+					<option ng-repeat="userCoupon in user.eCoupon" ng-value="userCoupon">{{userCoupon}}元折價券(網站)</option>
+				</select>
+			</li>
+		</ul>
+	</div>
+</div>
 <label>價格:</label>
 <input type="text" ng-model="prods.priceSpecial">
-<a ng-href="#/shopCart/1/" ng-click="update()">update</a>
-件數：{{prods.piece}}
+<a ng-href="#/prods" ng-click="update()">update</a>
 姓名：{{user.name}}
 <select>
-	<option ng-repeat="prodSpec1 in prods.prodSpec1" ng-value="{{prodSpec1}}">{{prodSpec1}}</option>
+	<option ng-repeat="prodSpec1 in prods.prodSpec1" ng-value="prodSpec1">{{prodSpec1}}</option>
 </select>
 <select>
-	<option ng-repeat="prodSpec2 in prods.prodSpec2" ng-value="{{prodSpec2}}">{{prodSpec2}}</option>
+	<option ng-repeat="prodSpec2 in prods.prodSpec2" ng-value="prodSpec2">{{prodSpec2}}</option>
 </select>

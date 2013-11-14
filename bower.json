@@ -8,7 +8,9 @@
     "jquery": "~1.7.2",
     "zepto": "~1.0",
     "angular": "~1.2.0",
-    "angular-ui-router": "~0.2.0"
+    "angular-ui-router": "~0.2.0",
+    "angular-route": "~1.2.0",
+    "angular-animate": "~1.2.0"
   },
   "devDependencies": {
   }

@@ -4098,34 +4098,49 @@ a {
   color: #362e2b;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_base\.scss}line{font-family:\0000320}}
-.wave-enter, .wave-leave {
-  -webkit-transition: all 5s;
-  -moz-transition: all 5s;
-  -o-transition: all 5s;
-  transition: all 5s;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_base\.scss}line{font-family:\0000326}}
-.wave-enter {
+/* Have to set height explicity on ui-view 
+to prevent collapsing during animation*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_base\.scss}line{font-family:\0000323}}
+.view-enter, .view-leave {
   position: absolute;
-  left: 100%;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_base\.scss}line{font-family:\0000330}}
-.wave-enter-active {
-  left: 0;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_base\.scss}line{font-family:\0000331}}
+.view-enter {
+  opacity: 0;
+  -webkit-transform: scale3d(0.5, 0.5, 0.5);
+  -moz-transform: scale3d(0.5, 0.5, 0.5);
+  transform: scale3d(0.5, 0.5, 0.5);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_base\.scss}line{font-family:\0000333}}
-.wave-leave {
-  position: absolute;
-  left: 0;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_base\.scss}line{font-family:\0000338}}
+.view-enter-active {
+  opacity: 1;
+  -webkit-transform: scale3d(1, 1, 1);
+  -moz-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_base\.scss}line{font-family:\0000337}}
-.wave-leave-active {
-  left: -100%;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_base\.scss}line{font-family:\0000345}}
+.view-leave {
+  opacity: 1;
+  /*padding-left: 0px;*/
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_base\.scss}line{font-family:\0000353}}
+.view-leave-active {
+  opacity: 0;
+  /*padding-left: 100px;*/
+  -webkit-transform: translate3d(100px, 0, 0);
+  -moz-transform: translate3d(100px, 0, 0);
+  transform: translate3d(100px, 0, 0);
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_layout\.scss}line{font-family:\000031}}
@@ -4199,7 +4214,7 @@ a {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_layout\.scss}line{font-family:\0000339}}
   .page .main {
     position: relative;
-    margin-top: 45px;
+    margin-top: 55px;
     padding: 0;
     max-width: 430px;
     padding-left: 5px;

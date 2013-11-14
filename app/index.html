@@ -8,13 +8,19 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>umallShop</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="css/screen.css">
         <!-- endbuild -->
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="bower_components/modernizr/modernizr.js"></script>
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+        <script src="bower_components/angular-route/angular-route.js"></script>
+        <script src="bower_components/angular-animate/angular-animate.js"></script>
+        <script src="js/controller.js"></script>
 
         <!-- endbuild -->
     </head>
@@ -24,9 +30,10 @@
         <![endif]-->
         <div class="page">
             <div class="navs">
-                test
+                <a href="#/prods">prods</a>
+                <a href="#/shopCart/1/">cart</a>
             </div>
-            <div class="main" ui-view='main' ng-animate="'wave'">
+            <div class="main" ui-view ng-animate="'view'">
             </div>
         </div>
 
@@ -36,9 +43,6 @@
         <!--script src="bower_components/jquery/jquery.js"></script-->
         <!-- endbower -->
         <!-- endbuild -->
-        <script src="bower_components/angular/angular.js"></script>
-        <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-        <script src="js/controller.js"></script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
