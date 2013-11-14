@@ -1,8 +1,17 @@
 var umallApp = angular.module('umallApp',['ui.router']);
 //ui-router
 angular.module('umallApp').config(function($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise("/prods");  
+    $urlRouterProvider.otherwise("/index");  
     $stateProvider
+    .state('index', {
+        url: '/index', 
+        views: {
+            'main': {
+                templateUrl: 'view/main.html',
+                controller:  'mainCtrl',
+            }
+        }
+    })
     .state('prods', {
         url: '/prods', 
         views: {

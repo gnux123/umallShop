@@ -4,7 +4,7 @@ $mobile:320px 4 480px;
 $total-columns    : 10; //格線內的總欄數
 $column-width     : 100px; //5個字
 $gutter-width     : 10px; //欄間距
-$grid-padding     : 5px;//1em 至左及至右滿版兩邊間距
+$grid-padding     : 0;//1em 至左及至右滿版兩邊間距
 
 @include at-breakpoint($mobile) { 
 	//mobile settings
