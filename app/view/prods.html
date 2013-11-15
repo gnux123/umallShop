@@ -1,52 +1,43 @@
-                <div class="prodShow">
-                    <img src="{{ prods.img }}" alt="">
-                </div>
-                <div class="prodNums">
-                    品號：901122345
-                </div>
+<div class="prodPage">
+    <div class="prodSpec">
+        <ul class="prodSpec_1">
+            <li ng-repeat="prodSpec1 in prods.prodSpec1"><a href="#">{{prodSpec1}}</a></li>
+        </ul>
 
-                <div class="prodSpec">
-                    <ul>
-                        <li class="prodTitle">{{ prods.name }}</li>
-                        <li class="prodSubs">{{ prods.subdes }}</li>
-                        <li></li>
-                    </ul>
-                </div>
+        <ul class="prodSpec_2">
+            <li ng-repeat="prodSpec2 in prods.prodSpec2"><a href="#">{{prodSpec2}}</a></li>
+        </ul>
+    </div>
+    <div class="prodDesc">
+        <div class="push_text">{{prods.pushText}}</div>
+        <div class="subDesc">{{prods.subdes}}</div>
+    </div>
+    <div class="recommands_zone">
+        <ul>
+            <li><a href="#">
+                <i class="fa fa-quote-right fa-2x"></i>
+                <span>達人推薦</span>
+            </a></li>
+            <li><a href="#">
+                <i class="fa fa-comments fa-2x"></i>
+                <span>商品評論</span>
+            </a></li>
+        </ul>
+    </div>
+    <div class="more_btn">
+        <a href="#">+more</a>
+    </div>
+    <div class="prodShow">
+        <img src="{{prods.img}}" alt="">
+    </div>
+    
+    <a href="#" class="shopCart_btn">
+        <i class="fa fa-shopping-cart fa-2x"></i>
+    </a>
 
-                <div class="prodSelects">
-                    <ul>
-                        <li>
-                            <a href="#">規格</a>
-                        </li>
-                        <li>
-                            <a href="#">顏色</a>
-                        </li>
-                    </ul>
-                </div>
+    <div class="priceZone">
+        <span class="org">NT{{prods.priceOrg}}</span>
+        <span class="special">NT{{prods.priceSpecial}}</span>
+    </div>
+</div>               
 
-                <div class="priceZone">
-                    優惠價：{{prods.priceSpecial | currency}}
-                    森活價：{{prods.priceOrg | currency}}
-                </div>
-                <div class="prodBonus">
-                    <a class="pure-button pure-button-primary" href="#">
-                        <i class="fa fa-gift fa-lg"></i>
-                        <span>贈品</span>
-                    </a>
-                </div>
-                <div class="addCart">
-                    <a class="pure-button pure-button-primary" href="/#/shopCart/1/">
-                        <i class="fa fa-shopping-cart fa-lg"></i>
-                        <span>加入購物車</span>
-                    </a>
-                </div>
-                <div class="prodDetail">
-                    <ul>
-                        <li class="current"><a href="#">付款方式</a></li>
-                        <li><a href="#">詳細說明</a></li>
-                    </ul>
-                    <div class="prodDetail_content">
-                        <div></div>
-                        <div></div>
-                    </div>
-                </div>
