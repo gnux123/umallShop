@@ -17,23 +17,27 @@ a {
 	color:#362e2b;
 }
 
-.wave-enter, .wave-leave {
-    -webkit-transition:all 5s;
-    -moz-transition:all 5s;
-    -o-transition:all 5s;
-    transition:all 5s;
+.wave.ng-enter, .wave.ng-leave {
+  position: absolute;
+  -webkit-transition:all 1s ease-in-out;
+    -moz-transition:all 1s ease-in-out;
+    -o-transition:all 1s ease-in-out;
+    transition:all 1s ease-in-out;
 }
-.wave-enter {
-    position:absolute;
-    left:100%;
+
+.wave.ng-enter {
+  opacity: 0;
 }
-.wave-enter-active {
-    left:0;
+
+.wave.ng-enter-active {
+  opacity: 1;
+
 }
-.wave-leave {
-    position:absolute;
-    left:0;
+
+.wave.ng-leave {
+  opacity: 1;
 }
-.wave-leave-active {
-    left:-100%;
+
+.wave.ng-leave-active {
+  opacity: 0;
 }
