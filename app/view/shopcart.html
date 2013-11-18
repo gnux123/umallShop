@@ -1,4 +1,51 @@
-<label>價格:</label>
+<div class="shopCart">
+	<div class="totalPrice">
+		<h2>總額：NT${{prods.priceSpecial}}</h2>
+		<div class="priceInfo">
+			森活價：NT${{prods.priceOrg}} 折扣券：<span>NT$ -200</span>
+		</div>
+	</div>
+
+	<div class="shopCart_steps step1">
+		<ul>
+			<li><i class="fa fa-shopping-cart fa-2x"></i>
+				<span>訂單明細</span>
+			</li>
+			<li><i class="fa fa-shopping-cart fa-2x"></i>
+				<span>訂購人</span>
+			</li>
+			<li><i class="fa fa-shopping-cart fa-2x"></i>
+				<span>付款明細</span>
+			</li>
+			<li><i class="fa fa-shopping-cart fa-2x"></i>
+				<span>訂單送出</span>
+			</li>
+		</ul>
+	</div>
+
+	<div class="vipZone">
+		<div class="vipZone_icon">
+			<i class="fa fa-user fa-2x"></i>
+			<span>會員獨享</span>
+		</div>
+
+		<ul>
+			<li><a href="#">折價券</a></li>
+			<li><a href="#">折扣金</a></li>
+			<li><a href="#">紅利金</a></li>
+		</ul>
+	</div>
+
+    <div class="prodShow">
+        <img src="{{prods.img}}" alt="">
+    </div>
+
+    <div class="shopBtn_area">
+		<a class="steps_Button" href="#">NEXT</a>   	
+    </div> 
+</div>
+
+<!-- <label>價格:</label>
 <input type="text" ng-model="prods.priceSpecial">
 <a ng-href="#/shopCart/1/" ng-click="update()">update</a>
 件數：{{prods.piece}}
@@ -8,4 +55,4 @@
 </select>
 <select>
 	<option ng-repeat="prodSpec2 in prods.prodSpec2" ng-value="prodSpec2">{{prodSpec2}}</option>
-</select>
+</select> -->

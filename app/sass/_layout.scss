@@ -5,6 +5,7 @@
 		position:relative;
 		display:none;
 		height:auto;
+		//logo
 		.appLogo {
 			position:relative;
 			.logo {
@@ -13,10 +14,11 @@
 				width:26px;
 				height:26px;
 				left:50%;
-				top:10px;
+				top:8px;
 				margin-left:-13px;
 
 				& > img { width:26px; }
+				color:$pink-text;
 			}
 		}
 

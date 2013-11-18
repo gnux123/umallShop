@@ -1,0 +1,199 @@
+@include at-breakpoint($mobile) {
+	.shopCart {
+		position:relative;
+		@include container;
+		@include border-box-sizing;
+		height:100%;
+		overflow:hidden;
+		padding:0 10px;
+		padding-top:20px;
+	}
+
+	.totalPrice {
+		@include span-columns(4 omega);
+		@include border-box-sizing;
+		height:auto;
+		//@include susy-grid-background;
+		font-family: arial;		
+		text-align: center;
+		
+		h2 {
+			display: inline-block;
+			font-size:1.6rem;
+			color:$pink-text;
+			font-weight:bold;
+		}
+
+		.priceInfo {
+			margin-top:10px;
+			& > span { color:$pink-text; }
+			font-size:0.92rem;
+		}
+	}
+
+	.shopCart_steps {
+		@include span-columns(4 omega);
+		@include border-box-sizing;
+
+		height:80px;
+		margin:20px 0;
+		text-align: center;
+
+		ul {
+			position:relative;
+			display: inline-block;
+			margin:0 auto;
+			@include pie-clearfix;
+		}
+
+		ul > li {
+			position:relative;
+			float:left;
+			display:block;
+			width:50px;
+			height:50px;
+			line-height: 55px;
+			border-radius:1000em;
+			border:4px solid $gray-lite;
+			background:#ffffff;
+			color:$gray-lite;
+			text-align: center;
+			margin-left:26px;
+
+			span {
+				position:absolute;
+				display: block;
+				width:80px;
+				left:-17px;
+				bottom:-50px;
+				z-index:1;
+				font-size:0.92rem;
+			}
+
+			&:before {
+				content:"";
+				position:absolute;
+				display: block;
+				width:30px;
+				height:4px;
+				background:$gray-lite;
+				left:-30px;
+				top:20px;
+
+			}
+
+			&:first-child {
+				margin-left:0;
+				&:before {
+					display: none;
+				}
+			}
+		}
+
+		&.step1 ul > li {
+			&:first-child {
+				border:4px solid $pink-text;
+				color:$pink-text;
+				background:$gray-lite;
+			}
+		}
+
+		&.step2 ul > li {
+			&:first-child, &:first-child+li {
+				border:4px solid $pink-text;
+				color:$pink-text;
+				background:$gray-lite;
+
+				&:before {
+					background:$pink-text;
+				}
+			}			
+		}	
+	}
+
+	.vipZone {
+		@include span-columns(4 omega);
+		@include border-box-sizing;
+		text-align: center;
+
+		.vipZone_icon {
+			margin:0 auto;
+			position:relative;
+			display: block;
+			width:60px;
+			height:60px;
+			line-height: 65px;
+			text-align: center;
+			background:$pink-text;
+			border-radius:1000em;
+			color:#ffffff;
+			margin-bottom: 30px;
+
+			span {
+				position:absolute;
+				left:-10px;
+				bottom:-45px;
+				display: block;
+				width:80px;
+				color:$pink-text;
+				letter-spacing: 2px;
+				font-weight:bold;
+			}
+		}
+
+		ul {
+			margin-top:5px;
+			margin-bottom:10px;
+			display: inline-block;
+			@include pie-clearfix;
+		}		
+
+		ul > li {
+			float:left;
+			margin-left: 20px;
+			a {
+				display: block;
+				padding:0 5px;
+				line-height:35px;
+				color:$pink-text;
+				border:3px solid $gray-lite;
+				background:#ffffff;
+				font-weight: bold;
+			}
+
+			&:first-child { margin-left:0; }
+		}
+	}
+
+	.shopCart > .prodShow{
+		opacity: 0.5;
+	}
+
+
+	.shopBtn_area {
+		position:relative;
+		@include span-columns(4 omega);
+		@include border-box-sizing;
+		text-align: center;		
+		a.steps_Button {
+			z-index:1;
+			position:absolute;
+			left:50%;
+			bottom:100px;
+			margin-left:-50px;
+			display: block;
+			width:100px;
+			height:100px;
+			line-height: 100px;
+			border-radius:1000em;
+			background:$pink-text;
+			text-align: center;
+			line-height: 100px;
+			color:#ffffff;
+			font-weight:bold;
+			font-size:1.5rem;
+			font-family: arial;
+		}
+	}
+
+}
