@@ -12,6 +12,10 @@ $grid-padding     : 0;//1em 至左及至右滿版兩邊間距
 
 }
 
+html,body {
+  height:100%;
+}
+
 a {
 	text-decoration:none;
 	color:#362e2b;

@@ -3,8 +3,10 @@
 	//@include susy-grid-background;
 	.navs {
 		position:relative;
+		padding-top:15px;
 		display:none;
 		height:auto;
+		background:$pink-lite;
 		//logo
 		.appLogo {
 			position:relative;
@@ -90,6 +92,7 @@
 		padding:0;
 		@include container;
 		//@include susy-grid-background;
+		min-height: 100%;
 		height:auto;
 		& > div {
 			margin-top:-2px;

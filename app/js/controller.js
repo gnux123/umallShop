@@ -33,5 +33,32 @@ var shopCtrl = function($scope, Data ,$stateParams){
     };
 }
 
+var bonusCtrl = function($scope, Data ,$stateParams){ 
+    Zepto(function($){
+        $(window).resize(function(){
+            sizefix();
+            bonusPos();
+        });
+        sizefix();
+        //bonusPos();
+        function sizefix(){
+            var _h = $(window).height(),
+                _navH = $(".navs").height();
+            $(".main").height(_h - _navH - 20);
+        }
+
+        function bonusPos(){
+            var _bonusFrame_h = $(".bonusList").height(),
+                _bonusLists_h = $(".bonusList > ul").height(),
+                _bonusMargin = ((_bonusLists_h - _bonusFrame_h)/2) - 60;
+
+            $(".bonusList > ul").css("-webkit-transform","translate3d(0,-"+_bonusMargin+"px,0)");
+        }
+
+    });
+
+}
+
 umallApp.controller('shopCtrl',shopCtrl);
 umallApp.controller('prodCtrl',prodCtrl);
+umallApp.controller('bonusCtrl',bonusCtrl);

@@ -40,4 +40,17 @@ angular.module('umallApp').config(function($stateProvider, $urlRouterProvider) {
             },
         }
     })
+    .state('bonus', {
+        url: '/bonus', 
+        views: {
+            'main': {
+                templateUrl: 'view/bonus.html',
+                controller:  'bonusCtrl'
+            },
+            'navs': {
+                templateUrl: 'view/navs_main.html',
+                controller: 'navsProdCtrl'
+            },
+        }
+    })
 });
