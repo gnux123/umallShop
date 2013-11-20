@@ -98,6 +98,14 @@
 			margin-top:-2px;
 			@include border-box-sizing;
 		}
+
+		& > .push_bg {
+			background:url(./../images/bg.jpg) no-repeat;
+			-moz-background-size:cover;
+			-webkit-background-size:cover;
+			-o-background-size:cover;
+			background-size:cover;		
+		}
 	}
 
 

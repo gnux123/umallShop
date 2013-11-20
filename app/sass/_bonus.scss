@@ -9,14 +9,6 @@
 		padding:0 10px;
 		padding-top:20px;
 		@include susy-grid-background;		
-	
-		&.push_bg {
-			background:url(./../images/bg.jpg) no-repeat;
-			-moz-background-size:cover;
-			-webkit-background-size:cover;
-			-o-background-size:cover;
-			background-size:cover;		
-		}
 	}
 
 	.bonusInput {

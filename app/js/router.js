@@ -53,4 +53,17 @@ angular.module('umallApp').config(function($stateProvider, $urlRouterProvider) {
             },
         }
     })
+    .state('game', {
+        url: '/game', 
+        views: {
+            'main': {
+                templateUrl: 'view/game.html',
+                controller:  'gameCtrl'
+            },
+            'navs': {
+                templateUrl: 'view/navs_main.html',
+                controller: 'navsProdCtrl'
+            },
+        }
+    })
 });

@@ -56,9 +56,48 @@ var bonusCtrl = function($scope, Data ,$stateParams){
         }
 
     });
+}
 
+var gameCtrl = function($scope, Data ,$stateParams){ 
+    Zepto(function($){
+        sizefix();
+        $(window).resize(function(){sizefix();});
+
+
+
+        var $value = 1,
+            _deg = ($value*45)*-1;
+        $.fn.addKeyframe([{
+            name: "board-main-run",
+            "from":$.keyframe.browserCode()+"transform:rotate(0deg)",
+            "to":$.keyframe.browserCode()+"transform:rotate("+(1800+_deg)+"deg)",
+        }]);
+
+
+        $("a.start").click(function(){
+            $(".main-animate").find("div.linear").removeClass("lienar");
+            $(".main-animate").find(".lightBall").addClass("lightBall-run");
+            $(".main-animate").find(".board_main").playKeyframe({
+                name: 'board-main-run',
+                timingFunction:'ease',
+                repeat:'1',
+                duration:'8000',
+                direction:'normal',
+                fillMode: 'forwards',
+                delay: 0
+            });
+            $(".main-animate").find(".blackCircle").addClass("blackCircle-run");
+        });
+
+        function sizefix(){
+            var _h = $(window).height(),
+                _navH = $(".navs").height();
+            $(".main").height(_h - _navH - 20);
+        }
+    });
 }
 
 umallApp.controller('shopCtrl',shopCtrl);
 umallApp.controller('prodCtrl',prodCtrl);
 umallApp.controller('bonusCtrl',bonusCtrl);
+umallApp.controller('gameCtrl',gameCtrl);
