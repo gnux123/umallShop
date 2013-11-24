@@ -8,12 +8,20 @@ var prodCtrl = navsProdCtrl = function($scope, Data, $stateParams){
 
 var prodCtrl = function($scope, Data, $stateParams){
     $scope.prods = Data[0];
+    $scope.colorful = $scope.colorful2 = 0;
     //zepto
     Zepto(function($){
+        var count = 0;
         $(".more_btn a").click(function(){
             $(".priceZone, .shopCart_btn, .prodShow").toggleClass("hidein");
             $(".prod_specNavs").toggleClass("active");
-            $(this).toggle($(this).text("-more"));
+            if( count == 0){
+                count=1;
+                $(this).text("-more");
+            }else{
+                count=0;
+                $(this).text("+more");
+            }         
         });
     });
 }
@@ -40,7 +48,7 @@ var bonusCtrl = function($scope, Data ,$stateParams){
             bonusPos();
         });
         sizefix();
-        //bonusPos();
+        bonusPos();
         function sizefix(){
             var _h = $(window).height(),
                 _navH = $(".navs").height();
@@ -60,33 +68,35 @@ var bonusCtrl = function($scope, Data ,$stateParams){
 
 var gameCtrl = function($scope, Data ,$stateParams){ 
     Zepto(function($){
+
         sizefix();
         $(window).resize(function(){sizefix();});
 
 
 
-        var $value = 1,
-            _deg = ($value*45)*-1;
-        $.fn.addKeyframe([{
-            name: "board-main-run",
-            "from":$.keyframe.browserCode()+"transform:rotate(0deg)",
-            "to":$.keyframe.browserCode()+"transform:rotate("+(1800+_deg)+"deg)",
-        }]);
+        // var $value = 8,
+        //     _deg = ($value*45)*-1;
+        // $.fn.addKeyframe([{
+        //     name: "board-main-run",
+        //     "from":$.keyframe.browserCode()+"transform:rotate(0deg)",
+        //     "to":$.keyframe.browserCode()+"transform:rotate("+(1800+_deg)+"deg)",
+        // }]);
 
 
-        $("a.start").click(function(){
-            $(".main-animate").find("div.linear").removeClass("lienar");
+        $("a.blackCircle").on('click',function(){
+            // alert(1);
+            $(".main-animate").find(".wrap, .lightBall").removeClass("linear");
             $(".main-animate").find(".lightBall").addClass("lightBall-run");
-            $(".main-animate").find(".board_main").playKeyframe({
-                name: 'board-main-run',
-                timingFunction:'ease',
-                repeat:'1',
-                duration:'8000',
-                direction:'normal',
-                fillMode: 'forwards',
-                delay: 0
-            });
-            $(".main-animate").find(".blackCircle").addClass("blackCircle-run");
+            // $(".main-animate").find(".wrap").playKeyframe({
+            //     name: 'board-main-run',
+            //     timingFunction:'ease',
+            //     repeat:'1',
+            //     duration:'8000',
+            //     direction:'normal',
+            //     fillMode: 'forwards',
+            //     delay: 0
+            // });
+            //$(".main-animate").find(".blackCircle").addClass("blackCircle-run");
         });
 
         function sizefix(){
