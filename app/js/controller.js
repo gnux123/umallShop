@@ -9,21 +9,18 @@ var prodCtrl = navsProdCtrl = function($scope, Data, $stateParams){
 var prodCtrl = function($scope, Data, $stateParams){
     $scope.prods = Data[0];
     $scope.colorful = $scope.colorful2 = 0;
-    //zepto
-    Zepto(function($){
-        var count = 0;
-        $(".more_btn a").click(function(){
-            $(".priceZone, .shopCart_btn, .prodShow").toggleClass("hidein");
-            $(".prod_specNavs").toggleClass("active");
-            if( count == 0){
-                count=1;
-                $(this).text("-more");
-            }else{
-                count=0;
-                $(this).text("+more");
-            }         
-        });
-    });
+    $scope.active = false;
+    $scope.btnText = "+more";
+    
+    $scope.prodSpecNavs = function(){
+        if($scope.active == false){
+            $scope.active = true;
+            $scope.btnText = "-more";
+        }else{
+            $scope.active = false;
+            $scope.btnText = "+more";
+        }
+    }
 }
 
 //shopCartController
