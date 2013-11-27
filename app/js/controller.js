@@ -1,9 +1,23 @@
 //prodsController
-var prodCtrl = navsProdCtrl = function($scope, Data, $stateParams){
+var navsProdCtrl = function($scope, Data, $stateParams){
     $scope.prods = Data[0];
-    $scope.$back = function() { 
+    $scope.backShow = false;
+    var _backLength = window.history.length;
+    if(_backLength >= 2){
+        //alert(_backLength);
+        $scope.backShow = true;
+    }else{
+        $scope.backShow = false;
+        return false;
+    }
+
+    //show
+    $scope.$back = function() {
         window.history.back();
     };
+}
+var prodCtrl = function($scope, Data, $stateParams){
+    $scope.prods = Data[0];
 }
 
 var prodCtrl = function($scope, Data, $stateParams){
@@ -28,14 +42,30 @@ var shopCtrl = function($scope, Data ,$stateParams){
     $scope.steps = $stateParams.steps;
     $scope.prods = Data[0];
     $scope.user = Data[1];
-    $scope.counter = 0;
+    $scope.memberCoupon = true;
 
-    var update = function() {
-        $scope.counter++;
-        Data[0].price = prods.price;
-        Data[0].piece = prods.piece;
-        alert($scope.counter);
-    };
+    $scope.memberOwn = function(){
+        if($scope.memberCoupon == true){
+            $scope.memberCoupon = false;
+        }else{
+            $scope.memberCoupon = true;
+        }       
+    }
+
+    $scope.addItems = function(){
+
+    }
+
+    $scope.reduceItems = function(){
+
+    }
+
+    // var update = function() {
+    //     $scope.counter++;
+    //     Data[0].price = prods.price;
+    //     Data[0].piece = prods.piece;
+    //     alert($scope.counter);
+    // };
 }
 
 var bonusCtrl = function($scope, Data ,$stateParams){ 
@@ -101,10 +131,12 @@ var gameCtrl = function($scope, Data ,$stateParams){
                 _navH = $(".navs").height();
             $(".main").height(_h - _navH - 20);
         }
-    });
+    })
 }
 
 umallApp.controller('shopCtrl',shopCtrl);
+umallApp.controller('navsProdCtrl',navsProdCtrl);
 umallApp.controller('prodCtrl',prodCtrl);
 umallApp.controller('bonusCtrl',bonusCtrl);
 umallApp.controller('gameCtrl',gameCtrl);
+

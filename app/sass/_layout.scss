@@ -3,7 +3,7 @@
 	//@include susy-grid-background;
 	.navs {
 		position:relative;
-		padding-top:15px;
+		//padding-top:15px;
 		display:none;
 		height:auto;
 		background:$pink-lite;
@@ -18,18 +18,26 @@
 				left:50%;
 				top:8px;
 				margin-left:-13px;
-
-				& > img { width:26px; }
 				color:$pink-text;
+				& > img { width:26px; }
 			}
 		}
 
+		//backBtn
 		a.back {
 			z-index:2;
 			position:absolute;
 			left:5px;
 			top:50%;
 			margin-top:-7px;
+			color:$pink-text;
+
+			&.backShow {
+				display: none;
+			}
+		}
+		
+		h2.prods_name, div.prods_nums {
 			color:$pink-text;
 		}
 
@@ -38,7 +46,6 @@
 			line-height:35px;
 			height:35px;
 			text-align: center;
-			color:#ffffff;
 			font-weight: bold;
 		}
 
@@ -46,7 +53,6 @@
 			position:absolute;
 			font-family: arial;
 			font-size:1rem;
-			color:#ffffff;
 			left:0;
 			bottom:8px;
 			width:100%;
@@ -94,6 +100,7 @@
 		//@include susy-grid-background;
 		min-height: 100%;
 		height:auto;
+
 		& > div {
 			margin-top:-2px;
 			@include border-box-sizing;

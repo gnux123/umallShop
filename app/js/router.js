@@ -1,9 +1,9 @@
 //ui-router
 angular.module('umallApp').config(function($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise("/index");  
+    $urlRouterProvider.otherwise("/");  
     $stateProvider
     .state('index', {
-        url: '/index', 
+        url: '/', 
         views: {
             'main': {
                 templateUrl: 'view/main.html',

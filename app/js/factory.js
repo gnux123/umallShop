@@ -15,6 +15,11 @@ umallApp.factory('Data', function(){
     {
         name: "蘇靖文",
         sex: "男",
-        mobile: "0987-797768"
+        mobile: "0987-797768",
+        address: ["台北市","南港區","昆陽街95-1號6樓"],
+        addressList: [
+            "台北市南港區昆陽街95-1號6樓",
+            "台北市大安區安南路一段33-7號4樓"
+        ]
     }];
 });

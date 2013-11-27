@@ -24,12 +24,12 @@
 	</div>
 
 	<div class="vipZone">
-		<div class="vipZone_icon">
+		<a href class="vipZone_icon" ng-click="memberOwn()">
 			<i class="fa fa-user fa-2x"></i>
 			<span>會員獨享</span>
-		</div>
+		</a>
 
-		<ul>
+		<ul ng-class="{hideEffect: memberCoupon == false}">
 			<li><a href="#">折價券</a></li>
 			<li><a href="#">折扣金</a></li>
 			<li><a href="#">紅利金</a></li>

@@ -1,0 +1,31 @@
+@include at-breakpoint($mobile) {
+	.couponGet {
+		position:relative;
+		@include container;
+		height:100%;
+		overflow:hidden;
+		padding-top:20px;
+	}
+
+	.couponGet_title {
+		position:relative;
+		color:$pink-text;
+		width:100%;
+		text-align: center;
+		& > span {
+			display: inline-block;
+			padding:10px 0;
+			font-size:2rem;
+			line-height: 40px;
+			border-top:2px dashed $pink-text;
+			letter-spacing: 1px;
+		}
+	
+		& > i {
+			position:absolute;
+			top:-7px;
+			left:50%;
+			margin-left: -12px;
+		}
+	}
+}

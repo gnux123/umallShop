@@ -19,12 +19,12 @@
     <div class="recommands_zone">
         <ul>
             <li><a href="#">
-                <i class="fa fa-quote-right fa-2x"></i>
-                <span>達人推薦</span>
-            </a></li>
-            <li><a href="#">
                 <i class="fa fa-comments fa-2x"></i>
-                <span>商品評論</span>
+                <span>商品評價</span>
+            </a></li>
+            <li><a href="#/shopCart/1/">
+                <i class="fa fa-shopping-cart fa-2x"></i>
+                <span>立即購買</span>
             </a></li>
         </ul>
     </div>
@@ -34,12 +34,14 @@
     <div class="prodShow" ng-class="{hidein: active == true}">
         <img src="{{prods.img}}" alt="">
     </div>
-    
-    <a href="#/shopCart/1/" class="shopCart_btn" ng-class="{hidein: active == true}">
-        <i class="fa fa-shopping-cart fa-2x"></i>
-    </a>
 
     <div class="priceZone" ng-class="{hidein: active == true}">
+        <div class="shareIcons">
+            <ul>
+                <li><a href="#">f</a></li>
+                <li><a href="#">LINE</a></li>
+            </ul>
+        </div>
         <span class="org">NT{{prods.priceOrg}}</span>
         <span class="special">NT{{prods.priceSpecial}}</span>
     </div>

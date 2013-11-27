@@ -145,7 +145,18 @@
 			margin-top:5px;
 			margin-bottom:10px;
 			display: inline-block;
+			opacity: 0;
 			@include pie-clearfix;
+
+			//effects
+			-webkit-transition:all 1s ease-in-out;
+			-moz-transition:all 1s ease-in-out;
+			-o-transition:all 1s ease-in-out;
+			transition:all 1s ease-in-out;
+
+			&.hideEffect {
+				opacity: 1;
+			}
 		}		
 
 		ul > li {
@@ -174,7 +185,8 @@
 		position:relative;
 		@include span-columns(4 omega);
 		@include border-box-sizing;
-		text-align: center;		
+		text-align: center;
+
 		a.steps_Button {
 			z-index:1;
 			position:absolute;

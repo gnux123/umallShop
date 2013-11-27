@@ -151,6 +151,40 @@
 		height:40px;
 		background:rgba(255,204,204,.7);
 		text-align: right;
+		
+		& > .shareIcons {
+			position: absolute;
+			left:5px;
+			top:5px;
+			display: inline-block;
+			height:30px;
+		}
+		
+		& > .shareIcons ul { @include pie-clearfix; }
+
+		& > .shareIcons ul li {
+			float:left;
+			margin-left:5px;
+			font-size:0.75rem;
+			&:first-child { 
+				margin-left:0;
+				font-size:1.8rem;
+				font-weight: bolder;
+			}
+		}
+
+		& > .shareIcons ul li a {
+			display: block;
+			width:30px;
+			height:30px;
+			border-radius:1000em;
+			background:$pink-text;
+			color:#ffffff;
+			text-align: center;
+			line-height:30px;
+			font-family:arial;
+
+		}
 
 		& > span { 
 			display:inline-block; 
