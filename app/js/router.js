@@ -27,11 +27,26 @@ angular.module('umallApp').config(function($stateProvider, $urlRouterProvider) {
             },
         }
     })
+    .state('prodSpec', {
+        url: '/prods/spec', 
+        views: {
+            'main': {
+                templateUrl: 'view/prodSpecChoice.html',
+                controller:  'prodSpecCtrl'
+            },
+            'navs': {
+                templateUrl: 'view/navs_prod.html',
+                controller: 'navsProdCtrl'
+            },
+        }
+    })
     .state('shop', {
         url: '/shopCart/:steps/', 
         views: {
             'main': {
-                templateUrl: 'view/shopcart.html',
+                templateUrl: function($stateParams){
+                    return 'view/shopcart_'+$stateParams.steps+'.html';
+                },
                 controller:  'shopCtrl'
             },
             'navs': {

@@ -1,0 +1,18 @@
+<div class="prodPage">
+    <div class="prodSpec">
+        <ul class="prodSpec_1" ng-init="prods.colorful=0">
+            <li ng-repeat="prodSpec1 in prods.prodSpec1" ng-class="{current: prods.colorful ==  $index}" ng-click = "prods.colorful = $index">
+                <a href="javascript:void(0);" ng-bind="prodSpec1"></a>
+            </li>
+        </ul>
+
+        <ul class="prodSpec_2" ng-init="prods.colorful2=0">
+            <li ng-repeat="prodSpec2 in prods.prodSpec2" ng-class="{current: prods.colorful2 ==  $index}" ng-click = "prods.colorful2 = $index">
+                <a href="javascript:void(0);"  ng-bind="prodSpec2"></a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+

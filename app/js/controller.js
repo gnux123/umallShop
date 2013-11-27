@@ -20,6 +20,10 @@ var prodCtrl = function($scope, Data, $stateParams){
     $scope.prods = Data[0];
 }
 
+var prodSpecCtrl = function($scope, Data, $stateParams){
+    $scope.prods = Data[0];
+}
+
 var prodCtrl = function($scope, Data, $stateParams){
     $scope.prods = Data[0];
     $scope.colorful = $scope.colorful2 = 0;
@@ -139,4 +143,4 @@ umallApp.controller('navsProdCtrl',navsProdCtrl);
 umallApp.controller('prodCtrl',prodCtrl);
 umallApp.controller('bonusCtrl',bonusCtrl);
 umallApp.controller('gameCtrl',gameCtrl);
-
+umallApp.controller('prodSpecCtrl',prodSpecCtrl);
