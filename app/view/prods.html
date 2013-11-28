@@ -5,11 +5,11 @@
     </div>
     <div class="recommands_zone">
         <ul>
-            <li><a href="#">
+            <li><a href="#/prods/comment/1/">
                 <i class="fa fa-comments fa-2x"></i>
                 <span>商品評價</span>
             </a></li>
-            <li><a href="#/prods/spec">
+            <li><a ng-href="#/{{hashGo}}" ng-click="prodTrans()">
                 <i class="fa fa-shopping-cart fa-2x"></i>
                 <span>立即購買</span>
             </a></li>
@@ -19,7 +19,7 @@
         <a href ng-click="prodSpecNavs()" ng-bind="btnText"></a>
     </div>
     <div class="prodShow" ng-class="{hidein: active == true}">
-        <img src="{{prods.img}}" alt="">
+        <img ng-src="{{prods.img}}" alt="">
     </div>
 
     <div class="priceZone" ng-class="{hidein: active == true}">
@@ -34,11 +34,11 @@
     </div>
     <div class="prod_specNavs" ng-class="{active: active == true}">
         <ul>
-            <li><a href="#">贈品</a></li>
-            <li><a href="#">詳細介紹</a></li>
-            <li><a href="#">付款方式</a></li>
-            <li><a href="#">配件</a></li>
-            <li><a href="#">其他</a></li>
+            <li><a href="http://www.u-mall.com.tw/Prod.aspx?sc=00402155">贈品</a></li>
+            <li><a href="http://www.u-mall.com.tw/Prod.aspx?sc=00402155">詳細介紹</a></li>
+            <li><a href="http://www.u-mall.com.tw/Prod.aspx?sc=00402155">付款方式</a></li>
+            <li><a href="http://www.u-mall.com.tw/Prod.aspx?sc=00402155">配件</a></li>
+            <li><a href="http://www.u-mall.com.tw/Prod.aspx?sc=00402155">其他</a></li>
         </ul>
     </div>
 

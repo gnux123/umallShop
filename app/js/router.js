@@ -40,6 +40,21 @@ angular.module('umallApp').config(function($stateProvider, $urlRouterProvider) {
             },
         }
     })
+    .state('prodComment', {
+        url: '/prods/comment/:pages/', 
+        views: {
+            'main': {
+                templateUrl: function($stateParams){
+                    return 'view/prodcomment_'+$stateParams.pages+'.html';
+                },
+                controller:  'prodCommentCtrl'
+            },
+            'navs': {
+                templateUrl: 'view/navs_prod.html',
+                controller: 'navsProdCtrl'
+            },
+        }
+    })
     .state('shop', {
         url: '/shopCart/:steps/', 
         views: {

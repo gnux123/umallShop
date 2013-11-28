@@ -68,8 +68,11 @@
 		@include border-box-sizing;
 		height:100%;
 		overflow:hidden;
-		padding:0 10px;
-		padding-top:20px;
+		padding:0;
+
+		& > img {
+			width:100%;
+		}
 
 
 	}

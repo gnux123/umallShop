@@ -1,5 +1,5 @@
 <div class="prodPage">
-    <div class="prodSpec">
+    <div class="prodSpec" style="display:none;">
         <ul class="prodSpec_1" ng-init="prods.colorful=0">
             <li ng-repeat="prodSpec1 in prods.prodSpec1" ng-class="{current: prods.colorful ==  $index}" ng-click = "prods.colorful = $index">
                 <a href="javascript:void(0);" ng-bind="prodSpec1"></a>
@@ -12,6 +12,27 @@
             </li>
         </ul>
     </div>
+    <br/>
+    <img src="images/prodSpecNav.jpg" width="100%" alt="">
+
+    <div class="prodShow" ng-class="{hidein: active == true}">
+        <img ng-src="{{prods.img}}" alt="">
+    </div>
+
+    <div class="priceZone" ng-class="{hidein: active == true}">
+        <div class="shareIcons">
+            <ul>
+                <li><a href="#">f</a></li>
+                <li><a href="#">LINE</a></li>
+            </ul>
+        </div>
+        <span class="org">NT{{prods.priceOrg}}</span>
+        <span class="special">NT{{prods.priceSpecial}}</span>
+    </div>
+
+    <div class="shopBtn_area">
+        <a class="steps_Button" href="#/shopCart/1/">NEXT</a>       
+    </div> 
 
 </div>
 

@@ -8,7 +8,8 @@
 		overflow:hidden;
 		padding:0 10px;
 		padding-top:20px;
-		@include susy-grid-background;		
+		@include susy-grid-background;
+		padding-bottom:80px;		
 	}
 
 	.bonusInput {
@@ -63,7 +64,7 @@
 		top:80px;
 		display: block;
 		width:120px;
-		height:80%;
+		height:350px;
 		border:1px solid $gray-lite;
 		background:#ffffff;
 		box-shadow:inset 0 0 6px rgba(0,0,0,.5);
@@ -120,7 +121,7 @@
 		width:170px;
 		height:200px;
 		bottom:50%;
-		margin-bottom:-150px;
+		margin-bottom:-100px;
 		color:$pink-text;
 		text-align: center;
 		font-family: arial;
@@ -141,5 +142,14 @@
 			top:40px;
 			margin-top:20px;
 		}
+	}
+
+	.shopGo {
+		position:absolute;
+		bottom:0;
+		@include span-columns(4 omega);
+		height:auto;
+		a img { width:100%; }
+		margin-left:-10px;
 	}
 }

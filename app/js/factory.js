@@ -1,13 +1,13 @@
 //factory
 umallApp.factory('Data', function(){
     return [{
-        nums: '901122345',
-        img: 'http://img2.u-mall.com.tw/UserFiles/Product/00470/00470304/26ad40e9-227c-44b1-acde-268123ce3c64.jpg',     
-        name: '六圓環生技特級納豆營養素六盒',
+        nums: '995072314',
+        img: 'http://img1.u-mall.com.tw/UserFiles/Product/00402/00402155/e8d44f44-4136-456d-b7f7-a9fc519da7bc.jpg',     
+        name: '摩洛哥綠色塔金鍋',
         pushText: '好吃又不會跳針!!目前預購中喔~',
-        subdes: '腰綁帶設計可展現完美腰身曲線 垂墜的線條感更是不敗的經典款 讓您呈現簡單俐落又大方',
-        priceSpecial: "3,000",
-        priceOrg: "6,000",
+        subdes: '★日本HARIO原裝進口★耐熱玻璃耐熱溫度差120℃★特殊耐熱透明玻璃上蓋，可看出烹煮變化',
+        priceSpecial: "1,900",
+        priceOrg: "2,775",
         prodSpec1: ["紅","橙","綠","黃","藍","靛","紫"],
         prodSpec2: ["S","M","L","XL","2XL","3XL"],
         piece: 1
