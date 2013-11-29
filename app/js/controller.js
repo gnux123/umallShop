@@ -107,7 +107,11 @@ var bonusCtrl = function($scope, Data ,$stateParams){
     });
 }
 
-var gameCtrl = function($scope, Data ,$stateParams){ 
+var gameCtrl = function($scope, Data ,$stateParams){
+    $scope.gameImg = "game_0";
+    $scope.change = function(){
+        $scope.gameImg = "game_1";
+    }
 }
 
 umallApp.controller('shopCtrl',shopCtrl);
