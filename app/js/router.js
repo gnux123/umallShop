@@ -1,5 +1,7 @@
+'use strict';
 //ui-router
-angular.module('umallApp').config(function($stateProvider, $urlRouterProvider) {
+angular.module('umallApp')
+.config(function($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise("/");  
     $stateProvider
     .state('index', {

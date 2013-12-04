@@ -1,3 +1,4 @@
+'use strict';
 //prodsController
 var navsProdCtrl = function($scope, Data, $stateParams){
     $scope.prods = Data[0];
@@ -143,6 +144,9 @@ var gameCtrl = function($scope, Data ,$stateParams){
             //     delay: 0
             // });
             //$(".main-animate").find(".blackCircle").addClass("blackCircle-run");
+            setTimeout(function(){
+                $(".popup").css("display","block");
+            },7000);
         });
 
         function sizefix(){

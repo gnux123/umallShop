@@ -16,7 +16,8 @@ module.exports = function (grunt) {
     // configurable paths
     var yeomanConfig = {
         app: 'app',
-        dist: 'dist'
+        dist: 'dist',
+        hostname: 'localhost'
     };
 
     grunt.initConfig({
@@ -175,37 +176,18 @@ module.exports = function (grunt) {
         /*concat: {
             dist: {}
         },*/
-        requirejs: {
-            dist: {
-                // Options: https://github.com/jrburke/r.js/blob/master/build/example.build.js
-                options: {
-                    // `name` and `out` is set by grunt-usemin
-                    baseUrl: yeomanConfig.app + '/scripts',
-                    optimize: 'none',
-                    // TODO: Figure out how to make sourcemaps work with grunt-usemin
-                    // https://github.com/yeoman/grunt-usemin/issues/30
-                    //generateSourceMaps: true,
-                    // required to support SourceMaps
-                    // http://requirejs.org/docs/errors.html#sourcemapcomments
-                    preserveLicenseComments: false,
-                    useStrict: true,
-                    wrap: true
-                    //uglify2: {} // https://github.com/mishoo/UglifyJS2
-                }
-            }
-        },
-        rev: {
-            dist: {
-                files: {
-                    src: [
-                        '<%= yeoman.dist %>/scripts/{,*/}*.js',
-                        '<%= yeoman.dist %>/styles/{,*/}*.css',
-                        '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp}',
-                        '<%= yeoman.dist %>/styles/fonts/{,*/}*.*'
-                    ]
-                }
-            }
-        },
+        // rev: {
+        //     dist: {
+        //         files: {
+        //             src: [
+        //                 '<%= yeoman.dist %>/scripts/{,*/}*.js',
+        //                 '<%= yeoman.dist %>/styles/{,*/}*.css',
+        //                 '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp}',
+        //                 '<%= yeoman.dist %>/styles/fonts/{,*/}*.*'
+        //             ]
+        //         }
+        //     }
+        // },
         useminPrepare: {
             options: {
                 dest: '<%= yeoman.dist %>'
@@ -216,8 +198,8 @@ module.exports = function (grunt) {
             options: {
                 dirs: ['<%= yeoman.dist %>']
             },
-            html: ['<%= yeoman.dist %>/{,*/}*.html'],
-            css: ['<%= yeoman.dist %>/styles/{,*/}*.css']
+            html: ['<%= yeoman.dist %>/{,*/}*.html']
+            //css: ['<%= yeoman.dist %>/styles/{,*/}*.css']
         },
         imagemin: {
             dist: {
@@ -227,6 +209,17 @@ module.exports = function (grunt) {
                     src: '{,*/}*.{png,jpg,jpeg}',
                     dest: '<%= yeoman.dist %>/images'
                 }]
+            }
+        },
+        ngmin: {
+            dist: {
+                files: [{
+                    expand: true,
+                    cwd: '.tmp/concat/js',
+                    src: '*.js',
+                    dest: '.tmp/concat/js'
+                }],
+                uglify:true
             }
         },
         svgmin: {
@@ -248,12 +241,18 @@ module.exports = function (grunt) {
             //
             // dist: {
             //     files: {
-            //         '<%= yeoman.dist %>/styles/main.css': [
-            //             '.tmp/styles/{,*/}*.css',
-            //             '<%= yeoman.app %>/styles/{,*/}*.css'
-            //         ]
+            //         '<%= yeoman.app %>/css/*.css': ['<%= yeoman.dist %>/css/*.css']
             //     }
             // }
+
+            dist: {
+                files: {
+                    '<%= yeoman.dist %>/css/screen.css': [
+                        '.tmp/styles/{,*/}*.css',
+                        '<%= yeoman.app %>/css/{,*/}*.css'
+                    ]
+                }
+            }
         },
         htmlmin: {
             dist: {
@@ -289,28 +288,29 @@ module.exports = function (grunt) {
                         '.htaccess',
                         'images/{,*/}*.{webp,gif}',
                         'styles/fonts/{,*/}*.*',
-                        'bower_components/sass-bootstrap/fonts/*.*'
+                        'view/*.*',
+                        'fonts/*.*'
                     ]
                 }]
             },
             styles: {
                 expand: true,
                 dot: true,
-                cwd: '<%= yeoman.app %>/styles',
+                cwd: '<%= yeoman.app %>/css',
                 dest: '.tmp/styles/',
                 src: '{,*/}*.css'
             }
         },
-        modernizr: {
-            devFile: '<%= yeoman.app %>/bower_components/modernizr/modernizr.js',
-            outputFile: '<%= yeoman.dist %>/bower_components/modernizr/modernizr.js',
-            files: [
-                '<%= yeoman.dist %>/scripts/{,*/}*.js',
-                '<%= yeoman.dist %>/css/{,*/}*.css',
-                '!<%= yeoman.dist %>/scripts/vendor/*'
-            ],
-            uglify: true
-        },
+        // modernizr: {
+        //     devFile: '<%= yeoman.app %>/bower_components/modernizr/modernizr.js',
+        //     outputFile: '<%= yeoman.dist %>/js/modernizr.js',
+        //     files: [
+        //         '<%= yeoman.dist %>/scripts/{,*/}*.js',
+        //         '<%= yeoman.dist %>/css/{,*/}*.css',
+        //         '!<%= yeoman.dist %>/scripts/vendor/*'
+        //     ],
+        //     uglify: true
+        // },
         concurrent: {
             server: [
                 'compass',
@@ -335,7 +335,7 @@ module.exports = function (grunt) {
                 exclude: ['modernizr']
             },
             all: {
-                rjsConfig: '<%= yeoman.app %>/scripts/main.js'
+                //rjsConfig: '<%= yeoman.app %>/js/main.js'
             }
         }
     });
@@ -367,13 +367,12 @@ module.exports = function (grunt) {
         'useminPrepare',
         'concurrent:dist',
         'autoprefixer',
-        'requirejs',
+        'ngmin',
         'concat',
         'cssmin',
-        'uglify',
-        'modernizr',
+        //'uglify',
+        //'modernizr',
         'copy:dist',
-        'rev',
         'usemin'
     ]);
 

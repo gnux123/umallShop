@@ -1,3 +1,4 @@
+'use strict';
 //factory
 umallApp.factory('Data', function(){
     return [{

@@ -74,7 +74,18 @@
 			width:100%;
 		}
 
+	}
 
+	.popup {
+		display: none;
+		position:absolute;
+		width:80%;
+		left:50%;
+		margin-left:-40%;
+		top:50%;
+		margin-top:25%;
+		z-index:3;
+		overflow: hidden;
 	}
 
 	.main-animate {
