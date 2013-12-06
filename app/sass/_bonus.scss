@@ -11,6 +11,47 @@
 		@include susy-grid-background;
 		padding-bottom:80px;		
 	}
+	
+	.bonusTitle {
+		position:relative;
+		height:auto;
+	}
+	
+	.bonusTitle ul { @include pie-clearfix; }
+	.bonusTitle li {
+		@include span-columns(4 omega);
+		@include border-box-sizing;
+		display: block;
+		height:auto;
+		margin-bottom:20px;
+		color:$pink-text;
+		text-align: center;
+	}
+
+	.bonusTitle li h1 {
+		font-size:2rem;
+		font-weight: bold;
+		padding:10px 0;
+	}
+
+	.bonusTitle .useTime {
+		margin-top:5px;
+	}
+
+	.bonusTitle .couponBtn {
+		position:absolute;
+		top:50%;
+		margin-top:-14px;
+		color:$pink-text;
+	}
+
+	.bonusTitle .couponBtn.left {
+		left:10px;
+	}
+
+	.bonusTitle .couponBtn.right{
+		right:10px;
+	}
 
 	.bonusInput {
 		@include span-columns(4 omega);
@@ -35,7 +76,7 @@
 			border:0;
 			font-size:0.92rem;
 			color:#888888;
-			padding-left:30px;
+			padding-left:10px;
 			font-weight: bold;
 		}
 		
@@ -55,101 +96,5 @@
 			color:#888888;
 			font-weight:bold;
 		}
-	}
-
-
-	.bonusList {
-		position: absolute;
-		right:10px;
-		top:80px;
-		display: block;
-		width:120px;
-		height:350px;
-		border:1px solid $gray-lite;
-		background:#ffffff;
-		box-shadow:inset 0 0 6px rgba(0,0,0,.5);
-		overflow: hidden;
-		ul {
-			position:relative;
-			top:0;
-			left:0;
-			margin:0;
-			padding:0;
-
-			-webkit-transition:all 1s ease-in-out;
-			-webkit-transform:translate3d(0,0,0);
-		}
-		ul > li {
-			position:relative;
-			display:block;
-			width:100%;
-			height:60px;
-			line-height: 60px;
-			text-align: center;
-			font-family: arial;
-			font-size:1.3rem;
-			color:$gray-lite;
-			font-weight:bold;
-
-			&.current {
-				font-size:2rem;
-				color:$pink-text;
-
-				i {
-					position:absolute;
-					top:-13px;
-					right:-15px;
-					font-size: 1.6rem;
-					&:after {
-						position:relative;
-						top:-6px;
-						left:-22.5px;
-						z-index:1;
-						content: "new";
-						color:#ffffff;
-						font-size:0.70rem;
-					}
-				}
-			}
-		}
-	}
-
-	.bonusContent {
-		position: absolute;
-		left:10px;
-		display: block;
-		width:170px;
-		height:200px;
-		bottom:50%;
-		margin-bottom:-100px;
-		color:$pink-text;
-		text-align: center;
-		font-family: arial;
-
-		h2 {
-			position:relative;
-			font-size:1.8rem;
-			letter-spacing: 1px;
-		}
-
-		span.bonusUse {
-			font-size:0.92rem;
-			line-height:30px;
-		}
-
-		span.useDate {
-			position:relative;
-			top:40px;
-			margin-top:20px;
-		}
-	}
-
-	.shopGo {
-		position:absolute;
-		bottom:0;
-		@include span-columns(4 omega);
-		height:auto;
-		a img { width:100%; }
-		margin-left:-10px;
 	}
 }

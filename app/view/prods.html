@@ -1,4 +1,4 @@
-<div class="prodPage">
+<div id="prodView" class="prodPage">
     <div class="prodDesc">
         <div class="push_text" ng-bind="prods.pushText"></div>
         <div class="subDesc" ng-bind="prods.subdes"></div>
@@ -13,26 +13,48 @@
                 <i class="fa fa-shopping-cart fa-2x"></i>
                 <span>立即購買</span>
             </a></li>
+            <li><a class="specBtn" ng-click="prodSpecNavs()" ng-class="{fixZone: active == true}">
+                <i class="fa fa-plus fa-2x"></i>
+                <span>更多資訊</span>
+            </a></li>            
         </ul>
     </div>
-    <div class="more_btn">
-        <a href ng-click="prodSpecNavs()" ng-bind="btnText"></a>
+    <div class="prodShow slide-animation">
+        <img ng-repeat="images in prods.img" ng-swipe-right="nextSlide()" ng-swipe-left="prevSlide()" ng-hide="!isCurrentSlideIndex($index)" ng-src="{{images}}" alt="">
+        <nav class="nav">
+            <a ng-repeat="images in prods.img" ng-class="{'current':isCurrentSlideIndex($index)}" ng-click="setCurrentSlideIndex($index);"></a>
+        </nav> 
     </div>
-    <div class="prodShow" ng-class="{hidein: active == true}">
-        <img ng-src="{{prods.img}}" alt="">
+    <div class="prodsDetail">
+        <ul>
+            <li>
+                <h3 id="prodGifts">贈品</h3>
+                <p ng-bind="prods.gifts"></p>
+            </li>
+            <li>
+                <h3>配件</h3>
+                <p ng-bind="prods.parts"></p>
+            </li>
+            <li>
+                <h3>詳細規格</h3>
+                <p ng-bind="prods.specDetail"></p>   
+            </li>
+            <li></li>
+        </ul>
+
     </div>
 
-    <div class="priceZone" ng-class="{hidein: active == true}">
+    <div class="priceZone">
         <div class="shareIcons">
             <ul>
                 <li><a href="#">f</a></li>
                 <li><a href="#">LINE</a></li>
             </ul>
         </div>
-        <span class="org">NT{{prods.priceOrg}}</span>
-        <span class="special">NT{{prods.priceSpecial}}</span>
+        <span class="org" ng-bind="'NT'+prods.priceOrg"></span>
+        <span class="special"ng-bind="'NT'+prods.priceSpecial"></span>
     </div>
-    <div class="prod_specNavs" ng-class="{active: active == true}">
+    <div class="prod_specNavs" >
         <ul>
             <li><a href="http://www.u-mall.com.tw/Prod.aspx?sc=00402155">贈品</a></li>
             <li><a href="http://www.u-mall.com.tw/Prod.aspx?sc=00402155">詳細介紹</a></li>

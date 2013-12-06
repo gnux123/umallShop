@@ -9,7 +9,9 @@
     "zepto": "~1.0",
     "angular": "~1.2.1",
     "angular-ui-router": "~0.2.0",
-    "angular-sanitize": "~1.2.0"
+    "angular-sanitize": "~1.2.0",
+    "angular-touch": "~1.2.0",
+    "angular-animate": "~1.2.0"
   },
   "devDependencies": {
   }

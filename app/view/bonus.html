@@ -1,5 +1,27 @@
 <div class="push_bg bonusPage">
+	<div class="bonusTitle">
+		<ul class="couponShow slide-animation">
+			<li ng-repeat="coupon in user.couponLists" ng-swipe-right="nextCoupon()" ng-swipe-left="prevCoupon()" ng-hide="!isCurrentCouponIndex($index)">
+				<h2 ng-bind="coupon.Event"></h2>
+				<h1 ng-bind="coupon.value"></h1>
+				<p ng-bind="coupon.eventLimte"></p>
+				<div class="useTime" ng-bind="'使用日期：'+coupon.dateStart+'~'+coupon.dateEnd">
+				</div>
+			</li>
+		</ul>
+		<a class="couponBtn left" ng-click="prevCoupon()">
+			<i class="fa fa-chevron-left fa-lg"></i>
+		</a>
+		<a class="couponBtn right" ng-click="nextCoupon()">
+			<i class="fa fa-chevron-right fa-lg"></i>
+		</a>
+	</div>
 	<div class="bonusInput">
+		<input type="text" value="券號輸入" />
+		<input type="button" value="兌換">
+	</div>
+	<a href="#/prods"><img src="images/bonusShopBanner.jpg" width="100%"></a>
+<!-- 	<div class="bonusInput">
 		<i class="fa fa-search fa-lg"></i>
 		<input type="text" value="券號輸入" />
 		<input type="button" value="兌換">
@@ -35,5 +57,5 @@
 		<a ng-href="#/prods">
 			<img src="images/bonusShopBanner.jpg">
 		</a>
-	</div>
+	</div> -->
 </div>
