@@ -44,7 +44,7 @@ var gameCtrl = function($scope, Data ,$stateParams){
         function sizefix(){
             var _h = $(window).height(),
                 _navH = $(".navs").height();
-            $(".main, .gameEventr").height(_h - _navH - 20);
+            $(".gameEventr").height(_h - _navH - 20);
         }
     })
 }

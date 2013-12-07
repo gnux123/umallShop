@@ -13,10 +13,19 @@
                 <i class="fa fa-shopping-cart fa-2x"></i>
                 <span>立即購買</span>
             </a></li>
-            <li><a class="specBtn" ng-click="prodSpecNavs()" ng-class="{fixZone: active == true}" du-scrollspy>
-                <i class="fa fa-plus fa-2x"></i>
-                <span ng-class="{hidein: active == true}">更多資訊</span>
-            </a></li>            
+            <li>
+                <div class="specBtn" ng-class="{fixZone: active == true}" du-scrollspy>
+                    <i class="fa fa-2x" ng-class="moreIcon" ng-click="prodSpecNavs()"></i>
+                    <span ng-class="{hidein: active == true}">更多資訊</span>
+                    <ul id="menu">
+                      <li class="menu-item"><a href="#menu"><i class="fa fa-shopping-cart fa-lg"></i></a></li>
+                      <li class="menu-item"><a href="#menu"><i class="fa fa-shopping-cart fa-lg"></i></a></li>
+                      <li class="menu-item"><a href="#menu"><i class="fa fa-shopping-cart fa-lg"></i></a></li>
+                      <li class="menu-item"><a href="#menu"><i class="fa fa-shopping-cart fa-lg"></i></span></a></li>
+                      <li class="menu-item"><a href="#menu"><i class="fa fa-shopping-cart fa-lg"></i></span></a></li>
+                    </ul>
+                </div>
+            </li>            
         </ul>
     </div>
     <div class="prodShow slide-animation">
@@ -25,19 +34,20 @@
             <a ng-repeat="images in prods.img" ng-class="{'current':isCurrentSlideIndex($index)}" ng-click="setCurrentSlideIndex($index);"></a>
         </nav> 
     </div>
-    <div class="prodsDetail">
+
+    <div class="prodDetails">
         <ul>
             <li>
                 <h3 id="prodGifts">贈品</h3>
-                <p ng-bind="prods.gifts"></p>
+                <div ng-bind="prods.gifts"></div>
             </li>
             <li>
                 <h3>配件</h3>
-                <p ng-bind="prods.parts"></p>
+                <div ng-bind="prods.parts"></div>
             </li>
             <li>
                 <h3>詳細規格</h3>
-                <p ng-bind="prods.specDetail"></p>   
+                <div ng-bind="prods.specDetail"></div>   
             </li>
             <li></li>
         </ul>
