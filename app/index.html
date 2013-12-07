@@ -18,9 +18,9 @@
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div id="pageView" class="page">
+        <div class="page">
             <div class="navs" ui-view='navs'></div>
-            <div class="main" ng-view ui-view='main'></div>
+            <div class="main" ui-view='main'></div>
         </div>
         <div class="sideMenu" ui-view='sideMenu'></div>
 
@@ -33,6 +33,7 @@
         <script src="bower_components/angular-route/angular-route.js"></script>
         <script src="bower_components/angular-touch/angular-touch.js"></script>
         <script src="bower_components/angular-animate/angular-animate.js"></script>
+        <script src="bower_components/angular-scroll/angular-scroll.js"></script>
         <!-- Core -->
         <script src="js/config.js"></script>
         <script src="js/factory.js" language="javascript" charset="utf-8"></script>

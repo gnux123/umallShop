@@ -13,9 +13,9 @@
                 <i class="fa fa-shopping-cart fa-2x"></i>
                 <span>立即購買</span>
             </a></li>
-            <li><a class="specBtn" ng-click="prodSpecNavs()" ng-class="{fixZone: active == true}">
+            <li><a class="specBtn" ng-click="prodSpecNavs()" ng-class="{fixZone: active == true}" du-scrollspy>
                 <i class="fa fa-plus fa-2x"></i>
-                <span>更多資訊</span>
+                <span ng-class="{hidein: active == true}">更多資訊</span>
             </a></li>            
         </ul>
     </div>

@@ -22,7 +22,7 @@ var bonusCtrl = function($scope, Data ,$stateParams){
         function sizefix(){
             var _h = $(window).height(),
                 _navH = $(".navs").height();
-            $(".main").height(_h - _navH - 20);
+            $(".bonusPage").height(_h - _navH - 20);
         }
 
         function bonusPos(){

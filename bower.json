@@ -7,11 +7,12 @@
     "modernizr": "~2.6.2",
     "jquery": "~1.7.2",
     "zepto": "~1.0",
-    "angular": "~1.2.1",
-    "angular-ui-router": "~0.2.0",
-    "angular-sanitize": "~1.2.0",
-    "angular-touch": "~1.2.0",
-    "angular-animate": "~1.2.0"
+    "angular": "1.2.1",
+    "angular-ui-router": "0.2.0",
+    "angular-sanitize": "1.2.0",
+    "angular-touch": "1.2.0",
+    "angular-animate": "1.2.0",
+    "angular-scroll": "0.2.2"
   },
   "devDependencies": {
   }
