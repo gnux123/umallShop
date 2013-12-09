@@ -86,10 +86,12 @@ angular.module('umallApp')
         }
     })
     .state('game', {
-        url: '/game', 
+        url: '/game/:pages/', 
         views: {
             'main': {
-                templateUrl: 'view/game.html',
+                templateUrl: function($stateParams){
+                    return 'view/game_'+$stateParams.pages+'.html';
+                },
                 controller:  'gameCtrl'
             },
             'navs': {

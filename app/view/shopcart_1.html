@@ -1,5 +1,69 @@
 <div class="shopCart">
-	<img src="images/shopCart_01.jpg" width="100%">
+	<ul>
+		<li>
+			<div class="shopCart_title user">
+				<i class="fa fa-user fa-2x"></i>
+				<span>
+					Hello. Guest.<br/>
+					收件人
+				</span>
+			</div>
+			<div class="shopCart_content">
+				<label>
+					<i class="fa fa-user fa-2x"></i>
+				</label>
+				<input type="text">
+				<fieldset class="group">
+				<label>
+					<i class="fa fa-map-marker fa-2x"></i>
+				</label>
+				<div class="selectGroup">
+					<select><option>台北市</option></select>
+					<select><option>南港區</option></select>					
+				</div>
+				<input type="text">
+				</fieldset>
+				<label>
+					<i class="fa fa-mobile fa-2x"></i>
+				</label>
+				<input type="text">
+			</div>
+		</li>
+		<li>
+			<div class="shopCart_title">
+				<i class="fa fa-file fa-2x"></i>
+				<span>訂單確認</span>
+			</div>
+			<div class="shopCart_content orderInfo">
+				<ul>
+					<li>
+						<img ng-src="{{prods.img[0]}}" width="100%">
+					</li>
+					<li>
+						<div class="specWrap">玫瑰紫</div>
+					</li>
+					<li>
+						<div class="specWrap size">M</div>
+					</li>
+					<li ng-bind="{{prods.piece}}"></li>
+				</ul>
+			</div>
+			<div class="shopCart_content priceDetail">
+				<div class="totalPrice" ng-bind="'總額 NT '+prods.priceSpecial+'元'"></div>
+				<div class="orginCoupon">
+					森活價：$ <span ng-bind="prods.priceOrg"></span>
+					折扣券：<span ng-bind="'$ -'+'0'"></span>
+				</div>
+			</div>
+		</li>
+		<li style="display:none;">
+			<div class="shopCart_title">
+				<i class="fa fa-info fa-2x"></i>
+				<span>會員獨享</span>
+			</div>			
+		</li>
+	</ul>
+	<img src="images/shopCart_02.jpg" width="100%">
 	<a class="steps_Button" style="margin-bottom:20px;" href="#/shopCart/2/">NEXT</a>   	
 </div>
 

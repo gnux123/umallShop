@@ -6,6 +6,34 @@ var gameCtrl = function($scope, Data ,$stateParams){
         $scope.gameImg = "game_1";
     }
 
+    window.addEventListener('shake', shakeEventDidOccur, false);
+    
+    //define a custom method to fire when shake occurs.
+    function shakeEventDidOccur () {
+    
+        // //put your own code here etc.
+        // if (confirm("Undo?")) {
+
+        // }
+        Zepto(function($){
+            $(".main-animate").find(".wrap, .lightBall").removeClass("linear");
+            $(".main-animate").find(".lightBall").addClass("lightBall-run");
+            // $(".main-animate").find(".wrap").playKeyframe({
+            //     name: 'board-main-run',
+            //     timingFunction:'ease',
+            //     repeat:'1',
+            //     duration:'8000',
+            //     direction:'normal',
+            //     fillMode: 'forwards',
+            //     delay: 0
+            // });
+            //$(".main-animate").find(".blackCircle").addClass("blackCircle-run");
+            setTimeout(function(){
+                $(".popup").css("display","block");
+            },7000);        
+        });
+    }
+
    Zepto(function($){
 
         sizefix();

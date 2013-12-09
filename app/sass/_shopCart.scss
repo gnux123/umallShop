@@ -1,4 +1,5 @@
 @include at-breakpoint($mobile) {
+	$gutter-width     : 5px; //欄間距
 	.shopCart {
 		position:relative;
 		@include container;
@@ -8,107 +9,173 @@
 		padding:0 10px;
 		padding-top:20px;
 	}
-
-	.totalPrice {
+	
+	//shopCart Title
+	.shopCart_title {
 		@include span-columns(4 omega);
 		@include border-box-sizing;
-		height:auto;
-		//@include susy-grid-background;
-		font-family: arial;		
 		text-align: center;
-		
-		h2 {
-			display: inline-block;
-			font-size:1.6rem;
-			color:$pink-text;
-			font-weight:bold;
+		font-family: arial;
+		& > i {
+			@include border-box-sizing;
+			margin:5px auto;
+			display: block;
+			width:60px;
+			height:60px;
+			line-height: 60px;
+			border-radius:50%;
+			background:$pink-lite;
+			color:#ffffff;
+			text-align: center;
+			font-size:2rem;
+			overflow: hidden;
 		}
 
-		.priceInfo {
-			margin-top:10px;
-			& > span { color:$pink-text; }
+		& > span {
+			color:$pink-text;
 			font-size:0.92rem;
+			line-height:20px;
+			font-weight: bolder;
+		}
+
+		&.user > i {
+			line-height: 75px;
+			font-size:3.5rem;
 		}
 	}
 
-	.shopCart_steps {
+	.shopCart_content {
 		@include span-columns(4 omega);
 		@include border-box-sizing;
+		height:auto;
+	}
 
-		height:80px;
-		margin:20px 0;
+	.shopCart_content > label, .shopCart_content .group > label {
+		@include span-columns(1);
+		@include border-box-sizing;
+		height:35px;
+		line-height:35px;
+		overflow: hidden;
+		background:$pink-lite;		
+		color:#ffffff;
 		text-align: center;
+	}
 
-		ul {
-			position:relative;
-			display: inline-block;
-			margin:0 auto;
-			@include pie-clearfix;
+	.shopCart_content input[type='text'] {
+		@include span-columns(3 omega);
+		@include border-box-sizing;
+		height:35px;
+		line-height:35px;
+		background:#ffffff;
+		border:3px solid $pink-lite;	
+	}
+
+	.shopCart_content .group {
+		& > .selectGroup{
+			@include span-columns(3 omega);
+			@include border-box-sizing;		
+		
+			& > select {
+				@include isolate-grid(2);
+				@include border-box-sizing;
+				margin-top:5px;
+				height:35px;
+				line-height:35px;
+				background:#ffffff;
+				border:3px solid $pink-lite;
+			}
 		}
 
-		ul > li {
-			position:relative;
-			float:left;
-			display:block;
-			width:50px;
-			height:50px;
-			line-height: 55px;
-			border-radius:1000em;
-			border:4px solid $gray-lite;
+		& > input[type='text']{
+			@include span-columns(4 omega);
+			@include border-box-sizing;
+			margin:5px 0 5px 5px;
+			height:35px;
+			line-height:35px;
 			background:#ffffff;
-			color:$gray-lite;
+			border:3px solid $pink-lite;				
+		}
+	}
+
+	.shopCart_content label, .shopCart_content > input[type='text'] {
+		margin:5px 0;
+	}
+
+	.shopCart_content.orderInfo {
+		margin:5px 0;
+		border:3px solid $pink-lite;
+		padding:5px;
+
+		& > ul li {
+			position:relative;
+			@include isolate-grid(1);
+			@include border-box-sizing;
+			height:65px;
+			line-height: 65px;
+			font-family: arial;
 			text-align: center;
-			margin-left:26px;
-
-			span {
-				position:absolute;
-				display: block;
-				width:80px;
-				left:-17px;
-				bottom:-50px;
-				z-index:1;
-				font-size:0.92rem;
-			}
-
+			color:$pink-text;
 			&:before {
-				content:"";
+				position: absolute;
+				top:0;
+				left:-1px;
+				content:"x";
+				height:65px;
+				line-height: 65px;
+				font-size:1rem;
+			}
+			&:first-child:before { display:none;}
+			&:last-child {
+				font-weight: lighter;
+				font-size:2.5rem;
+			}
+			.specWrap {
 				position:absolute;
-				display: block;
-				width:30px;
-				height:4px;
-				background:$gray-lite;
-				left:-30px;
-				top:20px;
+				top:5px;
+				right:0;
+				@include border-box-sizing;
+				width:55px;
+				height:55px;
+				line-height: 52px;
+				text-align: center;
+				border-radius:50%;
+				border:3px solid $pink-text;
+				font-size:0.92rem;
+				font-weight: bold;
+				overflow: hidden;
 
-			}
-
-			&:first-child {
-				margin-left:0;
-				&:before {
-					display: none;
+				&.size {
+					font-size:1.3rem;
 				}
 			}
 		}
+	}
 
-		&.step1 ul > li {
-			&:first-child {
-				border:4px solid $pink-text;
-				color:$pink-text;
-				background:$gray-lite;
-			}
+	.shopCart_content.priceDetail {
+		margin:20px 0;
+		font-family: arial;	
+		.totalPrice {
+			@include span-columns(4 omega);
+			@include border-box-sizing;
+			height:auto;	
+			text-align: center;
+			font-size:1.5rem;
+			color:$pink-text;
 		}
 
-		&.step2 ul > li {
-			&:first-child, &:first-child+li {
-				border:4px solid $pink-text;
-				color:$pink-text;
-				background:$gray-lite;
+		.orginCoupon { 
+			margin:5px 0;
+			@include span-columns(4 omega);
+			@include border-box-sizing;
+			color:$black-g;
+			height:20px;
+			line-height: 20px;
+			font-weight: lighter;
+			text-align: center;
+			font-size:0.92rem;
+		}
 
-				&:before {
-					background:$pink-text;
-				}
-			}			
-		}	
+		.orginCoupon span:first-child+span { color:$pink-text; }
 	}
 
 	.vipZone {

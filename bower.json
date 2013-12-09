@@ -12,7 +12,8 @@
     "angular-sanitize": "1.2.0",
     "angular-touch": "1.2.0",
     "angular-animate": "1.2.0",
-    "angular-scroll": "0.2.2"
+    "angular-scroll": "0.2.2",
+    "shake.js": "1.1.0"
   },
   "devDependencies": {
   }
