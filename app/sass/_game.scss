@@ -76,17 +76,23 @@
 
 	}
 
-	.popup {
+	.popup, .popup_2 {
 		display: none;
 		position:absolute;
 		width:80%;
 		left:50%;
 		margin-left:-40%;
 		top:50%;
-		margin-top:25%;
+		margin-top:-25%;
 		z-index:3;
 		overflow: hidden;
 	}
+
+	.popup_2 {
+		margin-top:-50%;
+	}
+
+
 
 	.main-animate {
 		margin:0 auto;

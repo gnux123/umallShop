@@ -5609,19 +5609,24 @@ a.steps_Button.finish:before {
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_game\.scss}line{font-family:\0000379}}
-  .popup {
+  .popup, .popup_2 {
     display: none;
     position: absolute;
     width: 80%;
     left: 50%;
     margin-left: -40%;
     top: 50%;
-    margin-top: 25%;
+    margin-top: -25%;
     z-index: 3;
     overflow: hidden;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_game\.scss}line{font-family:\0000391}}
+  .popup_2 {
+    margin-top: -50%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_game\.scss}line{font-family:\0000397}}
   .main-animate {
     margin: 0 auto;
     top: 50%;
@@ -5631,14 +5636,14 @@ a.steps_Button.finish:before {
     width: 300px;
     height: 300px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_game\.scss}line{font-family:\00003100}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_game\.scss}line{font-family:\00003106}}
   .main-animate > div {
     position: absolute;
     border-radius: 1000em;
     display: block;
     box-sizing: border-box;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_game\.scss}line{font-family:\00003108}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_game\.scss}line{font-family:\00003114}}
   .main-animate .wrap {
     z-index: 0;
     top: 0;
@@ -5652,7 +5657,7 @@ a.steps_Button.finish:before {
     -webkit-animation-name: inball;
     -webkit-animation-duration: 15s;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_game\.scss}line{font-family:\00003122}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_game\.scss}line{font-family:\00003128}}
   .main-animate .lightBall {
     z-index: 1;
     top: 10px;
@@ -5667,7 +5672,7 @@ a.steps_Button.finish:before {
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_game\.scss}line{font-family:\00003139}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_game\.scss}line{font-family:\00003145}}
   .main-animate .board_main {
     z-index: 2;
     top: 40px;
@@ -5682,7 +5687,7 @@ a.steps_Button.finish:before {
     /*				-webkit-animation-name:inball;
     	    	-webkit-animation-duration:15s;	*/
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_game\.scss}line{font-family:\00003155}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_game\.scss}line{font-family:\00003161}}
   .main-animate a.blackCircle {
     position: absolute;
     z-index: 3;
@@ -5698,19 +5703,19 @@ a.steps_Button.finish:before {
     /*				-webkit-animation-name:outball;
     	    	-webkit-animation-duration:15s;	*/
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_game\.scss}line{font-family:\00003172}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_game\.scss}line{font-family:\00003178}}
   .main-animate .linear {
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_game\.scss}line{font-family:\00003177}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_game\.scss}line{font-family:\00003183}}
   .main-animate .lightBall-run {
     -webkit-animation-name: goal;
     -webkit-animation-timing-function: ease;
     -webkit-animation-duration: 10s;
     -webkit-animation-iteration-count: 1;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_game\.scss}line{font-family:\00003184}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_game\.scss}line{font-family:\00003190}}
   .main-animate .blackCircle-run {
     -webkit-animation-name: goal-r;
     -webkit-animation-timing-function: ease;
