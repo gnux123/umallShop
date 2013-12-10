@@ -20,19 +20,20 @@ umallApp.factory('Data', function(){
 
     },
     {
-        name: "蘇靖文",
-        sex: "男",
-        mobile: "0987-797768",
-        address: ["台北市","南港區","昆陽街95-1號6樓"],
         addressList: [
-            "台北市南港區昆陽街95-1號6樓",
-            "台北市大安區安南路一段33-7號4樓"
+            {name:"蘇小文",sex:"男",mobile:"0987-797768",zip:"11599",city:"台北市",area:"南港區",address:"昆陽街95-1號6樓"},
+            {name:"王小三",sex:"男",mobile:"0987-797768",zip:"11599",city:"台北市",area:"南港區",address:"昆陽街95-1號6樓"},
+            {name:"李姍姍",sex:"女",mobile:"0987-797768",zip:"11599",city:"台北市",area:"南港區",address:"昆陽街95-1號6樓"}
         ],
         couponLists: [
-            {value:"100元", dateStart:"102/11/30", dateEnd:"102/12/03", Event:"會員專屬活動禮", eventLimte:"僅限森活價$ 600 (含)以上"},
-            {value:"200元", dateStart:"102/11/30", dateEnd:"102/12/03", Event:"SOGO專屬優惠券", eventLimte:"僅限森活價$ 700 (含)以上"},
-            {value:"8折", dateStart:"102/12/30", dateEnd:"103/12/30", Event:"會員專屬活動禮", eventLimte:"僅限森活價$ 800 (含)以上"},
-            {value:"9折", dateStart:"102/11/30", dateEnd:"102/12/03", Event:"會員專屬活動禮-2", eventLimte:"僅限森活價$ 1000 (含)以上"}
+            {value:"100元", dateStart:"102/11/30", dateEnd:"102/12/03", Event:"會員專屬活動禮", eventLimte:"僅限森活價$ 600 (含)以上", ticketNum: "560001124"},
+            {value:"200元", dateStart:"102/11/30", dateEnd:"102/12/03", Event:"SOGO專屬優惠券", eventLimte:"僅限森活價$ 700 (含)以上", ticketNum: "560001123"},
+            {value:"8折", dateStart:"102/12/30", dateEnd:"103/12/30", Event:"會員專屬活動禮", eventLimte:"僅限森活價$ 800 (含)以上", ticketNum: "560001122"},
+            {value:"9折", dateStart:"102/11/30", dateEnd:"102/12/03", Event:"會員專屬活動禮-2", eventLimte:"僅限森活價$ 1000 (含)以上", ticketNum: "560001121"}
+        ],
+        priceLists: [
+            {bonusPrice: "6,000", startDate:"102/11/30", endDate:"102/12/11"},
+            {discountPrice: "300", startDate:"102/10/30", endDate:"102/12/01"}
         ]
     }];
 });

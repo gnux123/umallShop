@@ -23,7 +23,7 @@
         <![endif]-->
         <div class="page">
             <div class="navs" ui-view='navs'></div>
-            <div class="main" ui-view='main'></div>
+            <div class="main" ui-view='main' ng-animate="'wave'"></div>
         </div>
         <div class="sideMenu" ui-view='sideMenu'></div>
 
@@ -37,6 +37,13 @@
         <script src="bower_components/angular-touch/angular-touch.min.js"></script>
         <script src="bower_components/angular-animate/angular-animate.min.js"></script>
         <script src="bower_components/angular-scroll/angular-scroll.min.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js js/plugin.js -->
+        <!-- Plugins --> 
+        <script src="bower_components/zepto/zepto.min.js"></script>
+        <script src="js/zepto.keyframes.min.js"></script>
+        <script src="bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
         
         <!-- build:js js/main.js -->
@@ -52,13 +59,6 @@
         <script src="js/control/prodSpecCtrl.js"></script>
         <script src="js/control/shopCtrl.js"></script>
         <script src="js/controller.js"></script>
-        <!-- endbuild -->
-        
-        <!-- build:js js/plugin.js -->
-        <!-- Plugins --> 
-        <script src="bower_components/zepto/zepto.min.js"></script>
-        <script src="js/zepto.keyframes.min.js"></script>
-        <script src="bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

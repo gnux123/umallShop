@@ -12,7 +12,7 @@
 				<label>
 					<i class="fa fa-user fa-2x"></i>
 				</label>
-				<input type="text">
+				<input type="text" value="{{user[0].name}}">
 				<fieldset class="group">
 				<label>
 					<i class="fa fa-map-marker fa-2x"></i>
@@ -21,12 +21,12 @@
 					<select><option>台北市</option></select>
 					<select><option>南港區</option></select>					
 				</div>
-				<input type="text">
+				<input type="text" value="{{user[0].address}}">
 				</fieldset>
 				<label>
 					<i class="fa fa-mobile fa-2x"></i>
 				</label>
-				<input type="text">
+				<input type="text" value="{{user[0].mobile}}">
 			</div>
 		</li>
 		<li>
@@ -56,15 +56,55 @@
 				</div>
 			</div>
 		</li>
-		<li style="display:none;">
+		<li>
 			<div class="shopCart_title">
 				<i class="fa fa-info fa-2x"></i>
 				<span>會員獨享</span>
-			</div>			
+			</div>
+			<div class="shopCart_content">
+				<div class="discountNavs">
+					<ul>
+						<li><a href="">折價券</a></li>
+						<li><a href="">紅利金</a></li>
+						<li><a href="">折扣金</a></li>
+					</ul>
+				</div>
+
+				<div id="disconPop_1" class="discountPop" ui-view="discountWrap">
+					<a class="disClose" ng-click="discountClose()">
+						<i class="fa fa-plus fa-lg"></i>
+					</a>
+					<div class="disContent">
+						1					
+					</div>
+				</div>
+
+				<div id="disconPop_2" class="discountPop" ui-view="discountWrap">
+					<a class="disClose" ng-click="discountClose()">
+						<i class="fa fa-plus fa-lg"></i>
+					</a>
+					<div class="disContent">
+						<label>紅利金：</label><input type="text" value="{{coupons[0].bonusPrice}}">				
+					</div>
+				</div>
+
+				<div id="disconPop_3" class="discountPop" ui-view="discountWrap">
+					<a class="disClose" ng-click="discountClose()">
+						<i class="fa fa-plus fa-lg"></i>
+					</a>
+					<div class="disContent">
+						3					
+					</div>
+				</div>
+			</div>		
+		</li>
+		<li>
+			<div class="shopBtn_area">
+				<a class="steps_Button" href="#/shopCart/2/">NEXT</a>
+			</div>
 		</li>
 	</ul>
-	<img src="images/shopCart_02.jpg" width="100%">
-	<a class="steps_Button" style="margin-bottom:20px;" href="#/shopCart/2/">NEXT</a>   	
+	   	
 </div>
 
 <!-- <label>價格:</label>

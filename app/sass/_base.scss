@@ -21,28 +21,19 @@ a {
 	color:#362e2b;
 }
 
-.wave.ng-enter, .wave.ng-leave {
-  -webkit-transition:all 1s ease-in-out;
-    -moz-transition:all 1s ease-in-out;
-    -o-transition:all 1s ease-in-out;
-    transition:all 1s ease-in-out;
-}
-
-.wave.ng-enter {
-  opacity: 0;
-}
-
-.wave.ng-enter-active {
-  opacity: 1;
-
-}
-
+.wave.ng-enter,
 .wave.ng-leave {
-  opacity: 1;
+  -webkit-transition:0.5s linear all;
+  transition:0.5s linear all;
 }
 
-.wave.ng-leave-active {
-  opacity: 0;
+.wave.ng-enter,
+.wave.ng-leave.ng-leave-active {
+  opacity:0;
+}
+.wave.ng-leave,
+.wave.ng-enter.ng-enter-active {
+  opacity:1;
 }
 
 

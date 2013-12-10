@@ -9,6 +9,10 @@
 		padding:0 10px;
 		padding-top:20px;
 	}
+
+	.shopCart > ul > li {
+		position:relative;
+	}
 	
 	//shopCart Title
 	.shopCart_title {
@@ -178,73 +182,90 @@
 		.orginCoupon span:first-child+span { color:$pink-text; }
 	}
 
-	.vipZone {
-		@include span-columns(4 omega);
+	.discountNavs {
+		margin-top:10px;
+	}
+	.discountNavs ul {
+		@include pie-clearfix;
+	}
+	.discountNavs ul > li {
+		position:relative;
+		float:left;
+		display: block;
+		height:auto;
+		@include isolate-grid(1,3);
 		@include border-box-sizing;
-		text-align: center;
-
-		.vipZone_icon {
-			margin:0 auto;
-			position:relative;
-			display: block;
-			width:60px;
-			height:60px;
-			line-height: 65px;
-			text-align: center;
-			background:$pink-text;
-			border-radius:1000em;
-			color:#ffffff;
-			margin-bottom: 30px;
-
-			span {
-				position:absolute;
-				left:-10px;
-				bottom:-45px;
-				display: block;
-				width:80px;
-				color:$pink-text;
-				letter-spacing: 2px;
-				font-weight:bold;
-			}
-		}
-
-		ul {
-			margin-top:5px;
-			margin-bottom:10px;
-			display: inline-block;
-			opacity: 0;
-			@include pie-clearfix;
-
-			//effects
-			-webkit-transition:all 1s ease-in-out;
-			-moz-transition:all 1s ease-in-out;
-			-o-transition:all 1s ease-in-out;
-			transition:all 1s ease-in-out;
-
-			&.hideEffect {
-				opacity: 1;
-			}
-		}		
-
-		ul > li {
-			float:left;
-			margin-left: 20px;
-			a {
-				display: block;
-				padding:0 5px;
-				line-height:35px;
-				color:$pink-text;
-				border:3px solid $gray-lite;
-				background:#ffffff;
-				font-weight: bold;
-			}
-
-			&:first-child { margin-left:0; }
-		}
 	}
 
-	.shopCart > .prodShow{
-		opacity: 0.5;
+	.discountNavs ul > li > a {
+		position:relative;
+		display: inline-block;
+		padding:5px;
+		margin:0 21%;
+		text-align: center;
+		color:#ffffff;
+		background:$pink-text;
+		font-size:0.92rem;
+	}
+
+	.discountNavs ul > li.current > a:before {
+		position:absolute;
+		top:25px;
+		left:50%;
+		margin-left:-8px;
+		content:"";
+		display: block;
+		width: 0px;
+		height: 0px;
+		border-style: solid;
+		border-width: 0 10px 10px 10px;
+		border-color: transparent transparent $pink-text transparent;
+	}
+
+	.discountNavs ul > li {
+		&:first-child > a { margin:0 0 0 40%; }
+		&:last-child > a { margin:0 40% 0 0;}
+	}
+
+	.discountPop {
+		position:relative;
+		@include span-columns(4 omega);
+		@include border-box-sizing;
+		margin-top:10px;
+		padding:5px;
+		border:3px solid $pink-text;
+		height:200px;
+		
+		& > a.disClose {
+			z-index:1;
+			top:0;
+			right:0;
+			display: block;
+			position: absolute;
+			width:30px;
+			height:30px;
+			line-height: 30px;
+			text-align: center;
+			background:$pink-text;
+			color:#ffffff;
+			
+			& > i {
+				-webkit-transform: rotate(45deg);
+						transform: rotate(45deg);
+			}
+		}
+
+		.disContent {
+			z-index: 0;
+			left:0;
+			top:0;
+			position:absolute;
+			width:100%;
+			height:200px;
+			overflow-x:hidden;
+			overflow-y: scroll;
+		}
+
 	}
 
 
@@ -253,14 +274,11 @@
 		@include span-columns(4 omega);
 		@include border-box-sizing;
 		text-align: center;
-		height:100px;
-		margin-top:-64px;
-		bottom:100px;
-		
+		height:150px;
+
 		a.steps_Button {
-		  position:absolute;
-		  top:50%;
-		  margin-top:-50px;
+			position:absolute;
+			top:30px;
 		}
 	}
 
