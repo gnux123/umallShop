@@ -5,8 +5,7 @@
 				<h2 ng-bind="coupon.Event"></h2>
 				<h1 ng-bind="coupon.value"></h1>
 				<p ng-bind="coupon.eventLimte"></p>
-				<div class="useTime" ng-bind="'使用日期：'+coupon.dateStart+'~'+coupon.dateEnd">
-				</div>
+				<div class="useTime" ng-bind="'使用日期：'+coupon.dateStart+'~'+coupon.dateEnd"></div>
 			</li>
 		</ul>
 		<a class="couponBtn left" ng-click="prevCoupon()">
@@ -18,44 +17,7 @@
 	</div>
 	<div class="bonusInput">
 		<input type="text" value="券號輸入" />
-		<input type="button" value="兌換">
+		<a class="bonusChange" ng-click="bonusChange()">兌換</a>
 	</div>
 	<a ng-href="#/prods"><img src="images/bonusShopBanner.png" width="100%"></a>
-<!-- 	<div class="bonusInput">
-		<i class="fa fa-search fa-lg"></i>
-		<input type="text" value="券號輸入" />
-		<input type="button" value="兌換">
-	</div>
-	<div class="bonusContent">
-		<h2>天天轉轉樂</h2>
-		<span class="bonusUse">僅限森活價$ 800 (含)以上</span>
-		<span class="useDate">
-			折價券<br>
-			2013/11/06<br>
-			2013/11/10
-		</span>
-	</div>
-
-	<div class="bonusList">
-		<ul>
-			<li>75折</li>
-			<li>300元</li>
-			<li>1,000元</li>
-			<li class="current">
-				85折
-				<i class="fa fa-comment"></i>
-			</li>
-			<li>6折</li>
-			<li>200元</li>
-			<li>9折</li>
-			<li>200元</li>
-			<li>3,000元</li>
-		</ul>		
-	</div>
-
-	<div class="shopGo">
-		<a ng-href="#/prods">
-			<img src="images/bonusShopBanner.jpg">
-		</a>
-	</div> -->
 </div>

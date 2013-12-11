@@ -4473,36 +4473,42 @@ a.steps_Button.finish:before {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_bonus\.scss}line{font-family:\0000329}}
   .bonusTitle li h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
-    padding: 10px 0;
+    padding: 20px 0;
     font-family: arial;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_bonus\.scss}line{font-family:\0000336}}
-  .bonusTitle .useTime {
-    margin-top: 5px;
+  .bonusTitle p {
+    color: #362e2b;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_bonus\.scss}line{font-family:\0000340}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_bonus\.scss}line{font-family:\0000339}}
+  .bonusTitle .useTime {
+    margin-top: 5px;
+    color: #362e2b;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_bonus\.scss}line{font-family:\0000344}}
   .bonusTitle .couponBtn {
     position: absolute;
     top: 50%;
-    margin-top: -14px;
+    margin-top: -30px;
     color: #d32146;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_bonus\.scss}line{font-family:\0000347}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_bonus\.scss}line{font-family:\0000351}}
   .bonusTitle .couponBtn.left {
     left: 10px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_bonus\.scss}line{font-family:\0000351}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_bonus\.scss}line{font-family:\0000355}}
   .bonusTitle .couponBtn.right {
     right: 10px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_bonus\.scss}line{font-family:\0000355}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_bonus\.scss}line{font-family:\0000359}}
   .bonusInput {
     width: 100%;
     float: right;
@@ -4516,14 +4522,14 @@ a.steps_Button.finish:before {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_bonus\.scss}line{font-family:\0000361}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_bonus\.scss}line{font-family:\0000365}}
   .bonusInput > i {
     position: absolute;
     color: #888888;
     left: 5px;
     top: 13px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_bonus\.scss}line{font-family:\0000368}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_bonus\.scss}line{font-family:\0000372}}
   .bonusInput > input[type='text'] {
     display: block;
     width: 100%;
@@ -4542,21 +4548,22 @@ a.steps_Button.finish:before {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_bonus\.scss}line{font-family:\0000382}}
-  .bonusInput > input[type='button'] {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_bonus\.scss}line{font-family:\0000386}}
+  .bonusInput > a.bonusChange {
     position: absolute;
     top: 5px;
     right: 10px;
     display: block;
     width: 60px;
     height: 30px;
+    line-height: 30px;
     border-radius: 100px;
-    background: #ffcccc;
+    background: #d32146;
     border: 0;
     text-align: center;
     letter-spacing: 2px;
     font-size: 1rem;
-    color: #888888;
+    color: #ffffff;
     font-weight: bold;
   }
 }
@@ -5085,19 +5092,39 @@ a.steps_Button.finish:before {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\0000313}}
-  .shopCart > ul > li {
-    position: relative;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\0000312}}
+  .shopCart input, .shopCart select {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    box-shadow: none;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\0000318}}
+  .shopCart > ul > li {
+    margin-top: 50px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+  .shopCart > ul > li:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\0000321}}
+  .shopCart > ul > li:first-child {
+    margin-top: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\0000325}}
   .shopCart_title {
     width: 100%;
     float: right;
     margin-right: 0;
     text-align: center;
     font-family: arial;
+    margin-bottom: 10px;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/\.compass\/extensions\/susy\/sass\/susy\/_grid\.scss}line{font-family:\0000314}}
   .shopCart_title * {
@@ -5105,7 +5132,7 @@ a.steps_Button.finish:before {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\0000323}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\0000331}}
   .shopCart_title > i {
     margin: 5px auto;
     display: block;
@@ -5125,20 +5152,20 @@ a.steps_Button.finish:before {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\0000338}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\0000346}}
   .shopCart_title > span {
     color: #d32146;
     font-size: 0.92rem;
     line-height: 20px;
     font-weight: bolder;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\0000345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\0000353}}
   .shopCart_title.user > i {
     line-height: 75px;
     font-size: 3.5rem;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\0000351}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\0000359}}
   .shopCart_content {
     width: 100%;
     float: right;
@@ -5152,7 +5179,7 @@ a.steps_Button.finish:before {
     box-sizing: border-box;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\0000357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\0000365}}
   .shopCart_content > label, .shopCart_content .group > label {
     width: 24.09639%;
     float: left;
@@ -5171,8 +5198,8 @@ a.steps_Button.finish:before {
     box-sizing: border-box;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\0000368}}
-  .shopCart_content input[type='text'] {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\0000376}}
+  .shopCart_content > input[type='text'] {
     width: 74.6988%;
     float: right;
     margin-right: 0;
@@ -5180,15 +5207,16 @@ a.steps_Button.finish:before {
     line-height: 35px;
     background: #ffffff;
     border: 3px solid #ffcccc;
+    font-size: 1rem;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/\.compass\/extensions\/susy\/sass\/susy\/_grid\.scss}line{font-family:\0000314}}
-  .shopCart_content input[type='text'] * {
+  .shopCart_content > input[type='text'] * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\0000378}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\0000387}}
   .shopCart_content .group > .selectGroup {
     width: 74.6988%;
     float: right;
@@ -5200,7 +5228,7 @@ a.steps_Button.finish:before {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\0000382}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\0000391}}
   .shopCart_content .group > .selectGroup > select {
     width: 49.39759%;
     float: left;
@@ -5228,7 +5256,7 @@ a.steps_Button.finish:before {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\0000393}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003102}}
   .shopCart_content .group > input[type='text'] {
     width: 100%;
     float: right;
@@ -5238,6 +5266,7 @@ a.steps_Button.finish:before {
     line-height: 35px;
     background: #ffffff;
     border: 3px solid #ffcccc;
+    font-size: 1rem;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/\.compass\/extensions\/susy\/sass\/susy\/_grid\.scss}line{font-family:\0000314}}
   .shopCart_content .group > input[type='text'] * {
@@ -5246,18 +5275,18 @@ a.steps_Button.finish:before {
     box-sizing: border-box;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003104}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003114}}
   .shopCart_content label, .shopCart_content > input[type='text'] {
     margin: 5px 0;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003108}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003118}}
   .shopCart_content.orderInfo {
     margin: 5px 0;
     border: 3px solid #ffcccc;
     padding: 5px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003113}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003123}}
   .shopCart_content.orderInfo > ul li {
     position: relative;
     width: 24.09639%;
@@ -5296,7 +5325,7 @@ a.steps_Button.finish:before {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003122}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003132}}
   .shopCart_content.orderInfo > ul li:before {
     position: absolute;
     top: 0;
@@ -5306,29 +5335,30 @@ a.steps_Button.finish:before {
     line-height: 65px;
     font-size: 1rem;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003131}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003141}}
   .shopCart_content.orderInfo > ul li:first-child:before {
     display: none;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003132}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003142}}
   .shopCart_content.orderInfo > ul li:last-child {
     font-weight: lighter;
     font-size: 2.5rem;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003136}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003146}}
   .shopCart_content.orderInfo > ul li .specWrap {
     position: absolute;
     top: 5px;
     right: 0;
     width: 55px;
     height: 55px;
-    line-height: 52px;
+    line-height: 55px;
     text-align: center;
     border-radius: 50%;
-    border: 3px solid #d32146;
+    background: #d32146;
     font-size: 0.92rem;
     font-weight: bold;
     overflow: hidden;
+    color: #ffffff;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/\.compass\/extensions\/susy\/sass\/susy\/_grid\.scss}line{font-family:\0000314}}
   .shopCart_content.orderInfo > ul li .specWrap * {
@@ -5336,17 +5366,17 @@ a.steps_Button.finish:before {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003151}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003162}}
   .shopCart_content.orderInfo > ul li .specWrap.size {
     font-size: 1.3rem;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003158}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003167}}
   .shopCart_content.priceDetail {
     margin: 20px 0;
     font-family: arial;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003161}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003170}}
   .shopCart_content.priceDetail .totalPrice {
     width: 100%;
     float: right;
@@ -5362,7 +5392,7 @@ a.steps_Button.finish:before {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003170}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003179}}
   .shopCart_content.priceDetail .orginCoupon {
     margin: 5px 0;
     width: 100%;
@@ -5381,12 +5411,12 @@ a.steps_Button.finish:before {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003182}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003191}}
   .shopCart_content.priceDetail .orginCoupon span:first-child + span {
     color: #d32146;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003185}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003194}}
   .discountNavs {
     margin-top: 10px;
   }
@@ -5398,7 +5428,7 @@ a.steps_Button.finish:before {
     clear: both;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003191}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003200}}
   .discountNavs ul > li {
     position: relative;
     float: left;
@@ -5431,7 +5461,7 @@ a.steps_Button.finish:before {
     box-sizing: border-box;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003200}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003209}}
   .discountNavs ul > li > a {
     position: relative;
     display: inline-block;
@@ -5443,7 +5473,7 @@ a.steps_Button.finish:before {
     font-size: 0.92rem;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003211}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003220}}
   .discountNavs ul > li.current > a:before {
     position: absolute;
     top: 25px;
@@ -5458,16 +5488,16 @@ a.steps_Button.finish:before {
     border-color: transparent transparent #d32146 transparent;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003226}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003235}}
   .discountNavs ul > li:first-child > a {
     margin: 0 0 0 40%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003227}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003236}}
   .discountNavs ul > li:last-child > a {
     margin: 0 40% 0 0;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003230}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003239}}
   .discountPop {
     position: relative;
     width: 100%;
@@ -5484,7 +5514,7 @@ a.steps_Button.finish:before {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003239}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003248}}
   .discountPop > a.disClose {
     z-index: 1;
     top: 0;
@@ -5498,24 +5528,96 @@ a.steps_Button.finish:before {
     background: #d32146;
     color: #ffffff;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003252}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003261}}
   .discountPop > a.disClose > i {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003258}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003267}}
   .discountPop .disContent {
     z-index: 0;
     left: 0;
     top: 0;
     position: absolute;
     width: 100%;
-    height: 200px;
+    height: 194px;
     overflow-x: hidden;
     overflow-y: scroll;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003272}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003281}}
+  .disContent > fieldset {
+    margin-top: 50px;
+    display: block;
+    width: 100%;
+    height: auto;
+    color: #d32146;
+    font-family: arial;
+    font-weight: bolder;
+    text-align: center;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003290}}
+  .disContent > fieldset label {
+    font-size: 2rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003294}}
+  .disContent > fieldset input[type='text'] {
+    border: 0;
+    font-size: 2rem;
+    width: 40%;
+    color: #d32146;
+    border-bottom: 1px solid #d32146;
+    border-radius: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003305}}
+  .disContent > .useTime {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003311}}
+  .disLists > li {
+    position: relative;
+    font-family: arial;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+  .disLists > li:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003315}}
+  .disLists > li h1 {
+    float: left;
+    display: inline-block;
+    color: #d32146;
+    font-size: 1.8rem;
+    font-weight: bold;
+    width: 80px;
+    height: 50px;
+    line-height: 50px;
+    letter-spacing: -2px;
+    text-align: right;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003328}}
+  .disLists > li > div {
+    margin-left: 5px;
+    float: left;
+    height: 50px;
+    font-size: 0.92rem;
+    letter-spacing: -1px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003334}}
+  .disLists > li > div p:first-child {
+    font-size: 1rem;
+    color: #d32146;
+    letter-spacing: normal;
+    line-height: 25px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003343}}
   .shopBtn_area {
     position: relative;
     width: 100%;
@@ -5530,10 +5632,10 @@ a.steps_Button.finish:before {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003279}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gnux123\/Desktop\/umallShop\/app\/sass\/_shopCart\.scss}line{font-family:\00003350}}
   .shopBtn_area a.steps_Button {
     position: absolute;
-    top: 30px;
+    top: 10px;
   }
 }
 @-webkit-keyframes inball {

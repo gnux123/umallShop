@@ -5,6 +5,7 @@ var shopCtrl = function($scope, Data ,$stateParams){
     $scope.prods = Data[0];
     $scope.user = Data[1].addressList;
     $scope.coupons = Data[1].priceLists;
+    $scope.eCoupons = Data[1].couponLists;
     $scope.memberCoupon = true;
 
     Zepto(function($){

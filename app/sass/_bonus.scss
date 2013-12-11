@@ -27,20 +27,24 @@
 	}
 
 	.bonusTitle li h1 {
-		font-size:2rem;
+		font-size:2.5rem;
 		font-weight: bold;
-		padding:10px 0;
+		padding:20px 0;
 		font-family: arial;
 	}
 
+	.bonusTitle p {
+		color:$black-g;
+	}
 	.bonusTitle .useTime {
 		margin-top:5px;
+		color:$black-g;
 	}
 
 	.bonusTitle .couponBtn {
 		position:absolute;
 		top:50%;
-		margin-top:-14px;
+		margin-top:-30px;
 		color:$pink-text;
 	}
 
@@ -79,20 +83,21 @@
 			font-weight: bold;
 		}
 		
-		& > input[type='button'] {
+		& > a.bonusChange {
 			position:absolute;
 			top:5px;
 			right:10px;
 			display: block;
 			width:60px;
 			height:30px;
+			line-height: 30px;
 			border-radius:100px;
-			background:$pink-lite;
+			background:$pink-text;
 			border:0;
 			text-align: center;
 			letter-spacing: 2px;
 			font-size:1rem;
-			color:#888888;
+			color:#ffffff;
 			font-weight:bold;
 		}
 	}

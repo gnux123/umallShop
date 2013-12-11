@@ -75,7 +75,15 @@
 						<i class="fa fa-plus fa-lg"></i>
 					</a>
 					<div class="disContent">
-						1					
+						<ul class="disLists">
+							<li ng-repeat="coupon in eCoupons">
+								<h1 ng-bind="coupon.value"></h1>
+								<div>
+									<p ng-bind="coupon.Event"></p>
+									<p class="useTime" ng-bind="'使用期限('+coupon.dateStart+'~'+coupon.dateEnd+')'"></p>
+								</div>
+							</li>
+						</ul>					
 					</div>
 				</div>
 
@@ -84,7 +92,12 @@
 						<i class="fa fa-plus fa-lg"></i>
 					</a>
 					<div class="disContent">
-						<label>紅利金：</label><input type="text" value="{{coupons[0].bonusPrice}}">				
+						<fieldset>
+							<label>紅利金：</label>
+							<input type="text" value="{{coupons[0].bonusPrice}}">
+						</fieldset>
+						<div class="useTime" ng-bind="'使用期限：'+coupons[0].startDate+'~'+coupons[0].endDate">
+						</div>			
 					</div>
 				</div>
 
@@ -93,7 +106,11 @@
 						<i class="fa fa-plus fa-lg"></i>
 					</a>
 					<div class="disContent">
-						3					
+						<fieldset>
+							<label ng-bind="'折扣金：'+coupons[1].discountPrice"></label>
+						</fieldset>
+						<div class="useTime" ng-bind="'使用期限：'+coupons[1].startDate+'~'+coupons[1].endDate">
+						</div>					
 					</div>
 				</div>
 			</div>		
