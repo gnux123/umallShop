@@ -354,15 +354,18 @@
 				transition: transform 500ms;
 				-webkit-transform: translate3d(0,0,0);
 				-webkit-transition: transform 500ms;
+				background:$pink-lite;
+				border-radius:50%;
+				overflow:hidden;
 			}
 		
-			i {
+			a {
 				display: block;
 				width:30px;
 				height:30px;
 				line-height: 30px;
 				border-radius:50%;
-				background:$pink-lite;
+				background:$pink-text;
 				color:$pink-text;
 				z-index:2;
 			}
@@ -379,7 +382,7 @@
 		-webkit-transform: translate3d(0,60px,0);
 		transform: translate3d(0,60px,0);
 		
-		i {
+		a {
 			box-shadow:0 0 6px rgba(0,0,0,.5);
 		}	
 	

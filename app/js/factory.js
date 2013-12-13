@@ -32,7 +32,7 @@ umallApp.factory('Data', function(){
             {value:"9折", dateStart:"102/11/30", dateEnd:"102/12/03", Event:"會員專屬活動禮-2", eventLimte:"僅限森活價$ 1000 (含)以上", ticketNum: "560001121"}
         ],
         priceLists: [
-            {bonusPrice: "6,000", startDate:"102/11/30", endDate:"102/12/11"},
+            {bonusPrice: "6000", startDate:"102/11/30", endDate:"102/12/11"},
             {discountPrice: "300", startDate:"102/10/30", endDate:"102/12/01"}
         ]
     }];

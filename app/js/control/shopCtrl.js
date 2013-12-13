@@ -7,7 +7,7 @@ var shopCtrl = function($scope, Data ,$stateParams){
     $scope.coupons = Data[1].priceLists;
     $scope.eCoupons = Data[1].couponLists;
     $scope.memberCoupon = true;
-
+    $scope.bonusPrice = $scope.coupons[0].bonusPrice;
     Zepto(function($){
         $(".discountPop").hide();
         $(".discountNavs li").each(function(){
@@ -15,6 +15,15 @@ var shopCtrl = function($scope, Data ,$stateParams){
                var _index = $(this).index() + 1;
                $(this).addClass("current").siblings(".current").removeClass("current");
                $("#disconPop_"+_index).show().siblings(".discountPop").hide();
+            });
+        });
+
+        $(".payments").hide();
+        $(".payments").first().show();
+        $(".paymentWay li").each(function(){
+            $(this).click(function(){
+                var _index = $(this).index()+1;
+                $("#payWay_"+_index).show().siblings(".payments").hide();
             });
         });
     });
@@ -26,15 +35,6 @@ var shopCtrl = function($scope, Data ,$stateParams){
         });
     }
 
-
-
-    $scope.addItems = function(){
-
-    }
-
-    $scope.reduceItems = function(){
-
-    }
 
     // var update = function() {
     //     $scope.counter++;
