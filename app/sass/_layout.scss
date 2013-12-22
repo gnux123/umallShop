@@ -1,4 +1,4 @@
-.page {
+.page, .memberPage {
 	@include container;
 	//@include susy-grid-background;
 	.navs {
@@ -68,11 +68,11 @@
 
 @include at-breakpoint($mobile) {
 	$gutter-width     : 0px; //欄間距
-	.page {
+	.page, .memberPage {
 		@include container;
 		//@include susy-grid-background;
 	}
-	.page .navs {
+	.page .navs, .memberPage .navs {
 		display: block;
 		position:relative;
 		width:100%;
@@ -93,13 +93,12 @@
 
 	}
 
-	.page .main {
+	.page .main, .memberPage .main {
 		position:relative;
 		//margin-top:5px;
 		padding:0;
 		@include container;
 		//@include susy-grid-background;
-		min-height: 100%;
 		height:auto;
 
 		& > div {

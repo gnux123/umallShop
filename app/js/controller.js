@@ -52,3 +52,8 @@ umallApp.controller('bonusCtrl',bonusCtrl).animation('.slide-animation', functio
 });
 umallApp.controller('gameCtrl',gameCtrl);
 umallApp.controller('prodSpecCtrl',prodSpecCtrl);
+
+//umallMember
+umallApp.controller('loginCtrl',loginCtrl);
+umallApp.controller('sideMenuCtrl',sideMenuCtrl);
+umallApp.controller('navsMemberCtrl',navsMemberCtrl);

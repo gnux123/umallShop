@@ -54,6 +54,19 @@
 			line-height: 75px;
 			font-size:3.5rem;
 		}
+
+		&.finish_title {
+			padding-top:100px;
+			& > i{
+				width:100px;
+				height:100px;
+				line-height:100px;
+			}
+
+			& > span {
+				font-size:1.7rem;
+			}	
+		}
 	}
 
 	.shopCart_content {

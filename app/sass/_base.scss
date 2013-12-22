@@ -13,7 +13,28 @@ $grid-padding     : 0;//1em 至左及至右滿版兩邊間距
 }
 
 html,body {
+  position:relative;
   height:100%;
+  overflow-x:hidden;
+  overflow-y: scroll;
+}
+
+.memberPage {
+  position:absolute;
+  width:100%;
+  height:100%;
+  -webkit-transition: all 500ms linear;
+  z-index:1;
+  -webkit-transform: translate3d(0,0,0);
+  background:#ffffff;
+  .main {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  &.sideShow {
+    -webkit-transform: translate3d(85%,0,0);
+  }
 }
 
 a {

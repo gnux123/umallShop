@@ -1,19 +1,22 @@
 <div class="prodPage">
-    <div class="prodSpec" style="display:none;">
-        <ul class="prodSpec_1" ng-init="prods.colorful=0">
+    <div class="specChoice_title">規格選擇</div>
+    <div class="specChoiceWrap specChoice">
+        <a class='slideBtn nextBtn' href='javascript:void(0);'><i class="fa fa-angle-right fa-2x"></i></a>
+        <a class='slideBtn prevBtn' href='javascript:void(0);'><i class="fa fa-angle-left fa-2x"></i></a>
+        <ul>
             <li ng-repeat="prodSpec1 in prods.prodSpec1" ng-class="{current: prods.colorful ==  $index}" ng-click = "prods.colorful = $index">
                 <a href="javascript:void(0);" ng-bind="prodSpec1"></a>
             </li>
         </ul>
-
-        <ul class="prodSpec_2" ng-init="prods.colorful2=0">
+    </div>
+    <div class="specChoice_title">尺寸選擇</div>
+    <div class="specChoiceWrap sizeChoice" ng-swipe-right="next()" ng-swipe-right="prev()">
+        <ul>
             <li ng-repeat="prodSpec2 in prods.prodSpec2" ng-class="{current: prods.colorful2 ==  $index}" ng-click = "prods.colorful2 = $index">
                 <a href="javascript:void(0);"  ng-bind="prodSpec2"></a>
             </li>
-        </ul>
+        </ul>        
     </div>
-    <br/>
-    <img src="images/prodSpecNav.jpg" width="100%" alt="">
 
     <div class="prodShow" ng-class="{hidein: active == true}">
         <img ng-src="{{prods.img[0]}}" alt="">
