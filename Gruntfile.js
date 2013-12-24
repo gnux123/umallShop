@@ -149,12 +149,13 @@ module.exports = function (grunt) {
             },
             dist: {
                 options: {
-                    generatedImagesDir: '<%= yeoman.dist %>/images/generated'
+                    generatedImagesDir: '<%= yeoman.dist %>/images/generated',
+                     debugInfo: true
                 }
             },
             server: {
                 options: {
-                    debugInfo: true
+                    debugInfo: false
                 }
             }
         },

@@ -72,19 +72,6 @@ angular.module('umallApp')
             },
         }
     })
-    .state('bonus', {
-        url: '/bonus', 
-        views: {
-            'main': {
-                templateUrl: 'view/bonus.html',
-                controller:  'bonusCtrl'
-            },
-            'navs': {
-                templateUrl: 'view/navs_main.html',
-                controller: 'navsProdCtrl'
-            },
-        }
-    })
     .state('game', {
         url: '/game/:pages/', 
         views: {
@@ -101,12 +88,14 @@ angular.module('umallApp')
             },
         }
     })
-    .state('login', {
-        url: '/login', 
+    .state('member', {
+        url: '/:pageName', 
         views: {
             'main': {
-                templateUrl: 'view/login.html',
-                controller:  'loginCtrl'
+                templateUrl: function($stateParams){
+                    return 'view/'+$stateParams.pageName+'.html';
+                },
+                controller: 'memCtrl'
             },
             'sideMenu': {
                 templateUrl: 'view/sideMenu.html',

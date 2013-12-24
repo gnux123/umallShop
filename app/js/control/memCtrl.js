@@ -1,7 +1,25 @@
 'use strict';
-var bonusCtrl = function($scope, Data ,$stateParams){ 
+//prodsController
+var memCtrl = function($scope, Data, $stateParams){
+    $scope.prods = Data[0];
     $scope.user = Data[1]; //userData
     $scope.currentIndex = 0;
+    
+    Zepto(function($){
+    	detectWindow();
+    	$(window).resize(function(){ detectWindow(); });
+
+    	function detectWindow(){
+    		var _h = $(window).height() - 46;
+    		$(".sideMenu").height(_h + 46);
+    		$(".memberPage").height(_h+46);
+    		$(".memberPage .main").css("min-height",_h-46);
+    		$(".memberPage .main > div").height(_h-16);
+    	}
+    });
+
+
+    //bonus
     $scope.isCurrentCouponIndex = function (index) { return $scope.currentIndex === index; };
 
     $scope.prevCoupon = function () {
