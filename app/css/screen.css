@@ -5220,6 +5220,14 @@ a.steps_Button.finish:before {
     bottom: 5px;
     font-size: 0.7rem;
     padding: 0 5px;
+    background: #eadcdc;
+  }
+
+  /* line 532, ../sass/_prodPage.scss */
+  .ifmContent {
+    width: 100%;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
