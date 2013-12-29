@@ -52,6 +52,7 @@ umallApp.controller('prodCtrl',prodCtrl).animation('.slide-animation', function 
 // });
 umallApp.controller('gameCtrl',gameCtrl);
 umallApp.controller('prodSpecCtrl',prodSpecCtrl);
+umallApp.controller('prodCommentCtrl',prodCommentCtrl);
 
 //umallMember
 umallApp.controller('memCtrl',memCtrl);

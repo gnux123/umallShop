@@ -507,4 +507,25 @@
 			}
 		}
 	}
+
+	//prodComment
+	.prodCommen li {
+		position:relative;
+		display: block;
+		@include span-columns(4 omega);
+		height:80px;
+
+		&.prodCommen_event {
+			h2 { font-size:1rem; }
+			p { font-size: 0.93rem; }
+			span{
+				position:absolute;
+				right:5px;
+				bottom:5px;
+				font-size:0.7rem;
+				padding:0 5px;
+				background:$gray-lite;
+			}
+		}
+	}
 }

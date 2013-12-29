@@ -1,9 +1,13 @@
+<div class="shopProd">
+	
+</div>
 <a href="#/shopCart/1/"><img width="100%" src="images/prodTalk_02-1.jpg"></a>
-<ul>
-	<li><a href><img src="images/prodTalkList_01.jpg" width="100%"></a></li>
-	<li><a href><img src="images/prodTalkList_02.jpg" width="100%"></a></li>
-	<li><a href><img src="images/prodTalkList_03.jpg" width="100%"></a></li>
-	<li><a href><img src="images/prodTalkList_01.jpg" width="100%"></a></li>
-	<li><a href><img src="images/prodTalkList_02.jpg" width="100%"></a></li>
-	<li><a href><img src="images/prodTalkList_03.jpg" width="100%"></a></li>
+<ul class="prodCommen">
+	<li class="prodCommen_event" ng-repeat="recommand in recomnList">
+		<a ng-href="#/prods/comment/4/{{$index}}">
+	        <h2 ng-bind="recommand.title"></h2>
+	        <p ng-bind="recommand.subDes"></p>
+	        <span ng-bind="recommand.from"></span>
+		</a>
+    </li>
 </ul>

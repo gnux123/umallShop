@@ -6,5 +6,4 @@ var sideMenuCtrl = function($scope, Data, $stateParams){
     	var now_text = $stateParams.pageName;
         alert(now_text);
     }
-
 }

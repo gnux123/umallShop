@@ -10,10 +10,10 @@ angular.module('umallApp')
             'main': {
                 templateUrl: 'view/main.html',
                 //controller:  'mainCtrl'
-            },
-            'navs': {
-                templateUrl: 'view/navs_main.html'
             }
+            // 'navs': {
+            //     templateUrl: 'view/navs_main.html'
+            // }
         }
     })
     .state('prods', {
@@ -43,7 +43,7 @@ angular.module('umallApp')
         }
     })
     .state('prodComment', {
-        url: '/prods/comment/:pages/', 
+        url: '/prods/comment/:pages/:index', 
         views: {
             'main': {
                 templateUrl: function($stateParams){
