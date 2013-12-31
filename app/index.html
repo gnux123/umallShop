@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" ng-app="umallApp"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" ng-app="umallApp" xmlns:fb="http://ogp.me/ns/fb#"> <!--<![endif]-->
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,11 +21,11 @@
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+
         <div class="page">
             <div class="navs" ui-view='navs'></div>
             <div class="main" ui-view='main' ng-animate="'wave'"></div>
         </div>
-
 
         <!-- build:js js/components.js -->
         <!-- Components -->
@@ -48,8 +48,8 @@
         <!-- build:js js/main.js -->
         <!-- Core -->
         <script src="js/config.js"></script>
-        <script src="js/factory.js" language="javascript" charset="utf-8"></script>
         <script src="js/router.js"></script>
+        <script src="js/factory.js" language="javascript" charset="utf-8"></script>
         <!-- Controller -->
         <script src="js/control/navsProdCtrl.js"></script>
         <script src="js/control/gameCtrl.js"></script>
@@ -62,7 +62,9 @@
         <script src="js/control/sideMenuCtrl.js"></script>
         <script src="js/controller.js"></script>
         <!-- endbuild -->
+
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <div id="fb-root"></div>
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
@@ -70,6 +72,14 @@
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X');ga('send','pageview');
+
+            // (function(d, s, id) {
+            //   var js, fjs = d.getElementsByTagName(s)[0];
+            //   if (d.getElementById(id)) return;
+            //   js = d.createElement(s); js.id = id;
+            //   js.src = "//connect.facebook.net/zh_TW/all.js#xfbml=1&appId=167539819976669";
+            //   fjs.parentNode.insertBefore(js, fjs);
+            // }(document, 'script', 'facebook-jssdk'));
         </script>
 </body>
 </html>

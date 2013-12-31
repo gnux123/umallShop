@@ -48,6 +48,7 @@ angular.module('umallApp')
             'main': {
                 templateUrl: function($stateParams){
                     return 'view/prodcomment_'+$stateParams.pages+'.html';
+                    
                 },
                 controller:  'prodCommentCtrl'
             },

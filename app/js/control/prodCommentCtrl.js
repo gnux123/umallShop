@@ -1,6 +1,7 @@
 'use strict';
 //prodsController
 var prodCommentCtrl = function($scope, $sce ,Data, $stateParams){
+	$scope.prods = Data[0];
     $scope.recomnList = Data[2].recommandLists;
     
     Zepto(function($){
