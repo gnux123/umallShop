@@ -5,7 +5,7 @@ var gameCtrl = function($scope, Data ,$stateParams){
     $scope.change = function(){
         Zepto(function($){
             setTimeout(function(){
-                $(".popup_2").css("display","block");
+                $(".popup_2, .pop3").css("display","block");
             },1000);              
         });
         //$scope.gameImg = "game_1";
@@ -24,7 +24,7 @@ var gameCtrl = function($scope, Data ,$stateParams){
                 },7000); 
             }else{
                 setTimeout(function(){
-                    $(".popup_2").css("display","block");
+                    $(".popup_2, .pop3").css("display","block");
                 },1000);
             }       
         });

@@ -5197,33 +5197,104 @@ a.steps_Button.finish:before {
   }
 
   /* line 512, ../sass/_prodPage.scss */
-  .prodCommen li {
+  .prodCommen > li {
     position: relative;
     display: block;
     width: 100%;
     float: right;
     margin-right: 0;
-    height: 80px;
+  }
+  /* line 14, ../../../../.compass/extensions/susy/sass/susy/_grid.scss */
+  .prodCommen > li * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
   }
   /* line 519, ../sass/_prodPage.scss */
-  .prodCommen li.prodCommen_event h2 {
-    font-size: 1rem;
+  .prodCommen > li.prodCommen_event a {
+    display: block;
+    width: 100%;
+    height: 90px;
+    padding-top: 30px;
+    padding-left: 30px;
+    font-family: arial;
+    border-width: 0 3px 3px 3px;
+    border-style: solid;
+    border-color: #d32146;
+    overflow: hidden;
   }
-  /* line 520, ../sass/_prodPage.scss */
-  .prodCommen li.prodCommen_event p {
+  /* line 532, ../sass/_prodPage.scss */
+  .prodCommen > li.prodCommen_event h2, .prodCommen > li.prodCommen_event p {
+    display: block;
+    width: 98%;
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+  }
+  /* line 541, ../sass/_prodPage.scss */
+  .prodCommen > li.prodCommen_event h2 {
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+  /* line 546, ../sass/_prodPage.scss */
+  .prodCommen > li.prodCommen_event p {
+    font-size: 0.93rem;
+    color: #d32146;
+  }
+  /* line 550, ../sass/_prodPage.scss */
+  .prodCommen > li.prodCommen_event span.cate {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    width: 120px;
+    height: 20px;
+    padding-left: 5px;
+    line-height: 20px;
+    background: #d32146;
+  }
+  /* line 561, ../sass/_prodPage.scss */
+  .prodCommen > li.prodCommen_event span.cate > i, .prodCommen > li.prodCommen_event span.cate > font {
+    color: #ffffff;
     font-size: 0.93rem;
   }
-  /* line 521, ../sass/_prodPage.scss */
-  .prodCommen li.prodCommen_event span {
+  /* line 566, ../sass/_prodPage.scss */
+  .prodCommen > li.prodCommen_event span.cate > i {
+    position: relative;
+    top: -2px;
+  }
+  /* line 571, ../sass/_prodPage.scss */
+  .prodCommen > li.prodCommen_event span.cate:before {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 0;
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 20px 20px 0 0;
+    border-color: #d32146 transparent transparent transparent;
+  }
+  /* line 585, ../sass/_prodPage.scss */
+  .prodCommen > li.prodCommen_event span.from {
     position: absolute;
     right: 5px;
     bottom: 5px;
     font-size: 0.7rem;
     padding: 0 5px;
-    background: #eadcdc;
+  }
+  /* line 594, ../sass/_prodPage.scss */
+  .prodCommen > li:first-child > a {
+    border: 3px solid #d32146;
   }
 
-  /* line 532, ../sass/_prodPage.scss */
+  /* line 597, ../sass/_prodPage.scss */
   .ifmContent {
     width: 100%;
     overflow: scroll;

@@ -5,9 +5,13 @@
 <ul class="prodCommen">
 	<li class="prodCommen_event" ng-repeat="recommand in recomnList">
 		<a ng-href="#/prods/comment/4/{{$index}}">
+			<span class="cate">
+				<i class="fa fa-star fa-lg"></i>
+				<font ng-bind="'【'+recommand.cate+'】'"></font>
+			</span>
 	        <h2 ng-bind="recommand.title"></h2>
 	        <p ng-bind="recommand.subDes"></p>
-	        <span ng-bind="recommand.from"></span>
+	        <span class="from" ng-bind="recommand.from"></span>
 		</a>
     </li>
 </ul>

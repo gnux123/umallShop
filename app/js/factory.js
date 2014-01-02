@@ -39,12 +39,12 @@ umallApp.factory('Data', function(){
     //recommandData
     {
         recommandLists: [
-            {title:"【新聞】瑪麗亞凱莉2013性感新作 OPI珠光磨砂限量版",subDes:"名人也愛用",from:"ETtoday",website:"http://m.ettoday.net/news/20130226/167924.htm"},
-            {title:"【達人推薦】聖誕樹聖誕紅還有麋鹿 各色聖誕節指彩特蒐",subDes:"指尖也要繽紛聖誕節",from:"妞新聞",website:"http://www.niusnews.com/=P2z6q6u4"},
-            {title:"【達人推薦】指彩 知性 優雅 浪漫 時尚",subDes:"這些顏色 不買有點對不起自己><”",from:"PIXNET",website:"http://shockisgood.pixnet.net/blog/post/26015807-%E7%9F%A5%E6%80%A7%E7%9A%84%E3%80%81%E5%84%AA%E9%9B%85%E7%9A%84%E3%80%81%E6%B5%AA%E6%BC%AB%E7%9A%84%E3%80%81%E6%99%82%E5%B0%9A%E7%9A%84%E3%80%82opi%E3%80%82f16%E3%80%8E"},
-            {title:"【開箱文】O.P.I 限量18K金箔指甲油'不開箱文'",subDes:"快開快開(急)",from:"mobile01",website:"http://m.mobile01.com/topicdetail.php?f=371&t=3024642"},
-            {title:"【鄉民推薦】網路上買OPI指甲油疑問",subDes:"原來可能用到山寨版(驚..)",from:"mobile01",website:"http://m.mobile01.com/topicdetail.php?f=373&t=1794715#4"},
-            {title:"【品牌故事】品牌經典商品25強爭霸賽-OPI之指甲油",subDes:"難怪OPI讓女生如此著迷",from:"BeautyPlus",website:"http://beautyplus.iswii.net/special-report/story/31450"},
+            {cate:"新聞",title:"瑪麗亞凱莉2013性感新作 OPI珠光磨砂限量版",subDes:"名人也愛用",from:"ETtoday",website:"http://m.ettoday.net/news/20130226/167924.htm"},
+            {cate:"達人推薦",title:"聖誕樹聖誕紅還有麋鹿 各色聖誕節指彩特蒐",subDes:"指尖也要繽紛聖誕節",from:"妞新聞",website:"http://www.niusnews.com/=P2z6q6u4"},
+            {cate:"達人推薦",title:"指彩 知性 優雅 浪漫 時尚",subDes:"這些顏色 不買有點對不起自己><”",from:"PIXNET",website:"http://shockisgood.pixnet.net/blog/post/26015807-%E7%9F%A5%E6%80%A7%E7%9A%84%E3%80%81%E5%84%AA%E9%9B%85%E7%9A%84%E3%80%81%E6%B5%AA%E6%BC%AB%E7%9A%84%E3%80%81%E6%99%82%E5%B0%9A%E7%9A%84%E3%80%82opi%E3%80%82f16%E3%80%8E"},
+            {cate:"開箱文",title:"O.P.I 限量18K金箔指甲油'不開箱文'",subDes:"快開快開(急)",from:"mobile01",website:"http://m.mobile01.com/topicdetail.php?f=371&t=3024642"},
+            {cate:"鄉民推薦",title:"網路上買OPI指甲油疑問",subDes:"原來可能用到山寨版(驚..)",from:"mobile01",website:"http://m.mobile01.com/topicdetail.php?f=373&t=1794715#4"},
+            {cate:"品牌故事",title:"品牌經典商品25強爭霸賽-OPI之指甲油",subDes:"難怪OPI讓女生如此著迷",from:"BeautyPlus",website:"http://beautyplus.iswii.net/special-report/story/31450"},
         ]
     }];
 });
