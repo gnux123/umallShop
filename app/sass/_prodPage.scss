@@ -594,6 +594,12 @@
 		&:first-child > a { border:3px solid $pink-text; }
 	}
 
+	.prodCommen > li > a {
+		&:visited, &:hover, &:active, &:focus {
+			span.cate:before { border-color: $pink-text transparent transparent transparent; }
+		}
+	}
+
 	.ifmContent {
 		width:100%;
 		overflow:scroll; 

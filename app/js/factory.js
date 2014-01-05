@@ -4,7 +4,7 @@ umallApp.factory('Data', function(){
     //prodsData
     return [{
         nums: '995124662',
-        img: ["http://img2.u-mall.com.tw/UserFiles/Product/00454/00454560/46b30f88-66fc-4876-9293-6165ff97f216.jpg"],
+        img: ["images/prod_opi.jpg"],
         name: '【OPI】霓彩革命限量六色迷你組',
         pushText: '全球同步上市 2014最新色',
         subdes: '★OPI 專業級美甲指甲油★獨家專利含有天然絲胺基酸和珍貴珍珠粉★色澤飽和度達到最恆彩效果★上色後不易脫落★刷毛軟硬適中上色更完美',

@@ -1,6 +1,11 @@
 <div class="gameEvent">
 	<a ng-click="change()"><img ng-src="images/{{gameImg}}.jpg" width="100%"></a>
-	<div class="popup_2">
-		<a href="#/bonus"><img src="images/popShow.jpg" width="100%"></a>
+	<div class="shadow_bg" ng-click="shadowCtrl()"></div>
+	<div class="popup game_notice">
+		<div class="popup_content" ng-include="'view/game_notice.html'"></div>
+		<a ng-click="shadowCtrl()">確定</a>
+	</div>
+	<div class="popup popup_hits">
+		<a href="member.html#/bonus"><img src="images/popShow.jpg" width="100%"></a>
 	</div>
 </div>

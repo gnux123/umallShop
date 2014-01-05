@@ -15,4 +15,13 @@ var navsProdCtrl = function($scope, Data, $stateParams){
     $scope.$back = function() {
         window.history.back();
     };
+
+    //gameHelp
+    $scope.gameHelp = function() {
+        Zepto(function($){
+            $(".gameHelp_btn").hide();
+            $(".shadow_bg").addClass("showSlide");
+            $(".game_notice").show();
+        });
+    }
 }
