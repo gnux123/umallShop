@@ -64,11 +64,12 @@
 			<div class="shopCart_content">
 				<div class="discountNavs">
 					<ul>
-						<li><a href="">折價券</a></li>
+						<li><a href="">折價券<span class="couponNums" ng-class="{couponShow: couponHide}" ng-bind="eCoupons.length"></span></a></li>
 						<li><a href="">紅利金</a></li>
 						<li><a href="">折扣金</a></li>
 					</ul>
 				</div>
+				<div class="discount_tips">點我看折扣</div>
 
 				<div id="disconPop_1" class="discountPop" ui-view="discountWrap">
 					<a class="disClose" ng-click="discountClose()">

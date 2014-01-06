@@ -32,6 +32,20 @@ var memCtrl = function($scope, Data, $stateParams){
         }
     });
 
+    //bonusChange
+    $scope.bonusChange = function(){
+        Zepto(function($){
+            $(".mask, .bonusPop").show();
+
+        });
+    }
+
+    $scope.maskHide = function(){
+        Zepto(function($){
+            $(".mask, .bonusPop").hide();
+        });        
+    }
+
 
     //bonus
     $scope.isCurrentCouponIndex = function (index) { return $scope.currentIndex === index; };

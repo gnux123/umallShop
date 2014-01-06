@@ -252,6 +252,25 @@
 		border-width: 0 10px 10px 10px;
 		border-color: transparent transparent $pink-text transparent;
 		}
+		
+		.couponNums {
+			position:absolute;
+			right:-10px;
+			top:-10px;
+			display: block;
+			width:20px;
+			height:20px;
+			background:$pink-lite;
+			border-radius:50%;
+			text-align: center;
+			line-height: 20px;
+			font-size:0.75rem;
+			font-weight: bold;
+			font-family: arial;
+			&.couponShow {
+				display: none;
+			}
+		}
 	}
 
 	.discountNavs ul > li {
@@ -266,6 +285,18 @@
 	.paymentWay ul > li {
 		&:first-child > a { margin:0 0 0 55%; }
 		&:last-child > a { margin:0 40% 0 0;}		
+	}
+
+
+	.discount_tips {
+		position:relative;
+		@include span-columns(4 omega);
+		@include border-box-sizing;
+		text-align: center;
+		line-height: 80px;
+		font-size:2rem;
+		letter-spacing: 1px;		
+		color:$pink-text;
 	}
 
 	.discountPop {
@@ -385,6 +416,10 @@
 		@include border-box-sizing;
 		text-align: center;
 		height:150px;
+
+		&.prodSpec_btn {
+			margin-top:70px;
+		}
 
 		a.steps_Button {
 			position:absolute;
