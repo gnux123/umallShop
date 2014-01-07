@@ -24,6 +24,10 @@ var shopCtrl = function($scope, Data ,$stateParams){
                 $(".discount_tips").hide();
                 $(this).addClass("current").siblings(".current").removeClass("current");
                 $("#disconPop_"+_index).show().siblings(".discountPop").hide();
+
+                if(_index == 1){
+                    $(".couponNums").hide();
+                }
             });
         });
 

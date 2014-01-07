@@ -4,13 +4,13 @@ umallApp.factory('Data', function(){
     //prodsData
     return [{
         nums: '995124662',
-        img: ["images/prod_opi.jpg"],
+        img: ["images/prod_opi00.jpg","images/prod_opi01.jpg","images/prod_opi02.jpg","images/prod_opi03.jpg"],
         name: '【OPI】霓彩革命限量六色迷你組',
         pushText: '全球同步上市 2014最新色',
-        subdes: '★OPI 專業級美甲指甲油★獨家專利含有天然絲胺基酸和珍貴珍珠粉★色澤飽和度達到最恆彩效果★上色後不易脫落★刷毛軟硬適中上色更完美',
+        subdes: '★OPI 專業級美甲指甲油<br/>★獨家專利含有天然絲胺基酸和珍貴珍珠粉<br/>★色澤飽和度達到最恆彩效果<br/>★上色後不易脫落<br/>★刷毛軟硬適中上色更完美',
         gifts: 'SPA維他命強韌護甲油',
         parts: '清新花香卸指甲油化妝棉',
-        specDetail: "「美國原裝進口‧網路經銷直營‧品質保證，請消費者安心購買」 ˙產品容量:指甲油3.75ml*6 ˙保存期限:3年 ˙製造日期:詳見瓶底/瓶身/盒身 ˙製 造 廠:美國OPI Products Inc.，N.Hollywood，CA USA",
+        specDetail: "「美國原裝進口‧網路經銷直營‧品質保證，請消費者安心購買」 <br/>˙產品容量:指甲油3.75ml*6 <br/>˙保存期限:3年 <br/>˙製造日期:詳見瓶底/瓶身/盒身 <br/>˙製 造 廠:美國OPI Products Inc.，N.Hollywood，CA USA",
         priceSpecial: "950",
         priceOrg: "1,200",
         prodSpec1: ["紅","橙","綠","黃","藍","靛","紫"],

@@ -1,7 +1,7 @@
 <div id="prodView" class="prodPage">
     <div class="prodDesc">
-        <div class="push_text" ng-bind="prods.pushText"></div>
-        <div class="subDesc" ng-bind="prods.subdes"></div>
+        <div class="push_text" ng-bind-html="prods.pushText"></div>
+        <div class="subDesc" ng-bind-html="prods.subdes"></div>
     </div>
     <div class="recommands_zone">
         <ul>
@@ -46,21 +46,23 @@
         <ul>
             <li>
                 <h3 id="prodGifts">贈品</h3>
-                <div ng-bind="prods.gifts"></div>
+                <div ng-bind-html="prods.gifts"></div>
             </li>
             <li>
                 <h3>配件</h3>
-                <div ng-bind="prods.parts"></div>
+                <div ng-bind-html="prods.parts"></div>
             </li>
             <li>
                 <h3>詳細規格</h3>
-                <div ng-bind="prods.specDetail"></div>   
+                <div ng-bind-html="prods.specDetail"></div>   
             </li>
             <li>
                 <h3>遊戲網址(Demo)</h3>
-                <a href="#/game/1/">輪盤(Demo)</a>
-                <a href="#/game/2/">彈珠台(Demo)</a>
-                <a href="#/game/3/">扭蛋機(Demo)</a>
+                <div>
+                    <a href="#/game/1/">輪盤(Demo)</a>
+                    <a href="#/game/2/">彈珠台(Demo)</a>
+                    <a href="#/game/3/">扭蛋機(Demo)</a>                    
+                </div>
             </li>
         </ul>
 
