@@ -9,24 +9,28 @@
 				</span>
 			</div>
 			<div class="shopCart_content">
+				<!-- name -->
 				<label>
 					<i class="fa fa-user fa-2x"></i>
 				</label>
 				<input type="text" value="{{user[0].name}}">
+				<!-- name end -->
+				<!-- address -->
 				<fieldset class="group">
-				<label>
-					<i class="fa fa-map-marker fa-2x"></i>
-				</label>
-				<div class="selectGroup">
-					<select><option>台北市</option></select>
-					<select><option>南港區</option></select>					
-				</div>
-				<input type="text" value="{{user[0].address}}">
+					<label>
+						<i class="fa fa-map-marker fa-2x"></i>
+					</label>
+					<div class="selectGroup">
+						<select><option>台北市</option></select>
+						<select><option>南港區</option></select>					
+					</div>
+					<input type="text" value="{{user[0].address}}">
 				</fieldset>
 				<label>
 					<i class="fa fa-mobile fa-2x"></i>
 				</label>
 				<input type="text" value="{{user[0].mobile}}">
+				<!-- address end -->
 			</div>
 		</li>
 		<li>
@@ -49,10 +53,10 @@
 				</ul>
 			</div>
 			<div class="shopCart_content priceDetail">
-				<div class="totalPrice" ng-bind="'總額 NT '+prods.priceSpecial+'元'"></div>
+				<div class="totalPrice" ng-bind="'總額 NT$ '+prods.priceSpecial+'元'"></div>
 				<div class="orginCoupon">
-					森活價：$ <span ng-bind="prods.priceOrg"></span>
-					折扣券：<span ng-bind="'$ -'+'0'"></span>
+					森活價：NT$ <span ng-bind="prods.priceOrg"></span>
+					折扣券：<span ng-bind="'NT$ -'+'0'"></span>
 				</div>
 			</div>
 		</li>
