@@ -171,7 +171,7 @@
 		top:0; 
 		width:100%; 
 		height:100%; 
-		background:rgba(255,255,255,.5);
+		background:rgba(255,255,255,.9);
 
 		&.showSlide {
 			display: block;
@@ -213,7 +213,8 @@
 				h3 {
 					color:$pink-text;
 					font-size: 1.2rem;
-					padding:5px 0;
+					padding:10px 0;
+					font-weight: bold;
 				}
 			}
 
@@ -221,16 +222,15 @@
 				z-index:2;
 				left:50%;
 				margin-left:-40px;
-				top:120px;
 				position:absolute;
 				display: block;
-				width:80px;
-				height: 80px;
+				width:100px;
+				height:100px;
 				border-radius:50%;
 				background:$pink-text;
 				color:#ffffff;
 				text-align: center;
-				line-height:40px;
+				line-height:50px;
 				font-size:1.2rem;
 			}
 		}
@@ -247,6 +247,47 @@
 			p:last-child {
 				color:$black-g;
 			}
+		}
+
+		&.bonusPop > a {
+			top:120px;
+		}
+		//game_notice
+		&.game_notice {
+			top:0;
+			left:0;
+			margin:0;
+			width:100%;
+			height:100%;
+			border:0;
+			background: none;
+			& > .popup_content { 
+				padding:20px 20px 60px 20px;
+				line-height: 20px;
+			}
+
+			&:after {
+				content:"";
+				position: absolute;
+				bottom:0;
+				left:0;
+				z-index:1;
+				display: block;
+				width:100%;
+				height:60px;
+				background: -moz-linear-gradient(top,  rgba(255,255,255,0) 1%, rgba(255,255,255,1) 49%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(255,255,255,0)), color-stop(49%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 1%,rgba(255,255,255,1) 49%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(top,  rgba(255,255,255,0) 1%,rgba(255,255,255,1) 49%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+				background: -ms-linear-gradient(top,  rgba(255,255,255,0) 1%,rgba(255,255,255,1) 49%,rgba(255,255,255,1) 100%); /* IE10+ */
+				background: linear-gradient(to bottom,  rgba(255,255,255,0) 1%,rgba(255,255,255,1) 49%,rgba(255,255,255,1) 100%); /* W3C */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+			}
+		}
+
+		&.game_notice > a {
+			bottom:-50px;
+
 		}
 	}
 
