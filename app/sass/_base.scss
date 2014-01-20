@@ -97,7 +97,7 @@ a.steps_Button {
     border-radius:1000em;
     border:4px solid $pink-text;
     transform-origin:50% 50%;
-    -webki-transform-origin:50% 50%;
+    -webkit-transform-origin:50% 50%;
     animation:btnActive 3s infinite ease;
     -webkit-animation:btnActive 3s infinite ease;
     @include border-box-sizing;

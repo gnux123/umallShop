@@ -36,7 +36,7 @@
 			height:60px;
 			line-height: 60px;
 			border-radius:50%;
-			background:$pink-lite;
+			background-color:$pink-lite;
 			color:#ffffff;
 			text-align: center;
 			font-size:2rem;
@@ -61,6 +61,13 @@
 				width:100px;
 				height:100px;
 				line-height:100px;
+
+				background-image: url(./../images/icon_finish.png);
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: 140px;
+				background-color:#ffffff;
+				
 			}
 
 			& > span {
@@ -351,7 +358,7 @@
 		font-weight: bolder;
 		text-align: center;
 		label {
-			font-size:2rem;
+			font-size:1.6rem;
 		}
 
 		input[type='text'] {
@@ -381,7 +388,7 @@
 			float:left;
 			display: inline-block;
 			color:$pink-text;
-			font-size: 1.8rem;
+			font-size: 1.53rem;
 			font-weight: bold;
 			width:80px;
 			height:50px;
@@ -427,4 +434,26 @@
 		}
 	}
 
+
+	.shopFinal > .notice {
+		position: absolute;
+		bottom:30px;
+		display: inline-block;
+		margin:0 auto;
+		left:0;
+	
+		&:after {
+			content: "";
+			position: absolute;
+			z-index: 1;
+			display: block;
+			width:32px;
+			height:32px;
+			background: #ececec;
+			bottom:-20px;
+			right:5px;
+			background: url(./../images/point.png) center no-repeat;
+			background-size:64px;
+		}
+	}
 }

@@ -4166,11 +4166,11 @@ a.steps_Button:before {
   border-radius: 1000em;
   border: 4px solid #d32146;
   transform-origin: 50% 50%;
-  -webki-transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
   animation: btnActive 3s infinite ease;
   -webkit-animation: btnActive 3s infinite ease;
 }
-/* line 14, ../../../../.compass/extensions/susy/sass/susy/_grid.scss */
+/* line 14, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_grid.scss */
 a.steps_Button:before * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -4321,7 +4321,7 @@ a.steps_Button.finish:before {
     display: table;
     clear: both;
   }
-  /* line 14, ../../../../.compass/extensions/susy/sass/susy/_grid.scss */
+  /* line 14, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_grid.scss */
   .page .main > div *, .memberPage .main > div * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -4414,7 +4414,7 @@ a.steps_Button.finish:before {
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.9);
   }
   /* line 176, ../sass/_layout.scss */
   .shadow_bg.showSlide, .mask.showSlide {
@@ -4441,7 +4441,7 @@ a.steps_Button.finish:before {
     height: 160px;
     margin-top: -80px;
   }
-  /* line 14, ../../../../.compass/extensions/susy/sass/susy/_grid.scss */
+  /* line 14, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_grid.scss */
   .popup.game_notice *, .popup.bonusPop * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -4463,23 +4463,23 @@ a.steps_Button.finish:before {
   .popup.game_notice > .popup_content h3, .popup.bonusPop > .popup_content h3 {
     color: #d32146;
     font-size: 1.2rem;
-    padding: 5px 0;
+    padding: 10px 0;
+    font-weight: bold;
   }
-  /* line 220, ../sass/_layout.scss */
+  /* line 221, ../sass/_layout.scss */
   .popup.game_notice > a, .popup.bonusPop > a {
     z-index: 2;
     left: 50%;
     margin-left: -40px;
-    top: 120px;
     position: absolute;
     display: block;
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     background: #d32146;
     color: #ffffff;
     text-align: center;
-    line-height: 40px;
+    line-height: 50px;
     font-size: 1.2rem;
   }
   /* line 239, ../sass/_layout.scss */
@@ -4496,6 +4496,54 @@ a.steps_Button.finish:before {
   /* line 247, ../sass/_layout.scss */
   .popup.bonusPop > .popup_content p:last-child {
     color: #362e2b;
+  }
+  /* line 252, ../sass/_layout.scss */
+  .popup.bonusPop > a {
+    top: 120px;
+  }
+  /* line 256, ../sass/_layout.scss */
+  .popup.game_notice {
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background: none;
+  }
+  /* line 264, ../sass/_layout.scss */
+  .popup.game_notice > .popup_content {
+    padding: 20px 20px 60px 20px;
+    line-height: 20px;
+  }
+  /* line 269, ../sass/_layout.scss */
+  .popup.game_notice:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: 60px;
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 1%, white 49%, white 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, rgba(255, 255, 255, 0)), color-stop(49%, white), color-stop(100%, white));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 1%, white 49%, white 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 1%, white 49%, white 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 1%, white 49%, white 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 1%, #ffffff 49%, #ffffff 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+    /* IE6-9 */
+  }
+  /* line 288, ../sass/_layout.scss */
+  .popup.game_notice > a {
+    bottom: -50px;
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
@@ -4519,7 +4567,7 @@ a.steps_Button.finish:before {
     display: table;
     clear: both;
   }
-  /* line 14, ../../../../.compass/extensions/susy/sass/susy/_grid.scss */
+  /* line 14, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_grid.scss */
   .bonusPage * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -4550,7 +4598,7 @@ a.steps_Button.finish:before {
     color: #d32146;
     text-align: center;
   }
-  /* line 14, ../../../../.compass/extensions/susy/sass/susy/_grid.scss */
+  /* line 14, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_grid.scss */
   .bonusTitle li * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -4602,7 +4650,7 @@ a.steps_Button.finish:before {
     padding-bottom: 10px;
     position: relative;
   }
-  /* line 14, ../../../../.compass/extensions/susy/sass/susy/_grid.scss */
+  /* line 14, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_grid.scss */
   .bonusInput * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -4628,7 +4676,7 @@ a.steps_Button.finish:before {
     padding-left: 10px;
     font-weight: bold;
   }
-  /* line 14, ../../../../.compass/extensions/susy/sass/susy/_grid.scss */
+  /* line 14, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_grid.scss */
   .bonusInput > input[type='text'] * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -4651,6 +4699,31 @@ a.steps_Button.finish:before {
     font-size: 1rem;
     color: #ffffff;
     font-weight: bold;
+  }
+
+  /* line 106, ../sass/_bonus.scss */
+  .noticeTips {
+    position: absolute;
+    display: block;
+    width: 100%;
+    bottom: 20px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  /* line 115, ../sass/_bonus.scss */
+  .noticeTips:after {
+    content: "";
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: #ececec;
+    bottom: -10px;
+    margin: 0 auto;
+    background: url(./../images/point.png) center no-repeat;
+    background-size: 64px;
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
@@ -4713,18 +4786,42 @@ a.steps_Button.finish:before {
 
   /* line 39, ../sass/_prodPage.scss */
   .prodDesc {
-    position: relative;
+    width: 100%;
+    float: right;
+    margin-right: 0;
     margin: 10px 0;
     padding: 0 15px;
   }
-  /* line 43, ../sass/_prodPage.scss */
+  /* line 14, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_grid.scss */
+  .prodDesc * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  /* line 44, ../sass/_prodPage.scss */
   .prodDesc > div {
     font-size: 0.92rem;
     line-height: 20px;
     color: #666666;
   }
 
-  /* line 50, ../sass/_prodPage.scss */
+  /* line 52, ../sass/_prodPage.scss */
+  .payWay_list {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+    padding: 0 15px;
+    margin: 10px 0;
+    font-size: 0.93rem;
+  }
+  /* line 14, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_grid.scss */
+  .payWay_list * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  /* line 60, ../sass/_prodPage.scss */
   .prodShow {
     margin-top: 20px;
     position: relative;
@@ -4734,17 +4831,17 @@ a.steps_Button.finish:before {
     margin-right: 0;
     height: auto;
   }
-  /* line 14, ../../../../.compass/extensions/susy/sass/susy/_grid.scss */
+  /* line 14, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_grid.scss */
   .prodShow * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-  /* line 58, ../sass/_prodPage.scss */
+  /* line 68, ../sass/_prodPage.scss */
   .prodShow img {
     width: 100%;
   }
-  /* line 62, ../sass/_prodPage.scss */
+  /* line 72, ../sass/_prodPage.scss */
   .prodShow .nav {
     z-index: 3;
     position: absolute;
@@ -4754,7 +4851,7 @@ a.steps_Button.finish:before {
     width: 100%;
     text-align: center;
   }
-  /* line 73, ../sass/_prodPage.scss */
+  /* line 83, ../sass/_prodPage.scss */
   .prodShow .nav a {
     display: inline-block;
     width: 13px;
@@ -4763,31 +4860,66 @@ a.steps_Button.finish:before {
     border-radius: 1000em;
     margin-left: 5px;
   }
-  /* line 80, ../sass/_prodPage.scss */
+  /* line 90, ../sass/_prodPage.scss */
   .prodShow .nav a:first-child {
     margin-left: 0;
   }
-  /* line 81, ../sass/_prodPage.scss */
+  /* line 91, ../sass/_prodPage.scss */
   .prodShow .nav a.current {
     background: #cccccc;
   }
 
-  /* line 85, ../sass/_prodPage.scss */
+  /* line 95, ../sass/_prodPage.scss */
   .recommands_zone {
     position: relative;
     width: 100%;
     float: right;
     margin-right: 0;
+    margin-top: 10px;
     padding: 0 10px;
     text-align: center;
+    background: #ffffff;
   }
-  /* line 14, ../../../../.compass/extensions/susy/sass/susy/_grid.scss */
+  /* line 14, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_grid.scss */
   .recommands_zone * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-  /* line 91, ../sass/_prodPage.scss */
+  /* line 104, ../sass/_prodPage.scss */
+  .recommands_zone:after {
+    position: absolute;
+    content: "";
+    display: block;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background: -moz-linear-gradient(top, white 0%, white 70%, rgba(255, 255, 255, 0) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(70%, white), color-stop(100%, rgba(255, 255, 255, 0)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, white 0%, white 70%, rgba(255, 255, 255, 0) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, white 0%, white 70%, rgba(255, 255, 255, 0) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, white 0%, white 70%, rgba(255, 255, 255, 0) 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 70%, rgba(255, 255, 255, 0) 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+    /* IE6-9 */
+  }
+  /* line 124, ../sass/_prodPage.scss */
+  .recommands_zone.fixed {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 0;
+  }
+  /* line 133, ../sass/_prodPage.scss */
   .recommands_zone > ul {
     display: inline-block;
     margin: 0 auto;
@@ -4798,18 +4930,14 @@ a.steps_Button.finish:before {
     display: table;
     clear: both;
   }
-  /* line 96, ../sass/_prodPage.scss */
+  /* line 138, ../sass/_prodPage.scss */
   .recommands_zone > ul > li {
     float: left;
     display: inline;
     width: 100px;
     height: 100px;
   }
-  /* line 102, ../sass/_prodPage.scss */
-  .recommands_zone > ul > li:first-child {
-    margin-left: 0;
-  }
-  /* line 104, ../sass/_prodPage.scss */
+  /* line 144, ../sass/_prodPage.scss */
   .recommands_zone > ul > li > a, .recommands_zone > ul > li > div {
     position: relative;
     display: block;
@@ -4817,24 +4945,24 @@ a.steps_Button.finish:before {
     height: 100px;
     text-align: center;
   }
-  /* line 112, ../sass/_prodPage.scss */
+  /* line 152, ../sass/_prodPage.scss */
   .recommands_zone > ul > li > a > i, .recommands_zone > ul > li > div > i {
     width: 65px;
     height: 65px;
     line-height: 63px;
     border-radius: 10000em;
-    background: #d32146;
+    background-color: #d32146;
     position: absolute;
     text-align: center;
     top: 0;
     left: 17.5px;
     color: #ffffff;
   }
-  /* line 125, ../sass/_prodPage.scss */
+  /* line 165, ../sass/_prodPage.scss */
   .recommands_zone > ul > li > a:first-child > i, .recommands_zone > ul > li > div:first-child > i {
     line-height: 65px;
   }
-  /* line 127, ../sass/_prodPage.scss */
+  /* line 167, ../sass/_prodPage.scss */
   .recommands_zone > ul > li > a span, .recommands_zone > ul > li > div span {
     position: absolute;
     display: block;
@@ -4844,7 +4972,7 @@ a.steps_Button.finish:before {
     font-size: 0.9rem;
     color: #d32146;
   }
-  /* line 137, ../sass/_prodPage.scss */
+  /* line 177, ../sass/_prodPage.scss */
   .recommands_zone > ul > li > a.specBtn, .recommands_zone > ul > li > div.specBtn {
     z-index: 3;
     -webkit-transition: all 500ms ease-in-out;
@@ -4854,37 +4982,48 @@ a.steps_Button.finish:before {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
-  /* line 146, ../sass/_prodPage.scss */
+  /* line 186, ../sass/_prodPage.scss */
   .recommands_zone > ul > li > a.specBtn span.hidein, .recommands_zone > ul > li > div.specBtn span.hidein {
     display: none;
   }
-  /* line 152, ../sass/_prodPage.scss */
+  /* line 192, ../sass/_prodPage.scss */
   .recommands_zone > ul > li > a.specBtn #menu > .menu-item:nth-child(1), .recommands_zone > ul > li > div.specBtn #menu > .menu-item:nth-child(1) {
     transition-delay: 825ms;
     -webkit-transition-delay: 825ms;
   }
-  /* line 152, ../sass/_prodPage.scss */
+  /* line 192, ../sass/_prodPage.scss */
   .recommands_zone > ul > li > a.specBtn #menu > .menu-item:nth-child(2), .recommands_zone > ul > li > div.specBtn #menu > .menu-item:nth-child(2) {
     transition-delay: 900ms;
     -webkit-transition-delay: 900ms;
   }
-  /* line 152, ../sass/_prodPage.scss */
+  /* line 192, ../sass/_prodPage.scss */
   .recommands_zone > ul > li > a.specBtn #menu > .menu-item:nth-child(3), .recommands_zone > ul > li > div.specBtn #menu > .menu-item:nth-child(3) {
     transition-delay: 975ms;
     -webkit-transition-delay: 975ms;
   }
-  /* line 152, ../sass/_prodPage.scss */
+  /* line 192, ../sass/_prodPage.scss */
   .recommands_zone > ul > li > a.specBtn #menu > .menu-item:nth-child(4), .recommands_zone > ul > li > div.specBtn #menu > .menu-item:nth-child(4) {
     transition-delay: 1050ms;
     -webkit-transition-delay: 1050ms;
   }
-  /* line 152, ../sass/_prodPage.scss */
+  /* line 192, ../sass/_prodPage.scss */
   .recommands_zone > ul > li > a.specBtn #menu > .menu-item:nth-child(5), .recommands_zone > ul > li > div.specBtn #menu > .menu-item:nth-child(5) {
     transition-delay: 1125ms;
     -webkit-transition-delay: 1125ms;
   }
+  /* line 201, ../sass/_prodPage.scss */
+  .recommands_zone > ul > li:first-child {
+    margin-left: 0;
+  }
+  /* line 203, ../sass/_prodPage.scss */
+  .recommands_zone > ul > li:first-child > a > i {
+    background-image: url(./../images/icon_news.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 65px;
+  }
 
-  /* line 163, ../sass/_prodPage.scss */
+  /* line 215, ../sass/_prodPage.scss */
   .prodDetails {
     width: 100%;
     float: right;
@@ -4893,13 +5032,13 @@ a.steps_Button.finish:before {
     margin-top: 20px;
     margin-bottom: 40px;
   }
-  /* line 14, ../../../../.compass/extensions/susy/sass/susy/_grid.scss */
+  /* line 14, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_grid.scss */
   .prodDetails * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-  /* line 170, ../sass/_prodPage.scss */
+  /* line 222, ../sass/_prodPage.scss */
   .prodDetails ul > li h3 {
     display: block;
     width: 100%;
@@ -4909,7 +5048,7 @@ a.steps_Button.finish:before {
     color: #d32146;
     font-size: 1rem;
   }
-  /* line 180, ../sass/_prodPage.scss */
+  /* line 232, ../sass/_prodPage.scss */
   .prodDetails ul > li > div {
     margin: 10px 0;
     padding: 0 10px;
@@ -4918,7 +5057,7 @@ a.steps_Button.finish:before {
     font-size: 0.92rem;
   }
 
-  /* line 209, ../sass/_prodPage.scss */
+  /* line 261, ../sass/_prodPage.scss */
   a.shopCart_btn {
     position: fixed;
     bottom: 50px;
@@ -4929,7 +5068,7 @@ a.steps_Button.finish:before {
     text-align: center;
   }
 
-  /* line 219, ../sass/_prodPage.scss */
+  /* line 271, ../sass/_prodPage.scss */
   .priceZone {
     z-index: 99;
     position: fixed;
@@ -4943,7 +5082,7 @@ a.steps_Button.finish:before {
     background: rgba(255, 204, 204, 0.7);
     text-align: right;
   }
-  /* line 230, ../sass/_prodPage.scss */
+  /* line 282, ../sass/_prodPage.scss */
   .priceZone > .shareIcons {
     position: absolute;
     left: 5px;
@@ -4957,19 +5096,19 @@ a.steps_Button.finish:before {
     display: table;
     clear: both;
   }
-  /* line 240, ../sass/_prodPage.scss */
+  /* line 292, ../sass/_prodPage.scss */
   .priceZone > .shareIcons ul li {
     float: left;
     margin-left: 5px;
     font-size: 0.75rem;
   }
-  /* line 244, ../sass/_prodPage.scss */
+  /* line 296, ../sass/_prodPage.scss */
   .priceZone > .shareIcons ul li:first-child {
     margin-left: 0;
     font-size: 1.8rem;
     font-weight: bolder;
   }
-  /* line 251, ../sass/_prodPage.scss */
+  /* line 303, ../sass/_prodPage.scss */
   .priceZone > .shareIcons ul li a {
     display: block;
     width: 30px;
@@ -4981,7 +5120,7 @@ a.steps_Button.finish:before {
     line-height: 30px;
     font-family: arial;
   }
-  /* line 264, ../sass/_prodPage.scss */
+  /* line 316, ../sass/_prodPage.scss */
   .priceZone > span {
     display: inline-block;
     font-size: 1.1rem;
@@ -4989,16 +5128,16 @@ a.steps_Button.finish:before {
     margin-right: 10px;
     font-family: arial;
   }
-  /* line 271, ../sass/_prodPage.scss */
+  /* line 323, ../sass/_prodPage.scss */
   .priceZone > span.org {
     text-decoration: line-through;
   }
-  /* line 272, ../sass/_prodPage.scss */
+  /* line 324, ../sass/_prodPage.scss */
   .priceZone > span.special {
     color: #d32146;
   }
 
-  /* line 276, ../sass/_prodPage.scss */
+  /* line 328, ../sass/_prodPage.scss */
   .prod_specNavs {
     bottom: 0;
     left: 0;
@@ -5007,7 +5146,7 @@ a.steps_Button.finish:before {
     float: right;
     margin-right: 0;
   }
-  /* line 282, ../sass/_prodPage.scss */
+  /* line 334, ../sass/_prodPage.scss */
   .prod_specNavs ul li {
     display: block;
     width: 100%;
@@ -5018,16 +5157,16 @@ a.steps_Button.finish:before {
     text-align: center;
     letter-spacing: 3px;
   }
-  /* line 291, ../sass/_prodPage.scss */
+  /* line 343, ../sass/_prodPage.scss */
   .prod_specNavs ul li:first-child {
     border-top: 0px;
   }
-  /* line 292, ../sass/_prodPage.scss */
+  /* line 344, ../sass/_prodPage.scss */
   .prod_specNavs ul li a {
     color: #d32146;
   }
 
-  /* line 299, ../sass/_prodPage.scss */
+  /* line 351, ../sass/_prodPage.scss */
   .prod_specNavs, .priceZone, .shopCart_btn, .prodShow {
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
@@ -5035,25 +5174,25 @@ a.steps_Button.finish:before {
     transition: all 1s ease-in-out;
   }
 
-  /* line 306, ../sass/_prodPage.scss */
+  /* line 358, ../sass/_prodPage.scss */
   .priceZone, .shopCart_btn {
     opacity: 1;
   }
-  /* line 308, ../sass/_prodPage.scss */
+  /* line 360, ../sass/_prodPage.scss */
   .priceZone.hidein, .shopCart_btn.hidein {
     opacity: 0;
   }
 
-  /* line 313, ../sass/_prodPage.scss */
+  /* line 365, ../sass/_prodPage.scss */
   .prodShow {
     opacity: 1;
   }
-  /* line 315, ../sass/_prodPage.scss */
+  /* line 367, ../sass/_prodPage.scss */
   .prodShow.hidein {
     opacity: 0.5;
   }
 
-  /* line 320, ../sass/_prodPage.scss */
+  /* line 372, ../sass/_prodPage.scss */
   .prod_specNavs {
     -webkit-transform: translate3d(0, 300px, 0);
     -moz-transform: translate3d(0, 300px, 0);
@@ -5061,7 +5200,7 @@ a.steps_Button.finish:before {
     -o-transform: translate3d(0, 300px, 0);
     transform: translate3d(0, 300px, 0);
   }
-  /* line 327, ../sass/_prodPage.scss */
+  /* line 379, ../sass/_prodPage.scss */
   .prod_specNavs.active {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -5070,12 +5209,12 @@ a.steps_Button.finish:before {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 340, ../sass/_prodPage.scss */
+  /* line 392, ../sass/_prodPage.scss */
   #menu {
     position: relative;
     z-index: -1;
   }
-  /* line 344, ../sass/_prodPage.scss */
+  /* line 396, ../sass/_prodPage.scss */
   #menu > li.menu-item {
     width: 30px;
     height: 30px;
@@ -5092,7 +5231,7 @@ a.steps_Button.finish:before {
     border-radius: 50%;
     overflow: hidden;
   }
-  /* line 361, ../sass/_prodPage.scss */
+  /* line 413, ../sass/_prodPage.scss */
   #menu > li a {
     display: block;
     width: 30px;
@@ -5104,7 +5243,7 @@ a.steps_Button.finish:before {
     z-index: 2;
   }
 
-  /* line 374, ../sass/_prodPage.scss */
+  /* line 426, ../sass/_prodPage.scss */
   div.specBtn.fixZone {
     -webkit-transition: all 1200ms ease-in-out;
     -moz-transition: all 1200ms ease-in-out;
@@ -5115,39 +5254,39 @@ a.steps_Button.finish:before {
     -webkit-transform: translate3d(0, 60px, 0);
     transform: translate3d(0, 60px, 0);
   }
-  /* line 384, ../sass/_prodPage.scss */
+  /* line 436, ../sass/_prodPage.scss */
   div.specBtn.fixZone a {
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
   }
-  /* line 401, ../sass/_prodPage.scss */
+  /* line 453, ../sass/_prodPage.scss */
   div.specBtn.fixZone #menu > .menu-item:nth-child(1) {
     transition-delay: 675ms;
     transform: translate3d(0.0px, -60px, 0);
     -webkit-transition-delay: 575ms;
     -webkit-transform: translate3d(0.0px, -60px, 0);
   }
-  /* line 401, ../sass/_prodPage.scss */
+  /* line 453, ../sass/_prodPage.scss */
   div.specBtn.fixZone #menu > .menu-item:nth-child(2) {
     transition-delay: 750ms;
     transform: translate3d(-42.42641px, -42.42641px, 0);
     -webkit-transition-delay: 650ms;
     -webkit-transform: translate3d(-42.42641px, -42.42641px, 0);
   }
-  /* line 401, ../sass/_prodPage.scss */
+  /* line 453, ../sass/_prodPage.scss */
   div.specBtn.fixZone #menu > .menu-item:nth-child(3) {
     transition-delay: 825ms;
     transform: translate3d(-60px, 0.0px, 0);
     -webkit-transition-delay: 725ms;
     -webkit-transform: translate3d(-60px, 0.0px, 0);
   }
-  /* line 401, ../sass/_prodPage.scss */
+  /* line 453, ../sass/_prodPage.scss */
   div.specBtn.fixZone #menu > .menu-item:nth-child(4) {
     transition-delay: 900ms;
     transform: translate3d(-42.42641px, 42.42641px, 0);
     -webkit-transition-delay: 800ms;
     -webkit-transform: translate3d(-42.42641px, 42.42641px, 0);
   }
-  /* line 401, ../sass/_prodPage.scss */
+  /* line 453, ../sass/_prodPage.scss */
   div.specBtn.fixZone #menu > .menu-item:nth-child(5) {
     transition-delay: 975ms;
     transform: translate3d(0.0px, 60px, 0);
@@ -5155,7 +5294,7 @@ a.steps_Button.finish:before {
     -webkit-transform: translate3d(0.0px, 60px, 0);
   }
 
-  /* line 411, ../sass/_prodPage.scss */
+  /* line 463, ../sass/_prodPage.scss */
   .specChoice_title {
     margin: 10px 0;
     width: 100%;
@@ -5168,26 +5307,26 @@ a.steps_Button.finish:before {
     text-align: center;
     color: #362e2b;
   }
-  /* line 14, ../../../../.compass/extensions/susy/sass/susy/_grid.scss */
+  /* line 14, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_grid.scss */
   .specChoice_title * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
 
-  /* line 423, ../sass/_prodPage.scss */
+  /* line 475, ../sass/_prodPage.scss */
   .specChoiceWrap {
     position: relative;
     height: 60px;
     overflow: hidden;
   }
-  /* line 14, ../../../../.compass/extensions/susy/sass/susy/_grid.scss */
+  /* line 14, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_grid.scss */
   .specChoiceWrap * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-  /* line 428, ../sass/_prodPage.scss */
+  /* line 480, ../sass/_prodPage.scss */
   .specChoiceWrap > ul {
     position: absolute;
     display: inline-block;
@@ -5198,7 +5337,7 @@ a.steps_Button.finish:before {
     display: table;
     clear: both;
   }
-  /* line 434, ../sass/_prodPage.scss */
+  /* line 486, ../sass/_prodPage.scss */
   .specChoiceWrap > ul li {
     margin: 5px;
     float: left;
@@ -5212,19 +5351,19 @@ a.steps_Button.finish:before {
     text-align: center;
     line-height: 46px;
   }
-  /* line 14, ../../../../.compass/extensions/susy/sass/susy/_grid.scss */
+  /* line 14, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_grid.scss */
   .specChoiceWrap > ul li * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
 
-  /* line 451, ../sass/_prodPage.scss */
+  /* line 503, ../sass/_prodPage.scss */
   .specChoiceWrap.specChoice {
     margin: 0 10px;
     border: 2px solid #ffcccc;
   }
-  /* line 454, ../sass/_prodPage.scss */
+  /* line 506, ../sass/_prodPage.scss */
   .specChoiceWrap.specChoice > ul {
     left: 30px;
     top: 0;
@@ -5232,7 +5371,7 @@ a.steps_Button.finish:before {
     -webkit-transition: all 500ms linear;
     transition: all 500ms linear;
   }
-  /* line 462, ../sass/_prodPage.scss */
+  /* line 514, ../sass/_prodPage.scss */
   .specChoiceWrap.specChoice .slideBtn {
     position: absolute;
     width: 25px;
@@ -5241,7 +5380,7 @@ a.steps_Button.finish:before {
     z-index: 1;
     top: 0;
   }
-  /* line 470, ../sass/_prodPage.scss */
+  /* line 522, ../sass/_prodPage.scss */
   .specChoiceWrap.specChoice .slideBtn i {
     margin-top: 10px;
     position: relative;
@@ -5250,12 +5389,12 @@ a.steps_Button.finish:before {
     text-align: center;
     color: #ffffff;
   }
-  /* line 480, ../sass/_prodPage.scss */
+  /* line 532, ../sass/_prodPage.scss */
   .specChoiceWrap.specChoice .slideBtn.nextBtn {
     right: 0;
   }
 
-  /* line 486, ../sass/_prodPage.scss */
+  /* line 538, ../sass/_prodPage.scss */
   .specChoiceWrap.sizeChoice {
     width: 100%;
     float: right;
@@ -5265,12 +5404,12 @@ a.steps_Button.finish:before {
     height: 40px;
     text-align: center;
   }
-  /* line 492, ../sass/_prodPage.scss */
+  /* line 544, ../sass/_prodPage.scss */
   .specChoiceWrap.sizeChoice > ul {
     position: relative;
     display: inline-block;
   }
-  /* line 497, ../sass/_prodPage.scss */
+  /* line 549, ../sass/_prodPage.scss */
   .specChoiceWrap.sizeChoice > ul li {
     float: left;
     margin: 0 5px;
@@ -5280,13 +5419,13 @@ a.steps_Button.finish:before {
     background: #d32146;
     border: 0;
   }
-  /* line 505, ../sass/_prodPage.scss */
+  /* line 557, ../sass/_prodPage.scss */
   .specChoiceWrap.sizeChoice > ul li a {
     color: #ffffff;
     font-size: 0.93rem;
   }
 
-  /* line 513, ../sass/_prodPage.scss */
+  /* line 565, ../sass/_prodPage.scss */
   .prodCommen > li {
     position: relative;
     display: block;
@@ -5294,13 +5433,13 @@ a.steps_Button.finish:before {
     float: right;
     margin-right: 0;
   }
-  /* line 14, ../../../../.compass/extensions/susy/sass/susy/_grid.scss */
+  /* line 14, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_grid.scss */
   .prodCommen > li * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-  /* line 520, ../sass/_prodPage.scss */
+  /* line 572, ../sass/_prodPage.scss */
   .prodCommen > li.prodCommen_event a {
     display: block;
     width: 100%;
@@ -5313,7 +5452,7 @@ a.steps_Button.finish:before {
     border-color: #d32146;
     overflow: hidden;
   }
-  /* line 533, ../sass/_prodPage.scss */
+  /* line 585, ../sass/_prodPage.scss */
   .prodCommen > li.prodCommen_event h2, .prodCommen > li.prodCommen_event p {
     display: block;
     width: 98%;
@@ -5326,17 +5465,17 @@ a.steps_Button.finish:before {
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
   }
-  /* line 542, ../sass/_prodPage.scss */
+  /* line 594, ../sass/_prodPage.scss */
   .prodCommen > li.prodCommen_event h2 {
     font-size: 1rem;
     font-weight: bolder;
   }
-  /* line 547, ../sass/_prodPage.scss */
+  /* line 599, ../sass/_prodPage.scss */
   .prodCommen > li.prodCommen_event p {
     font-size: 0.93rem;
     color: #d32146;
   }
-  /* line 551, ../sass/_prodPage.scss */
+  /* line 603, ../sass/_prodPage.scss */
   .prodCommen > li.prodCommen_event span.cate {
     position: absolute;
     left: 0;
@@ -5348,17 +5487,17 @@ a.steps_Button.finish:before {
     line-height: 20px;
     background: #d32146;
   }
-  /* line 562, ../sass/_prodPage.scss */
+  /* line 614, ../sass/_prodPage.scss */
   .prodCommen > li.prodCommen_event span.cate > i, .prodCommen > li.prodCommen_event span.cate > font {
     color: #ffffff;
     font-size: 0.93rem;
   }
-  /* line 567, ../sass/_prodPage.scss */
+  /* line 619, ../sass/_prodPage.scss */
   .prodCommen > li.prodCommen_event span.cate > i {
     position: relative;
     top: -2px;
   }
-  /* line 572, ../sass/_prodPage.scss */
+  /* line 624, ../sass/_prodPage.scss */
   .prodCommen > li.prodCommen_event span.cate:before {
     content: "";
     position: absolute;
@@ -5371,7 +5510,7 @@ a.steps_Button.finish:before {
     border-width: 20px 20px 0 0;
     border-color: #d32146 transparent transparent transparent;
   }
-  /* line 586, ../sass/_prodPage.scss */
+  /* line 639, ../sass/_prodPage.scss */
   .prodCommen > li.prodCommen_event span.from {
     position: absolute;
     right: 5px;
@@ -5379,17 +5518,17 @@ a.steps_Button.finish:before {
     font-size: 0.7rem;
     padding: 0 5px;
   }
-  /* line 595, ../sass/_prodPage.scss */
+  /* line 648, ../sass/_prodPage.scss */
   .prodCommen > li:first-child > a {
     border: 3px solid #d32146;
   }
 
-  /* line 600, ../sass/_prodPage.scss */
+  /* line 653, ../sass/_prodPage.scss */
   .prodCommen > li > a:visited span.cate:before, .prodCommen > li > a:hover span.cate:before, .prodCommen > li > a:active span.cate:before, .prodCommen > li > a:focus span.cate:before {
     border-color: #d32146 transparent transparent transparent;
   }
 
-  /* line 604, ../sass/_prodPage.scss */
+  /* line 657, ../sass/_prodPage.scss */
   .ifmContent {
     width: 100%;
     overflow: scroll;
@@ -5416,7 +5555,7 @@ a.steps_Button.finish:before {
     display: table;
     clear: both;
   }
-  /* line 14, ../../../../.compass/extensions/susy/sass/susy/_grid.scss */
+  /* line 14, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_grid.scss */
   .shopCart * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -5456,7 +5595,7 @@ a.steps_Button.finish:before {
     font-family: arial;
     margin-bottom: 10px;
   }
-  /* line 14, ../../../../.compass/extensions/susy/sass/susy/_grid.scss */
+  /* line 14, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_grid.scss */
   .shopCart_title * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -5470,13 +5609,13 @@ a.steps_Button.finish:before {
     height: 60px;
     line-height: 60px;
     border-radius: 50%;
-    background: #ffcccc;
+    background-color: #ffcccc;
     color: #ffffff;
     text-align: center;
     font-size: 2rem;
     overflow: hidden;
   }
-  /* line 14, ../../../../.compass/extensions/susy/sass/susy/_grid.scss */
+  /* line 14, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_grid.scss */
   .shopCart_title > i * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -5503,27 +5642,32 @@ a.steps_Button.finish:before {
     width: 100px;
     height: 100px;
     line-height: 100px;
+    background-image: url(./../images/icon_finish.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 140px;
+    background-color: #ffffff;
   }
-  /* line 66, ../sass/_shopCart.scss */
+  /* line 73, ../sass/_shopCart.scss */
   .shopCart_title.finish_title > span {
     font-size: 1.7rem;
   }
 
-  /* line 72, ../sass/_shopCart.scss */
+  /* line 79, ../sass/_shopCart.scss */
   .shopCart_content {
     width: 100%;
     float: right;
     margin-right: 0;
     height: auto;
   }
-  /* line 14, ../../../../.compass/extensions/susy/sass/susy/_grid.scss */
+  /* line 14, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_grid.scss */
   .shopCart_content * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
 
-  /* line 78, ../sass/_shopCart.scss */
+  /* line 85, ../sass/_shopCart.scss */
   .shopCart_content > label, .shopCart_content .group > label {
     width: 24.09639%;
     float: left;
@@ -5535,14 +5679,14 @@ a.steps_Button.finish:before {
     color: #ffffff;
     text-align: center;
   }
-  /* line 14, ../../../../.compass/extensions/susy/sass/susy/_grid.scss */
+  /* line 14, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_grid.scss */
   .shopCart_content > label *, .shopCart_content .group > label * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
 
-  /* line 89, ../sass/_shopCart.scss */
+  /* line 96, ../sass/_shopCart.scss */
   .shopCart_content > input[type='text'] {
     width: 74.6988%;
     float: right;
@@ -5553,26 +5697,26 @@ a.steps_Button.finish:before {
     border: 3px solid #ffcccc;
     font-size: 1rem;
   }
-  /* line 14, ../../../../.compass/extensions/susy/sass/susy/_grid.scss */
+  /* line 14, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_grid.scss */
   .shopCart_content > input[type='text'] * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
 
-  /* line 100, ../sass/_shopCart.scss */
+  /* line 107, ../sass/_shopCart.scss */
   .shopCart_content .group > .selectGroup {
     width: 74.6988%;
     float: right;
     margin-right: 0;
   }
-  /* line 14, ../../../../.compass/extensions/susy/sass/susy/_grid.scss */
+  /* line 14, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_grid.scss */
   .shopCart_content .group > .selectGroup * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-  /* line 104, ../sass/_shopCart.scss */
+  /* line 111, ../sass/_shopCart.scss */
   .shopCart_content .group > .selectGroup > select {
     width: 49.39759%;
     float: left;
@@ -5584,23 +5728,23 @@ a.steps_Button.finish:before {
     background: #ffffff;
     border: 3px solid #ffcccc;
   }
-  /* line 42, ../../../../.compass/extensions/susy/sass/susy/_isolation.scss */
+  /* line 42, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_isolation.scss */
   .shopCart_content .group > .selectGroup > select:nth-child(2n + 1) {
     margin-left: 0%;
     clear: left;
   }
-  /* line 42, ../../../../.compass/extensions/susy/sass/susy/_isolation.scss */
+  /* line 42, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_isolation.scss */
   .shopCart_content .group > .selectGroup > select:nth-child(2n + 2) {
     margin-left: 50.60241%;
     clear: none;
   }
-  /* line 14, ../../../../.compass/extensions/susy/sass/susy/_grid.scss */
+  /* line 14, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_grid.scss */
   .shopCart_content .group > .selectGroup > select * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-  /* line 115, ../sass/_shopCart.scss */
+  /* line 122, ../sass/_shopCart.scss */
   .shopCart_content .group > input[type='text'] {
     width: 100%;
     float: right;
@@ -5612,25 +5756,25 @@ a.steps_Button.finish:before {
     border: 3px solid #ffcccc;
     font-size: 1rem;
   }
-  /* line 14, ../../../../.compass/extensions/susy/sass/susy/_grid.scss */
+  /* line 14, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_grid.scss */
   .shopCart_content .group > input[type='text'] * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
 
-  /* line 127, ../sass/_shopCart.scss */
+  /* line 134, ../sass/_shopCart.scss */
   .shopCart_content label, .shopCart_content > input[type='text'] {
     margin: 5px 0;
   }
 
-  /* line 131, ../sass/_shopCart.scss */
+  /* line 138, ../sass/_shopCart.scss */
   .shopCart_content.orderInfo {
     margin: 5px 0;
     border: 3px solid #ffcccc;
     padding: 5px;
   }
-  /* line 136, ../sass/_shopCart.scss */
+  /* line 143, ../sass/_shopCart.scss */
   .shopCart_content.orderInfo > ul li {
     position: relative;
     width: 24.09639%;
@@ -5643,33 +5787,33 @@ a.steps_Button.finish:before {
     text-align: center;
     color: #d32146;
   }
-  /* line 42, ../../../../.compass/extensions/susy/sass/susy/_isolation.scss */
+  /* line 42, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_isolation.scss */
   .shopCart_content.orderInfo > ul li:nth-child(4n + 1) {
     margin-left: 0%;
     clear: left;
   }
-  /* line 42, ../../../../.compass/extensions/susy/sass/susy/_isolation.scss */
+  /* line 42, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_isolation.scss */
   .shopCart_content.orderInfo > ul li:nth-child(4n + 2) {
     margin-left: 25.3012%;
     clear: none;
   }
-  /* line 42, ../../../../.compass/extensions/susy/sass/susy/_isolation.scss */
+  /* line 42, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_isolation.scss */
   .shopCart_content.orderInfo > ul li:nth-child(4n + 3) {
     margin-left: 50.60241%;
     clear: none;
   }
-  /* line 42, ../../../../.compass/extensions/susy/sass/susy/_isolation.scss */
+  /* line 42, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_isolation.scss */
   .shopCart_content.orderInfo > ul li:nth-child(4n + 4) {
     margin-left: 75.90361%;
     clear: none;
   }
-  /* line 14, ../../../../.compass/extensions/susy/sass/susy/_grid.scss */
+  /* line 14, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_grid.scss */
   .shopCart_content.orderInfo > ul li * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-  /* line 145, ../sass/_shopCart.scss */
+  /* line 152, ../sass/_shopCart.scss */
   .shopCart_content.orderInfo > ul li:before {
     position: absolute;
     top: 0;
@@ -5679,16 +5823,16 @@ a.steps_Button.finish:before {
     line-height: 65px;
     font-size: 1rem;
   }
-  /* line 154, ../sass/_shopCart.scss */
+  /* line 161, ../sass/_shopCart.scss */
   .shopCart_content.orderInfo > ul li:first-child:before {
     display: none;
   }
-  /* line 155, ../sass/_shopCart.scss */
+  /* line 162, ../sass/_shopCart.scss */
   .shopCart_content.orderInfo > ul li:last-child {
     font-weight: lighter;
     font-size: 2.5rem;
   }
-  /* line 159, ../sass/_shopCart.scss */
+  /* line 166, ../sass/_shopCart.scss */
   .shopCart_content.orderInfo > ul li .specWrap {
     position: absolute;
     top: 5px;
@@ -5704,23 +5848,23 @@ a.steps_Button.finish:before {
     overflow: hidden;
     color: #ffffff;
   }
-  /* line 14, ../../../../.compass/extensions/susy/sass/susy/_grid.scss */
+  /* line 14, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_grid.scss */
   .shopCart_content.orderInfo > ul li .specWrap * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-  /* line 175, ../sass/_shopCart.scss */
+  /* line 182, ../sass/_shopCart.scss */
   .shopCart_content.orderInfo > ul li .specWrap.size {
     font-size: 1.3rem;
   }
 
-  /* line 180, ../sass/_shopCart.scss */
+  /* line 187, ../sass/_shopCart.scss */
   .shopCart_content.priceDetail {
     margin: 20px 0;
     font-family: arial;
   }
-  /* line 183, ../sass/_shopCart.scss */
+  /* line 190, ../sass/_shopCart.scss */
   .shopCart_content.priceDetail .totalPrice {
     width: 100%;
     float: right;
@@ -5730,13 +5874,13 @@ a.steps_Button.finish:before {
     font-size: 1.5rem;
     color: #d32146;
   }
-  /* line 14, ../../../../.compass/extensions/susy/sass/susy/_grid.scss */
+  /* line 14, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_grid.scss */
   .shopCart_content.priceDetail .totalPrice * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-  /* line 192, ../sass/_shopCart.scss */
+  /* line 199, ../sass/_shopCart.scss */
   .shopCart_content.priceDetail .orginCoupon {
     margin: 5px 0;
     width: 100%;
@@ -5749,18 +5893,18 @@ a.steps_Button.finish:before {
     text-align: center;
     font-size: 0.92rem;
   }
-  /* line 14, ../../../../.compass/extensions/susy/sass/susy/_grid.scss */
+  /* line 14, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_grid.scss */
   .shopCart_content.priceDetail .orginCoupon * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-  /* line 204, ../sass/_shopCart.scss */
+  /* line 211, ../sass/_shopCart.scss */
   .shopCart_content.priceDetail .orginCoupon span:first-child + span {
     color: #d32146;
   }
 
-  /* line 207, ../sass/_shopCart.scss */
+  /* line 214, ../sass/_shopCart.scss */
   .discountNavs, .paymentWay {
     margin-top: 10px;
   }
@@ -5772,7 +5916,7 @@ a.steps_Button.finish:before {
     clear: both;
   }
 
-  /* line 218, ../sass/_shopCart.scss */
+  /* line 225, ../sass/_shopCart.scss */
   .discountNavs ul > li, .paymentWay ul > li {
     position: relative;
     float: left;
@@ -5783,29 +5927,29 @@ a.steps_Button.finish:before {
     margin-right: 1.6129%;
     margin-right: -100%;
   }
-  /* line 42, ../../../../.compass/extensions/susy/sass/susy/_isolation.scss */
+  /* line 42, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_isolation.scss */
   .discountNavs ul > li:nth-child(3n + 1), .paymentWay ul > li:nth-child(3n + 1) {
     margin-left: 0%;
     clear: left;
   }
-  /* line 42, ../../../../.compass/extensions/susy/sass/susy/_isolation.scss */
+  /* line 42, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_isolation.scss */
   .discountNavs ul > li:nth-child(3n + 2), .paymentWay ul > li:nth-child(3n + 2) {
     margin-left: 33.87097%;
     clear: none;
   }
-  /* line 42, ../../../../.compass/extensions/susy/sass/susy/_isolation.scss */
+  /* line 42, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_isolation.scss */
   .discountNavs ul > li:nth-child(3n + 3), .paymentWay ul > li:nth-child(3n + 3) {
     margin-left: 67.74194%;
     clear: none;
   }
-  /* line 14, ../../../../.compass/extensions/susy/sass/susy/_grid.scss */
+  /* line 14, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_grid.scss */
   .discountNavs ul > li *, .paymentWay ul > li * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
 
-  /* line 229, ../sass/_shopCart.scss */
+  /* line 236, ../sass/_shopCart.scss */
   .discountNavs ul > li > a, .paymentWay ul > li > a {
     position: relative;
     display: inline-block;
@@ -5817,7 +5961,7 @@ a.steps_Button.finish:before {
     font-size: 0.92rem;
   }
 
-  /* line 242, ../sass/_shopCart.scss */
+  /* line 249, ../sass/_shopCart.scss */
   .discountNavs ul > li.current > a:before {
     position: absolute;
     top: 25px;
@@ -5831,7 +5975,7 @@ a.steps_Button.finish:before {
     border-width: 0 10px 10px 10px;
     border-color: transparent transparent #d32146 transparent;
   }
-  /* line 256, ../sass/_shopCart.scss */
+  /* line 263, ../sass/_shopCart.scss */
   .discountNavs .couponNums {
     position: absolute;
     right: -10px;
@@ -5847,40 +5991,40 @@ a.steps_Button.finish:before {
     font-weight: bold;
     font-family: arial;
   }
-  /* line 270, ../sass/_shopCart.scss */
+  /* line 277, ../sass/_shopCart.scss */
   .discountNavs .couponNums.couponShow {
     display: none;
   }
 
-  /* line 277, ../sass/_shopCart.scss */
+  /* line 284, ../sass/_shopCart.scss */
   .discountNavs ul > li:first-child > a {
     margin: 0 0 0 40%;
   }
-  /* line 278, ../sass/_shopCart.scss */
+  /* line 285, ../sass/_shopCart.scss */
   .discountNavs ul > li:last-child > a {
     margin: 0 40% 0 0;
   }
 
-  /* line 281, ../sass/_shopCart.scss */
+  /* line 288, ../sass/_shopCart.scss */
   .paymentWay {
     margin-bottom: 20px;
   }
 
-  /* line 284, ../sass/_shopCart.scss */
+  /* line 291, ../sass/_shopCart.scss */
   .paymentWay ul > li > a {
     margin: 0 13%;
   }
 
-  /* line 286, ../sass/_shopCart.scss */
+  /* line 293, ../sass/_shopCart.scss */
   .paymentWay ul > li:first-child > a {
     margin: 0 0 0 55%;
   }
-  /* line 287, ../sass/_shopCart.scss */
+  /* line 294, ../sass/_shopCart.scss */
   .paymentWay ul > li:last-child > a {
     margin: 0 40% 0 0;
   }
 
-  /* line 291, ../sass/_shopCart.scss */
+  /* line 298, ../sass/_shopCart.scss */
   .discount_tips {
     position: relative;
     width: 100%;
@@ -5892,14 +6036,14 @@ a.steps_Button.finish:before {
     letter-spacing: 1px;
     color: #d32146;
   }
-  /* line 14, ../../../../.compass/extensions/susy/sass/susy/_grid.scss */
+  /* line 14, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_grid.scss */
   .discount_tips * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
 
-  /* line 302, ../sass/_shopCart.scss */
+  /* line 309, ../sass/_shopCart.scss */
   .discountPop {
     position: relative;
     width: 100%;
@@ -5910,13 +6054,13 @@ a.steps_Button.finish:before {
     border: 3px solid #d32146;
     height: 200px;
   }
-  /* line 14, ../../../../.compass/extensions/susy/sass/susy/_grid.scss */
+  /* line 14, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_grid.scss */
   .discountPop * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-  /* line 311, ../sass/_shopCart.scss */
+  /* line 318, ../sass/_shopCart.scss */
   .discountPop > a.disClose {
     z-index: 1;
     top: 0;
@@ -5930,12 +6074,12 @@ a.steps_Button.finish:before {
     background: #d32146;
     color: #ffffff;
   }
-  /* line 324, ../sass/_shopCart.scss */
+  /* line 331, ../sass/_shopCart.scss */
   .discountPop > a.disClose > i {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
   }
-  /* line 330, ../sass/_shopCart.scss */
+  /* line 337, ../sass/_shopCart.scss */
   .discountPop .disContent {
     z-index: 0;
     left: 0;
@@ -5947,7 +6091,7 @@ a.steps_Button.finish:before {
     overflow-y: scroll;
   }
 
-  /* line 344, ../sass/_shopCart.scss */
+  /* line 351, ../sass/_shopCart.scss */
   .disContent > fieldset {
     margin-top: 50px;
     display: block;
@@ -5958,11 +6102,11 @@ a.steps_Button.finish:before {
     font-weight: bolder;
     text-align: center;
   }
-  /* line 353, ../sass/_shopCart.scss */
+  /* line 360, ../sass/_shopCart.scss */
   .disContent > fieldset label {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
-  /* line 357, ../sass/_shopCart.scss */
+  /* line 364, ../sass/_shopCart.scss */
   .disContent > fieldset input[type='text'] {
     border: 0;
     font-size: 2rem;
@@ -5972,14 +6116,14 @@ a.steps_Button.finish:before {
     border-radius: 0;
   }
 
-  /* line 368, ../sass/_shopCart.scss */
+  /* line 375, ../sass/_shopCart.scss */
   .disContent > .useTime, .disContent > .useBonus {
     width: 100%;
     margin-top: 10px;
     text-align: center;
   }
 
-  /* line 376, ../sass/_shopCart.scss */
+  /* line 383, ../sass/_shopCart.scss */
   .disLists > li {
     position: relative;
     font-family: arial;
@@ -5990,12 +6134,12 @@ a.steps_Button.finish:before {
     display: table;
     clear: both;
   }
-  /* line 380, ../sass/_shopCart.scss */
+  /* line 387, ../sass/_shopCart.scss */
   .disLists > li h1 {
     float: left;
     display: inline-block;
     color: #d32146;
-    font-size: 1.8rem;
+    font-size: 1.53rem;
     font-weight: bold;
     width: 80px;
     height: 50px;
@@ -6003,7 +6147,7 @@ a.steps_Button.finish:before {
     letter-spacing: -2px;
     text-align: right;
   }
-  /* line 393, ../sass/_shopCart.scss */
+  /* line 400, ../sass/_shopCart.scss */
   .disLists > li > div {
     margin-left: 5px;
     float: left;
@@ -6011,7 +6155,7 @@ a.steps_Button.finish:before {
     font-size: 0.92rem;
     letter-spacing: -1px;
   }
-  /* line 399, ../sass/_shopCart.scss */
+  /* line 406, ../sass/_shopCart.scss */
   .disLists > li > div p:first-child {
     font-size: 1rem;
     color: #d32146;
@@ -6019,13 +6163,13 @@ a.steps_Button.finish:before {
     line-height: 25px;
   }
 
-  /* line 408, ../sass/_shopCart.scss */
+  /* line 415, ../sass/_shopCart.scss */
   .paymentCid label > i {
     font-size: 1.5rem;
     line-height: 35px;
   }
 
-  /* line 413, ../sass/_shopCart.scss */
+  /* line 420, ../sass/_shopCart.scss */
   .shopBtn_area {
     position: relative;
     width: 100%;
@@ -6034,20 +6178,43 @@ a.steps_Button.finish:before {
     text-align: center;
     height: 150px;
   }
-  /* line 14, ../../../../.compass/extensions/susy/sass/susy/_grid.scss */
+  /* line 14, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_grid.scss */
   .shopBtn_area * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-  /* line 420, ../sass/_shopCart.scss */
+  /* line 427, ../sass/_shopCart.scss */
   .shopBtn_area.prodSpec_btn {
     margin-top: 70px;
   }
-  /* line 424, ../sass/_shopCart.scss */
+  /* line 431, ../sass/_shopCart.scss */
   .shopBtn_area a.steps_Button {
     position: absolute;
     top: 10px;
+  }
+
+  /* line 438, ../sass/_shopCart.scss */
+  .shopFinal > .notice {
+    position: absolute;
+    bottom: 30px;
+    display: inline-block;
+    margin: 0 auto;
+    left: 0;
+  }
+  /* line 445, ../sass/_shopCart.scss */
+  .shopFinal > .notice:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: #ececec;
+    bottom: -20px;
+    right: 5px;
+    background: url(./../images/point.png) center no-repeat;
+    background-size: 64px;
   }
 }
 @-webkit-keyframes inball {
@@ -6149,7 +6316,7 @@ a.steps_Button.finish:before {
     display: table;
     clear: both;
   }
-  /* line 14, ../../../../.compass/extensions/susy/sass/susy/_grid.scss */
+  /* line 14, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_grid.scss */
   .gameEvent * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -6295,7 +6462,7 @@ a.steps_Button.finish:before {
     display: table;
     clear: both;
   }
-  /* line 14, ../../../../.compass/extensions/susy/sass/susy/_grid.scss */
+  /* line 14, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_grid.scss */
   .loginPage * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -6324,7 +6491,7 @@ a.steps_Button.finish:before {
     height: 100%;
     background: url(./../images/bg.jpg) no-repeat;
   }
-  /* line 14, ../../../../.compass/extensions/susy/sass/susy/_grid.scss */
+  /* line 14, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_grid.scss */
   .sideMenuWrap * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;

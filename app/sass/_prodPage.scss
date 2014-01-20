@@ -37,7 +37,8 @@
 	}
 
 	.prodDesc {
-		position:relative;
+		@include span-columns(4 omega);
+		@include border-box-sizing; 
 		margin:10px 0;
 		padding:0 15px;
 		& > div {
@@ -45,6 +46,15 @@
 			line-height:20px;
 			color:#666666;
 		}
+
+	}
+
+	.payWay_list {
+		@include span-columns(4 omega);
+		@include border-box-sizing;
+		padding:0 15px;
+		margin:10px 0;
+		font-size:0.93rem;	
 	}
 
 	.prodShow {
@@ -83,11 +93,43 @@
 	}
 
 	.recommands_zone {
-		position:relative;
+		position: relative;
 		@include span-columns(4 omega);
 		@include border-box-sizing;
+		margin-top:10px;
 		padding:0 10px;
 		text-align: center;
+		background: #ffffff;
+		
+		&:after {
+			position: absolute;
+			content:"";
+			display: block;
+			bottom:-30px;
+			left:0;
+			width:100%;
+			height:30px;
+			background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 70%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(70%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 70%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 70%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 70%,rgba(255,255,255,0) 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 70%,rgba(255,255,255,0) 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+
+
+		}
+
+		
+		&.fixed {
+			position:fixed;
+			z-index:5;
+			top:0;
+			left:0;
+			width:100%;
+			margin-top:0;
+		}
+
 		& > ul { 
 			@include pie-clearfix;
 			display: inline-block;
@@ -98,8 +140,6 @@
 			display: inline;
 			width:100px;
 			height:100px;
-			
-			&:first-child { margin-left:0; }
 
 			& > a, & > div {
 				position:relative;
@@ -114,7 +154,7 @@
 					height:65px;
 					line-height:63px;
 					border-radius:10000em;
-					background:$pink-text;
+					background-color:$pink-text;
 					position:absolute;
 					text-align: center;
 					top:0;
@@ -155,8 +195,20 @@
 					  }
 					}									
 				}
-			} 
-		}		
+			}
+
+			//news
+			&:first-child { 
+				margin-left:0; 
+				& > a > i {
+					background-image: url(./../images/icon_news.png);
+					background-position: center;
+					background-repeat: no-repeat;
+					background-size: 65px;
+				}
+			}
+		}
+
 	}
 
 
@@ -583,6 +635,7 @@
 
 				}
 			}
+			
 			span.from {
 				position:absolute;
 				right:5px;

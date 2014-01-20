@@ -39,6 +39,9 @@ var shopCtrl = function($scope, Data ,$stateParams){
                 $("#payWay_"+_index).show().siblings(".payments").hide();
             });
         });
+
+        var _shopH = $(window).height() - $(".navs").height() - 20;
+        $(".shopFinal").css("min-height",_shopH);
     });
 
     $scope.discountClose = function(){

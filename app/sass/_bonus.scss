@@ -101,4 +101,29 @@
 			font-weight:bold;
 		}
 	}
+	
+	//bonusTips
+	.noticeTips {
+		position: absolute;
+		display:block;
+		width:100%;
+		bottom:20px;
+		margin:0 auto;
+		text-align: center;
+		font-size:1.3rem;
+	
+		&:after {
+			content: "";
+			position: relative;
+			z-index: 1;
+			display: block;
+			width:32px;
+			height:32px;
+			background: #ececec;
+			bottom:-10px;
+			margin:0 auto;
+			background: url(./../images/point.png) center no-repeat;
+			background-size:64px;
+		}
+	}
 }

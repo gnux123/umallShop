@@ -1,13 +1,9 @@
 <div id="prodView" class="prodPage">
-    <div class="prodDesc">
-        <div class="push_text" ng-bind-html="prods.pushText"></div>
-        <div class="subDesc" ng-bind-html="prods.subdes"></div>
-    </div>
     <div class="recommands_zone">
         <ul>
             <li><a href="#/prods/comment/1/">
-                <i class="fa fa-comments fa-2x"></i>
-                <span>商品評價</span>
+                <i></i>
+                <span>商品情報</span>
             </a></li>
             <li><a href="#/prods/spec" >
                 <i class="fa fa-shopping-cart fa-2x"></i>
@@ -35,11 +31,21 @@
             </li>            
         </ul>
     </div>
+    
+    <div class="payWay_list">
+        付款方式：ATM/信用卡付款/貨到付款
+    </div>
+
     <div class="prodShow slide-animation">
         <img ng-repeat="images in prods.img" ng-swipe-right="nextSlide()" ng-swipe-left="prevSlide()" ng-hide="!isCurrentSlideIndex($index)" ng-src="{{images}}" alt="">
         <nav class="nav">
             <a ng-repeat="images in prods.img" ng-class="{'current':isCurrentSlideIndex($index)}" ng-click="setCurrentSlideIndex($index);"></a>
         </nav> 
+    </div>
+
+    <div class="prodDesc">
+        <div class="push_text" ng-bind-html="prods.pushText"></div>
+        <div class="subDesc" ng-bind-html="prods.subdes"></div>
     </div>
 
     <div class="prodDetails">

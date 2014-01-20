@@ -1,5 +1,5 @@
 'use strict';
-var prodCtrl = function($scope, Data, $stateParams, scroller){
+var prodCtrl = function($scope, Data, $location, $anchorScroll, $stateParams, scroller){
     $scope.prods = Data[0];
     $scope.colorful = $scope.colorful2 = 0;
     $scope.active = false;
@@ -12,7 +12,7 @@ var prodCtrl = function($scope, Data, $stateParams, scroller){
     $scope.prodTrans = function(){
         var specLength1 = $scope.prods.prodSpec1.length,
             specLength2 = $scope.prods.prodSpec1.length;
-        if(specLength1 == 0 & specLength2 == 0){
+        if(specLength1 == 0 && specLength2 == 0){
             $scope.hashGo = "shopCart/1/";
             // alert($scope.hashGo);
         }else{
@@ -44,4 +44,20 @@ var prodCtrl = function($scope, Data, $stateParams, scroller){
             scroller.scrollTo(0, 0, 1000);
         }
     }
+
 }
+
+
+umallApp.directive("scroll", function ($window) {
+    return function(scope, element, attrs) {
+        angular.element($window).bind("scroll", function() {
+            console.log(this.pageYOffset);
+             if (this.pageYOffset >= 100) {
+                 scope.boolChangeClass = true;
+             } else {
+                 scope.boolChangeClass = false;
+             }
+            scope.$apply();
+        });
+    };
+});
