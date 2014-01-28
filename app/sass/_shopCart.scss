@@ -437,11 +437,13 @@
 
 	.shopFinal > .notice {
 		position: absolute;
-		bottom:30px;
-		display: inline-block;
+		bottom:20px;
+		display: block;
+		width:100%;
 		margin:0 auto;
 		left:0;
-	
+		font-size:1rem;
+		text-align: center;
 		&:after {
 			content: "";
 			position: absolute;

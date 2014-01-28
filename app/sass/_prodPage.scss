@@ -1,14 +1,18 @@
 @include at-breakpoint($mobile) {
+	$gutter-width     : 5px; //欄間距
 	.prodPage{
 		position:relative;
 		@include container;
 		height:100%;
+		//background: #ececec;
 	}
 
+	//商品規格
 	.prodSpec {
 		position:relative;
 		margin-top:10px;
 		margin-left:10px;
+
 		ul {
 			display: inline-block;
 			margin:5px 0;
@@ -17,6 +21,7 @@
 			border:3px solid $gray-lite;
 			background:#ffffff;
 		}
+		
 		ul > li { 
 			float:left;
 			a {
@@ -36,6 +41,7 @@
 		}
 	}
 
+	//商品描述
 	.prodDesc {
 		@include span-columns(4 omega);
 		@include border-box-sizing; 
@@ -48,15 +54,18 @@
 		}
 
 	}
-
+	
+	//付款方式
 	.payWay_list {
 		@include span-columns(4 omega);
 		@include border-box-sizing;
 		padding:0 15px;
 		margin:10px 0;
-		font-size:0.93rem;	
+		font-size:0.93rem;
+		color:#666666;
 	}
 
+	//商品圖片展示
 	.prodShow {
 		margin-top:20px;
 		position:relative;
@@ -92,6 +101,7 @@
 		}
 	}
 
+	
 	.recommands_zone {
 		position: relative;
 		@include span-columns(4 omega);
@@ -119,8 +129,8 @@
 
 
 		}
-
 		
+		//fixed
 		&.fixed {
 			position:fixed;
 			z-index:5;
@@ -129,6 +139,11 @@
 			width:100%;
 			margin-top:0;
 		}
+
+		& ~ .payWay_list {
+			margin-top:40px;
+		}
+
 
 		& > ul { 
 			@include pie-clearfix;
@@ -220,6 +235,7 @@
 		margin-bottom:40px;
 		& ul > li {
 			h3 {
+				@include border-box-sizing;
 				display:block; 
 				width:100%;
 				height:30px;
@@ -227,6 +243,8 @@
 				background:$pink-lite;
 				color:$pink-text;
 				font-size:1rem;
+				padding-left:10px;
+
 			}
 
 			& > div {
@@ -235,6 +253,7 @@
 				width:100%;
 				height:auto;
 				font-size:0.92rem;
+				color:#666666;
 			}
 		}
 	}
@@ -268,28 +287,22 @@
 		text-align: center;
 	}
 
-	.priceZone {
-		z-index:99;
-		position:fixed;
-		bottom:0;
-		left:0;
-		display: block;
-		@include span-columns(4 omega);
-		height:40px;
-		background:rgba(255,204,204,.7);
-		text-align: right;
-		
-		& > .shareIcons {
-			position: absolute;
-			left:5px;
-			top:5px;
-			display: inline-block;
-			height:30px;
-		}
-		
-		& > .shareIcons ul { @include pie-clearfix; }
 
-		& > .shareIcons ul li {
+	.shareIcons {
+		@include span-columns(4 omega);
+		@include border-box-sizing;
+		position:relative;
+		padding:0 5px;
+		display: inline-block;
+		height:30px;
+		ul { 
+			position: absolute;
+			right:5px;
+			top:0;
+			@include pie-clearfix; 
+		}
+
+		ul li {
 			float:left;
 			margin-left:5px;
 			font-size:0.75rem;
@@ -300,7 +313,7 @@
 			}
 		}
 
-		& > .shareIcons ul li a {
+		ul li a {
 			display: block;
 			width:30px;
 			height:30px;
@@ -310,8 +323,19 @@
 			text-align: center;
 			line-height:30px;
 			font-family:arial;
-
 		}
+	}
+
+	.priceZone {
+		z-index:99;
+		position:fixed;
+		bottom:0;
+		left:0;
+		display: block;
+		@include span-columns(4 omega);
+		height:40px;
+		background:rgba(255,204,204,.7);
+		text-align: right;
 
 		& > span { 
 			display:inline-block; 
@@ -562,33 +586,76 @@
 	}
 
 	//prodComment
-	.prodCommen > li {
-		position:relative;
-		display: block;
+	.shopImg {
+		position: relative;
 		@include span-columns(4 omega);
 		@include border-box-sizing;
+		height:160px;
+		overflow: hidden;
+	}
+
+	.shopImg > .shopImgWrap {
+		position: absolute;
+		width:100%;
+		height:auto;
+		opacity: 0.5;
+
+		&.top { top:0; }
+		&.middle { top:50%; margin-top:-50%; }
+		&.bottom {  bottom:0; }
+	}
+	.shopImg > a {
+		position: absolute;
+		z-index:2;
+		top:40px;
+		right:15px;
+	}
+	.shopImg > a > i {
+		display: block;
+		width:80px;
+		height:80px;
+		border-radius: 50%;
+		overflow: hidden;
+		color:#ffffff;
+		background: $pink-text;
+		text-align: center;
+		line-height: 80px;
+		font-size:3rem;
+	}
+
+	.prodCommen {
+		@include span-columns(4 omega);
+		@include border-box-sizing;
+		//@include susy-grid-background;
+	}
+
+	.prodCommen > li {
+		display: block;
+		@include isolate-grid(2);
+		@include border-box-sizing;
+		border-radius: 5px;
+		overflow:hidden;
+		margin-top:5px;
+		box-shadow: 0 0 3px rgba(0,0,0,.5);
 
 		&.prodCommen_event {
 			a {
 				display: block;
 				width:100%;
-				height:90px;
 				padding-top: 30px;
 				padding-left:30px;
 				font-family: arial;
-				border-width:0 3px 3px 3px;
-				border-style:solid;
-				border-color:$pink-text;
-				overflow:hidden;
+				border-top:8px solid $pink-text;
+				background-color:#ffffff;
 			}
 			
 			h2, p { 
 				display: block;
 				width:98%;
-				height:18px;
+				//height:18px;
 				line-height:18px;
-				overflow:hidden;
-				@include ellipsis;
+				//overflow:hidden;
+				//@include ellipsis;
 			}
 
 			h2 {
@@ -601,39 +668,39 @@
 				color:$pink-text;
 			}
 			span.cate {
-				position:absolute;
-				left:0;
-				top:0;
-				display: inline-block;
-				width:120px;
-				height:20px;
-				padding-left:5px;
-				line-height:20px;
-				background:$pink-text;
+				// position:absolute;
+				// left:0;
+				// top:0;
+				// display: inline-block;
+				// width:120px;
+				// height:20px;
+				// padding-left:5px;
+				// line-height:20px;
+				// background:$pink-text;
 				
-				& > i, & > font {
-					color:#ffffff;
-					font-size:0.93rem;
-				}
+				// & > i, & > font {
+				// 	color:#ffffff;
+				// 	font-size:0.93rem;
+				// }
 
-				& > i {
-					position:relative;
-					top:-2px;
-				}
+				// & > i {
+				// 	position:relative;
+				// 	top:-2px;
+				// }
 
-				&:before {
-					content: "";
-					position: absolute;
-					right:-20px;
-					top:0;
-					display: block;
-					width: 0px;
-					height: 0px;
-					border-style: solid;
-					border-width: 20px 20px 0 0;
-					border-color: $pink-text transparent transparent transparent;
+				// &:before {
+				// 	content: "";
+				// 	position: absolute;
+				// 	right:-20px;
+				// 	top:0;
+				// 	display: block;
+				// 	width: 0px;
+				// 	height: 0px;
+				// 	border-style: solid;
+				// 	border-width: 20px 20px 0 0;
+				// 	border-color: $pink-text transparent transparent transparent;
 
-				}
+				// }
 			}
 			
 			span.from {
@@ -645,7 +712,7 @@
 				// background:$gray-lite;
 			}
 		}
-		&:first-child > a { border:3px solid $pink-text; }
+		//&:first-child > a { border:3px solid $pink-text; }
 	}
 
 	.prodCommen > li > a {

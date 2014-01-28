@@ -35,7 +35,12 @@
     <div class="payWay_list">
         付款方式：ATM/信用卡付款/貨到付款
     </div>
-
+    <div class="shareIcons">
+        <ul>
+            <li><a href="#">f</a></li>
+            <li><a href="#">LINE</a></li>
+        </ul>
+    </div>
     <div class="prodShow slide-animation">
         <img ng-repeat="images in prods.img" ng-swipe-right="nextSlide()" ng-swipe-left="prevSlide()" ng-hide="!isCurrentSlideIndex($index)" ng-src="{{images}}" alt="">
         <nav class="nav">
@@ -46,6 +51,7 @@
     <div class="prodDesc">
         <div class="push_text" ng-bind-html="prods.pushText"></div>
         <div class="subDesc" ng-bind-html="prods.subdes"></div>
+        <div>[回饋紅利金：NT$1000(員工專用)]</div>
     </div>
 
     <div class="prodDetails">
@@ -75,12 +81,6 @@
     </div>
 </div>
     <div class="priceZone">
-        <div class="shareIcons">
-            <ul>
-                <li><a href="#">f</a></li>
-                <li><a href="#">LINE</a></li>
-            </ul>
-        </div>
         <span class="org" ng-bind="'NT$'+prods.priceOrg"></span>
         <span class="special"ng-bind="'NT$'+prods.priceSpecial"></span>
     </div>

@@ -17,7 +17,7 @@ angular.module('umallApp')
         }
     })
     .state('prods', {
-        url: '/prods', 
+        url: '/prods?sc', 
         views: {
             'main': {
                 templateUrl: 'view/prods.html',
@@ -30,7 +30,7 @@ angular.module('umallApp')
         }
     })
     .state('prodSpec', {
-        url: '/prods/spec', 
+        url: '/prods/spec?sc', 
         views: {
             'main': {
                 templateUrl: 'view/prodSpecChoice.html',
@@ -53,7 +53,14 @@ angular.module('umallApp')
                 controller:  'prodCommentCtrl'
             },
             'navs': {
-                templateUrl: 'view/navs_prod.html',
+                templateUrl: function($stateParams){
+                    if ($stateParams.pages == 2){
+                        return 'view/navs_prodComment.html';
+                    }else{
+                        return 'view/navs_prod.html';
+                    }
+                    
+                },
                 controller: 'navsProdCtrl'
             },
         }

@@ -1,7 +1,10 @@
-<div class="shopProd">
-	
+<div class="shopImg">
+	<div class="shopImgWrap middle"><img width="100%" ng-src="{{prods.img[0]}}"></div>
+	<a href="#/shopCart/1/">
+		<i class="fa fa-shopping-cart fa-2x"></i>
+	</a>
 </div>
-<a href="#/shopCart/1/"><img width="100%" ng-src="{{prods.img[0]}}"></a>
+
 <ul class="prodCommen">
 	<li class="prodCommen_event" ng-repeat="recommand in recomnList">
 		<a ng-href="#/prods/comment/4/{{$index}}">
