@@ -145,17 +145,18 @@ module.exports = function (grunt) {
                 fontsDir: '<%= yeoman.app %>/font',
                 importPath: '<%= yeoman.app %>/sass',
                 relativeAssets: true,
-                require: 'susy'
+                require: 'susy',
+                noLineComments: true
             },
             dist: {
                 options: {
                     generatedImagesDir: '<%= yeoman.dist %>/images/generated',
-                     debugInfo: true
+                    debugInfo: false,
                 }
             },
             server: {
                 options: {
-                    debugInfo: false
+                    debugInfo: false,
                 }
             }
         },

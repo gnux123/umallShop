@@ -9,8 +9,8 @@ $grid-padding     : 0;//1em 至左及至右滿版兩邊間距
 @include at-breakpoint($mobile) { 
 	//mobile settings
 	$total-columns 	  : 4; //格線內的總欄數
-
 }
+
 
 html,body {
   position:relative;
