@@ -45,8 +45,8 @@ var prodCtrl = function($scope, $document, Data, $location, $stateParams, scroll
         }
     }
 
-    $scope.scroll = $($document).scroll();
-    $scope.$watch('scroll', function(newValue) {
-        console.log(newValue);
-    });
+    //$scope.scroll = $($document).scroll();
+    //$scope.$watch('scroll', function(newValue) {
+    //    console.log(newValue);
+    //});
 }

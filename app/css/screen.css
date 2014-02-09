@@ -4071,7 +4071,7 @@ striping:
 /* line 15, ../sass/_base.scss */
 html, body {
   position: relative;
-  height: 100%;
+  height: auto;
   overflow-x: hidden;
   overflow-y: scroll;
 }
