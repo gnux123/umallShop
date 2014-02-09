@@ -1,5 +1,5 @@
 //'use strict';
-var prodCtrl = function($scope, $document, Data, $location, $stateParams, scroller){
+var prodCtrl = function($scope, $document, Data, $location, $stateParams){
     $scope.prods = Data[0];
     $scope.colorful = $scope.colorful2 = 0;
     $scope.active = false;
