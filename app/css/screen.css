@@ -3459,32 +3459,13 @@ a {
   color: #362e2b;
 }
 
-.wave.ng-enter,
-.wave.ng-leave {
-  -webkit-transition: 0.5s linear all;
-  transition: 0.5s linear all;
-}
-
-.wave.ng-enter,
-.wave.ng-leave.ng-leave-active {
-  opacity: 0;
-}
-
-.wave.ng-leave,
-.wave.ng-enter.ng-enter-active {
-  opacity: 1;
-}
-
-.well[ui-view] {
-  height: 65px;
-}
-
 .ui-view-container {
   position: relative;
 }
 
 [ui-view].ng-enter, [ui-view].ng-leave {
   position: absolute;
+  top: 0;
   left: 0;
   right: 0;
   -webkit-transition: all .5s ease-in-out;
@@ -3494,17 +3475,17 @@ a {
 }
 
 [ui-view].ng-enter {
-  opacity: 0;
-  -webkit-transform: scale3d(0.5, 0.5, 0.5);
-  -moz-transform: scale3d(0.5, 0.5, 0.5);
-  transform: scale3d(0.5, 0.5, 0.5);
+  opacity: 1;
+  -webkit-transform: translate3d(-320px, 0, 0);
+  -moz-transform: translate3d(-320px, 0, 0);
+  transform: translate3d(-320px, 0, 0);
 }
 
 [ui-view].ng-enter-active {
   opacity: 1;
-  -webkit-transform: scale3d(1, 1, 1);
-  -moz-transform: scale3d(1, 1, 1);
-  transform: scale3d(1, 1, 1);
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 [ui-view].ng-leave {
@@ -3515,21 +3496,21 @@ a {
 }
 
 [ui-view].ng-leave-active {
-  opacity: 0;
-  -webkit-transform: translate3d(100px, 0, 0);
-  -moz-transform: translate3d(100px, 0, 0);
-  transform: translate3d(100px, 0, 0);
+  opacity: 1;
+  -webkit-transform: translate3d(320px, 0, 0);
+  -moz-transform: translate3d(320px, 0, 0);
+  transform: translate3d(320px, 0, 0);
 }
 
 @-webkit-keyframes btnActive {
   from {
     opacity: 1;
-    -webkit-transform: scale(1);
+    transform: scale(1);
   }
 
   to {
     opacity: 0;
-    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
   }
 }
 
