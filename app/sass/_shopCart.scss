@@ -41,7 +41,9 @@
 			z-index:-1;
 		}
 
-		&.member_vip:after { display: none; }
+		&.member_vip, &.finish_title, &.paymentGate{ 
+			&:after{ display: none; } 
+		}
 
 		& > i {
 			@include border-box-sizing;

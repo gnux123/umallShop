@@ -4808,7 +4808,7 @@ a.steps_Button.finish:before {
     margin-left: -3px;
     z-index: -1;
   }
-  .shopCart_title.member_vip:after {
+  .shopCart_title.member_vip:after, .shopCart_title.finish_title:after, .shopCart_title.paymentGate:after {
     display: none;
   }
   .shopCart_title > i {

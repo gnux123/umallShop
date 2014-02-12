@@ -32,7 +32,7 @@ var shopCtrl = function($scope, Data ,$stateParams){
         });
 
         $(".payments").hide();
-        $(".payments").first().show();
+        $(".payments").last().show();
         $(".paymentWay li").each(function(){
             $(this).click(function(){
                 var _index = $(this).index()+1;
