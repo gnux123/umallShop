@@ -4797,6 +4797,20 @@ a.steps_Button.finish:before {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
+  .shopCart_title:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 6px;
+    height: 300px;
+    background-color: #ffcccc;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+  }
+  .shopCart_title.member_vip:after {
+    display: none;
+  }
   .shopCart_title > i {
     margin: 5px auto;
     display: block;
@@ -4946,6 +4960,7 @@ a.steps_Button.finish:before {
     margin: 5px 0;
     border: 3px solid #ffcccc;
     padding: 5px;
+    background: #ffffff;
   }
   .shopCart_content.orderInfo > ul li {
     position: relative;
@@ -5022,7 +5037,9 @@ a.steps_Button.finish:before {
 
   .shopCart_content.priceDetail {
     margin: 20px 0;
+    padding: 10px 0;
     font-family: arial;
+    background: #ffffff;
   }
   .shopCart_content.priceDetail .totalPrice {
     width: 100%;

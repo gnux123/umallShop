@@ -28,6 +28,21 @@
 		text-align: center;
 		font-family: arial;
 		margin-bottom:10px;
+		
+		&:after {
+			content: "";
+			position: absolute;
+			display: block;
+			width:6px;
+			height:300px;
+			background-color:$pink-lite;
+			left:50%;
+			margin-left: -3px;
+			z-index:-1;
+		}
+
+		&.member_vip:after { display: none; }
+
 		& > i {
 			@include border-box-sizing;
 			margin:5px auto;
@@ -139,6 +154,7 @@
 		margin:5px 0;
 		border:3px solid $pink-lite;
 		padding:5px;
+		background: #ffffff;
 
 		& > ul li {
 			position:relative;
@@ -186,7 +202,9 @@
 
 	.shopCart_content.priceDetail {
 		margin:20px 0;
-		font-family: arial;	
+		padding:10px 0;
+		font-family: arial;
+		background: #ffffff;	
 		.totalPrice {
 			@include span-columns(4 omega);
 			@include border-box-sizing;
