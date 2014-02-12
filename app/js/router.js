@@ -56,6 +56,8 @@ angular.module('umallApp')
                 templateUrl: function($stateParams){
                     if ($stateParams.pages == 2){
                         return 'view/navs_prodComment.html';
+                    }else if($stateParams.pages == 1){
+                        return
                     }else{
                         return 'view/navs_prod.html';
                     }

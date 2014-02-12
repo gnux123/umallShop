@@ -8,21 +8,24 @@ var memCtrl = function($scope, Data, $stateParams){
     Zepto(function($){
     	detectWindow();
         bonusPos();
-    	$(window).resize(function(){ 
+    	
+        $(window).resize(function(){ 
             detectWindow(); 
             bonusPos();
         });
 
-    	function detectWindow(){
-    		var _h = $(window).height() - 46,
+    	
+        function detectWindow(){
+    		var _h = $(window).height(),
                 nav_h = $(".navs").height();
-    		$(".sideMenu").height(_h + nav_h);
-    		$(".memberPage").height(_h+nav_h);
-    		$(".memberPage .main").css("min-height",_h-nav_h);
-    		$(".memberPage .main > div").height(_h-nav_h);
+            //alert(_h+","+nav_h);
+    		$(".memberPage").height(_h);
+    		$(".memberPage .main").css("min-height",_h - nav_h);
+    		$(".memberPage .main > div").height(_h - nav_h);
 
-            $(".bonusPage").height(_h - nav_h + 27);
+            $(".bonusPage").height(_h - (nav_h+20));
     	}
+
 
         function bonusPos(){
             var _bonusFrame_h = $(".bonusList").height(),

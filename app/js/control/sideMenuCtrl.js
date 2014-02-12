@@ -6,4 +6,9 @@ var sideMenuCtrl = function($scope, Data, $stateParams){
     	var now_text = $stateParams.pageName;
         alert(now_text);
     }
+
+    Zepto(function($){
+		var _h = $(window).height();
+        $(".sideMenu").height(_h);
+    });
 }

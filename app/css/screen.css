@@ -3430,13 +3430,6 @@ striping:
   content: "\f196";
 }
 
-html, body {
-  position: relative;
-  height: auto;
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
-
 .memberPage {
   position: absolute;
   width: 100%;
@@ -3457,49 +3450,6 @@ html, body {
 a {
   text-decoration: none;
   color: #362e2b;
-}
-
-.ui-view-container {
-  position: relative;
-}
-
-[ui-view].ng-enter, [ui-view].ng-leave {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  -webkit-transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out;
-  -o-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-}
-
-[ui-view].ng-enter {
-  opacity: 1;
-  -webkit-transform: translate3d(-320px, 0, 0);
-  -moz-transform: translate3d(-320px, 0, 0);
-  transform: translate3d(-320px, 0, 0);
-}
-
-[ui-view].ng-enter-active {
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
-[ui-view].ng-leave {
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
-[ui-view].ng-leave-active {
-  opacity: 1;
-  -webkit-transform: translate3d(320px, 0, 0);
-  -moz-transform: translate3d(320px, 0, 0);
-  transform: translate3d(320px, 0, 0);
 }
 
 @-webkit-keyframes btnActive {
@@ -5587,6 +5537,26 @@ a.steps_Button.finish:before {
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
+  body {
+    height: 100%;
+  }
+
+  .memberPage,
+  .sideMenu,
+  .memberPage > .main {
+    overflow: hidden;
+  }
+
+  .memberPage > .main > div {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  .memberPage > .main
+  .sideMenu {
+    height: 100%;
+  }
+
   .loginPage {
     position: relative;
     max-width: 415px;
@@ -5597,7 +5567,6 @@ a.steps_Button.finish:before {
     height: 100%;
     overflow: hidden;
     padding: 0 10px;
-    padding-top: 20px;
   }
   .loginPage:after {
     content: "";
@@ -5627,7 +5596,8 @@ a.steps_Button.finish:before {
     display: block;
     width: 85%;
     height: 100%;
-    background: url(./../images/bg.jpg) no-repeat;
+    background: url(./../images/bg.jpg) center no-repeat;
+    background-size: 150% 150%;
   }
   .sideMenuWrap * {
     -webkit-box-sizing: border-box;

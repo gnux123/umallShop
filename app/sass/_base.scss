@@ -12,12 +12,12 @@ $grid-padding     : 0;//1em 至左及至右滿版兩邊間距
 }
 
 
-html,body {
-  position:relative;
-  height:auto;
-  overflow-x:hidden;
-  overflow-y: scroll;
-}
+// html,body {
+//   position:relative;
+//   height:auto;
+//   overflow-x:hidden;
+//   overflow-y: scroll;
+// }
 
 .memberPage {
   position:absolute;
@@ -46,48 +46,48 @@ a {
 //  height: 65px; 
 // }
 
-.ui-view-container {
-  position: relative;
-}
+// .ui-view-container {
+//   position: relative;
+// }
 
-[ui-view].ng-enter, [ui-view].ng-leave {
-  position: absolute;
-  top:0;
-  left: 0;
-  right: 0;
-  -webkit-transition:all .5s ease-in-out;
-    -moz-transition:all .5s ease-in-out;
-    -o-transition:all .5s ease-in-out;
-    transition:all .5s ease-in-out;
-}
+// [ui-view].ng-enter, [ui-view].ng-leave {
+//   position: absolute;
+//   top:0;
+//   left: 0;
+//   right: 0;
+//   -webkit-transition:all .5s ease-in-out;
+//     -moz-transition:all .5s ease-in-out;
+//     -o-transition:all .5s ease-in-out;
+//     transition:all .5s ease-in-out;
+// }
 
-[ui-view].ng-enter {
-  opacity: 1;
-  -webkit-transform:translate3d(-320px, 0, 0);
-  -moz-transform:translate3d(-320px, 0, 0);
-  transform:translate3d(-320px, 0, 0);
-}
+// [ui-view].ng-enter {
+//   opacity: 1;
+//   -webkit-transform:translate3d(-320px, 0, 0);
+//   -moz-transform:translate3d(-320px, 0, 0);
+//   transform:translate3d(-320px, 0, 0);
+// }
 
-[ui-view].ng-enter-active {
-  opacity: 1;
-  -webkit-transform:translate3d(0, 0, 0);
-  -moz-transform:translate3d(0, 0, 0);
-  transform:translate3d(0, 0, 0);
-}
+// [ui-view].ng-enter-active {
+//   opacity: 1;
+//   -webkit-transform:translate3d(0, 0, 0);
+//   -moz-transform:translate3d(0, 0, 0);
+//   transform:translate3d(0, 0, 0);
+// }
 
-[ui-view].ng-leave {
-  opacity: 1; 
-  -webkit-transform:translate3d(0, 0, 0);
-  -moz-transform:translate3d(0, 0, 0);
-  transform:translate3d(0, 0, 0);
-}
+// [ui-view].ng-leave {
+//   opacity: 1; 
+//   -webkit-transform:translate3d(0, 0, 0);
+//   -moz-transform:translate3d(0, 0, 0);
+//   transform:translate3d(0, 0, 0);
+// }
 
-[ui-view].ng-leave-active {
-  opacity: 1;
-  -webkit-transform:translate3d(320px, 0, 0);
-  -moz-transform:translate3d(320px, 0, 0);
-  transform:translate3d(320px, 0, 0);
-}
+// [ui-view].ng-leave-active {
+//   opacity: 1;
+//   -webkit-transform:translate3d(320px, 0, 0);
+//   -moz-transform:translate3d(320px, 0, 0);
+//   transform:translate3d(320px, 0, 0);
+// }
 
 @-webkit-keyframes btnActive {
   from{
