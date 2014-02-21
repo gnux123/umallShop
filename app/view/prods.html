@@ -11,7 +11,7 @@
             </a></li>
             <li>
                 <div class="specBtn" ng-class="{fixZone: active == true}" du-scrollspy>
-                    <i class="fa fa-2x" ng-class="moreIcon" ng-click="prodSpecNavs()"></i>
+                    <i class="fa fa-2x" ng-class="moreIcon" ng-click="prodSpecNavs(); alertOpen();"></i>
                     <span ng-class="{hidein: active == true}">更多資訊</span>
                     <ul id="menu">
                       <li class="menu-item"><a href="#menu">
@@ -84,11 +84,12 @@
     <span class="org" ng-bind="'NT$'+prods.priceOrg"></span>
     <span class="special"ng-bind="'NT$'+prods.priceSpecial"></span>
 </div>
-<div class="popup bonusPop">
-    <div class="popup_content">
-        <p>恭喜您！！成功兌換</p><br>
-        <p>NT$<span>3000</span>折價券</p><br>
-        <p>使用日期：2014/1/1~2014/12/31</p>
+<div class="Pop alertPop">
+    <a class="popClose" ng-click="alertClose()">
+        <i class="fa fa-plus fa-lg"></i>
+    </a>
+    <div class="popContent">
+        無贈品配件相關資料
     </div>
 </div>
 

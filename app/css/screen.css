@@ -3533,6 +3533,73 @@ a.steps_Button.finish:before {
   display: none;
 }
 
+.Pop {
+  position: fixed;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  margin-left: -46%;
+  border: 3px solid #d32146;
+  background: #ffffff;
+}
+.Pop * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.Pop > a.popClose {
+  z-index: 1;
+  top: 0;
+  right: 0;
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background: #d32146;
+  color: #ffffff;
+}
+.Pop > a.popClose > i {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.Pop .popContent {
+  z-index: 0;
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+}
+.Pop.alertPop {
+  margin-top: -60px;
+  height: 120px;
+}
+.Pop.alertPop .popContent {
+  height: 114px;
+  line-height: 114px;
+  text-align: center;
+  font-size: 1.6rem;
+  color: #d32146;
+  overflow: hidden;
+}
+.Pop.historyPop {
+  margin-top: -105px;
+  height: 210px;
+}
+.Pop.historyPop .popContent {
+  height: 204px;
+  line-height: 204px;
+  text-align: center;
+  font-size: 1.6rem;
+  color: #d32146;
+  overflow: hidden;
+}
+.Pop.historyPop .popContent > img {
+  width: 288px;
+}
+
 .page, .memberPage {
   *zoom: 1;
   max-width: 1090px;
@@ -3564,10 +3631,37 @@ a.steps_Button.finish:before {
   left: 50%;
   top: 8px;
   margin-left: -13px;
-  color: #d32146;
 }
 .page .navs .appLogo .logo > img, .memberPage .navs .appLogo .logo > img {
   width: 26px;
+}
+.page .navs .appLogo .memTitle, .memberPage .navs .appLogo .memTitle {
+  position: absolute;
+  display: block;
+  left: 50%;
+  top: 8px;
+  width: 150px;
+  margin-left: -75px;
+  height: 26px;
+  color: #d32146;
+  text-align: center;
+  line-height: 32px;
+  font-size: 1.2rem;
+}
+.page .navs .appLogo .memTitle > span, .memberPage .navs .appLogo .memTitle > span {
+  position: absolute;
+  display: inline-block;
+  top: 6px;
+  right: 0px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  line-height: 20px;
+  text-align: center;
+  background: #d32146;
+  color: #ffffff;
+  font-size: 0.6rem;
+  font-weight: lighter;
 }
 .page .navs a.back, .memberPage .navs a.back {
   z-index: 2;
@@ -3918,7 +4012,11 @@ a.steps_Button.finish:before {
   .bonusTitle .couponBtn {
     position: absolute;
     top: 50%;
-    margin-top: -30px;
+    margin-top: -40px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
     color: #d32146;
   }
 

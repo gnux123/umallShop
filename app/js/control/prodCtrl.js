@@ -30,4 +30,12 @@ var prodCtrl = function($scope, $document, Data, $location, $stateParams){
     $scope.nextSlide = function () {
         $scope.currentIndex = ($scope.currentIndex > 0) ? --$scope.currentIndex : $scope.prods.img.length - 1;
     };
+
+    $(".alertPop").hide();
+    $scope.alertOpen = function() {
+        $(".alertPop").show();         
+    }
+    $scope.alertClose = function() {
+        $(".alertPop").hide();   
+    }
 }

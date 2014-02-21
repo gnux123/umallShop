@@ -4,7 +4,16 @@
 		<span>交易記錄</span>
 	</div>
 	<div class="historyWrap">
-		<img src="images/mem_p1.png" width="100%" ng-click="alert()">
-		<img src="images/mem_p1.png" width="100%" ng-click="alert()">
+		<img src="images/mem_p1.png" width="100%" ng-click="alertOpen()">
 	</div>
+
+	<div class="Pop historyPop">
+	    <a class="popClose" ng-click="alertClose()">
+	        <i class="fa fa-plus fa-lg"></i>
+	    </a>
+	    <div class="popContent">
+	    	<img src="images/historypop_context.png" alt="">
+	    </div>
+	</div>
+	
 </div>

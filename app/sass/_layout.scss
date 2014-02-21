@@ -18,8 +18,37 @@
 				left:50%;
 				top:8px;
 				margin-left:-13px;
-				color:$pink-text;
 				& > img { width:26px; }
+			}
+
+			.memTitle{
+				position:absolute;
+				display: block;
+				left:50%;
+				top:8px;
+				width:150px;
+				margin-left:-75px;
+				height:26px;
+				color:$pink-text;
+				text-align: center;
+				line-height: 32px;
+				font-size: 1.2#{rem};
+
+				& > span {
+					position: absolute;
+					display: inline-block;
+					top:6px;
+					right:0px;
+					width:20px;
+					height:20px;
+					border-radius: 50%;
+					line-height: 20px;
+					text-align: center;
+					background:$pink-text;
+					color:#ffffff;
+					font-size:0.6#{rem};
+					font-weight: lighter;
+				}
 			}
 		}
 

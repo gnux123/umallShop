@@ -154,3 +154,76 @@ a.steps_Button {
     &:before { display:none; }
   }
 }
+
+//popup
+.Pop {
+    position:fixed;
+    z-index:3;
+    top:50%;
+    left:50%;
+    width:90%;
+    @include border-box-sizing;
+    margin-left:-46%;
+    border:3px solid $pink-text;
+    background: #ffffff;
+    
+    & > a.popClose {
+      z-index:1;
+      top:0;
+      right:0;
+      display: block;
+      position: absolute;
+      width:30px;
+      height:30px;
+      line-height: 30px;
+      text-align: center;
+      background:$pink-text;
+      color:#ffffff;
+      & > i {
+        -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+      }
+    }
+
+    .popContent {
+      z-index: 0;
+      left:0;
+      top:0;
+      position:absolute;
+      width:100%;
+    }
+    
+    //alertPop_module
+    &.alertPop {
+      margin-top:-60px;
+      height:120px;
+
+      .popContent {
+        height:114px;
+        line-height: 114px;
+        text-align: center;
+        font-size:1.6#{rem};
+        color:$pink-text;
+        overflow: hidden;       
+      }     
+    }
+
+    //historyPop_module
+    &.historyPop{
+      margin-top:-105px;
+      height:210px;
+
+      .popContent {
+        height:204px;
+        line-height: 204px;
+        text-align: center;
+        font-size:1.6#{rem};
+        color:$pink-text;
+        overflow: hidden;
+
+        & > img {
+          width:288px;
+        }       
+      }     
+    }
+  }

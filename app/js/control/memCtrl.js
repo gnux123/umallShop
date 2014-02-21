@@ -69,4 +69,12 @@ var memCtrl = function($scope, Data, $stateParams){
         alert("此功能尚在建置中。");
     }
 
+    $(".Pop").hide();
+    $scope.alertOpen = function() {
+        $(".Pop").show().siblings(".Pop").hide();         
+    }
+    $scope.alertClose = function() {
+        $(".Pop").hide();   
+    }
+
 }
