@@ -3430,11 +3430,35 @@ striping:
   content: "\f196";
 }
 
+* {
+  font-family: arial;
+}
+
+body {
+  display: block;
+  width: 100%;
+}
+body.mem_body {
+  width: 320px;
+  height: 100%;
+  overflow: hidden;
+}
+
+input[placeholder] {
+  color: #cccccc;
+}
+
+input[placeholder]:focus {
+  color: #362e2b;
+}
+
 .memberPage {
   position: absolute;
   width: 100%;
+  left: 0;
+  top: 0;
   height: 100%;
-  -webkit-transition: all 500ms linear;
+  -webkit-transition: all .5s linear;
   z-index: 1;
   -webkit-transform: translate3d(0, 0, 0);
   background: #ffffff;
@@ -3633,7 +3657,7 @@ a.steps_Button.finish:before {
     box-sizing: border-box;
   }
   .page .main > .push_bg, .memberPage .main > .push_bg {
-    background: url(./../images/bg.jpg) no-repeat;
+    background: url(./../images//bg.jpg) no-repeat;
     -moz-background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
@@ -3979,7 +4003,7 @@ a.steps_Button.finish:before {
     background: #ececec;
     bottom: -10px;
     margin: 0 auto;
-    background: url(./../images/point.png) center no-repeat;
+    background: url(./../images//point.png) center no-repeat;
     background-size: 64px;
   }
 }
@@ -4105,6 +4129,23 @@ a.steps_Button.finish:before {
   }
   .prodShow .nav a.current {
     background: #cccccc;
+  }
+
+  .prodSpecImg {
+    padding-top: 10px;
+    width: 100%;
+    float: right;
+    margin-right: 0;
+  }
+  .prodSpecImg * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .prodSpecImg > img {
+    width: 100%;
+    float: right;
+    margin-right: 0;
   }
 
   .recommands_zone {
@@ -4567,6 +4608,12 @@ a.steps_Button.finish:before {
     -webkit-transition: all 500ms linear;
     transition: all 500ms linear;
   }
+  .specChoiceWrap.specChoice > ul .focus {
+    background: #ffcccc;
+  }
+  .specChoiceWrap.specChoice > ul .focus > a {
+    color: #d32146;
+  }
   .specChoiceWrap.specChoice .slideBtn {
     position: absolute;
     width: 25px;
@@ -4677,11 +4724,13 @@ a.steps_Button.finish:before {
   }
 
   .prodCommen > li {
+    position: relative;
     display: block;
     width: 49.39759%;
     float: left;
     margin-right: 1.20482%;
     margin-right: -100%;
+    padding-bottom: 30px;
     border-radius: 5px;
     overflow: hidden;
     margin-top: 5px;
@@ -4808,7 +4857,7 @@ a.steps_Button.finish:before {
     margin-left: -3px;
     z-index: -1;
   }
-  .shopCart_title.member_vip:after, .shopCart_title.finish_title:after, .shopCart_title.paymentGate:after {
+  .shopCart_title.member_vip:after, .shopCart_title.finish_title:after, .shopCart_title.paymentGate:after, .shopCart_title.user:after, .shopCart_title.orderLists:after {
     display: none;
   }
   .shopCart_title > i {
@@ -4885,7 +4934,7 @@ a.steps_Button.finish:before {
     box-sizing: border-box;
   }
 
-  .shopCart_content > input[type='text'] {
+  .shopCart_content > input[type='text'], .shopCart_content > input[type='password'] {
     width: 74.6988%;
     float: right;
     margin-right: 0;
@@ -4895,7 +4944,7 @@ a.steps_Button.finish:before {
     border: 3px solid #ffcccc;
     font-size: 1rem;
   }
-  .shopCart_content > input[type='text'] * {
+  .shopCart_content > input[type='text'] *, .shopCart_content > input[type='password'] * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -4935,7 +4984,7 @@ a.steps_Button.finish:before {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-  .shopCart_content .group > input[type='text'] {
+  .shopCart_content .group > input[type='text'], .shopCart_content .group > input[type='password'] {
     width: 100%;
     float: right;
     margin-right: 0;
@@ -4946,13 +4995,13 @@ a.steps_Button.finish:before {
     border: 3px solid #ffcccc;
     font-size: 1rem;
   }
-  .shopCart_content .group > input[type='text'] * {
+  .shopCart_content .group > input[type='text'] *, .shopCart_content .group > input[type='password'] * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
 
-  .shopCart_content label, .shopCart_content > input[type='text'] {
+  .shopCart_content label, .shopCart_content > input[type='text'], .shopCart_content > input[type='password'] {
     margin: 5px 0;
   }
 
@@ -5189,11 +5238,22 @@ a.steps_Button.finish:before {
     font-size: 2rem;
     letter-spacing: 1px;
     color: #d32146;
+    padding-left: 60px;
   }
   .discount_tips * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+  }
+  .discount_tips:before {
+    left: 20px;
+    display: block;
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: url(./../images//icons/icon_point.png) center no-repeat;
+    background-size: 70px 70px;
   }
 
   .discountPop {
@@ -5301,6 +5361,9 @@ a.steps_Button.finish:before {
     letter-spacing: normal;
     line-height: 25px;
   }
+  .disLists > li.selected {
+    background: #ffcccc;
+  }
 
   .paymentCid label > i {
     font-size: 1.5rem;
@@ -5321,7 +5384,7 @@ a.steps_Button.finish:before {
     box-sizing: border-box;
   }
   .shopBtn_area.prodSpec_btn {
-    margin-top: 70px;
+    margin-top: 10px;
   }
   .shopBtn_area a.steps_Button {
     position: absolute;
@@ -5350,6 +5413,40 @@ a.steps_Button.finish:before {
     right: 5px;
     background: url(./../images/point.png) center no-repeat;
     background-size: 64px;
+  }
+
+  .priceInfo.prFixed > .priceTotalZone {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    margin: 0;
+  }
+  .priceInfo.prFixed > .priceTotalZone:after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 30px;
+    bottom: -30px;
+    left: 0;
+    background: -moz-linear-gradient(top, white 0%, rgba(255, 255, 255, 0.67) 33%, rgba(255, 255, 255, 0) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(33%, rgba(255, 255, 255, 0.67)), color-stop(100%, rgba(255, 255, 255, 0)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, white 0%, rgba(255, 255, 255, 0.67) 33%, rgba(255, 255, 255, 0) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, white 0%, rgba(255, 255, 255, 0.67) 33%, rgba(255, 255, 255, 0) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, white 0%, rgba(255, 255, 255, 0.67) 33%, rgba(255, 255, 255, 0) 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #ffffff 0%, rgba(255, 255, 255, 0.67) 33%, rgba(255, 255, 255, 0) 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+    /* IE6-9 */
+  }
+  .priceInfo.prFixed + li {
+    margin-top: 193px;
   }
 }
 @-webkit-keyframes inball {
@@ -5542,9 +5639,10 @@ a.steps_Button.finish:before {
     position: absolute;
     display: block;
     top: 5px;
-    right: 10px;
-    width: 20px;
-    height: 20px;
+    right: 5px;
+    width: 40px;
+    height: 35px;
+    text-align: center;
   }
   a.gameHelp_btn > i {
     color: #d32146;
@@ -5554,10 +5652,6 @@ a.steps_Button.finish:before {
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
-  body {
-    height: 100%;
-  }
-
   .memberPage,
   .sideMenu,
   .memberPage > .main {
@@ -5569,8 +5663,11 @@ a.steps_Button.finish:before {
     overflow-y: scroll;
   }
 
-  .memberPage > .main
   .sideMenu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
     height: 100%;
   }
 
@@ -5613,7 +5710,7 @@ a.steps_Button.finish:before {
     display: block;
     width: 85%;
     height: 100%;
-    background: url(./../images/bg.jpg) center no-repeat;
+    background: url(./../images//bg.jpg) center no-repeat;
     background-size: 150% 150%;
   }
   .sideMenuWrap * {
@@ -5687,10 +5784,27 @@ a.steps_Button.finish:before {
     text-align: center;
   }
   .toolsBox > ul > li a i {
-    width: 100%;
-    height: auto;
+    display: block;
+    width: 94px;
+    height: 60px;
     text-align: center;
     color: #d32146;
+  }
+  .toolsBox > ul > li a i.tradeInfo {
+    background: url(./../images//icons/icon_tradeInfo.png) center no-repeat;
+    background-size: 36px 36px;
+  }
+  .toolsBox > ul > li a i.myBonus {
+    background: url(./../images//icons/icon_myBonus.png) center no-repeat;
+    background-size: 36px 36px;
+  }
+  .toolsBox > ul > li a i.memInfo {
+    background: url(./../images//icons/icon_memInfo.png) center no-repeat;
+    background-size: 36px 36px;
+  }
+  .toolsBox > ul > li a i.userGuide {
+    background: url(./../images//icons/icon_userGuide.png) center no-repeat;
+    background-size: 36px 36px;
   }
   .toolsBox > ul > li a span {
     font-size: 0.93rem;
@@ -5742,5 +5856,46 @@ a.steps_Button.finish:before {
     height: auto;
     text-align: center;
     color: #d32146;
+  }
+
+  .historyWrap, .userGuideWrap {
+    position: relative;
+    width: 100%;
+    float: right;
+    margin-right: 0;
+    height: auto;
+    background: #ffcccc;
+  }
+
+  .userGuide_content {
+    position: relative;
+    width: 100%;
+    float: right;
+    margin-right: 0;
+    height: auto;
+  }
+
+  .userGuideWrap {
+    position: relative;
+    width: 100%;
+    float: right;
+    margin-right: 0;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    text-align: center;
+    padding: 0 10px;
+  }
+  .userGuideWrap h3 {
+    margin-top: 20px;
+    font-size: 1.6rem;
+  }
+  .userGuideWrap h3, .userGuideWrap h4 {
+    color: #d32146;
+  }
+  .userGuideWrap span {
+    display: block;
+    width: 100%;
+    text-align: left;
+    color: #ffffff;
   }
 }

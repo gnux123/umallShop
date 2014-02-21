@@ -4,18 +4,25 @@
         <a class='slideBtn nextBtn' href='javascript:void(0);'><i class="fa fa-angle-right fa-2x"></i></a>
         <a class='slideBtn prevBtn' href='javascript:void(0);'><i class="fa fa-angle-left fa-2x"></i></a>
         <ul>
-            <li ng-repeat="prodSpec1 in prods.prodSpec1" ng-class="{current: prods.colorful ==  $index}" ng-click = "prods.colorful = $index">
+            <li ng-repeat="prodSpec1 in prods.prodSpec1" ng-class="{focus: prods.colorful ==  $index}" ng-click = "prods.colorful = $index">
                 <a href="javascript:void(0);" ng-bind="prodSpec1"></a>
             </li>
         </ul>
     </div>
-    <div class="specChoice_title">尺寸選擇</div>
-    <div class="specChoiceWrap sizeChoice" ng-swipe-right="next()" ng-swipe-right="prev()">
-        <ul>
-            <li ng-repeat="prodSpec2 in prods.prodSpec2" ng-class="{current: prods.colorful2 ==  $index}" ng-click = "prods.colorful2 = $index">
-                <a href="javascript:void(0);"  ng-bind="prodSpec2"></a>
-            </li>
-        </ul>        
+
+    <div class="prodSpecImg">
+        <img ng-src="{{prods.img[0]}}" max-width="90%" alt="">
+    </div>
+
+    <div style="display:none;">
+        <div class="specChoice_title">尺寸選擇</div>
+        <div class="specChoiceWrap sizeChoice" ng-swipe-right="next()" ng-swipe-right="prev()">
+            <ul>
+                <li ng-repeat="prodSpec2 in prods.prodSpec2" ng-class="{current: prods.colorful2 ==  $index}" ng-click = "prods.colorful2 = $index">
+                    <a href="javascript:void(0);"  ng-bind="prodSpec2"></a>
+                </li>
+            </ul>        
+        </div>        
     </div>
 
     <div class="priceZone" ng-class="{hidein: active == true}">
@@ -24,7 +31,7 @@
     </div>
 
     <div class="shopBtn_area prodSpec_btn">
-        <a class="steps_Button" href="#/shopCart/1/">NEXT</a>       
+        <a class="steps_Button" href="#/shopCart/1/">下一步</a>       
     </div> 
 
 </div>

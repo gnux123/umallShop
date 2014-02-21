@@ -107,7 +107,7 @@
 		}
 
 		& > .push_bg {
-			background:url(./../images/bg.jpg) no-repeat;
+			background:url(#{$img-path}/bg.jpg) no-repeat;
 			-moz-background-size:cover;
 			-webkit-background-size:cover;
 			-o-background-size:cover;
@@ -173,9 +173,7 @@
 		height:100%; 
 		background:rgba(255,255,255,.9);
 
-		&.showSlide {
-			display: block;
-		}
+		&.showSlide { display: block; }
 	}	
 
 	//popup

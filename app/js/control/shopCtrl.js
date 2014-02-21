@@ -16,15 +16,32 @@ var shopCtrl = function($scope, Data ,$stateParams){
         $scope.couponHide = false;
     }
 
+    //ecouponTranslateValue
+    $scope.couponValue = function(i){
+        if($scope.eCoupons[i].value > 1){
+           return "NT$"+$scope.eCoupons[i].value;
+        }else{
+            return ($scope.eCoupons[i].value*10)+"折";
+        }
+    }
+
+
     Zepto(function($){
+        $(window).scroll(function(){
+            var _y = $(this).scrollTop();
+            if(_y <= 0){
+                $(".priceInfo").removeClass("prFixed");               
+            }
+        });
         $(".discountPop").hide();
         $(".discountNavs li").each(function(){
             $(this).click(function(){
+                $(".priceInfo").addClass("prFixed");
+
                 var _index = $(this).index() + 1;
                 $(".discount_tips").hide();
                 $(this).addClass("current").siblings(".current").removeClass("current");
                 $("#disconPop_"+_index).show().siblings(".discountPop").hide();
-
                 if(_index == 1){
                     $(".couponNums").hide();
                 }
@@ -32,11 +49,15 @@ var shopCtrl = function($scope, Data ,$stateParams){
         });
 
         $(".payments").hide();
-        $(".payments").last().show();
+        $(".payments").first().show();
         $(".paymentWay li").each(function(){
             $(this).click(function(){
                 var _index = $(this).index()+1;
+                if(_index == 1 || _index == 2){
+                    alert("您已選擇完成，請繼續下一步驟。");
+                }
                 $("#payWay_"+_index).show().siblings(".payments").hide();
+                
             });
         });
 
@@ -49,6 +70,7 @@ var shopCtrl = function($scope, Data ,$stateParams){
             $(".current").removeClass("current");
             $(".discountPop").hide();
             $(".discount_tips").show();
+            $(".priceInfo").removeClass("prFixed");
         });
     }
 

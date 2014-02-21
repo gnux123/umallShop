@@ -68,7 +68,7 @@
                 <h3>詳細規格</h3>
                 <div ng-bind-html="prods.specDetail"></div>   
             </li>
-            <li>
+            <li style="display:none;">
                 <h3>遊戲網址(Demo)</h3>
                 <div>
                     <a href="#/game/1/">輪盤(Demo)</a>
@@ -80,9 +80,16 @@
 
     </div>
 </div>
-    <div class="priceZone">
-        <span class="org" ng-bind="'NT$'+prods.priceOrg"></span>
-        <span class="special"ng-bind="'NT$'+prods.priceSpecial"></span>
+<div class="priceZone">
+    <span class="org" ng-bind="'NT$'+prods.priceOrg"></span>
+    <span class="special"ng-bind="'NT$'+prods.priceSpecial"></span>
+</div>
+<div class="popup bonusPop">
+    <div class="popup_content">
+        <p>恭喜您！！成功兌換</p><br>
+        <p>NT$<span>3000</span>折價券</p><br>
+        <p>使用日期：2014/1/1~2014/12/31</p>
     </div>
+</div>
 
 

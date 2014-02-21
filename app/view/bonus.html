@@ -3,7 +3,7 @@
 		<ul class="couponShow slide-animation">
 			<li ng-repeat="coupon in user.couponLists" ng-swipe-right="nextCoupon()" ng-swipe-left="prevCoupon()" ng-hide="!isCurrentCouponIndex($index)">
 				<h2 ng-bind="coupon.Event"></h2>
-				<h1 ng-bind="coupon.value"></h1>
+				<h1 ng-bind="couponValue($index)"></h1>
 				<p ng-bind="coupon.eventLimte"></p>
 				<div class="useTime" ng-bind="'使用日期：'+coupon.dateStart+'~'+coupon.dateEnd"></div>
 			</li>
@@ -15,7 +15,7 @@
 			<i class="fa fa-chevron-right fa-lg"></i>
 		</a>
 	</div>
-	<div class="bonusInput">
+	<div class="bonusInput" style="display:none;">
 		<input type="text" value="12345678" />
 		<a class="bonusChange" ng-click="bonusChange()">兌換</a>
 	</div>

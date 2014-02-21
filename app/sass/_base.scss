@@ -11,14 +11,37 @@ $grid-padding     : 0;//1em 至左及至右滿版兩邊間距
 	$total-columns 	  : 4; //格線內的總欄數
 }
 
+* { font-family: arial; }
+
+body {
+  display: block;
+  width:100%;
+
+  &.mem_body {
+    width:320px;
+    height:100%;
+    overflow: hidden;
+  }
+}
+
+input[placeholder] {
+  color:#cccccc;
+}
+input[placeholder]:focus {
+  color:$black-g;
+};
+
 .memberPage {
   position:absolute;
   width:100%;
+  left:0;
+  top:0;
   height:100%;
-  -webkit-transition: all 500ms linear;
+  -webkit-transition: all .5s linear;
   z-index:1;
   -webkit-transform: translate3d(0,0,0);
   background:#ffffff;
+
   .main {
     overflow-x: hidden;
     overflow-y: scroll;

@@ -2,6 +2,7 @@
 //prodsController
 var memCtrl = function($scope, Data, $stateParams){
     $scope.prods = Data[0];
+    $scope.eCoupons = Data[1].couponLists;
     $scope.user = Data[1]; //userData
     $scope.currentIndex = 0;
 
@@ -35,6 +36,15 @@ var memCtrl = function($scope, Data, $stateParams){
         }
     });
 
+    //ecouponTranslateValue
+    $scope.couponValue = function(i){
+        if($scope.eCoupons[i].value > 1){
+           return "NT$"+$scope.eCoupons[i].value;
+        }else{
+            return ($scope.eCoupons[i].value*10)+"折";
+        }
+    }
+
     //bonusChange
     $scope.bonusChange = function(){
         Zepto(function($){ $(".mask, .bonusPop").show(); });
@@ -54,4 +64,9 @@ var memCtrl = function($scope, Data, $stateParams){
     $scope.nextCoupon = function () {
         $scope.currentIndex = ($scope.currentIndex > 0) ? --$scope.currentIndex : $scope.user.couponLists.length - 1;
     };
+
+    $scope.alert = function(){
+        alert("此功能尚在建置中。");
+    }
+
 }

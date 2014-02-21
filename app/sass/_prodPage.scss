@@ -101,6 +101,15 @@
 		}
 	}
 
+	.prodSpecImg {
+		padding-top: 10px;
+		@include span-columns(4 omega);
+		@include border-box-sizing;
+		& > img {
+			@include span-columns(4 omega);
+		}
+	}
+
 	
 	.recommands_zone {
 		position: relative;
@@ -533,6 +542,11 @@
 			width:1000em;
 			-webkit-transition: all 500ms linear;
 					transition: all 500ms linear;
+
+			.focus {
+				background: $pink-lite;
+				& > a { color:$pink-text; }
+			}
 		}
 		//slideBtn
 		.slideBtn {
@@ -630,9 +644,11 @@
 	}
 
 	.prodCommen > li {
+		position: relative;
 		display: block;
 		@include isolate-grid(2);
 		@include border-box-sizing;
+		padding-bottom:30px;
 		border-radius: 5px;
 		overflow:hidden;
 		margin-top:5px;

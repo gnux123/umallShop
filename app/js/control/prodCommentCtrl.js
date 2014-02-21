@@ -13,4 +13,8 @@ var prodCommentCtrl = function($scope, $sce ,Data, $stateParams){
     $scope.gerUrl = function(){
     	return $sce.trustAsResourceUrl($scope.recomnList[$stateParams.index].website);
     }
+
+    $scope.alert = function(){
+        alert("此功能尚在建置中。");
+    }
 }

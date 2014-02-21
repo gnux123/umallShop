@@ -10,5 +10,9 @@ var sideMenuCtrl = function($scope, Data, $stateParams){
     Zepto(function($){
 		var _h = $(window).height();
         $(".sideMenu").height(_h);
+
+        $(".toolsBox li a, a.logoutBtn").click(function(){
+        	$(".memberPage").removeClass("sideShow");
+       	});
     });
 }

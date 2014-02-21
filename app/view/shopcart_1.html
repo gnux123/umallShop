@@ -1,10 +1,10 @@
 <div class="shopCart">
 	<ul>
 		<li>
-			<div class="shopCart_title user">
+			<div class="shopCart_title">
 				<i class="fa fa-user fa-2x"></i>
 				<span>
-					Hello. {{user[0].name}}.<br/>
+					Hello. Guest.<br/>
 					收件人
 				</span>
 			</div>
@@ -13,7 +13,7 @@
 				<label>
 					<i class="fa fa-user fa-2x"></i>
 				</label>
-				<input type="text" value="{{user[0].name}}">
+				<input type="text" value="" placeholder="請輸入姓名">
 				<!-- name end -->
 				<!-- address -->
 				<fieldset class="group">
@@ -24,16 +24,16 @@
 						<select><option>台北市</option></select>
 						<select><option>南港區</option></select>					
 					</div>
-					<input type="text" value="{{user[0].address}}">
+					<input type="text" value="" placeholder="請輸入詳細地址">
 				</fieldset>
 				<label>
 					<i class="fa fa-mobile fa-2x"></i>
 				</label>
-				<input type="text" value="{{user[0].mobile}}">
+				<input type="text" value=""  placeholder="請輸入行動電話">
 				<!-- address end -->
 			</div>
 		</li>
-		<li>
+		<li class="priceInfo">
 			<div class="shopCart_title">
 				<i class="fa fa-file fa-2x"></i>
 				<span>訂單確認</span>
@@ -52,11 +52,11 @@
 					<li ng-bind="{{prods.piece}}"></li>
 				</ul>
 			</div>
-			<div class="shopCart_content priceDetail">
+			<div class="shopCart_content priceDetail priceTotalZone">
 				<div class="totalPrice" ng-bind="'總額 NT$ '+prods.priceSpecial"></div>
 				<div class="orginCoupon">
 					森活價：NT$ <span ng-bind="prods.priceOrg"></span>
-					折扣券：<span ng-bind="'NT$ -'+'0'"></span>
+					折扣金額：<span ng-bind="'NT$ -'+'0'"></span>
 				</div>
 			</div>
 		</li>
@@ -81,8 +81,8 @@
 					</a>
 					<div class="disContent">
 						<ul class="disLists">
-							<li ng-repeat="coupon in eCoupons">
-								<h1 ng-bind="coupon.value"></h1>
+							<li ng-repeat="coupon in eCoupons" ng-class="{selected: prods.colorful ==  $index}" ng-click = "prods.colorful = $index">
+								<h1 ng-bind="couponValue($index)"></h1>
 								<div>
 									<p ng-bind="coupon.Event"></p>
 									<p class="useTime" ng-bind="'使用期限('+coupon.dateStart+'~'+coupon.dateEnd+')'"></p>
@@ -125,7 +125,7 @@
 		</li>
 		<li>
 			<div class="shopBtn_area">
-				<a class="steps_Button" href="#/shopCart/2/">NEXT</a>
+				<a class="steps_Button" href="#/shopCart/2/">下一步</a>
 			</div>
 		</li>
 	</ul>

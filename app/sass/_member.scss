@@ -1,7 +1,4 @@
 @include at-breakpoint($mobile) {
-	body {
-		height:100%;
-	}
 	.memberPage, 
 	.sideMenu, 
 	.memberPage > .main {
@@ -13,9 +10,11 @@
 		overflow-y:scroll;
 	}	
 
-	.memberPage > .main
-
 	.sideMenu {
+		position: absolute;
+		left:0;
+		top:0;
+		z-index: 0;
 		height:100%;
 	}
 
@@ -48,7 +47,7 @@
 		display: block;
 		width:85%;
 		height:100%;
-		background: url(./../images/bg.jpg) center no-repeat;
+		background: url(#{$img-path}/bg.jpg) center no-repeat;
 		background-size:150% 150%;
 		@include border-box-sizing;
 	}
@@ -105,10 +104,32 @@
 			height:auto;
 			text-align: center;
 			i {
-				width:100%;
-				height:auto;
+				display: block;
+				width:94px;
+				height:60px;
 				text-align: center;
 				color:$pink-text;
+
+
+				&.tradeInfo {
+					background: url(#{$img-path}/icons/icon_tradeInfo.png) center no-repeat;
+					background-size: 36px 36px;
+				}
+
+				&.myBonus {
+					background: url(#{$img-path}/icons/icon_myBonus.png) center no-repeat;
+					background-size: 36px 36px;
+				}
+
+				&.memInfo {
+					background: url(#{$img-path}/icons/icon_memInfo.png) center no-repeat;
+					background-size: 36px 36px;
+				}
+
+				&.userGuide {
+					background: url(#{$img-path}/icons/icon_userGuide.png) center no-repeat;
+					background-size: 36px 36px;
+				}
 			}
 			span {
 				font-size: 0.93rem;
@@ -163,5 +184,38 @@
 		text-align: center;
 		color:$pink-text;
 		//line-height: 30px;
+	}
+
+
+	//history
+	.historyWrap, .userGuideWrap {
+		position: relative;
+		@include span-columns(4 omega);
+		height:auto;
+		background: $pink-lite;
+	}
+
+	//userGuide
+	.userGuide_content {
+		position: relative;
+		@include span-columns(4 omega);
+		height:auto;	
+	}
+
+	.userGuideWrap {
+		position: relative;
+		@include span-columns(4 omega);
+		font-size:1.3rem;
+		line-height: 2rem;
+		text-align: center;
+		padding:0 10px;
+		h3 { margin-top:20px; font-size:1.6rem; }
+		h3, h4 { color:$pink-text; }
+		span { 
+			display: block;
+			width:100%;
+			text-align: left;
+			color:#ffffff; 
+		}	
 	}
 }
