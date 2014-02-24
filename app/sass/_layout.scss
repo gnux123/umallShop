@@ -1,169 +1,80 @@
-.page, .memberPage {
-	@include container;
-	//@include susy-grid-background;
-	.navs {
-		position:relative;
-		//padding-top:15px;
-		display:none;
-		height:auto;
-		background:$pink-lite;
-		//logo
-		.appLogo {
-			position:relative;
-			.logo {
-				position:absolute;
-				display: block;
-				width:26px;
-				height:26px;
-				left:50%;
-				top:8px;
-				margin-left:-13px;
-				& > img { width:26px; }
-			}
-
-			.memTitle{
-				position:absolute;
-				display: block;
-				left:50%;
-				top:8px;
-				width:150px;
-				margin-left:-75px;
-				height:26px;
-				color:$pink-text;
-				text-align: center;
-				line-height: 32px;
-				font-size: 1.2#{rem};
-
-				& > span {
-					position: absolute;
-					display: inline-block;
-					top:6px;
-					right:0px;
-					width:20px;
-					height:20px;
-					border-radius: 50%;
-					line-height: 20px;
-					text-align: center;
-					background:$pink-text;
-					color:#ffffff;
-					font-size:0.6#{rem};
-					font-weight: lighter;
-				}
-			}
-		}
-
-		//backBtn
-		a.back {
-			z-index:2;
-			position:absolute;
-			left:5px;
-			top:50%;
-			margin-top:-7px;
-			color:$pink-text;
-			font-size:1.2rem;
-
-			&.backShow {
-				display: none;
-			}
-		}
-		
-		h2.prods_name, div.prods_nums {
-			color:$pink-text;
-		}
-
-		h2.prods_name {
-			margin:0 20px;
-			line-height:35px;
-			height:35px;
-			text-align: center;
-			font-weight: bold;
-		}
-
-		div.prods_nums {
-			position:absolute;
-			font-family: arial;
-			font-size:1rem;
-			left:0;
-			bottom:8px;
-			width:100%;
-			z-index:1;
-			height:15px;
-			line-height:15px;
-			text-align: center;
-		}
-
-	}
-}
-
 @include at-breakpoint($mobile) {
 	$gutter-width     : 0px; //欄間距
-	.page, .memberPage {
+	.page, .memberPage { 
 		@include container;
-		//@include susy-grid-background;
-	}
-	.page .navs, .memberPage .navs {
-		display: block;
-		position:relative;
-		width:100%;
-		height:auto;
-		top:0;
-		left:0;
-		background:$pink-lite;
-		z-index:1;
-		
-		.appLogo {
+		.navs {
+			display: block;
+			position:relative;
 			width:100%;
-			height:45px;
+			height:auto;
+			top:0;
+			left:0;
+			background:$pink-lite;
+			z-index:1;
+			
+			.appLogo {
+				position:relative;
+				width:100%;
+				height:45px;
+
+				.logo {
+					position:absolute;
+					display: block;
+					width:26px;
+					height:26px;
+					left:50%;
+					top:8px;
+					margin-left:-13px;
+				}
+			}
+
+			.prodNavs { height:60px; }
 		}
 
-		.prodNavs {
-			height:60px;
-		}
+		//mainView
+		.main {
+			@include container;
+			//@include susy-grid-background;
+			position:relative;
+			padding:0;
+			height:auto;
 
-	}
+			& > div {
+				@include border-box-sizing;
+			}
 
-	.page .main, .memberPage .main {
-		position:relative;
-		//margin-top:5px;
-		padding:0;
-		@include container;
-		//@include susy-grid-background;
-		height:auto;
-
-		& > div {
-			//margin-top:-2px;
-			@include border-box-sizing;
-		}
-
-		& > .push_bg {
-			background:url(#{$img-path}/bg.jpg) no-repeat;
-			-moz-background-size:cover;
-			-webkit-background-size:cover;
-			-o-background-size:cover;
-			background-size:cover;		
+			& > .push_bg {
+				background:url(#{$img-path}/bg.jpg) no-repeat;
+				-moz-background-size:cover;
+				-webkit-background-size:cover;
+				-o-background-size:cover;
+				background-size:cover;		
+			}
 		}
 	}
 
 
 	//main
-	.page .AdBanner {
-		height:auto;
-		@include span-columns(4 omega);
-		a > img { width:100%; }	
-	}
-
-	.page .prodsGroup {
-		height:auto;
-		@include span-columns(4 omega);
-		@include pie-clearfix;
-		& > ul > li {
-			float:left;
-			display: block;
+	.page {
+		.AdBanner {
 			height:auto;
-			@include span-columns(2,4);
+			@include span-columns(4 omega);
+			a > img { width:100%; }			
+		}
 
-			&:last-child {
-				@include span-columns(2 omega,4);
+		.prodsGroup {
+			height:auto;
+			@include span-columns(4 omega);
+			@include pie-clearfix;
+			& > ul > li {
+				float:left;
+				display: block;
+				height:auto;
+				@include span-columns(2,4);
+
+				&:last-child {
+					@include span-columns(2 omega,4);
+				}
 			}
 
 			.hotProd {
@@ -188,10 +99,11 @@
 					text-align: right;
 				}
 			}
-		}		
+		}
+	
 	}
 
-	//mask
+	//popUp mask
 	.shadow_bg, .mask {
 		display:none; 
 		position:absolute; 

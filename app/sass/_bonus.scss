@@ -117,18 +117,18 @@
 		font-size:1.3rem;
 		color:$pink-text;
 	
-		&:after {
-			content: "";
-			position: relative;
-			z-index: 1;
-			display: block;
-			width:32px;
-			height:32px;
-			background: #ececec;
-			bottom:-10px;
-			margin:0 auto;
-			background: url(#{$img-path}/point.png) center no-repeat;
-			background-size:64px;
-		}
+		// &:after {
+		// 	content: "";
+		// 	position: relative;
+		// 	z-index: 1;
+		// 	display: block;
+		// 	width:32px;
+		// 	height:32px;
+		// 	background: #ececec;
+		// 	bottom:-10px;
+		// 	margin:0 auto;
+		// 	background: url(#{$img-path}/point.png) center no-repeat;
+		// 	background-size:64px;
+		// }
 	}
 }

@@ -147,6 +147,7 @@
 			left:0;
 			width:100%;
 			margin-top:0;
+			padding-top:5px;
 		}
 
 		& ~ .payWay_list {
@@ -242,7 +243,7 @@
 		position:relative;
 		margin-top:20px;
 		margin-bottom:40px;
-		& ul > li {
+		ul > li {
 			h3 {
 				@include border-box-sizing;
 				display:block; 
@@ -253,7 +254,6 @@
 				color:$pink-text;
 				font-size:1rem;
 				padding-left:10px;
-
 			}
 
 			& > div {

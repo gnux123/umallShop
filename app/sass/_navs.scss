@@ -1,0 +1,81 @@
+.page, .memberPage {
+	.navs > .appLogo {
+		.logo {
+			color:$pink-text;
+			& > img { width:26px; }
+		}
+
+		.memTitle{
+			position:absolute;
+			display: block;
+			left:50%;
+			top:8px;
+			width:150px;
+			margin-left:-75px;
+			height:26px;
+			color:$pink-text;
+			text-align: center;
+			line-height: 32px;
+			font-size: 1.2#{rem};
+
+			& > span {
+				position: absolute;
+				display: inline-block;
+				top:6px;
+				right:0px;
+				width:20px;
+				height:20px;
+				border-radius: 50%;
+				line-height: 20px;
+				text-align: center;
+				background:$pink-text;
+				color:#ffffff;
+				font-size:0.6#{rem};
+				font-weight: lighter;
+			}
+		}		
+	}
+
+	//prodNavs
+	h2.prods_name, div.prods_nums { color:$pink-text; }
+	
+	h2.prods_name {
+		margin:0 20px;
+		line-height:35px;
+		height:35px;
+		text-align: center;
+		font-weight: bold;
+	}
+
+	div.prods_nums {
+		position:absolute;
+		font-family: arial;
+		font-size:1rem;
+		left:0;
+		bottom:8px;
+		width:100%;
+		z-index:1;
+		height:15px;
+		line-height:15px;
+		text-align: center;
+	}
+
+	//backBtn
+	a.back {
+		z-index:2;
+		position:absolute;
+		left:5px;
+		top:50%;
+		width:40px;
+		height:40px;
+		margin-top:-20px;
+		color:$pink-text;
+		font-size:1.2rem;
+		text-align: left;
+		line-height: 40px;
+
+		&.backShow {
+			display: none;
+		}
+	}
+}

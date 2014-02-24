@@ -3600,104 +3600,6 @@ a.steps_Button.finish:before {
   width: 288px;
 }
 
-.page, .memberPage {
-  *zoom: 1;
-  max-width: 1090px;
-  _width: 1090px;
-  padding-left: 0;
-  padding-right: 0;
-  margin-left: auto;
-  margin-right: auto;
-}
-.page:after, .memberPage:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.page .navs, .memberPage .navs {
-  position: relative;
-  display: none;
-  height: auto;
-  background: #ffcccc;
-}
-.page .navs .appLogo, .memberPage .navs .appLogo {
-  position: relative;
-}
-.page .navs .appLogo .logo, .memberPage .navs .appLogo .logo {
-  position: absolute;
-  display: block;
-  width: 26px;
-  height: 26px;
-  left: 50%;
-  top: 8px;
-  margin-left: -13px;
-}
-.page .navs .appLogo .logo > img, .memberPage .navs .appLogo .logo > img {
-  width: 26px;
-}
-.page .navs .appLogo .memTitle, .memberPage .navs .appLogo .memTitle {
-  position: absolute;
-  display: block;
-  left: 50%;
-  top: 8px;
-  width: 150px;
-  margin-left: -75px;
-  height: 26px;
-  color: #d32146;
-  text-align: center;
-  line-height: 32px;
-  font-size: 1.2rem;
-}
-.page .navs .appLogo .memTitle > span, .memberPage .navs .appLogo .memTitle > span {
-  position: absolute;
-  display: inline-block;
-  top: 6px;
-  right: 0px;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  line-height: 20px;
-  text-align: center;
-  background: #d32146;
-  color: #ffffff;
-  font-size: 0.6rem;
-  font-weight: lighter;
-}
-.page .navs a.back, .memberPage .navs a.back {
-  z-index: 2;
-  position: absolute;
-  left: 5px;
-  top: 50%;
-  margin-top: -7px;
-  color: #d32146;
-  font-size: 1.2rem;
-}
-.page .navs a.back.backShow, .memberPage .navs a.back.backShow {
-  display: none;
-}
-.page .navs h2.prods_name, .page .navs div.prods_nums, .memberPage .navs h2.prods_name, .memberPage .navs div.prods_nums {
-  color: #d32146;
-}
-.page .navs h2.prods_name, .memberPage .navs h2.prods_name {
-  margin: 0 20px;
-  line-height: 35px;
-  height: 35px;
-  text-align: center;
-  font-weight: bold;
-}
-.page .navs div.prods_nums, .memberPage .navs div.prods_nums {
-  position: absolute;
-  font-family: arial;
-  font-size: 1rem;
-  left: 0;
-  bottom: 8px;
-  width: 100%;
-  z-index: 1;
-  height: 15px;
-  line-height: 15px;
-  text-align: center;
-}
-
 @media (min-width: 320px) and (max-width: 480px) {
   .page, .memberPage {
     max-width: 400px;
@@ -3711,7 +3613,6 @@ a.steps_Button.finish:before {
     display: table;
     clear: both;
   }
-
   .page .navs, .memberPage .navs {
     display: block;
     position: relative;
@@ -3723,21 +3624,30 @@ a.steps_Button.finish:before {
     z-index: 1;
   }
   .page .navs .appLogo, .memberPage .navs .appLogo {
+    position: relative;
     width: 100%;
     height: 45px;
+  }
+  .page .navs .appLogo .logo, .memberPage .navs .appLogo .logo {
+    position: absolute;
+    display: block;
+    width: 26px;
+    height: 26px;
+    left: 50%;
+    top: 8px;
+    margin-left: -13px;
   }
   .page .navs .prodNavs, .memberPage .navs .prodNavs {
     height: 60px;
   }
-
   .page .main, .memberPage .main {
-    position: relative;
-    padding: 0;
     max-width: 400px;
     padding-left: 0;
     padding-right: 0;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    padding: 0;
     height: auto;
   }
   .page .main:after, .memberPage .main:after {
@@ -3767,7 +3677,6 @@ a.steps_Button.finish:before {
   .page .AdBanner a > img {
     width: 100%;
   }
-
   .page .prodsGroup {
     height: auto;
     width: 100%;
@@ -3792,23 +3701,23 @@ a.steps_Button.finish:before {
     float: right;
     margin-right: 0;
   }
-  .page .prodsGroup > ul > li .hotProd {
+  .page .prodsGroup .hotProd {
     width: 100%;
     height: auto;
   }
-  .page .prodsGroup > ul > li .hotProd a > img {
+  .page .prodsGroup .hotProd a > img {
     width: 100%;
   }
-  .page .prodsGroup > ul > li .hotProd .hotProdSpec {
+  .page .prodsGroup .hotProd .hotProdSpec {
     margin-top: -2px;
     width: 100%;
     height: 70px;
     background: #ffcccc;
   }
-  .page .prodsGroup > ul > li .hotProd .hotProdSpec h3 {
+  .page .prodsGroup .hotProd .hotProdSpec h3 {
     line-height: 20px;
   }
-  .page .prodsGroup > ul > li .hotProd .priceGroup {
+  .page .prodsGroup .hotProd .priceGroup {
     padding-top: 5px;
     color: #d32146;
     font-family: arial;
@@ -3941,6 +3850,79 @@ a.steps_Button.finish:before {
     bottom: -50px;
   }
 }
+.page .navs > .appLogo .logo, .memberPage .navs > .appLogo .logo {
+  color: #d32146;
+}
+.page .navs > .appLogo .logo > img, .memberPage .navs > .appLogo .logo > img {
+  width: 26px;
+}
+.page .navs > .appLogo .memTitle, .memberPage .navs > .appLogo .memTitle {
+  position: absolute;
+  display: block;
+  left: 50%;
+  top: 8px;
+  width: 150px;
+  margin-left: -75px;
+  height: 26px;
+  color: #d32146;
+  text-align: center;
+  line-height: 32px;
+  font-size: 1.2rem;
+}
+.page .navs > .appLogo .memTitle > span, .memberPage .navs > .appLogo .memTitle > span {
+  position: absolute;
+  display: inline-block;
+  top: 6px;
+  right: 0px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  line-height: 20px;
+  text-align: center;
+  background: #d32146;
+  color: #ffffff;
+  font-size: 0.6rem;
+  font-weight: lighter;
+}
+.page h2.prods_name, .page div.prods_nums, .memberPage h2.prods_name, .memberPage div.prods_nums {
+  color: #d32146;
+}
+.page h2.prods_name, .memberPage h2.prods_name {
+  margin: 0 20px;
+  line-height: 35px;
+  height: 35px;
+  text-align: center;
+  font-weight: bold;
+}
+.page div.prods_nums, .memberPage div.prods_nums {
+  position: absolute;
+  font-family: arial;
+  font-size: 1rem;
+  left: 0;
+  bottom: 8px;
+  width: 100%;
+  z-index: 1;
+  height: 15px;
+  line-height: 15px;
+  text-align: center;
+}
+.page a.back, .memberPage a.back {
+  z-index: 2;
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  color: #d32146;
+  font-size: 1.2rem;
+  text-align: left;
+  line-height: 40px;
+}
+.page a.back.backShow, .memberPage a.back.backShow {
+  display: none;
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
   .bonusPage {
     position: relative;
@@ -4090,19 +4072,6 @@ a.steps_Button.finish:before {
     text-align: center;
     font-size: 1.3rem;
     color: #d32146;
-  }
-  .noticeTips:after {
-    content: "";
-    position: relative;
-    z-index: 1;
-    display: block;
-    width: 32px;
-    height: 32px;
-    background: #ececec;
-    bottom: -10px;
-    margin: 0 auto;
-    background: url(./../images//point.png) center no-repeat;
-    background-size: 64px;
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
@@ -4291,6 +4260,7 @@ a.steps_Button.finish:before {
     left: 0;
     width: 100%;
     margin-top: 0;
+    padding-top: 5px;
   }
   .recommands_zone ~ .payWay_list {
     margin-top: 40px;

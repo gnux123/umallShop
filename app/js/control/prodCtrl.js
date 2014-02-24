@@ -31,6 +31,20 @@ var prodCtrl = function($scope, $document, Data, $location, $stateParams){
         $scope.currentIndex = ($scope.currentIndex > 0) ? --$scope.currentIndex : $scope.prods.img.length - 1;
     };
 
+    //
+    Zepto(function($){
+        $(window).scroll(function(){
+            var _y = $(this).scrollTop();
+            if(_y > 60){
+                $(".recommands_zone").addClass("fixed");
+            }else if(_y <= 60){
+                $(".recommands_zone").removeClass("fixed");    
+            }
+        });
+    });
+
+
+    //popUp alert
     $(".alertPop").hide();
     $scope.alertOpen = function() {
         $(".alertPop").show();         
