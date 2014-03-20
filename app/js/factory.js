@@ -1,6 +1,6 @@
 'use strict';
 //factory
-umallApp.factory('Data', function(){
+umallApp.service('Data', function(){
     //prodsData
     return [{
         nums: '995124662',

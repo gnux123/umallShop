@@ -25,7 +25,7 @@ angular.module('umallApp')
             },
             'navs': {
                 templateUrl: 'view/navs_prod.html',
-                controller: 'navsProdCtrl'
+                controller: 'navsCtrl'
             },
         }
     })
@@ -38,7 +38,7 @@ angular.module('umallApp')
             },
             'navs': {
                 templateUrl: 'view/navs_prod.html',
-                controller: 'navsProdCtrl'
+                controller: 'navsCtrl'
             },
         }
     })
@@ -63,7 +63,7 @@ angular.module('umallApp')
                     }
                     
                 },
-                controller: 'navsProdCtrl'
+                controller: 'navsCtrl'
             },
         }
     })
@@ -78,7 +78,7 @@ angular.module('umallApp')
             },
             'navs': {
                 templateUrl: 'view/navs_shop.html',
-                controller: 'navsProdCtrl'
+                controller: 'navsCtrl'
             },
         }
     })
@@ -94,7 +94,7 @@ angular.module('umallApp')
             },
             'navs': {
                 templateUrl: 'view/navs_main.html',
-                controller: 'navsProdCtrl'
+                controller: 'navsCtrl'
             },
         }
     })
@@ -113,7 +113,8 @@ angular.module('umallApp')
             },            
             'navs': {
                 templateUrl: 'view/navs_member.html',
-                controller: 'navsMemberCtrl'
+                controller: 'navsCtrl'
+                // controller: 'navsMemberCtrl'
             }
         }
     })
