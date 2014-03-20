@@ -12,6 +12,7 @@
 			background:$pink-lite;
 			z-index:1;
 			
+			//logoPosition
 			.appLogo {
 				position:relative;
 				width:100%;
@@ -61,46 +62,6 @@
 			@include span-columns(4 omega);
 			a > img { width:100%; }			
 		}
-
-		.prodsGroup {
-			height:auto;
-			@include span-columns(4 omega);
-			@include pie-clearfix;
-			& > ul > li {
-				float:left;
-				display: block;
-				height:auto;
-				@include span-columns(2,4);
-
-				&:last-child {
-					@include span-columns(2 omega,4);
-				}
-			}
-
-			.hotProd {
-				width:100%;
-				height:auto;
-				a > img { width:100%; }
-
-				.hotProdSpec {
-					margin-top:-2px;
-					width:100%;
-					height:70px;
-					background:$pink-lite;
-
-					h3 { line-height:20px; }
-				}
-
-				.priceGroup {
-					padding-top:5px;
-					color:$pink-text;
-					font-family: arial;
-					font-size:1.4rem;
-					text-align: right;
-				}
-			}
-		}
-	
 	}
 
 	//popUp mask
@@ -147,11 +108,11 @@
 				padding:0 10px;
 				overflow-x: hidden;
 				overflow-y: scroll;
-				font-size:0.93rem;
+				font-size:$font-s#{rem};
 
 				h3 {
 					color:$pink-text;
-					font-size: 1.2rem;
+					font-size: $font-default+0.2#{rem};
 					padding:10px 0;
 					font-weight: bold;
 				}
@@ -170,7 +131,7 @@
 				color:#ffffff;
 				text-align: center;
 				line-height:50px;
-				font-size:1.2rem;
+				font-size:$font-default+0.2#{rem};
 			}
 		}
 		
@@ -180,7 +141,7 @@
 			text-align: center;
 			color:$pink-text;
 			span {
-				font-size:3rem;
+				font-size:$font-default*3#{rem};
 				font-weight: bold;
 			}
 			p:last-child {
@@ -224,10 +185,7 @@
 			}
 		}
 
-		&.game_notice > a {
-			bottom:-50px;
-
-		}
+		&.game_notice > a { bottom:-50px; }
 	}
 
 }

@@ -24,6 +24,8 @@ body {
   }
 }
 
+a, input[type='text'], input[type='password'], input[type='phone'] { outline: none; }
+
 input[placeholder] {
   color:#cccccc;
 }
@@ -150,7 +152,7 @@ a.steps_Button {
   }
 
   &.finish {
-    font-size:2rem;
+    //font-size:2rem;
     &:before { display:none; }
   }
 }

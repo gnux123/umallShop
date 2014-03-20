@@ -132,7 +132,7 @@
 				}
 			}
 			span {
-				font-size: 0.93rem;
+				font-size: $font-s#{rem};
 				color:$pink-text;
 			}
 		}
@@ -153,7 +153,7 @@
 		height:40px;
 		line-height: 40px;
 		text-align: center;
-		font-size:1rem;
+		font-size:$font-default#{rem};
 		letter-spacing: 2px;
 		color:#ffffff;
 		background:$pink-text;
@@ -171,7 +171,7 @@
 		text-align: center;
 		letter-spacing: 3px;
 		color:$gray-lite;
-		font-size:0.93rem;
+		font-size:$font-s#{rem};
 		line-height: 18px;
 
 	}
@@ -205,11 +205,11 @@
 	.userGuideWrap {
 		position: relative;
 		@include span-columns(4 omega);
-		font-size:1.3rem;
-		line-height: 2rem;
+		font-size:$font-default+0.3#{rem};
+		line-height:$font-default*2#{rem};
 		text-align: center;
 		padding:0 10px;
-		h3 { margin-top:20px; font-size:1.6rem; }
+		h3 { margin-top:20px; font-size:$font-default+0.6#{rem}; }
 		h3, h4 { color:$pink-text; }
 		span { 
 			display: block;

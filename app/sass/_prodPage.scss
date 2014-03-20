@@ -115,10 +115,12 @@
 		position: relative;
 		@include span-columns(4 omega);
 		@include border-box-sizing;
-		margin-top:10px;
-		padding:0 10px;
+		margin-top:0;
+		padding:10px 10px 0 10px;
 		text-align: center;
 		background: #ffffff;
+		transition: all 2s ease-in-out;
+		transform:translate3d(0,0,0);
 		
 		&:after {
 			position: absolute;
@@ -147,7 +149,8 @@
 			left:0;
 			width:100%;
 			margin-top:0;
-			padding-top:5px;
+			transform:translate3d(0,0,0);
+
 		}
 
 		& ~ .payWay_list {
@@ -659,7 +662,7 @@
 				display: block;
 				width:100%;
 				padding-top: 30px;
-				padding-left:30px;
+				padding-left:10px;
 				font-family: arial;
 				border-top:8px solid $pink-text;
 				background-color:#ffffff;
@@ -677,11 +680,16 @@
 			h2 {
 				font-size:1rem; 
 				font-weight: bolder;
+				margin-bottom: 15px;
 			}
 
 			p { 
+				display: block;
+				width:99%;
+				height:18px;
 				font-size: 0.93rem; 
 				color:$pink-text;
+				@include ellipsis;
 			}
 			span.cate {
 				// position:absolute;
@@ -726,6 +734,14 @@
 				font-size:0.7rem;
 				padding:0 5px;
 				// background:$gray-lite;
+			}
+
+			span.moreLink {
+				position:absolute;
+				left:5px;
+				bottom:5px;
+				font-size:0.7rem;
+				padding:0 5px;
 			}
 		}
 		//&:first-child > a { border:3px solid $pink-text; }

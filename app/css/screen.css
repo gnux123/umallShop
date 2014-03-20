@@ -3444,6 +3444,10 @@ body.mem_body {
   overflow: hidden;
 }
 
+a, input[type='text'], input[type='password'], input[type='phone'] {
+  outline: none;
+}
+
 input[placeholder] {
   color: #cccccc;
 }
@@ -3525,9 +3529,6 @@ a.steps_Button:before * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-}
-a.steps_Button.finish {
-  font-size: 2rem;
 }
 a.steps_Button.finish:before {
   display: none;
@@ -3676,53 +3677,6 @@ a.steps_Button.finish:before {
   }
   .page .AdBanner a > img {
     width: 100%;
-  }
-  .page .prodsGroup {
-    height: auto;
-    width: 100%;
-    float: right;
-    margin-right: 0;
-  }
-  .page .prodsGroup:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  .page .prodsGroup > ul > li {
-    float: left;
-    display: block;
-    height: auto;
-    width: 50%;
-    float: left;
-    margin-right: 0%;
-  }
-  .page .prodsGroup > ul > li:last-child {
-    width: 50%;
-    float: right;
-    margin-right: 0;
-  }
-  .page .prodsGroup .hotProd {
-    width: 100%;
-    height: auto;
-  }
-  .page .prodsGroup .hotProd a > img {
-    width: 100%;
-  }
-  .page .prodsGroup .hotProd .hotProdSpec {
-    margin-top: -2px;
-    width: 100%;
-    height: 70px;
-    background: #ffcccc;
-  }
-  .page .prodsGroup .hotProd .hotProdSpec h3 {
-    line-height: 20px;
-  }
-  .page .prodsGroup .hotProd .priceGroup {
-    padding-top: 5px;
-    color: #d32146;
-    font-family: arial;
-    font-size: 1.4rem;
-    text-align: right;
   }
 
   .shadow_bg, .mask {
@@ -4220,10 +4174,12 @@ a.steps_Button.finish:before {
     width: 100%;
     float: right;
     margin-right: 0;
-    margin-top: 10px;
-    padding: 0 10px;
+    margin-top: 0;
+    padding: 10px 10px 0 10px;
     text-align: center;
     background: #ffffff;
+    transition: all 2s ease-in-out;
+    transform: translate3d(0, 0, 0);
   }
   .recommands_zone * {
     -webkit-box-sizing: border-box;
@@ -4260,7 +4216,7 @@ a.steps_Button.finish:before {
     left: 0;
     width: 100%;
     margin-top: 0;
-    padding-top: 5px;
+    transform: translate3d(0, 0, 0);
   }
   .recommands_zone ~ .payWay_list {
     margin-top: 40px;
@@ -4821,7 +4777,7 @@ a.steps_Button.finish:before {
     display: block;
     width: 100%;
     padding-top: 30px;
-    padding-left: 30px;
+    padding-left: 10px;
     font-family: arial;
     border-top: 8px solid #d32146;
     background-color: #ffffff;
@@ -4834,14 +4790,30 @@ a.steps_Button.finish:before {
   .prodCommen > li.prodCommen_event h2 {
     font-size: 1rem;
     font-weight: bolder;
+    margin-bottom: 15px;
   }
   .prodCommen > li.prodCommen_event p {
+    display: block;
+    width: 99%;
+    height: 18px;
     font-size: 0.93rem;
     color: #d32146;
+    white-space: nowrap;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
   }
   .prodCommen > li.prodCommen_event span.from {
     position: absolute;
     right: 5px;
+    bottom: 5px;
+    font-size: 0.7rem;
+    padding: 0 5px;
+  }
+  .prodCommen > li.prodCommen_event span.moreLink {
+    position: absolute;
+    left: 5px;
     bottom: 5px;
     font-size: 0.7rem;
     padding: 0 5px;
@@ -4934,11 +4906,10 @@ a.steps_Button.finish:before {
     width: 60px;
     height: 60px;
     line-height: 60px;
-    border-radius: 50%;
-    background-color: #ffcccc;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #ffcccc;
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
     overflow: hidden;
   }
   .shopCart_title > i * {
@@ -4947,7 +4918,7 @@ a.steps_Button.finish:before {
     box-sizing: border-box;
   }
   .shopCart_title > span {
-    color: #d32146;
+    color: #362e2b;
     font-size: 0.92rem;
     line-height: 20px;
     font-weight: bolder;
@@ -4957,12 +4928,13 @@ a.steps_Button.finish:before {
     font-size: 3.5rem;
   }
   .shopCart_title.finish_title {
-    padding-top: 100px;
+    padding-top: 20px;
   }
   .shopCart_title.finish_title > i {
     width: 100px;
     height: 100px;
     line-height: 100px;
+    border-radius: 50%;
     background-image: url(./../images/icon_finish.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -4970,7 +4942,8 @@ a.steps_Button.finish:before {
     background-color: #ffffff;
   }
   .shopCart_title.finish_title > span {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
+    color: #d32146;
   }
 
   .shopCart_content {
@@ -5234,17 +5207,18 @@ a.steps_Button.finish:before {
   .discountNavs ul > li > a, .paymentWay ul > li > a {
     position: relative;
     display: inline-block;
-    padding: 5px;
+    width: 80px;
+    padding: 3px;
     margin: 0 21%;
     text-align: center;
     color: #ffffff;
     background: #d32146;
-    font-size: 0.92rem;
+    font-size: 0.9rem;
   }
 
   .discountNavs ul > li.current > a:before {
     position: absolute;
-    top: 25px;
+    top: 23px;
     left: 50%;
     margin-left: -8px;
     content: "";
@@ -5366,6 +5340,14 @@ a.steps_Button.finish:before {
     overflow-x: hidden;
     overflow-y: scroll;
   }
+  .discountPop .disContent ~ a.bonusUseTip {
+    position: absolute;
+    right: 0;
+    bottom: -30px;
+    color: #ffffff;
+    background: #d32146;
+    padding: 3px 5px;
+  }
 
   .disContent > fieldset {
     margin-top: 50px;
@@ -5462,12 +5444,12 @@ a.steps_Button.finish:before {
   .shopFinal > .notice {
     position: absolute;
     bottom: 20px;
-    display: block;
-    width: 100%;
+    display: inline-block;
     margin: 0 auto;
-    left: 0;
+    right: 0;
+    padding-right: 30px;
     font-size: 1rem;
-    text-align: center;
+    text-align: right;
   }
   .shopFinal > .notice:after {
     content: "";
@@ -5481,6 +5463,10 @@ a.steps_Button.finish:before {
     right: 5px;
     background: url(./../images/point.png) center no-repeat;
     background-size: 64px;
+  }
+
+  .shopCart > ul > li.priceInfo + li {
+    margin-top: 160px;
   }
 
   .priceInfo.prFixed > .priceTotalZone {
