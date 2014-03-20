@@ -1,5 +1,87 @@
 <div class="shopCart">
 	<ul>
+		<li class="priceInfo">
+			<div class="shopCart_title">
+				<i class="fa fa-file fa-2x"></i>
+				<span>訂單確認</span>
+			</div>
+			<div class="shopCart_content orderInfo">
+				<ul>
+					<li>
+						<img ng-src="{{prods.img[0]}}" width="100%">
+					</li>
+					<li>
+						<div class="specWrap">玫瑰紫</div>
+					</li>
+					<li>
+						<div class="specWrap size">M</div>
+					</li>
+					<li ng-bind="{{prods.piece}}"></li>
+				</ul>
+			</div>
+			<div class="shopCart_content priceDetail priceTotalZone">
+				<div class="totalPrice" ng-bind="'總額 NT$ '+prods.priceSpecial"></div>
+				<div class="orginCoupon" ng-init="$root.price = 200">
+					森活價：NT$ <span ng-bind="prods.priceOrg"></span>
+					折扣金額：<span ng-bind="'NT$ -'+$root.price"></span>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="shopCart_title member_vip">
+				<i class="fa fa-info fa-2x"></i>
+				<span>會員獨享</span>
+			</div>
+			<div class="shopCart_content">
+				<div class="discountNavs">
+					<ul>
+						<li><a href="">可用折價券<span class="couponNums" ng-class="{couponShow: couponHide}" ng-bind="eCoupons.length"></span></a></li>
+						<li><a href="">紅利金</a></li>
+						<li><a href="">折扣金</a></li>
+					</ul>
+				</div>
+				<div class="discount_tips">點我看折扣</div>
+
+				<div id="disconPop_1" class="discountPop" ui-view="discountWrap">
+					<div class="disContent">
+						<ul class="disLists">
+							<li ng-repeat="coupon in eCoupons" ng-class="{selected: prods.colorful ==  $index}" ng-click = "prods.colorful = $index;$root.priceCalc($index);">
+								<h1 ng-bind="couponValue($index)"></h1>
+								<div>
+									<p ng-bind="coupon.Event"></p>
+									<p class="useTime" ng-bind="'使用期限('+coupon.dateStart+'~'+coupon.dateEnd+')'"></p>
+								</div>
+							</li>
+						</ul>			
+					</div>
+					<a class="bonusUseTip" href="#">折價券使用說明</a>	
+				</div>
+
+				<div id="disconPop_2" class="discountPop" ui-view="discountWrap">
+					<div class="disContent">
+						<fieldset>
+							<label>紅利金：NT$</label>
+							<input type="text" ng-model="bonusPrice">
+						</fieldset>
+						<div class="useTime" ng-bind="'使用期限：'+coupons[0].startDate+'~'+coupons[0].endDate">
+						</div>
+						<div class="useBonus" ng-bind="'您已剩餘 NT$'+(coupons[0].bonusPrice - bonusPrice)"></div>			
+					</div>
+				</div>
+
+				<div id="disconPop_3" class="discountPop" ui-view="discountWrap">
+					<div class="disContent">
+						<fieldset>
+							<label ng-bind="'折扣金：NT$'+coupons[1].discountPrice"></label>
+						</fieldset>
+						<div class="useTime" ng-bind="'使用期限：'+coupons[1].startDate+'~'+coupons[1].endDate">
+						</div>
+						<div class="useTime" ng-bind="'本次可折抵金額：NT$'+coupons[1].discountPrice*0.2">
+						</div>						
+					</div>
+				</div>
+			</div>		
+		</li>
 		<li>
 			<div class="shopCart_title">
 				<i class="fa fa-user fa-2x"></i>
@@ -32,96 +114,6 @@
 				<input type="text" value=""  placeholder="請輸入行動電話">
 				<!-- address end -->
 			</div>
-		</li>
-		<li class="priceInfo">
-			<div class="shopCart_title">
-				<i class="fa fa-file fa-2x"></i>
-				<span>訂單確認</span>
-			</div>
-			<div class="shopCart_content orderInfo">
-				<ul>
-					<li>
-						<img ng-src="{{prods.img[0]}}" width="100%">
-					</li>
-					<li>
-						<div class="specWrap">玫瑰紫</div>
-					</li>
-					<li>
-						<div class="specWrap size">M</div>
-					</li>
-					<li ng-bind="{{prods.piece}}"></li>
-				</ul>
-			</div>
-			<div class="shopCart_content priceDetail priceTotalZone">
-				<div class="totalPrice" ng-bind="'總額 NT$ '+prods.priceSpecial"></div>
-				<div class="orginCoupon">
-					森活價：NT$ <span ng-bind="prods.priceOrg"></span>
-					折扣金額：<span ng-bind="'NT$ -'+'200'"></span>
-				</div>
-			</div>
-		</li>
-		<li>
-			<div class="shopCart_title member_vip">
-				<i class="fa fa-info fa-2x"></i>
-				<span>會員獨享</span>
-			</div>
-			<div class="shopCart_content">
-				<div class="discountNavs">
-					<ul>
-						<li><a href="">折價券<span class="couponNums" ng-class="{couponShow: couponHide}" ng-bind="eCoupons.length"></span></a></li>
-						<li><a href="">紅利金</a></li>
-						<li><a href="">折扣金</a></li>
-					</ul>
-				</div>
-				<div class="discount_tips">點我看折扣</div>
-
-				<div id="disconPop_1" class="discountPop" ui-view="discountWrap">
-					<a class="disClose" ng-click="discountClose()">
-						<i class="fa fa-plus fa-lg"></i>
-					</a>
-					<div class="disContent">
-						<ul class="disLists">
-							<li ng-repeat="coupon in eCoupons" ng-class="{selected: prods.colorful ==  $index}" ng-click = "prods.colorful = $index">
-								<h1 ng-bind="couponValue($index)"></h1>
-								<div>
-									<p ng-bind="coupon.Event"></p>
-									<p class="useTime" ng-bind="'使用期限('+coupon.dateStart+'~'+coupon.dateEnd+')'"></p>
-								</div>
-							</li>
-						</ul>					
-					</div>
-				</div>
-
-				<div id="disconPop_2" class="discountPop" ui-view="discountWrap">
-					<a class="disClose" ng-click="discountClose()">
-						<i class="fa fa-plus fa-lg"></i>
-					</a>
-					<div class="disContent">
-						<fieldset>
-							<label>紅利金：NT$</label>
-							<input type="text" ng-model="bonusPrice">
-						</fieldset>
-						<div class="useTime" ng-bind="'使用期限：'+coupons[0].startDate+'~'+coupons[0].endDate">
-						</div>
-						<div class="useBonus" ng-bind="'您已剩餘 NT$'+(coupons[0].bonusPrice - bonusPrice)"></div>			
-					</div>
-				</div>
-
-				<div id="disconPop_3" class="discountPop" ui-view="discountWrap">
-					<a class="disClose" ng-click="discountClose()">
-						<i class="fa fa-plus fa-lg"></i>
-					</a>
-					<div class="disContent">
-						<fieldset>
-							<label ng-bind="'折扣金：NT$'+coupons[1].discountPrice"></label>
-						</fieldset>
-						<div class="useTime" ng-bind="'使用期限：'+coupons[1].startDate+'~'+coupons[1].endDate">
-						</div>
-						<div class="useTime" ng-bind="'本次可折抵金額：NT$'+coupons[1].discountPrice*0.2">
-						</div>						
-					</div>
-				</div>
-			</div>		
 		</li>
 		<li>
 			<div class="shopBtn_area">

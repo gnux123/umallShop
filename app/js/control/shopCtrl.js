@@ -25,6 +25,9 @@ var shopCtrl = function($scope, Data ,$stateParams){
         }
     }
 
+    $scope.$root.priceCalc = function(i){
+        return $scope.eCoupons[i].value;
+    }
 
     Zepto(function($){
         $(window).scroll(function(){
@@ -33,17 +36,20 @@ var shopCtrl = function($scope, Data ,$stateParams){
                 $(".priceInfo").removeClass("prFixed");               
             }
         });
-        $(".discountPop").hide();
+        $(".discountPop").hide().first().show();
+        $(".discountNavs li").first().addClass("current");
+        $(".discount_tips").hide();
         $(".discountNavs li").each(function(){
             $(this).click(function(){
                 $(".priceInfo").addClass("prFixed");
 
                 var _index = $(this).index() + 1;
-                $(".discount_tips").hide();
                 $(this).addClass("current").siblings(".current").removeClass("current");
                 $("#disconPop_"+_index).show().siblings(".discountPop").hide();
                 if(_index == 1){
                     $(".couponNums").hide();
+                }else if(_index == 2){
+                    $("#disconPop_"+_index).find("input[type='text']").focus(); 
                 }
             });
         });

@@ -33,23 +33,40 @@ var prodCtrl = function($scope, $document, Data, $location, $stateParams){
 
     //
     Zepto(function($){
+        // $(window).scrollTop(0,0);
         $(window).scroll(function(){
+            // $(".recommands_zone").css({
+            //    'position':'fixed',
+            //    'top':'-200px'     
+            // });
             var _y = $(this).scrollTop();
-            if(_y > 60){
+            if(_y >= 60){
                 $(".recommands_zone").addClass("fixed");
-            }else if(_y <= 60){
-                $(".recommands_zone").removeClass("fixed");    
+                // $(".recommands_zone").css({
+                //     "position":"fixed",
+                //     "-webkit-transition":"0s",
+                //     "-webkit-transform":"translate3d(0,0,0)",
+                //     "z-index":"3"
+                // });
+            }else if(_y < 60){
+                $(".recommands_zone").removeClass("fixed");
+                // $(".recommands_zone").css({
+                //     "position":"relative"                 
+                // });    
             }
+
+            // // alert('SCROLLING!');
+            // var stopListener = $(window).mouseup(function(){ // listen to mouse up
+            //     // alert('STOPPED SCROLLING!');
+            //     stopListner(); // Stop listening to mouse up after heard for the first time
+
+            // });
         });
     });
 
 
     //popUp alert
     $(".alertPop").hide();
-    $scope.alertOpen = function() {
-        $(".alertPop").show();         
-    }
-    $scope.alertClose = function() {
-        $(".alertPop").hide();   
-    }
+    $scope.alertOpen = function() { $(".alertPop").show();}
+    $scope.alertClose = function() { $(".alertPop").hide(); }
 }
