@@ -198,7 +198,7 @@ module.exports = function (grunt) {
         },
         usemin: {
             options: {
-                dirs: ['<%= yeoman.dist %>']
+                assetDirs: ['<%= yeoman.dist %>']
             },
             html: ['<%= yeoman.dist %>/{,*/}*.html']
             //css: ['<%= yeoman.dist %>/styles/{,*/}*.css']
@@ -221,7 +221,18 @@ module.exports = function (grunt) {
                     src: '*.js',
                     dest: '.tmp/concat/js'
                 }],
-                uglify:true
+            }
+        },
+        uglify: {
+            dist: {
+                files:{
+                    '<%= yeoman.dist %>/js/plugin.js':[
+                        '.tmp/concat/js/plugin.js' 
+                    ],
+                    '<%= yeoman.dist %>/js/shak.js':[
+                        '.tmp/concat/js/shak.js' 
+                    ]
+                }
             }
         },
         svgmin: {
@@ -279,6 +290,19 @@ module.exports = function (grunt) {
         },
         // Put files not handled in other tasks here
         copy: {
+            test: {
+                files: [{
+                    expand: true,
+                    dot: true,
+                    cwd: '.tmp/concat/js',
+                    dest: '<%= yeoman.dist %>/js/',
+                    src: [
+                        'angularjs.js',
+                        'components.js',
+                        'main.js'
+                    ]
+                }]
+            },
             dist: {
                 files: [{
                     expand: true,
@@ -316,7 +340,7 @@ module.exports = function (grunt) {
         concurrent: {
             server: [
                 'compass',
-                'coffee:dist',
+//                'coffee:dist',
                 'copy:styles'
             ],
             test: [
@@ -324,7 +348,7 @@ module.exports = function (grunt) {
                 'copy:styles'
             ],
             dist: [
-                'coffee',
+          //      'coffee',
                 'compass',
                 'copy:styles',
                 'imagemin',
@@ -369,11 +393,11 @@ module.exports = function (grunt) {
         'useminPrepare',
         'concurrent:dist',
         'autoprefixer',
-        'ngmin',
         'concat',
         'cssmin',
-        //'uglify',
         //'modernizr',
+        'uglify',
+        'copy:test',
         'copy:dist',
         'usemin'
     ]);
