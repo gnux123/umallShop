@@ -20,8 +20,8 @@
 				</ul>
 			</div>
 			<div class="shopCart_content priceDetail priceTotalZone">
-				<div class="totalPrice" ng-bind="'總額 NT$ '+prods.priceSpecial"></div>
-				<div class="orginCoupon" ng-init="$root.price = 200">
+				<div class="totalPrice" ng-bind="'總額 NT$ '+priceSpecial"></div>
+				<div class="orginCoupon" ng-init="$root.price = 0">
 					森活價：NT$ <span ng-bind="prods.priceOrg"></span>
 					折扣金額：<span ng-bind="'NT$ -'+$root.price"></span>
 				</div>
@@ -45,7 +45,9 @@
 				<div id="disconPop_1" class="discountPop" ui-view="discountWrap">
 					<div class="disContent">
 						<ul class="disLists">
-							<li ng-repeat="coupon in eCoupons" ng-class="{selected: prods.colorful ==  $index}" ng-click = "prods.colorful = $index;$root.priceCalc($index);">
+                            <li ng-repeat="coupon in eCoupons" ng-class="{selected: prods.colorful ==  $index}" 
+                                                               ng-click = "prods.colorful = $index; priceCalc($index);">
+
 								<h1 ng-bind="couponValue($index)"></h1>
 								<div>
 									<p ng-bind="coupon.Event"></p>
