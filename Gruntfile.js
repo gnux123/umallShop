@@ -216,10 +216,8 @@ module.exports = function (grunt) {
         ngmin: {
             dist: {
                 files: [{
-                    expand: true,
-                    cwd: '.tmp/concat/js',
-                    src: '*.js',
-                    dest: '.tmp/concat/js'
+                    src: '.tmp/concat/js/main.js',
+                    dest: '.tmp/concat/js/main.js'
                 }],
             }
         },
@@ -233,6 +231,13 @@ module.exports = function (grunt) {
                         '.tmp/concat/js/shak.js' 
                     ]
                 }
+            },
+            ng : {
+                options: {
+                    report: 'min',
+                    mangle: false
+                },
+                files: {'<%= yeoman.dist %>/js/main.js':['.tmp/concat/js/main.js']} 
             }
         },
         svgmin: {
@@ -299,7 +304,6 @@ module.exports = function (grunt) {
                     src: [
                         'angularjs.js',
                         'components.js',
-                        'main.js'
                     ]
                 }]
             },
@@ -397,6 +401,7 @@ module.exports = function (grunt) {
         'cssmin',
         //'modernizr',
         'uglify',
+        'uglify:ng',
         'copy:test',
         'copy:dist',
         'usemin'
