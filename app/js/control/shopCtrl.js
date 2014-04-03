@@ -1,6 +1,6 @@
 'use strict';
 //shopCartController
-var shopCtrl = function($scope, Data ,$stateParams){ 
+var shopCtrl = function($rootScope, $scope, Data ,$stateParams){ 
     $scope.steps = $stateParams.steps;
     $scope.prods = Data[0];
     $scope.user = Data[1].addressList;
@@ -8,7 +8,7 @@ var shopCtrl = function($scope, Data ,$stateParams){
     $scope.eCoupons = Data[1].couponLists;
     $scope.memberCoupon = true;
     $scope.bonusPrice = $scope.coupons[0].bonusPrice;
-
+    $scope.priceSpecial = $scope.prods.priceSpecial;
 
     if($scope.eCoupons.length == 0){
         $scope.couponHide = true;
@@ -19,14 +19,20 @@ var shopCtrl = function($scope, Data ,$stateParams){
     //ecouponTranslateValue
     $scope.couponValue = function(i){
         if($scope.eCoupons[i].value > 1){
-           return "NT$"+$scope.eCoupons[i].value;
+            return "NT$"+$scope.eCoupons[i].value;
         }else{
             return ($scope.eCoupons[i].value*10)+"折";
         }
     }
 
-    $scope.$root.priceCalc = function(i){
-        return $scope.eCoupons[i].value;
+    $scope.priceCalc = function(i){
+        if(+$scope.eCoupons[i].value > 1) {
+            $rootScope.price = (+$scope.eCoupons[i].value);
+        } else {
+           var origPrice = +$scope.prods.priceOrg;
+            $rootScope.price = Math.round ( origPrice - (origPrice * (+$scope.eCoupons[i].value)));
+        }
+        $scope.priceSpecial = $scope.prods.priceSpecial - $rootScope.price;
     }
 
     Zepto(function($){
