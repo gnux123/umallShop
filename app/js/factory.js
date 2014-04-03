@@ -12,14 +12,14 @@ umallApp.service('Data', function(){
         parts: '清新花香卸指甲油化妝棉',
         specDetail: "「美國原裝進口‧網路經銷直營‧品質保證，請消費者安心購買」 <br/>˙產品容量:指甲油3.75ml*6 <br/>˙保存期限:3年 <br/>˙製造日期:詳見瓶底/瓶身/盒身 <br/>˙製 造 廠:美國OPI Products Inc.，N.Hollywood，CA USA",
         priceSpecial: "950",
-        priceOrg: "1,200",
+        priceOrg: "1200",
         prodSpec1: ["紅","橙","綠","黃"],
         prodSpec2: ["S","M","L","XL","2XL","3XL"],
-        piece: 1
-
+        piece: 1,
     },
     //userData
     {
+        price : 0,
         addressList: [
             {name:"蘇小文",sex:"男",mobile:"0987-797768",zip:"11599",city:"台北市",area:"南港區",address:"昆陽街95-1號6樓"},
             {name:"王小三",sex:"男",mobile:"0987-797768",zip:"11599",city:"台北市",area:"南港區",address:"昆陽街95-1號6樓"},
