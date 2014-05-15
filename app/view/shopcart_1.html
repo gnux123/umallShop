@@ -1,9 +1,15 @@
 <div class="shopCart">
 	<ul>
+		<li class="personPhoto">
+			<div class="photoImg">
+				<img src="images/person.jpg" alt="">	
+			</div>
+			<div class="personName">午安，王小美</div>
+		</li>
 		<li class="priceInfo">
 			<div class="shopCart_title">
-				<i class="fa fa-file fa-2x"></i>
-				<span>訂單確認</span>
+				<i class="fa fa-file"></i>
+				<span>規格選擇</span>
 			</div>
 			<div class="shopCart_content orderInfo">
 				<ul>
@@ -11,12 +17,11 @@
 						<img ng-src="{{prods.img[0]}}" width="100%">
 					</li>
 					<li>
-						<div class="specWrap">玫瑰紫</div>
-					</li>
-					<li>
 						<div class="specWrap size">M</div>
 					</li>
-					<li ng-bind="{{prods.piece}}"></li>
+					<li>
+						<div class="specWrap colors">玫瑰紫</div>
+					</li>
 				</ul>
 			</div>
 			<div class="shopCart_content priceDetail priceTotalZone">

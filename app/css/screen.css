@@ -467,10 +467,10 @@ a.pure-button-selected {
     /* increased bottom padding to make it group with its related input element */
   }
 }
-/* Copyright 2013 Yahoo! Inc. http://yuilibrary.com/license/ */
+/*! Copyright 2013 Yahoo! Inc. http://yuilibrary.com/license/ */
 /* This page lists core form styles adopted from Normalize.css. */
-/* Copyright (c) Nicolas Gallagher and Jonathan Neal */
-/* normalize.css v1.1.0 | MIT License | git.io/normalize */
+/*! Copyright (c) Nicolas Gallagher and Jonathan Neal */
+/*! normalize.css v1.1.0 | MIT License | git.io/normalize */
 /* This page has Normalize.css form-specific style rules applied to a .yui3-form context */
 /* ==========
 Forms Core
@@ -1689,7 +1689,7 @@ striping:
   border-bottom-width: 0;
 }
 
-/*
+/*!
  *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
@@ -3502,7 +3502,7 @@ a.steps_Button {
   height: 100px;
   line-height: 100px;
   border-radius: 1000em;
-  background: #d32146;
+  background: #ff0048;
   text-align: center;
   line-height: 100px;
   color: #ffffff;
@@ -3519,7 +3519,7 @@ a.steps_Button:before {
   width: 100px;
   height: 100px;
   border-radius: 1000em;
-  border: 4px solid #d32146;
+  border: 4px solid #ff0048;
   transform-origin: 50% 50%;
   -webkit-transform-origin: 50% 50%;
   animation: btnActive 3s infinite ease;
@@ -3541,7 +3541,7 @@ a.steps_Button.finish:before {
   left: 50%;
   width: 90%;
   margin-left: -46%;
-  border: 3px solid #d32146;
+  border: 3px solid #ff0048;
   background: #ffffff;
 }
 .Pop * {
@@ -3559,7 +3559,7 @@ a.steps_Button.finish:before {
   height: 30px;
   line-height: 30px;
   text-align: center;
-  background: #d32146;
+  background: #ff0048;
   color: #ffffff;
 }
 .Pop > a.popClose > i {
@@ -3582,7 +3582,7 @@ a.steps_Button.finish:before {
   line-height: 114px;
   text-align: center;
   font-size: 1.6rem;
-  color: #d32146;
+  color: #ff0048;
   overflow: hidden;
 }
 .Pop.historyPop {
@@ -3594,7 +3594,7 @@ a.steps_Button.finish:before {
   line-height: 204px;
   text-align: center;
   font-size: 1.6rem;
-  color: #d32146;
+  color: #ff0048;
   overflow: hidden;
 }
 .Pop.historyPop .popContent > img {
@@ -3621,7 +3621,6 @@ a.steps_Button.finish:before {
     height: auto;
     top: 0;
     left: 0;
-    background: #ffcccc;
     z-index: 1;
   }
   .page .navs .appLogo, .memberPage .navs .appLogo {
@@ -3706,7 +3705,7 @@ a.steps_Button.finish:before {
     font-family: arial;
   }
   .popup.game_notice, .popup.bonusPop {
-    border: 3px solid #d32146;
+    border: 3px solid #ff0048;
     background: #ffffff;
     height: 160px;
     margin-top: -80px;
@@ -3728,7 +3727,7 @@ a.steps_Button.finish:before {
     font-size: 0.93rem;
   }
   .popup.game_notice > .popup_content h3, .popup.bonusPop > .popup_content h3 {
-    color: #d32146;
+    color: #ff0048;
     font-size: 1.2rem;
     padding: 10px 0;
     font-weight: bold;
@@ -3742,7 +3741,7 @@ a.steps_Button.finish:before {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background: #d32146;
+    background: #ff0048;
     color: #ffffff;
     text-align: center;
     line-height: 50px;
@@ -3751,7 +3750,7 @@ a.steps_Button.finish:before {
   .popup.bonusPop > .popup_content {
     padding: 10px;
     text-align: center;
-    color: #d32146;
+    color: #ff0048;
   }
   .popup.bonusPop > .popup_content span {
     font-size: 3rem;
@@ -3805,10 +3804,21 @@ a.steps_Button.finish:before {
   }
 }
 .page .navs > .appLogo .logo, .memberPage .navs > .appLogo .logo {
-  color: #d32146;
+  color: #ff0048;
 }
 .page .navs > .appLogo .logo > img, .memberPage .navs > .appLogo .logo > img {
   width: 26px;
+}
+.page .navs > .appLogo .logo.shopNavTitle, .memberPage .navs > .appLogo .logo.shopNavTitle {
+  top: 0;
+  left: 50%;
+  margin-left: -50px;
+  width: 100px;
+  height: 45px;
+  display: inline-block;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 45px;
 }
 .page .navs > .appLogo .memTitle, .memberPage .navs > .appLogo .memTitle {
   position: absolute;
@@ -3818,7 +3828,7 @@ a.steps_Button.finish:before {
   width: 150px;
   margin-left: -75px;
   height: 26px;
-  color: #d32146;
+  color: #ff0048;
   text-align: center;
   line-height: 32px;
   font-size: 1.2rem;
@@ -3833,13 +3843,13 @@ a.steps_Button.finish:before {
   border-radius: 50%;
   line-height: 20px;
   text-align: center;
-  background: #d32146;
+  background: #ff0048;
   color: #ffffff;
   font-size: 0.6rem;
   font-weight: lighter;
 }
 .page h2.prods_name, .page div.prods_nums, .memberPage h2.prods_name, .memberPage div.prods_nums {
-  color: #d32146;
+  color: #ff0048;
 }
 .page h2.prods_name, .memberPage h2.prods_name {
   margin: 0 20px;
@@ -3868,7 +3878,7 @@ a.steps_Button.finish:before {
   width: 40px;
   height: 40px;
   margin-top: -20px;
-  color: #d32146;
+  color: #ff0048;
   font-size: 1.2rem;
   text-align: left;
   line-height: 40px;
@@ -3920,7 +3930,7 @@ a.steps_Button.finish:before {
     display: block;
     height: auto;
     margin-bottom: 20px;
-    color: #d32146;
+    color: #ff0048;
     text-align: center;
   }
   .bonusTitle li * {
@@ -3953,7 +3963,7 @@ a.steps_Button.finish:before {
     height: 40px;
     line-height: 40px;
     text-align: center;
-    color: #d32146;
+    color: #ff0048;
   }
 
   .bonusTitle .couponBtn.left {
@@ -4008,7 +4018,7 @@ a.steps_Button.finish:before {
     height: 30px;
     line-height: 30px;
     border-radius: 100px;
-    background: #d32146;
+    background: #ff0048;
     border: 0;
     text-align: center;
     letter-spacing: 2px;
@@ -4025,7 +4035,7 @@ a.steps_Button.finish:before {
     margin: 0 auto;
     text-align: center;
     font-size: 1.3rem;
-    color: #d32146;
+    color: #ff0048;
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
@@ -4070,7 +4080,7 @@ a.steps_Button.finish:before {
     height: 35px;
     line-height: 35px;
     text-align: center;
-    color: #d32146;
+    color: #ff0048;
     font-size: 0.95rem;
     font-family: arial;
   }
@@ -4248,7 +4258,7 @@ a.steps_Button.finish:before {
     height: 65px;
     line-height: 63px;
     border-radius: 10000em;
-    background-color: #d32146;
+    background-color: #ff0048;
     position: absolute;
     text-align: center;
     top: 0;
@@ -4265,7 +4275,7 @@ a.steps_Button.finish:before {
     bottom: 10px;
     text-align: center;
     font-size: 0.9rem;
-    color: #d32146;
+    color: #ff0048;
   }
   .recommands_zone > ul > li > a.specBtn, .recommands_zone > ul > li > div.specBtn {
     z-index: 3;
@@ -4328,7 +4338,7 @@ a.steps_Button.finish:before {
     height: 30px;
     line-height: 30px;
     background: #ffcccc;
-    color: #d32146;
+    color: #ff0048;
     font-size: 1rem;
     padding-left: 10px;
   }
@@ -4352,7 +4362,7 @@ a.steps_Button.finish:before {
     right: 10px;
     background: rgba(255, 204, 204, 0.7);
     padding: 10px;
-    color: #d32146;
+    color: #ff0048;
     text-align: center;
   }
 
@@ -4395,7 +4405,7 @@ a.steps_Button.finish:before {
     width: 30px;
     height: 30px;
     border-radius: 1000em;
-    background: #d32146;
+    background: #ff0048;
     color: #ffffff;
     text-align: center;
     line-height: 30px;
@@ -4426,7 +4436,7 @@ a.steps_Button.finish:before {
     text-decoration: line-through;
   }
   .priceZone > span.special {
-    color: #d32146;
+    color: #ff0048;
   }
 
   .prod_specNavs {
@@ -4451,7 +4461,7 @@ a.steps_Button.finish:before {
     border-top: 0px;
   }
   .prod_specNavs ul li a {
-    color: #d32146;
+    color: #ff0048;
   }
 
   .prod_specNavs, .priceZone, .shopCart_btn, .prodShow {
@@ -4516,8 +4526,8 @@ a.steps_Button.finish:before {
     height: 30px;
     line-height: 30px;
     border-radius: 50%;
-    background: #d32146;
-    color: #d32146;
+    background: #ff0048;
+    color: #ff0048;
     z-index: 2;
   }
 
@@ -4636,13 +4646,13 @@ a.steps_Button.finish:before {
     background: #ffcccc;
   }
   .specChoiceWrap.specChoice > ul .focus > a {
-    color: #d32146;
+    color: #ff0048;
   }
   .specChoiceWrap.specChoice .slideBtn {
     position: absolute;
     width: 25px;
     height: 100%;
-    background: #d32146;
+    background: #ff0048;
     z-index: 1;
     top: 0;
   }
@@ -4677,7 +4687,7 @@ a.steps_Button.finish:before {
     width: 40px;
     height: 40px;
     line-height: 40px;
-    background: #d32146;
+    background: #ff0048;
     border: 0;
   }
   .specChoiceWrap.sizeChoice > ul li a {
@@ -4730,7 +4740,7 @@ a.steps_Button.finish:before {
     border-radius: 50%;
     overflow: hidden;
     color: #ffffff;
-    background: #d32146;
+    background: #ff0048;
     text-align: center;
     line-height: 80px;
     font-size: 3rem;
@@ -4779,7 +4789,7 @@ a.steps_Button.finish:before {
     padding-top: 30px;
     padding-left: 10px;
     font-family: arial;
-    border-top: 8px solid #d32146;
+    border-top: 8px solid #ff0048;
     background-color: #ffffff;
   }
   .prodCommen > li.prodCommen_event h2, .prodCommen > li.prodCommen_event p {
@@ -4797,7 +4807,7 @@ a.steps_Button.finish:before {
     width: 99%;
     height: 18px;
     font-size: 0.93rem;
-    color: #d32146;
+    color: #ff0048;
     white-space: nowrap;
     overflow: hidden;
     -ms-text-overflow: ellipsis;
@@ -4820,7 +4830,7 @@ a.steps_Button.finish:before {
   }
 
   .prodCommen > li > a:visited span.cate:before, .prodCommen > li > a:hover span.cate:before, .prodCommen > li > a:active span.cate:before, .prodCommen > li > a:focus span.cate:before {
-    border-color: #d32146 transparent transparent transparent;
+    border-color: #ff0048 transparent transparent transparent;
   }
 
   .ifmContent {
@@ -4862,7 +4872,7 @@ a.steps_Button.finish:before {
   }
 
   .shopCart > ul > li {
-    margin-top: 50px;
+    margin-top: 40px;
   }
   .shopCart > ul > li:after {
     content: "";
@@ -4892,7 +4902,7 @@ a.steps_Button.finish:before {
     display: block;
     width: 6px;
     height: 300px;
-    background-color: #ffcccc;
+    background-color: #ff0048;
     left: 50%;
     margin-left: -3px;
     z-index: -1;
@@ -4903,14 +4913,10 @@ a.steps_Button.finish:before {
   .shopCart_title > i {
     margin: 5px auto;
     display: block;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
     background-color: #ffffff;
-    color: #ffcccc;
+    color: #ff0048;
     text-align: center;
-    font-size: 3rem;
-    overflow: hidden;
+    font-size: 2.5rem;
   }
   .shopCart_title > i * {
     -webkit-box-sizing: border-box;
@@ -4919,9 +4925,10 @@ a.steps_Button.finish:before {
   }
   .shopCart_title > span {
     color: #362e2b;
-    font-size: 0.92rem;
-    line-height: 20px;
+    font-size: 1.3rem;
+    line-height: 40px;
     font-weight: bolder;
+    letter-spacing: 1px;
   }
   .shopCart_title.user > i {
     line-height: 75px;
@@ -4943,7 +4950,7 @@ a.steps_Button.finish:before {
   }
   .shopCart_title.finish_title > span {
     font-size: 1.3rem;
-    color: #d32146;
+    color: #ff0048;
   }
 
   .shopCart_content {
@@ -5048,36 +5055,32 @@ a.steps_Button.finish:before {
 
   .shopCart_content.orderInfo {
     margin: 5px 0;
-    border: 3px solid #ffcccc;
+    border: 3px solid #ff0048;
     padding: 5px;
     background: #ffffff;
   }
   .shopCart_content.orderInfo > ul li {
     position: relative;
-    width: 24.09639%;
+    width: 32.25806%;
     float: left;
-    margin-right: 1.20482%;
+    margin-right: 1.6129%;
     margin-right: -100%;
-    height: 65px;
-    line-height: 65px;
+    height: 117px;
+    line-height: 100px;
     font-family: arial;
     text-align: center;
-    color: #d32146;
+    color: #ff0048;
   }
-  .shopCart_content.orderInfo > ul li:nth-child(4n + 1) {
+  .shopCart_content.orderInfo > ul li:nth-child(3n + 1) {
     margin-left: 0%;
     clear: left;
   }
-  .shopCart_content.orderInfo > ul li:nth-child(4n + 2) {
-    margin-left: 25.3012%;
+  .shopCart_content.orderInfo > ul li:nth-child(3n + 2) {
+    margin-left: 33.87097%;
     clear: none;
   }
-  .shopCart_content.orderInfo > ul li:nth-child(4n + 3) {
-    margin-left: 50.60241%;
-    clear: none;
-  }
-  .shopCart_content.orderInfo > ul li:nth-child(4n + 4) {
-    margin-left: 75.90361%;
+  .shopCart_content.orderInfo > ul li:nth-child(3n + 3) {
+    margin-left: 67.74194%;
     clear: none;
   }
   .shopCart_content.orderInfo > ul li * {
@@ -5087,31 +5090,35 @@ a.steps_Button.finish:before {
   }
   .shopCart_content.orderInfo > ul li:before {
     position: absolute;
-    top: 0;
-    left: -1px;
+    top: 50%;
+    left: 3px;
+    margin-top: -32px;
     content: "x";
-    height: 65px;
-    line-height: 65px;
-    font-size: 1rem;
+    height: 64px;
+    line-height: 64px;
+    font-size: 1.2rem;
   }
   .shopCart_content.orderInfo > ul li:first-child:before {
     display: none;
   }
   .shopCart_content.orderInfo > ul li:last-child {
     font-weight: lighter;
-    font-size: 2.5rem;
+  }
+  .shopCart_content.orderInfo > ul li:last-child:before {
+    left: -10px;
   }
   .shopCart_content.orderInfo > ul li .specWrap {
     position: absolute;
-    top: 5px;
-    right: 0;
-    width: 55px;
-    height: 55px;
-    line-height: 55px;
+    top: 50%;
+    left: 20px;
+    margin-top: -40px;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
     text-align: center;
     border-radius: 50%;
-    background: #d32146;
-    font-size: 0.92rem;
+    background: #ff0048;
+    font-size: 1.5rem;
     font-weight: bold;
     overflow: hidden;
     color: #ffffff;
@@ -5121,8 +5128,8 @@ a.steps_Button.finish:before {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-  .shopCart_content.orderInfo > ul li .specWrap.size {
-    font-size: 1.3rem;
+  .shopCart_content.orderInfo > ul li .specWrap.colors {
+    font-size: 1.2rem;
   }
 
   .shopCart_content.priceDetail {
@@ -5138,7 +5145,7 @@ a.steps_Button.finish:before {
     height: auto;
     text-align: center;
     font-size: 1.5rem;
-    color: #d32146;
+    color: #ff0048;
   }
   .shopCart_content.priceDetail .totalPrice * {
     -webkit-box-sizing: border-box;
@@ -5163,7 +5170,7 @@ a.steps_Button.finish:before {
     box-sizing: border-box;
   }
   .shopCart_content.priceDetail .orginCoupon span:first-child + span {
-    color: #d32146;
+    color: #ff0048;
   }
 
   .discountNavs, .paymentWay {
@@ -5212,7 +5219,7 @@ a.steps_Button.finish:before {
     margin: 0 21%;
     text-align: center;
     color: #ffffff;
-    background: #d32146;
+    background: #ff0048;
     font-size: 0.9rem;
   }
 
@@ -5227,7 +5234,7 @@ a.steps_Button.finish:before {
     height: 0px;
     border-style: solid;
     border-width: 0 10px 10px 10px;
-    border-color: transparent transparent #d32146 transparent;
+    border-color: transparent transparent #ff0048 transparent;
   }
   .discountNavs .couponNums {
     position: absolute;
@@ -5279,7 +5286,7 @@ a.steps_Button.finish:before {
     line-height: 80px;
     font-size: 2rem;
     letter-spacing: 1px;
-    color: #d32146;
+    color: #ff0048;
     padding-left: 60px;
   }
   .discount_tips * {
@@ -5305,7 +5312,7 @@ a.steps_Button.finish:before {
     margin-right: 0;
     margin-top: 10px;
     padding: 5px;
-    border: 3px solid #d32146;
+    border: 3px solid #ff0048;
     height: 200px;
   }
   .discountPop * {
@@ -5323,7 +5330,7 @@ a.steps_Button.finish:before {
     height: 30px;
     line-height: 30px;
     text-align: center;
-    background: #d32146;
+    background: #ff0048;
     color: #ffffff;
   }
   .discountPop > a.disClose > i {
@@ -5345,7 +5352,7 @@ a.steps_Button.finish:before {
     right: 0;
     bottom: -30px;
     color: #ffffff;
-    background: #d32146;
+    background: #ff0048;
     padding: 3px 5px;
   }
 
@@ -5354,7 +5361,7 @@ a.steps_Button.finish:before {
     display: block;
     width: 100%;
     height: auto;
-    color: #d32146;
+    color: #ff0048;
     font-family: arial;
     font-weight: bolder;
     text-align: center;
@@ -5366,8 +5373,8 @@ a.steps_Button.finish:before {
     border: 0;
     font-size: 2rem;
     width: 40%;
-    color: #d32146;
-    border-bottom: 1px solid #d32146;
+    color: #ff0048;
+    border-bottom: 1px solid #ff0048;
     border-radius: 0;
   }
 
@@ -5389,7 +5396,7 @@ a.steps_Button.finish:before {
   .disLists > li h1 {
     float: left;
     display: inline-block;
-    color: #d32146;
+    color: #ff0048;
     font-size: 1.53rem;
     font-weight: bold;
     width: 80px;
@@ -5407,7 +5414,7 @@ a.steps_Button.finish:before {
   }
   .disLists > li > div p:first-child {
     font-size: 1rem;
-    color: #d32146;
+    color: #ff0048;
     letter-spacing: normal;
     line-height: 25px;
   }
@@ -5501,6 +5508,33 @@ a.steps_Button.finish:before {
   }
   .priceInfo.prFixed + li {
     margin-top: 193px;
+  }
+
+  .photoImg {
+    top: 0;
+    left: 50%;
+    margin-left: -60px;
+    position: relative;
+    display: block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .photoImg > img {
+    width: 100%;
+  }
+
+  .personName {
+    position: relative;
+    left: 50%;
+    margin-left: -75px;
+    color: #ff0048;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 1.3rem;
   }
 }
 @-webkit-keyframes inball {
@@ -5699,7 +5733,7 @@ a.steps_Button.finish:before {
     text-align: center;
   }
   a.gameHelp_btn > i {
-    color: #d32146;
+    color: #ff0048;
   }
   a.gameHelp_btn.gameHelp {
     display: none;
@@ -5754,7 +5788,7 @@ a.steps_Button.finish:before {
     height: 46px;
     line-height: 46px;
     text-align: center;
-    color: #d32146;
+    color: #ff0048;
   }
   .sideMenuBtn.sideMenu {
     display: none;
@@ -5799,7 +5833,7 @@ a.steps_Button.finish:before {
     width: 80%;
     margin: 0 auto;
     font-size: 1rem;
-    color: #d32146;
+    color: #ff0048;
     text-align: center;
     line-height: 25px;
   }
@@ -5829,7 +5863,7 @@ a.steps_Button.finish:before {
     padding: 20px 0;
     width: 50%;
     height: auto;
-    border-bottom: 1px solid #d32146;
+    border-bottom: 1px solid #ff0048;
   }
   .toolsBox > ul > li a {
     display: block;
@@ -5842,7 +5876,7 @@ a.steps_Button.finish:before {
     width: 94px;
     height: 60px;
     text-align: center;
-    color: #d32146;
+    color: #ff0048;
   }
   .toolsBox > ul > li a i.tradeInfo {
     background: url(./../images//icons/icon_tradeInfo.png) center no-repeat;
@@ -5862,7 +5896,7 @@ a.steps_Button.finish:before {
   }
   .toolsBox > ul > li a span {
     font-size: 0.93rem;
-    color: #d32146;
+    color: #ff0048;
   }
 
   .btnArea {
@@ -5884,7 +5918,7 @@ a.steps_Button.finish:before {
     font-size: 1rem;
     letter-spacing: 2px;
     color: #ffffff;
-    background: #d32146;
+    background: #ff0048;
   }
   .button:first-child {
     margin-top: 10px;
@@ -5909,7 +5943,7 @@ a.steps_Button.finish:before {
     width: 80%;
     height: auto;
     text-align: center;
-    color: #d32146;
+    color: #ff0048;
   }
 
   .historyWrap, .userGuideWrap {
@@ -5944,7 +5978,7 @@ a.steps_Button.finish:before {
     font-size: 1.6rem;
   }
   .userGuideWrap h3, .userGuideWrap h4 {
-    color: #d32146;
+    color: #ff0048;
   }
   .userGuideWrap span {
     display: block;

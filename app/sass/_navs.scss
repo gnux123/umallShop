@@ -3,6 +3,18 @@
 		.logo {
 			color:$pink-text;
 			& > img { width:26px; }
+			&.shopNavTitle {
+				top:0;
+				left:50%;
+				margin-left:-50px;
+				width:100px;
+				height:45px;
+				display: inline-block;
+				text-align: center;
+				font-size:$font-default+0.2#{rem};
+				line-height: 45px;
+			
+			}
 		}
 
 		.memTitle{
