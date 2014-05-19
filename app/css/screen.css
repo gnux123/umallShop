@@ -4916,7 +4916,7 @@ a.steps_Button.finish:before {
     background-color: #ffffff;
     color: #ff0048;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
   .shopCart_title > i * {
     -webkit-box-sizing: border-box;
@@ -4966,13 +4966,13 @@ a.steps_Button.finish:before {
   }
 
   .shopCart_content > label, .shopCart_content .group > label {
-    width: 24.09639%;
+    width: 9.63855%;
     float: left;
     margin-right: 1.20482%;
     height: 35px;
     line-height: 35px;
     overflow: hidden;
-    background: #ffcccc;
+    background: #ff0048;
     color: #ffffff;
     text-align: center;
   }
@@ -4983,13 +4983,13 @@ a.steps_Button.finish:before {
   }
 
   .shopCart_content > input[type='text'], .shopCart_content > input[type='password'] {
-    width: 74.6988%;
+    width: 87.95181%;
     float: right;
     margin-right: 0;
     height: 35px;
     line-height: 35px;
     background: #ffffff;
-    border: 3px solid #ffcccc;
+    border: 3px solid #ff0048;
     font-size: 1rem;
   }
   .shopCart_content > input[type='text'] *, .shopCart_content > input[type='password'] * {
@@ -4999,7 +4999,7 @@ a.steps_Button.finish:before {
   }
 
   .shopCart_content .group > .selectGroup {
-    width: 74.6988%;
+    width: 87.95181%;
     float: right;
     margin-right: 0;
   }
@@ -5009,22 +5009,23 @@ a.steps_Button.finish:before {
     box-sizing: border-box;
   }
   .shopCart_content .group > .selectGroup > select {
-    width: 49.39759%;
+    width: 48.78049%;
     float: left;
-    margin-right: 1.20482%;
+    margin-right: 2.43902%;
     margin-right: -100%;
     margin-top: 5px;
     height: 35px;
     line-height: 35px;
     background: #ffffff;
-    border: 3px solid #ffcccc;
+    border: 3px solid #ff0048;
+    border-radius: 0px;
   }
   .shopCart_content .group > .selectGroup > select:nth-child(2n + 1) {
     margin-left: 0%;
     clear: left;
   }
   .shopCart_content .group > .selectGroup > select:nth-child(2n + 2) {
-    margin-left: 50.60241%;
+    margin-left: 51.21951%;
     clear: none;
   }
   .shopCart_content .group > .selectGroup > select * {
@@ -5040,7 +5041,7 @@ a.steps_Button.finish:before {
     height: 35px;
     line-height: 35px;
     background: #ffffff;
-    border: 3px solid #ffcccc;
+    border: 3px solid #ff0048;
     font-size: 1rem;
   }
   .shopCart_content .group > input[type='text'] *, .shopCart_content .group > input[type='password'] * {
@@ -5065,11 +5066,11 @@ a.steps_Button.finish:before {
     float: left;
     margin-right: 1.6129%;
     margin-right: -100%;
-    height: 117px;
-    line-height: 100px;
     font-family: arial;
     text-align: center;
     color: #ff0048;
+    min-height: 80px;
+    height: 120px;
   }
   .shopCart_content.orderInfo > ul li:nth-child(3n + 1) {
     margin-left: 0%;
@@ -5091,7 +5092,7 @@ a.steps_Button.finish:before {
   .shopCart_content.orderInfo > ul li:before {
     position: absolute;
     top: 50%;
-    left: 3px;
+    left: 1px;
     margin-top: -32px;
     content: "x";
     height: 64px;
@@ -5107,19 +5108,25 @@ a.steps_Button.finish:before {
   .shopCart_content.orderInfo > ul li:last-child:before {
     left: -10px;
   }
-  .shopCart_content.orderInfo > ul li .specWrap {
-    position: absolute;
+  .shopCart_content.orderInfo > ul li > img {
+    position: relative;
     top: 50%;
-    left: 20px;
-    margin-top: -40px;
-    width: 80px;
-    height: 80px;
-    line-height: 80px;
+    margin-top: -50%;
+  }
+  .shopCart_content.orderInfo > ul li .specWrap {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin: 0 auto;
+    margin-top: -30px;
+    margin-left: -30px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
     text-align: center;
     border-radius: 50%;
     background: #ff0048;
     font-size: 1.5rem;
-    font-weight: bold;
     overflow: hidden;
     color: #ffffff;
   }
@@ -5129,7 +5136,7 @@ a.steps_Button.finish:before {
     box-sizing: border-box;
   }
   .shopCart_content.orderInfo > ul li .specWrap.colors {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .shopCart_content.priceDetail {
@@ -5185,13 +5192,11 @@ a.steps_Button.finish:before {
 
   .discountNavs ul > li, .paymentWay ul > li {
     position: relative;
-    float: left;
-    display: block;
-    height: auto;
     width: 32.25806%;
     float: left;
     margin-right: 1.6129%;
     margin-right: -100%;
+    height: 35px;
   }
   .discountNavs ul > li:nth-child(3n + 1), .paymentWay ul > li:nth-child(3n + 1) {
     margin-left: 0%;
@@ -5210,22 +5215,32 @@ a.steps_Button.finish:before {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-
   .discountNavs ul > li > a, .paymentWay ul > li > a {
-    position: relative;
-    display: inline-block;
+    position: absolute;
+    display: block;
     width: 80px;
-    padding: 3px;
-    margin: 0 21%;
+    height: 35px;
+    line-height: 35px;
+    margin: 0 auto;
     text-align: center;
     color: #ffffff;
     background: #ff0048;
-    font-size: 0.9rem;
+    font-size: 0.93rem;
+  }
+
+  .discountNavs ul > li:first-child > a, .paymentWay ul > li:first-child > a {
+    margin-left: 25.3012%;
+  }
+  .discountNavs ul > li:first-child + li > a, .paymentWay ul > li:first-child + li > a {
+    margin: 0 19.27711%;
+  }
+  .discountNavs ul > li:last-child > a, .paymentWay ul > li:last-child > a {
+    margin-left: 9.63855%;
   }
 
   .discountNavs ul > li.current > a:before {
     position: absolute;
-    top: 23px;
+    top: 35px;
     left: 50%;
     margin-left: -8px;
     content: "";
@@ -5255,54 +5270,8 @@ a.steps_Button.finish:before {
     display: none;
   }
 
-  .discountNavs ul > li:first-child > a {
-    margin: 0 0 0 40%;
-  }
-  .discountNavs ul > li:last-child > a {
-    margin: 0 40% 0 0;
-  }
-
   .paymentWay {
     margin-bottom: 20px;
-  }
-
-  .paymentWay ul > li > a {
-    margin: 0 13%;
-  }
-
-  .paymentWay ul > li:first-child > a {
-    margin: 0 0 0 55%;
-  }
-  .paymentWay ul > li:last-child > a {
-    margin: 0 40% 0 0;
-  }
-
-  .discount_tips {
-    position: relative;
-    width: 100%;
-    float: right;
-    margin-right: 0;
-    text-align: center;
-    line-height: 80px;
-    font-size: 2rem;
-    letter-spacing: 1px;
-    color: #ff0048;
-    padding-left: 60px;
-  }
-  .discount_tips * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  .discount_tips:before {
-    left: 20px;
-    display: block;
-    content: "";
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    background: url(./../images//icons/icon_point.png) center no-repeat;
-    background-size: 70px 70px;
   }
 
   .discountPop {
@@ -5354,6 +5323,34 @@ a.steps_Button.finish:before {
     color: #ffffff;
     background: #ff0048;
     padding: 3px 5px;
+  }
+
+  .discount_tips {
+    position: relative;
+    width: 100%;
+    float: right;
+    margin-right: 0;
+    text-align: center;
+    line-height: 80px;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    color: #ff0048;
+    padding-left: 60px;
+  }
+  .discount_tips * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .discount_tips:before {
+    left: 20px;
+    display: block;
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: url(./../images//icons/icon_point.png) center no-repeat;
+    background-size: 70px 70px;
   }
 
   .disContent > fieldset {
@@ -5472,8 +5469,33 @@ a.steps_Button.finish:before {
     background-size: 64px;
   }
 
-  .shopCart > ul > li.priceInfo + li {
-    margin-top: 160px;
+  .shopCart_content.finishForm {
+    padding: 0 12.04819%;
+  }
+
+  .shopCart_content.finishForm > ul > li {
+    font-size: 1rem;
+    color: #888888;
+    margin: 10px 0;
+    line-height: 20px;
+  }
+  .shopCart_content.finishForm > ul > li:first-child {
+    margin-top: 0;
+  }
+  .shopCart_content.finishForm > ul > li span.title + span {
+    text-decoration: underline;
+  }
+  .shopCart_content.finishForm > ul > li.prodName, .shopCart_content.finishForm > ul > li.prodSpec {
+    margin-left: 0;
+    font-size: 1.2rem;
+    color: #362e2b;
+    font-weight: bold;
+  }
+  .shopCart_content.finishForm > ul > li.paymentWay {
+    margin-top: 25px;
+  }
+  .shopCart_content.finishForm > ul > li.transTips {
+    color: #ff0048;
   }
 
   .priceInfo.prFixed > .priceTotalZone {

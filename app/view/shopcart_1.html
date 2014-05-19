@@ -34,15 +34,15 @@
 		</li>
 		<li>
 			<div class="shopCart_title member_vip">
-				<i class="fa fa-info fa-2x"></i>
+				<i class="fa fa-ticket"></i>
 				<span>會員獨享</span>
 			</div>
 			<div class="shopCart_content">
 				<div class="discountNavs">
 					<ul>
-						<li><a href="">可用折價券<span class="couponNums" ng-class="{couponShow: couponHide}" ng-bind="eCoupons.length"></span></a></li>
-						<li><a href="">紅利金</a></li>
-						<li><a href="">折扣金</a></li>
+						<li><a href="javascript:void(0);">折價券<span class="couponNums" ng-class="{couponShow: couponHide}" ng-bind="eCoupons.length"></span></a></li>
+						<li><a href="javascript:void(0);">紅利金</a></li>
+						<li><a href="javascript:void(0);">折扣金</a></li>
 					</ul>
 				</div>
 				<div class="discount_tips">點我看折扣</div>
@@ -89,11 +89,8 @@
 		</li>
 		<li>
 			<div class="shopCart_title">
-				<i class="fa fa-user fa-2x"></i>
-				<span>
-					Hello. Guest.<br/>
-					收件人
-				</span>
+				<i class="fa fa-user"></i>
+				<span>收件人</span>
 			</div>
 			<div class="shopCart_content">
 				<!-- name -->
@@ -127,15 +124,3 @@
 		</li>
 	</ul>
 </div>
-
-<!-- <label>價格:</label>
-<input type="text" ng-model="prods.priceSpecial">
-<a ng-href="#/shopCart/1/" ng-click="update()">update</a>
-件數：{{prods.piece}}
-姓名：{{user.name}}
-<select>
-	<option ng-repeat="prodSpec1 in prods.prodSpec1" ng-value="prodSpec1">{{prodSpec1}}</option>
-</select>
-<select>
-	<option ng-repeat="prodSpec2 in prods.prodSpec2" ng-value="prodSpec2">{{prodSpec2}}</option>
-</select> -->
