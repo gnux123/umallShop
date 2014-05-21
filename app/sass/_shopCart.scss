@@ -75,16 +75,15 @@
 		&.finish_title {
 			padding-top:20px;
 			& > i{
-				width:100px;
-				height:100px;
-				line-height:100px;
-				border-radius: 50%;
+				width:128px;
+				height:128px;
+				&.success {
+					background: url(#{$img-path}/icons_cart_success.png) center no-repeat;
+				}
 
-				background-image: url(./../images/icon_finish.png);
-				background-position: center;
-				background-repeat: no-repeat;
-				background-size: 140px;
-				background-color:#ffffff;
+				&.fail {
+					background: url(#{$img-path}/icons_cart_fail.png) center no-repeat;
+				}
 				
 			}
 
@@ -186,6 +185,7 @@
 				line-height: 64px;
 				font-size:$font-default*1.2#{rem};
 			}
+
 			&:first-child:before { display:none;}
 			&:last-child {
 				font-weight: lighter;
