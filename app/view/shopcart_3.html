@@ -7,11 +7,10 @@
 			</div>
 			<div class="shopCart_content finishForm">
 				<ul>
-					<li class="prodName">
-						這是假字這是假字這是假字這是假字這是假字這是假字這是假字
+					<li class="prodName" ng-bind="prods.name">
+						
 					</li>
-					<li class="prodSpec">
-					玫瑰紅 / M
+					<li class="prodSpec" ng-bind="prods.prodSpec1[0]+' / '+prods.prodSpec2[1]">
 					</li>
 					<li class="paymentWay">
 						<span class="title">付款方式：</span>
@@ -23,7 +22,7 @@
 					</li>
 					<li class="totalPrize">
 						<span class="title">結帳總額：</span>
-						<span>$1,980</span>
+						<span ng-bind="'$'+prods.priceSpecial"></span>
 					</li>
 					<li class="transBank">
 						<span class="title">轉帳銀行：</span>

@@ -315,6 +315,7 @@ module.exports = function (grunt) {
                     dest: '<%= yeoman.dist %>',
                     src: [
                         '*.{ico,png,txt}',
+			'images/*.{jpg,png}',
                         '.htaccess',
                         'images/{,*/}*.{webp,gif}',
                         'styles/fonts/{,*/}*.*',
@@ -395,15 +396,15 @@ module.exports = function (grunt) {
     grunt.registerTask('build', [
         'clean:dist',
         'useminPrepare',
-        'concurrent:dist',
         'autoprefixer',
+        'copy:test',
+        'copy:dist',
+        'concurrent:dist',
         'concat',
         'cssmin',
         //'modernizr',
         'uglify',
         'uglify:ng',
-        'copy:test',
-        'copy:dist',
         'usemin'
     ]);
 
