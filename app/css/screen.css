@@ -5641,6 +5641,7 @@ a.steps_Button.finish:before {
     overflow: hidden;
     padding: 0;
     background: url(./../images/bg.jpg) no-repeat;
+    background-size: 100% 100%;
   }
   .gameEvent:after {
     content: "";
