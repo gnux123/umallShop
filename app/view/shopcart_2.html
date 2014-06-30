@@ -28,23 +28,23 @@
 			<div id="payWay_2" class="payments shopCart_content">
 			</div>
 			<div id="payWay_3" class="payments shopCart_content paymentCid">
-				<label>
-					<i class="fa fa-user fa-2x"></i>
-				</label>
-				<input type="text" placeholder="請輸入信用卡號16碼">
-				<fieldset class="group">
-				<label>
-					<i class="fa fa-calendar fa-2x"></i>
-				</label>
-				<div class="selectGroup">
-					<select><option>03</option></select>
-					<select><option>2013</option></select>					
-				</div>
-				</fieldset>
-				<label>
-					<i class="fa fa-credit-card fa-2x"></i>
-				</label>
-				<input type="text"  placeholder="請輸入背面檢驗3碼">				
+				<div class="demo-container">
+	        		<div class="card-wrapper"></div>
+
+			        <div class="form-container active">
+			            <form action="">
+			                <input placeholder="Card number" type="text" name="number">
+			                <input placeholder="Full name" type="text" name="name">
+			                <input placeholder="MM/YY" type="text" name="expiry">
+			                <input placeholder="CVC" type="text" name="cvc">
+			            </form>
+			        </div>
+    			</div>
+    			<script>
+		            Zepto(function($){
+		                $('.active form').card({ container: $('.card-wrapper')});
+		            });
+    			</script>				
 			</div>
 		</li>
 	</ul>
